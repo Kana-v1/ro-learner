@@ -25,3 +25,8 @@ __pycache__/
 app/build/
 *.ipa
 *.xcodeproj/xcuserdata/
+# generated on the CI Mac from app/project.yml
+app/RoLearner.xcodeproj/
+app/RoLearner/Info.plist
+app/Payload/
+app/build.log

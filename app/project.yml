@@ -1,0 +1,41 @@
+# XcodeGen spec: the Xcode project is generated from this on the CI Mac
+# (xcodegen generate), so no .xcodeproj is committed.
+name: RoLearner
+options:
+  bundleIdPrefix: io.github.kanav1
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    # Swift 5 language mode: Swift 6 strict-concurrency errors would each cost
+    # a full CI round-trip to discover, with no local compiler to catch them.
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  RoLearner:
+    type: application
+    platform: iOS
+    sources: [RoLearner]
+    scheme: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.kanav1.rolearner
+        TARGETED_DEVICE_FAMILY: "1"
+    info:
+      path: RoLearner/Info.plist
+      properties:
+        CFBundleDisplayName: Română
+        CFBundlePackageType: APPL
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        # keep playing and listening with the screen locked
+        UIBackgroundModes: [audio]
+        # show the app's Documents folder in the Files app: drop lessons in,
+        # pick results up
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        NSMicrophoneUsageDescription: Listens to your spoken answers during drills.
+        NSSpeechRecognitionUsageDescription: Turns your spoken Romanian into text to check your answers.
