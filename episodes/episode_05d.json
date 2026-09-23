@@ -1,0 +1,1353 @@
+{
+ "episode": 5,
+ "part": "d",
+ "lesson": 5,
+ "title": "Cum e cămașa?",
+ "source": "Limba care ne unește, nivelul I — Lecția 5 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "register_scale",
+   "book": "îmbrăcăminte",
+   "spoken": "haine",
+   "gloss": "clothes",
+   "note": "The chapter's headword 'îmbrăcăminte' is the formal, collective word — you see it on shop signs and forms. In speech everyone says 'haine' for clothes ('unde sunt hainele?'). 'O haină' on its own colloquially means a coat or jacket. Learn haine first; keep îmbrăcăminte for reading.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "roșu, verde, maro, gri",
+   "gloss": "red, green, brown, grey",
+   "note": "The book gives only alb, negru, albastru, galben. You will want at least red and green immediately. Note the agreement quirks: roșu / roșie / roșii behaves like negru; verde has just verde / verzi; maro and gri don't change at all (o rochie maro, niște pantaloni gri).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "paltonul, puloverul, fularul, tricoul, impermeabilul",
+   "spoken": "paltonu', puloveru', fularu', tricou', impermeabilu'",
+   "gloss": "the coat, the sweater, the scarf, the t-shirt, the raincoat",
+   "note": "This is the chapter that formally teaches the -ul 'the' ending — and it is exactly the ending spoken Romanian clips. You will learn 'paltonul' and hear 'paltonu''. Both are the same word; the full -l is the careful/written form. Feminine -a stays (cămașa, rochia).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "rău",
+   "spoken": "urât (for clothes) / nu-mi place",
+   "gloss": "bad → ugly / I don't like it",
+   "note": "'Rău' is the book's word for bad, but about a person it leans toward mean/evil, and about clothes it sounds odd. A garment you dislike is 'urât' (ugly), or you just say 'nu-mi place' (I don't like it). Keep rău as the opposite of bun in the abstract; reach for urât in front of a wardrobe.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cum e cămașa?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cămașa e albă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Paltonul e negru.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Dar cravata? Cum e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cravata e albastră. Și tricoul e albastru, de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Iată o rochie galbenă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da. O rochie galbenă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The wardrobe again, now with an opinion on the colour of everything — white, black, blue, yellow. Listen to how the colour word changes its ending to match the thing. That matching is today.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four colours, each on a thing. The plain form first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Four colours"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e alb.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The t-shirt is white.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e alb.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "white",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "alb",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e negru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coat is black.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e negru.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "black",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "negru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The t-shirt is blue.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "blue",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "albastru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puloverul e galben.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The sweater is yellow.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puloverul e galben.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "yellow",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "galben",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The four together, mixed. Just the colour.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "blue",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "albastru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "yellow",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "galben",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "white",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "alb",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "black",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "negru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two words for describing. Cum — how, what is it like. And de asemenea — as well, too.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "cum and de asemenea"
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum e cămașa?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How is the shirt?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s044",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum e cămașa?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "how / what is it like",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cum",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru, de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The t-shirt is blue too.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s049",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru, de asemenea.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "as well, too",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "de asemenea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the rule under all of this. A Romanian adjective has four forms — it matches its noun, masculine or feminine, one or many. Take alb, white:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Agreement"
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Alb, albă, albi, albe.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou alb, o cămașă albă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a white t-shirt, a white shirt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou alb, o cămașă albă",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște tricouri albe, niște cămăși albe",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some white t-shirts, some white shirts",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște tricouri albe, niște cămăși albe",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The colours ending in -u shift a little more. Negru, black — negru, neagră, negri, negre:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover negru, o mănușă neagră",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a black sweater, a black glove",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover negru, o mănușă neagră",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pulovere negre, niște mănuși negre",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some black sweaters, some black gloves",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pulovere negre, niște mănuși negre",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Albastru works the same — albastru, albastră, albaștri, albastre. Do not memorise the table; the drill sets it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s068",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work, and the ending has to match the thing. A whole sentence out loud each time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The shirt is white.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cămașa e albă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coat is black.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e negru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tie is blue.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cravata e albastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dress is yellow.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Rochia e galbenă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How is the shirt? — It's white.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum e cămașa? E albă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How are the trousers? — They're black.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum sunt pantalonii? Sunt negri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The t-shirt is blue, the tie is blue too.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru, cravata e albastră de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The sweater is white, the shirt is white.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puloverul e alb, cămașa e albă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some black gloves",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Niște mănuși negre.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some yellow dresses",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Niște rochii galbene.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How is the coat? — It's black.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum e paltonul? E negru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The blouse is white, the skirt is black.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bluza e albă, fusta e neagră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The t-shirt is yellow.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e galben.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The gloves are black too.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mănușile sunt negre de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. The book gives you four colours; you will want more at once — at least red and green.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie roșie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a red dress",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s100",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie roșie",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a green sweater",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s103",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover verde",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Roșu behaves like negru — roșu, roșie, roșii. Verde barely changes — verde, verzi. And maro, brown, and gri, grey, never change at all: o rochie maro, niște pantaloni gri.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s105",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a dictionary.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a notebook.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un caiet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a pen, and this is an eraser.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un pix, iar aceasta e o radieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? — A book.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce e aceasta? O carte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What's this? — casually.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce-i asta?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm not an economist, I'm an accountant.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunt economist, sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum e cămașa? Cămașa e albă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e negru. Cravata e albastră.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru, de asemenea.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iată o rochie galbenă!",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s125",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum e cămașa? Cămașa e albă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e negru. Cravata e albastră.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tricoul e albastru, de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iată o rochie galbenă!",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s130",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The wardrobe again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s131",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cum e cămașa?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cămașa e albă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s133",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s134",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Paltonul e negru.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Dar cravata? Cum e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cravata e albastră. Și tricoul e albastru, de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Iată o rochie galbenă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da. O rochie galbenă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Every ending matched its thing. Next time, the last of it — how a thing is beyond its colour: good, nice, elegant, short.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: pick three things you can see and say the colour, endings matching. Cămașa e albă. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

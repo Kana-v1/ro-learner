@@ -1,0 +1,471 @@
+{
+ "_meta": {
+  "intervals": [
+   1,
+   3,
+   7,
+   16
+  ],
+  "note": "Spaced-retrieval state. An item introduced at sequence index i0 is due for review when the current episode's index minus i0 is one of the intervals. Scheduling is a pure function of `sequence` + `intervals`; nothing is mutated on build except that a new episode registers its own items here (intro=its slug, plus a canonical cue/answer used verbatim in later review blocks). Items 01..04b were seeded from those episodes' own validated drill answers."
+ },
+ "sequence": [
+  "01",
+  "02",
+  "03a",
+  "03b",
+  "04a",
+  "04b",
+  "05a",
+  "05b",
+  "05c",
+  "05d",
+  "05e",
+  "05r",
+  "06a",
+  "06b",
+  "06c",
+  "06d",
+  "06e",
+  "06f"
+ ],
+ "items": {
+  "01-1": {
+   "intro": "01",
+   "g": "m",
+   "cue": "I am Moldovan — you are a man.",
+   "answer": "Eu sunt moldovean."
+  },
+  "01-2": {
+   "intro": "01",
+   "g": "m",
+   "cue": "He is from Russia.",
+   "answer": "El este din Rusia."
+  },
+  "01-3": {
+   "intro": "01",
+   "g": "f",
+   "cue": "You are a girl.",
+   "answer": "Tu ești fată."
+  },
+  "01-4": {
+   "intro": "01",
+   "g": "f",
+   "cue": "Are you from Ukraine? Politely, to one person.",
+   "answer": "Dumneata ești din Ucraina?"
+  },
+  "01-5": {
+   "intro": "01",
+   "g": "m",
+   "cue": "Yes, I am from Moldova.",
+   "answer": "Da, eu sunt din Moldova."
+  },
+  "01-6": {
+   "intro": "01",
+   "g": "m",
+   "cue": "I am in Moldova.",
+   "answer": "Eu sunt în Moldova."
+  },
+  "02-1": {
+   "intro": "02",
+   "g": "m",
+   "cue": "I am a manager.",
+   "answer": "Eu sunt manager."
+  },
+  "02-2": {
+   "intro": "02",
+   "g": "m",
+   "cue": "I am not an economist, I am an accountant.",
+   "answer": "Nu sunt economist, sunt contabil."
+  },
+  "02-3": {
+   "intro": "02",
+   "g": "m",
+   "cue": "We are in the office.",
+   "answer": "Noi suntem în birou."
+  },
+  "02-4": {
+   "intro": "02",
+   "g": "m",
+   "cue": "Are you a driver? Politely.",
+   "answer": "Dumneavoastră sunteți șofer?"
+  },
+  "02-5": {
+   "intro": "02",
+   "g": "f",
+   "cue": "She is a shop assistant, he is a journalist.",
+   "answer": "Ea e vânzătoare, el e ziarist."
+  },
+  "02-6": {
+   "intro": "02",
+   "g": "f",
+   "cue": "Good morning, madam!",
+   "answer": "Bună dimineața, doamnă!"
+  },
+  "03a-1": {
+   "intro": "03a",
+   "g": "m",
+   "cue": "This is a dictionary.",
+   "answer": "Acesta e un dicționar."
+  },
+  "03a-2": {
+   "intro": "03a",
+   "g": "m",
+   "cue": "This is a notebook.",
+   "answer": "Acesta e un caiet."
+  },
+  "03a-3": {
+   "intro": "03a",
+   "g": "m",
+   "cue": "This is a pen, and this is an eraser.",
+   "answer": "Acesta e un pix, iar aceasta e o radieră."
+  },
+  "03a-4": {
+   "intro": "03a",
+   "g": "f",
+   "cue": "What is this? — A book.",
+   "answer": "Ce e aceasta? O carte."
+  },
+  "03a-5": {
+   "intro": "03a",
+   "g": "f",
+   "cue": "What's this? — casually.",
+   "answer": "Ce-i asta?"
+  },
+  "03a-6": {
+   "intro": "03a",
+   "g": "m",
+   "cue": "I'm not an economist, I'm an accountant.",
+   "answer": "Nu sunt economist, sunt contabil."
+  },
+  "03b-1": {
+   "intro": "03b",
+   "g": "f",
+   "cue": "This is a classroom.",
+   "answer": "Aceasta e o sală de curs."
+  },
+  "03b-2": {
+   "intro": "03b",
+   "g": "f",
+   "cue": "On the table there is a flower.",
+   "answer": "Pe masă e o floare."
+  },
+  "03b-3": {
+   "intro": "03b",
+   "g": "f",
+   "cue": "What is next to the window? — A bench.",
+   "answer": "Ce e lângă fereastră? O bancă."
+  },
+  "03b-4": {
+   "intro": "03b",
+   "g": "m",
+   "cue": "This is a good course.",
+   "answer": "Acesta e un curs bun."
+  },
+  "03b-5": {
+   "intro": "03b",
+   "g": "f",
+   "cue": "Next to the school there is a building.",
+   "answer": "Lângă școală e o clădire."
+  },
+  "03b-6": {
+   "intro": "03b",
+   "g": "m",
+   "cue": "Who is this? — A course student.",
+   "answer": "Cine e acesta? Un cursant."
+  },
+  "04a-1": {
+   "intro": "04a",
+   "g": "f",
+   "cue": "This is a house.",
+   "answer": "Aceasta e o casă."
+  },
+  "04a-2": {
+   "intro": "04a",
+   "g": "f",
+   "cue": "This is a room.",
+   "answer": "Aceasta e o cameră."
+  },
+  "04a-3": {
+   "intro": "04a",
+   "g": "f",
+   "cue": "This is a floor, and this is a ceiling.",
+   "answer": "Aceasta e o podea, iar acesta e un tavan."
+  },
+  "04a-4": {
+   "intro": "04a",
+   "g": "m",
+   "cue": "Now I am in the kitchen.",
+   "answer": "Acum sunt în bucătărie."
+  },
+  "04a-5": {
+   "intro": "04a",
+   "g": "m",
+   "cue": "Who is he? — He is Mr Radu.",
+   "answer": "Cine e dumnealui? Dumnealui e domnu' Radu."
+  },
+  "04a-6": {
+   "intro": "04a",
+   "g": "f",
+   "cue": "Next to the window there is a bench.",
+   "answer": "Lângă fereastră e o bancă."
+  },
+  "04b-1": {
+   "intro": "04b",
+   "g": "f",
+   "cue": "This is a sofa.",
+   "answer": "Aceasta e o canapea."
+  },
+  "04b-2": {
+   "intro": "04b",
+   "g": "f",
+   "cue": "This is a mirror.",
+   "answer": "Aceasta e o oglindă."
+  },
+  "04b-3": {
+   "intro": "04b",
+   "g": "f",
+   "cue": "This is a magazine, and this is a newspaper.",
+   "answer": "Aceasta e o revistă, iar acesta e un ziar."
+  },
+  "04b-4": {
+   "intro": "04b",
+   "g": "f",
+   "cue": "In the bedroom there are some nightstands.",
+   "answer": "În dormitor sunt niște noptiere."
+  },
+  "04b-5": {
+   "intro": "04b",
+   "g": "m",
+   "cue": "A shelf for books.",
+   "answer": "Un raft pentru cărți."
+  },
+  "04b-6": {
+   "intro": "04b",
+   "g": "m",
+   "cue": "The apartment is near, the house is far.",
+   "answer": "Apartamentul e aproape, casa e departe."
+  },
+  "palton": {
+   "intro": "05a",
+   "g": "m",
+   "cue": "a coat",
+   "answer": "un palton"
+  },
+  "pulover": {
+   "intro": "05a",
+   "g": "m",
+   "cue": "a sweater",
+   "answer": "un pulover"
+  },
+  "cămașă": {
+   "intro": "05a",
+   "g": "f",
+   "cue": "a shirt",
+   "answer": "o cămașă"
+  },
+  "pantaloni": {
+   "intro": "05a",
+   "g": "m",
+   "cue": "trousers",
+   "answer": "niște pantaloni"
+  },
+  "unde": {
+   "intro": "05a",
+   "g": "f",
+   "cue": "where",
+   "answer": "unde"
+  },
+  "iată": {
+   "intro": "05a",
+   "g": "m",
+   "cue": "here it is",
+   "answer": "iată"
+  },
+  "bluză": {
+   "intro": "05b",
+   "g": "f",
+   "cue": "a blouse",
+   "answer": "o bluză"
+  },
+  "rochie": {
+   "intro": "05b",
+   "g": "f",
+   "cue": "a dress",
+   "answer": "o rochie"
+  },
+  "fustă": {
+   "intro": "05b",
+   "g": "f",
+   "cue": "a skirt",
+   "answer": "o fustă"
+  },
+  "cravată": {
+   "intro": "05b",
+   "g": "f",
+   "cue": "a tie",
+   "answer": "o cravată"
+  },
+  "tricou": {
+   "intro": "05b",
+   "g": "m",
+   "cue": "a t-shirt",
+   "answer": "un tricou"
+  },
+  "fular": {
+   "intro": "05c",
+   "g": "m",
+   "cue": "a scarf",
+   "answer": "un fular"
+  },
+  "impermeabil": {
+   "intro": "05c",
+   "g": "m",
+   "cue": "a raincoat",
+   "answer": "un impermeabil"
+  },
+  "căciulă": {
+   "intro": "05c",
+   "g": "f",
+   "cue": "a winter hat",
+   "answer": "o căciulă"
+  },
+  "mănușă": {
+   "intro": "05c",
+   "g": "f",
+   "cue": "a glove",
+   "answer": "o mănușă"
+  },
+  "îmbrăcăminte": {
+   "intro": "05c",
+   "g": "f",
+   "cue": "clothing",
+   "answer": "îmbrăcăminte"
+  },
+  "alb": {
+   "intro": "05d",
+   "g": "m",
+   "cue": "white",
+   "answer": "alb"
+  },
+  "negru": {
+   "intro": "05d",
+   "g": "m",
+   "cue": "black",
+   "answer": "negru"
+  },
+  "albastru": {
+   "intro": "05d",
+   "g": "m",
+   "cue": "blue",
+   "answer": "albastru"
+  },
+  "galben": {
+   "intro": "05d",
+   "g": "m",
+   "cue": "yellow",
+   "answer": "galben"
+  },
+  "cum": {
+   "intro": "05d",
+   "g": "f",
+   "cue": "how / what is it like",
+   "answer": "cum"
+  },
+  "de asemenea": {
+   "intro": "05d",
+   "g": "m",
+   "cue": "as well, too",
+   "answer": "de asemenea"
+  },
+  "bun": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "good",
+   "answer": "bun"
+  },
+  "rău": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "bad",
+   "answer": "rău"
+  },
+  "frumos": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "nice, beautiful",
+   "answer": "frumos"
+  },
+  "elegant": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "elegant",
+   "answer": "elegant"
+  },
+  "comod": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "comfortable",
+   "answer": "comod"
+  },
+  "scurt": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "short",
+   "answer": "scurt"
+  },
+  "modern": {
+   "intro": "05e",
+   "g": "m",
+   "cue": "modern",
+   "answer": "modern"
+  },
+  "mamă": {
+   "intro": "06a",
+   "g": "f",
+   "cue": "mother",
+   "answer": "mamă"
+  },
+  "tată": {
+   "intro": "06a",
+   "g": "m",
+   "cue": "father",
+   "answer": "tată"
+  },
+  "frate": {
+   "intro": "06a",
+   "g": "m",
+   "cue": "brother",
+   "answer": "frate"
+  },
+  "soră": {
+   "intro": "06a",
+   "g": "f",
+   "cue": "sister",
+   "answer": "soră"
+  },
+  "bunic": {
+   "intro": "06b",
+   "g": "m",
+   "cue": "grandfather",
+   "answer": "bunic"
+  },
+  "bunică": {
+   "intro": "06b",
+   "g": "f",
+   "cue": "grandmother",
+   "answer": "bunică"
+  },
+  "copil": {
+   "intro": "06b",
+   "g": "m",
+   "cue": "child",
+   "answer": "copil"
+  },
+  "familie": {
+   "intro": "06b",
+   "g": "f",
+   "cue": "family",
+   "answer": "familie"
+  }
+ }
+}

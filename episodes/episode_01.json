@@ -1,0 +1,2624 @@
+{
+ "episode": 1,
+ "lesson": 1,
+ "title": "Bună dimineața!",
+ "source": "Limba care ne unește, nivelul I — Lecția 1",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "domnul / doamna / domnișoara": "the -ul and -a endings mean 'the'",
+  "scuzați": "sorry, excuse me",
+  "Bălți": "a city in northern Moldova",
+  "Ivanova": "a surname"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "El este bărbat. Ea este femeie.",
+   "spoken": "El e bărbat. Ea e femeie.",
+   "gloss": "he is / she is",
+   "note": "The single most frequent gap between written and spoken Romanian. Este is correct and never wrong, but in conversation almost everyone says e. Teach este in the drill, because that is the form the book builds on, and teach e as the one you will actually hear.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "domnul Radu, doamna Elena",
+   "spoken": "domnu' Radu, doamna Elena",
+   "gloss": "Mr Radu, Mrs Elena",
+   "note": "Spoken Romanian drops the final -l of the definite article: domnul becomes domnu', băiatul becomes băiatu'. This is ordinary neutral speech, not sloppiness. Feminine -a is unaffected.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare bine.",
+   "gloss": "Nice to meet you.",
+   "note": "The standard thing to say when introduced. The chapter teaches greetings and nationalities but never this, and it is the phrase a real first meeting cannot do without. Teach as a fixed chunk.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Ce mai faceți?",
+   "gloss": "How are you? — polite, to one person or several",
+   "note": "Follows the greeting almost automatically. Grammar is well beyond lesson one, so deliver it whole and do not analyse it.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "spoken": "Bună ziua. / Bună. / Salut.",
+   "gloss": "formal · neutral-friendly · informal",
+   "note": "The book presents all three flat, as if interchangeable. They are not. Bună ziua to a stranger, an official, anyone older. Bună with someone your own age you have met. Salut only with friends. Getting this wrong is more noticeable than a grammar mistake.",
+   "confidence": "high"
+  },
+  {
+   "type": "filler",
+   "spoken": "Păi...",
+   "gloss": "Well... — the closest thing to Russian ну",
+   "note": "Opens a hesitant or qualified answer. Neutral: fine with colleagues and shopkeepers. Păi, nu sunt din Chișinău. — Well, I'm not from Chișinău.",
+   "confidence": "high"
+  },
+  {
+   "type": "filler",
+   "spoken": "Deci...",
+   "gloss": "So... / I mean...",
+   "note": "Formally means therefore, but in speech it fills pauses and restarts sentences the way English so does. Extremely common; can be drawn out while thinking.",
+   "confidence": "high"
+  },
+  {
+   "type": "filler",
+   "spoken": "Mă rog...",
+   "gloss": "Well, anyway... / or rather...",
+   "note": "Used to concede a point or correct yourself mid-sentence. Neutral register. Useful early because it buys time without sounding uncertain.",
+   "confidence": "check"
+  },
+  {
+   "type": "moldovanism",
+   "book": "sînt, sîntem (given alongside sunt, suntem)",
+   "spoken": "sunt, suntem",
+   "gloss": "am / are, we are",
+   "note": "The book is from Chișinău, 2003, and offers both spellings. The î forms are dated and marked in Romania. Use only the u forms.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună dimineața! Eu sunt Dana.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Domnul Radu Bărbulescu?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, eu sunt. Bună dimineața!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Sunteți din Chișinău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu. Sunt din Bălți. Sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Doamna Elena Ivanova?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Nu sunt doamnă! Sunt domnișoară.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ah, scuzați! Domnișoara Elena. Dumneavoastră sunteți din Chișinău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Da. Dar nu sunt moldoveancă. Sunt ucraineancă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Iar eu sunt din Chișinău. Sunt moldoveancă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La revedere! Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s013",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "La revedere!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s014",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Three people and a register, first morning of a language course. You caught a name or two — that is the right amount on a first listen. We come back to it at the end.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s015",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four letters first. Only the four that turned up in what you just heard.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Sounds"
+  },
+  {
+   "id": "s016",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ă, an A wearing a little bowl. A dull vowel, the -er at the end of 'water'. In bărbat, a man.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bărbat",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bărbat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "In doamnă, a lady.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doamnă",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doamnă",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s022",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ș, an S with a comma under it. Just 'sh'. In domnișoară, miss.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "domnișoară",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "domnișoară",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s025",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ț, a T with a comma under it. 'ts', as at the end of 'cats'. In dimineața, morning.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dimineața",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dimineața",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So: bună dimineața. Good morning.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața!",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s031",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And Î or Â — one sound, two spellings. Nothing like it in English: say 'ee' with your tongue pulled back. In în, meaning in.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And in român, a Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "român",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "român",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s037",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the words, each one inside a phrase. Say every phrase out loud in the gap. Out loud — thinking it does not count.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Vocabulary"
+  },
+  {
+   "id": "s038",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four kinds of person.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este băiat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a boy.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s041",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este băiat.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s044",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este fată.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bărbat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a man.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s047",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bărbat.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este femeie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a woman.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s050",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este femeie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Three ways to address someone. You heard all three during the roll call.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s052",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bună ziua, domn!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good afternoon, sir.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bună ziua, domn!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună ziua, doamnă!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good afternoon, madam.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună ziua, doamnă!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună seara, domnișoară!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good evening, miss.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună seara, domnișoară!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And when a title comes before a name, it grows an ending: domnul Radu, doamna Elena, domnișoara Elena. That ending is Romanian's word for 'the', and it attaches to the back of the word instead of standing in front of it. Take it as a whole phrase for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s062",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nationalities. Listen for the pattern rather than memorising ten separate words.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — said by a man.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt moldovean.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu sunt moldoveancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — said by a woman.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu sunt moldoveancă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este rus.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Russian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s071",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este rus.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este ucrainean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Ukrainian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este ucrainean.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este ucraineancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is Ukrainian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s077",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este ucraineancă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bulgar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Bulgarian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bulgar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este găgăuz.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Gagauz.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s083",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este găgăuz.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este român.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s086",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este român.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este francez.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is French.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s089",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este francez.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este englez.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is English.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s092",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este englez.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There it is: the men's form ends in nothing in particular, the women's adds -că. Moldovean, moldoveancă. Ucrainean, ucraineancă. That one rule covers most of the list.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s094",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two very small words that people mix up forever.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s095",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am from Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s097",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt din Moldova.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt în Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am in Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s100",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt în Moldova.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Din is from. În is in. Once more, slowly.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s102",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "din",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And four connecting words.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s105",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Da.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s107",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Da.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "No.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s110",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este din Moldova, iar ea este din Ucraina.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is from Moldova, and she is from Ukraine.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s113",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este din Moldova, iar ea este din Ucraina.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt rus, dar el este român.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Russian, but he is Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s116",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt rus, dar el este român.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Everything in this episode runs on one verb: a fi, to be. Six forms.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The verb a fi"
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "eu sunt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s119",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tu ești",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s121",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you are",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "el este",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s123",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he is",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ea este",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s125",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she is",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "noi suntem",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s127",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we are",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "voi sunteți",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s129",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you are, more than one",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei sunt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s131",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they are, men",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ele sunt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s133",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they are, women",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "For the negative, put nu in front and change nothing else.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s135",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunt rus.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am not Russian.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s137",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunt rus.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea nu este din Rusia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s139",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is not from Russia.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s140",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea nu este din Rusia.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s141",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now something worth stopping for. Listen to what Radu actually said when Dana asked where he was from.",
+   "rate": 1.0,
+   "pause_after_ms": 600,
+   "chapter": "Dropping the pronoun"
+  },
+  {
+   "id": "s142",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu. Sunt din Bălți. Sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s143",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Not eu sunt din Bălți. Just sunt din Bălți. Romanian usually leaves the pronoun out, because the verb ending already tells you who is speaking. Sunt can only mean I am.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s144",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The pronoun comes back when you are pointing at someone in particular. Dana reads a name, and Radu answers:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s145",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, eu sunt.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, that is me. There the eu is the whole point.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s147",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So: drop it for plain statements, keep it for contrast. The drill below uses full forms because those need practice. In speech, let them go.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s148",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six phrases for arriving and leaving.",
+   "rate": 1.0,
+   "pause_after_ms": 600,
+   "chapter": "Greetings"
+  },
+  {
+   "id": "s149",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s150",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good morning.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s151",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună ziua!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s153",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good afternoon.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s154",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună ziua!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s155",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună seara!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good evening.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s157",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună seara!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s158",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Salut!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s159",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Hi. Informal — for friends.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s160",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Salut!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s161",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "La revedere!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s162",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Goodbye.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s163",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "La revedere!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s164",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s165",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "See you soon.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s166",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s167",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One more pair. Dumneavoastră is the respectful you — Dana used it with everyone on her list. Dumneata is a middle setting, polite but warmer.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s168",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți din Rusia?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s169",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you from Russia?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s170",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți din Rusia?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s171",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneata ești din Ucraina?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s172",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you from Ukraine?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s173",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneata ești din Ucraina?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s174",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Note that dumneavoastră takes sunteți, the plural form, even for one person — the same move French makes with vous.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s175",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Last section, and it is not from the textbook. That book was written in Chișinău in 2003. It teaches correct Romanian, not always spoken Romanian. So: what a Bucharest mouth actually produces.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s176",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The book says el este, ea este. Correct, always. But listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s177",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e bărbat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s178",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e femeie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s179",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Just e. The commonest gap between written and spoken Romanian. Keep drilling este — the book builds on it — but expect e.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s180",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We taught domnul Radu. In speech that final L falls off.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s181",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "domnu' Radu",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s182",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "domnu' Radu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s183",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Domnu', not domnul. Ordinary neutral speech, not sloppiness. Feminine doamna keeps its ending.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s184",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the phrase our roll call should have had. On being introduced:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s185",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s186",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nice to meet you.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s187",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare bine.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s188",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grammar far beyond this lesson. Take it whole.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s189",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And two ways to stall while you think.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s190",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Păi...",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s191",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Well... — exactly like Russian ну.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s192",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Păi...",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s193",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "It opens a hesitant answer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s194",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Păi, nu sunt din Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s195",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And deci — officially therefore, in speech just like English 'so'. Stretch it as long as you need.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s196",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Deci... eu sunt din Bălți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s197",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Both neutral. Safe with a colleague, in a shop, with a stranger.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s198",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is the part that does the work. I say it in English, you say it in Romanian out loud, then you hear it. Answer before you are sure — guessing and being corrected is what makes it stick.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s199",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — you are a man.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s200",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s201",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — you are a woman.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s202",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu sunt moldoveancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s203",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is Ukrainian.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s204",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea este ucraineancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s205",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Bulgarian.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s206",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bulgar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s207",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is from Russia.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s208",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este din Rusia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s209",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We are from Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s210",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi suntem din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s211",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are from Bulgaria — speaking to several people.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s212",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Voi sunteți din Bulgaria.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s213",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They are from Moldova — a group of men.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s214",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei sunt din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s215",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s216",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tu ești fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s217",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am not French.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s218",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu nu sunt francez.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s219",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is not from Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s220",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea nu este din Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s221",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is not English, he is Gagauz.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s222",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El nu este englez, el este găgăuz.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s223",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you from Ukraine? Politely, to one person.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s224",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneata ești din Ucraina?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s225",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you Russian? Respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s226",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți rus?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s227",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good morning, madam!",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s228",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața, doamnă!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s229",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good evening, miss!",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s230",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună seara, domnișoară!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s231",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, I am from Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s232",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Da, eu sunt din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s233",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "No, I am not Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s234",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu, eu nu sunt român.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s235",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a man, she is a woman.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s236",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bărbat, ea este femeie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s237",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is from Moldova, and she is from Ukraine.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s238",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este din Moldova, iar ea este din Ucraina.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s239",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am in Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s240",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt în Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s241",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "See you soon!",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s242",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s243",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a man — the way you would actually say it.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s244",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e bărbat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s245",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nice to meet you.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s246",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s247",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Well... I am not from Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s248",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Păi, nu sunt din Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s249",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the reading passage from the lesson itself. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s250",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt Ion. Sunt din Moldova.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s251",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Și el este din Moldova, iar ea este din Ucraina.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s252",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tu ești din Chișinău. Noi suntem din Bulgaria.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s253",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Voi sunteți din Rusia. Dar ei? Ei sunt din America.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s254",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este Radu, iar ea este Dana.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s255",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bărbat, ea este femeie. Noi suntem din Moldova.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s256",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at normal speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s257",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt Ion. Sunt din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s258",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Și el este din Moldova, iar ea este din Ucraina.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s259",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tu ești din Chișinău. Noi suntem din Bulgaria.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s260",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Voi sunteți din Rusia. Dar ei? Ei sunt din America.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s261",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este Radu, iar ea este Dana.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s262",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este bărbat, ea este femeie. Noi suntem din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s263",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Back to the roll call. Same recording, same speed. Nothing about it has changed.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s264",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună dimineața! Eu sunt Dana.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s265",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Domnul Radu Bărbulescu?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s266",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, eu sunt. Bună dimineața!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s267",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Sunteți din Chișinău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s268",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu. Sunt din Bălți. Sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s269",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Doamna Elena Ivanova?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s270",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Nu sunt doamnă! Sunt domnișoară.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s271",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ah, scuzați! Domnișoara Elena. Dumneavoastră sunteți din Chișinău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s272",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Da. Dar nu sunt moldoveancă. Sunt ucraineancă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s273",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Iar eu sunt din Chișinău. Sunt moldoveancă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s274",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La revedere! Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s275",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "La revedere!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s276",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Every word of that was built from this one lesson. Twenty-four words and one verb.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s277",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One thing before the next episode. Say your own line out loud — where you are from, what you are. Start with sunt, and leave the eu off. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

@@ -1,0 +1,1869 @@
+{
+ "episode": 3,
+ "part": "a",
+ "lesson": 3,
+ "title": "Noi suntem împreună (A)",
+ "source": "Limba care ne unește, nivelul I — Lecția 3 (partea A)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Mihai / Elena / Radu": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "Ce este aceasta?",
+   "spoken": "Ce-i asta?",
+   "gloss": "What's this?",
+   "note": "For objects this is the everyday form: este contracts to -i, and aceasta shortens to asta. You will hear 'Ce-i asta?' far more than the textbook's full 'Ce este aceasta?'. Fully neutral for things. The book itself shows the halfway step, 'Acesta-i un stilou', so the contraction is already in the source.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "spoken": "Cine e? / Cine-i ăsta?",
+   "gloss": "Who is it? / Who's this (guy)?",
+   "note": "The same asta/ăsta shortening is fine for objects but turns familiar and can sound dismissive about a person ('who's this guy?'). With someone you have just met, keep 'Cine e?' or name the person. Save ăsta/asta-for-people for friends.",
+   "confidence": "check"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum se spune ... în română?",
+   "gloss": "How do you say ... in Romanian?",
+   "note": "The chapter teaches you to ask 'what is this?' when the thing is in front of you, but never how to ask for a word you don't know. This is the phrase that actually unblocks you in a class. Grammar beyond this lesson; take it whole.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Ce înseamnă ...?",
+   "gloss": "What does ... mean?",
+   "note": "The other half of asking about words: point at a word rather than a thing. Deliver as a fixed chunk, no analysis.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "o radieră",
+   "spoken": "o gumă (de șters)",
+   "gloss": "an eraser / rubber",
+   "note": "'Radieră' is the textbook word and not wrong, but almost everyone says 'gumă' (literally 'gum'), or 'gumă de șters' to be explicit. Learn both, since the book keeps using radieră.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "un pix (nu un stilou)",
+   "gloss": "a ballpoint pen (not a fountain pen)",
+   "note": "The book lists pix and stilou side by side as if equal. In practice 'pix' is the pen everyone actually uses; 'stilou' is a fountain pen and now fairly rare. Default to pix.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "dicționarul, manualul, caietul, scaunul",
+   "spoken": "dicționaru', manualu', caietu', scaunu'",
+   "gloss": "the dictionary, the textbook, the notebook, the chair",
+   "note": "The dropped final -l from lessons 1-2, now on this chapter's masculine and neuter nouns. Same rule, more words.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "o sală de curs",
+   "spoken": "o clasă / o sală",
+   "gloss": "a classroom / lecture room",
+   "note": "'Sală de curs' fits an adult course or lecture hall, which is our setting. In a school you'd say 'clasă' or 'sală de clasă'. Not wrong, just pick by context.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua! Poftiți, domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Acesta e Mihai. E cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare bine. Dar aceasta? Cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aceasta e Elena. E profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bună! Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce e acesta? Un dicționar?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, e un dicționar. Iar acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și aceasta ce e? O radieră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu, nu e o radieră. E o carte.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci: aici e un caiet, un creion și un pix.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s013",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s014",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cu plăcere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s015",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first class. Someone new is being shown round — who the people are, what the things on the desk are. Two questions do all the work: who is this, and what is this. By the end they will be yours.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s016",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The things on a desk. Each one inside a full sentence — this is a X, that is a Y — never on its own. Say the sentence out loud in the gap.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "This is..."
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a dictionary.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a textbook.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un manual.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o carte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a book.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o carte.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un caiet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a notebook.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un caiet.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un creion.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a pencil.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un creion.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un pix.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a pen.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un pix.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un stilou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a fountain pen.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un stilou.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o radieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an eraser.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s040",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o radieră.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the room itself.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o masă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a table.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s044",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o masă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a chair.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s047",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un scaun.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o ușă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a door.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s050",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o ușă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o fereastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a window.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s053",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o fereastră.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a course student.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un cursant.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the same things again, but this time here and there, one against another. Listen for how the words come back inside a different sentence — that is how you will actually meet them.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Here and there"
+  },
+  {
+   "id": "s058",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un caiet, iar acolo e un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un pix, iar aceasta e o radieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e o carte, iar acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e o masă, acolo e un scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e o ușă, iar aceasta e o fereastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un creion. Acolo e un stilou.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s064",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two pairs of little words ran through all of that. First: this.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "acesta and aceasta"
+  },
+  {
+   "id": "s065",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Acesta for a masculine or neuter thing. Aceasta for a feminine one. It is the same masculine-neuter-together pattern as un from last time — acesta goes with un, aceasta goes with o.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un creion.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s069",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o carte.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o masă.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s071",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o ușă.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Second pair: the questions they answer. Cine for a person, ce for a thing. Cine — who. Ce — what.",
+   "rate": 1.0,
+   "pause_after_ms": 600,
+   "chapter": "cine and ce"
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e acesta? Un cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is this? A course student.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s075",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e acesta? Un cursant.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? A dictionary.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Un dicționar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine e aceasta? Elena.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is this? Elena.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s081",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine e aceasta? Elena.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce e aceasta? O carte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? A book.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s084",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce e aceasta? O carte.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Cine only for people, ce only for things. Ask ce about a person and you have asked what they are, not who — occasionally useful, usually not what you meant.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s086",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The part that is not from the book — how this actually sounds in Bucharest, and the questions the chapter forgot to give you.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s087",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The book asks ce este aceasta. Nobody says all of that about a mug on a table. Este collapses onto the word before it, and aceasta becomes asta:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s088",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce-i asta?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What's this?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s090",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce-i asta?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ce-i asta. Completely neutral for objects — you will hear it constantly. For a person, though, asta or ăsta turns familiar, even dismissive — who's this guy. With someone you have just met, keep cine e.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s092",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is it?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s094",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine e?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the real gap. The chapter teaches you to ask what is this when the thing is in front of you — but not how to ask for a word you do not know. These two unblock every class:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s096",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum se spune... în română?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How do you say... in Romanian?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum se spune... în română?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce înseamnă...?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does... mean?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s101",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce înseamnă...?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grammar far beyond this lesson. Take both whole.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s103",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Last, two words the book treats as equals but life does not. A pix is the ballpoint everyone writes with. A stilou is a fountain pen — you will rarely need it. And the book's radieră is correct, but almost everyone says gumă.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s104",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pix",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s105",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o gumă",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s106",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Keep radieră for the drill, because the book uses it. Expect gumă in the room.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s107",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the work, and it is longer this time. English in, a whole Romanian sentence out loud, then the answer. Every word you just met, several times over, never bare.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a dictionary.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a textbook.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a dictionary, and this is a textbook.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar, iar acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a book.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o carte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a notebook.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un caiet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a pen, and this is a notebook.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un pix, iar acesta e un caiet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a pencil.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un creion.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a fountain pen.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un stilou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an eraser.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o radieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a pen, and this is an eraser.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un pix, iar aceasta e o radieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a table.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o masă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a chair, and this is a table.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un scaun, iar aceasta e o masă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a door, and this is a window.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o ușă, iar aceasta e o fereastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? — A pencil.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Un creion.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? — A book.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce e aceasta? O carte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is this? — A course student.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e acesta? Un cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is this a dictionary? — No, it's a textbook.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dicționar? Nu, e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is this a book? — Yes, it's a book.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o carte? Da, e o carte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What's this? — casually.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s145",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce-i asta?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How do you say 'notebook' in Romanian?",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s147",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum se spune 'notebook' în română?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s148",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does 'caiet' mean?",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s149",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce înseamnă 'caiet'?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, a few things from earlier. Same rules — answer out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s151",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is an architect.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s152",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e arhitect.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s153",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do for a living?",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s154",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s155",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm not an economist, I'm an accountant.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s156",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunt economist, sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s157",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a lawyer, she is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s158",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e jurist, ea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s159",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Aren't you from the city? — Yes I am.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s160",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ba da, sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s161",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nice to meet you.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s162",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s163",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — a man speaking.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s164",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s165",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A handful of sentences run together, the way the book's own text will in the second half. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s166",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bună ziua! Acesta e un cursant. Aceasta e o profesoară.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s167",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Acesta e un dicționar. Iar acesta e un manual.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s168",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e o carte. Aici e un caiet, un creion și un pix.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s169",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e aceasta? Aceasta e Elena.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s170",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e aceasta? O radieră. Iar aceasta e o masă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s171",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un scaun. Aceasta e o ușă, iar aceasta e o fereastră.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s172",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s173",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bună ziua! Acesta e un cursant. Aceasta e o profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s174",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Acesta e un dicționar. Iar acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s175",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e o carte. Aici e un caiet, un creion și un pix.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s176",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e aceasta? Aceasta e Elena.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s177",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e aceasta? O radieră. Iar aceasta e o masă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s178",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un scaun. Aceasta e o ușă, iar aceasta e o fereastră.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s179",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first class again. Same recording — only your ear has changed.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s180",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua! Poftiți, domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s181",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s182",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Acesta e Mihai. E cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s183",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare bine. Dar aceasta? Cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s184",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aceasta e Elena. E profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s185",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bună! Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s186",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce e acesta? Un dicționar?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s187",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, e un dicționar. Iar acesta e un manual.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s188",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și aceasta ce e? O radieră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s189",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu, nu e o radieră. E o carte.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s190",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci: aici e un caiet, un creion și un pix.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s191",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s192",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cu plăcere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s193",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Every question in it was one of two: cine e, ce e. Next time, the other half — where everything is in the room.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s194",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: pick five things near you and name each one out loud. Acesta e un..., aceasta e o... And when you do not know the word — cum se spune. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

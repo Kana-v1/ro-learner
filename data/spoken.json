@@ -1,0 +1,281 @@
+{
+ "_meta": {
+  "target_variety": "Romania (Bucharest)",
+  "target_register": "polite-neutral — colleagues, shops, strangers",
+  "excluded": [
+   "Moldovan and Transylvanian regionalisms (no as a filler, servus)",
+   "familiar-and-below markers (bă, mă, mișto, gen)",
+   "anything the learner would not use with someone they just met"
+  ],
+  "confidence": "high = safe to teach as-is; check = plausible but wants a native eye before it goes into an episode",
+  "review": "run make_review_sheet.py and have a native speaker go through the whole file in one sitting"
+ },
+ "1": [
+  {
+   "type": "written_vs_spoken",
+   "book": "El este bărbat. Ea este femeie.",
+   "spoken": "El e bărbat. Ea e femeie.",
+   "gloss": "he is / she is",
+   "note": "The single most frequent gap between written and spoken Romanian. Este is correct and never wrong, but in conversation almost everyone says e. Teach este in the drill, because that is the form the book builds on, and teach e as the one you will actually hear.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "domnul Radu, doamna Elena",
+   "spoken": "domnu' Radu, doamna Elena",
+   "gloss": "Mr Radu, Mrs Elena",
+   "note": "Spoken Romanian drops the final -l of the definite article: domnul becomes domnu', băiatul becomes băiatu'. This is ordinary neutral speech, not sloppiness. Feminine -a is unaffected.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare bine.",
+   "gloss": "Nice to meet you.",
+   "note": "The standard thing to say when introduced. The chapter teaches greetings and nationalities but never this, and it is the phrase a real first meeting cannot do without. Teach as a fixed chunk.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Ce mai faceți?",
+   "gloss": "How are you? — polite, to one person or several",
+   "note": "Follows the greeting almost automatically. Grammar is well beyond lesson one, so deliver it whole and do not analyse it.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "spoken": "Bună ziua. / Bună. / Salut.",
+   "gloss": "formal · neutral-friendly · informal",
+   "note": "The book presents all three flat, as if interchangeable. They are not. Bună ziua to a stranger, an official, anyone older. Bună with someone your own age you have met. Salut only with friends. Getting this wrong is more noticeable than a grammar mistake.",
+   "confidence": "high"
+  },
+  {
+   "type": "filler",
+   "spoken": "Păi...",
+   "gloss": "Well... — the closest thing to Russian ну",
+   "note": "Opens a hesitant or qualified answer. Neutral: fine with colleagues and shopkeepers. Păi, nu sunt din Chișinău. — Well, I'm not from Chișinău.",
+   "confidence": "high"
+  },
+  {
+   "type": "filler",
+   "spoken": "Deci...",
+   "gloss": "So... / I mean...",
+   "note": "Formally means therefore, but in speech it fills pauses and restarts sentences the way English so does. Extremely common; can be drawn out while thinking.",
+   "confidence": "high"
+  },
+  {
+   "type": "filler",
+   "spoken": "Mă rog...",
+   "gloss": "Well, anyway... / or rather...",
+   "note": "Used to concede a point or correct yourself mid-sentence. Neutral register. Useful early because it buys time without sounding uncertain.",
+   "confidence": "check"
+  },
+  {
+   "type": "moldovanism",
+   "book": "sînt, sîntem (given alongside sunt, suntem)",
+   "spoken": "sunt, suntem",
+   "gloss": "am / are, we are",
+   "note": "The book is from Chișinău, 2003, and offers both spellings. The î forms are dated and marked in Romania. Use only the u forms.",
+   "confidence": "high"
+  }
+ ],
+ "2": [
+  {
+   "type": "missing_from_book",
+   "spoken": "Cu ce vă ocupați?",
+   "gloss": "What do you do for a living?",
+   "note": "The chapter teaches you to state a profession but never to ask about one — there is no question form anywhere in it. This is the polite, neutral way. Ce faceți? is shorter and also common, but it can also just mean 'what are you doing right now', so this one is safer.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Unde lucrați?",
+   "gloss": "Where do you work?",
+   "note": "In practice this comes up as often as the profession question itself, and the answer can be a place name the learner already has: la teatru, la școală, în magazin.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Mulțumesc. — Cu plăcere.",
+   "gloss": "Thank you. — You're welcome.",
+   "note": "Absent from the first two chapters entirely. Cu plăcere is the standard reply; Pentru puțin also exists and sounds slightly warmer.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are. / Come in. / Go ahead.",
+   "note": "Does a lot of work with no single English equivalent: handing something over, showing someone in, inviting them to speak. Poftiți is the polite form, poftim the familiar one. You will hear it constantly in shops and offices.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "biroul, magazinul, orașul",
+   "spoken": "birou', magazinu', orașu'",
+   "gloss": "the office, the shop, the town",
+   "note": "The dropped final -l from lesson one, now on the chapter's own nouns. Same rule, wider application.",
+   "confidence": "high"
+  },
+  {
+   "type": "grammar_gap",
+   "book": "Aici este un inginer. / Eu sunt inginer.",
+   "spoken": "Eu sunt inginer. — never 'un inginer'.",
+   "gloss": "I am an engineer.",
+   "note": "The chapter drills un and o, then states professions with no article at all, and never points out that this is deliberate. Romanian omits the article when the noun names your role. English and Russian speakers both put one in by reflex. Worth saying out loud.",
+   "confidence": "high"
+  }
+ ],
+ "3": [
+  {
+   "type": "written_vs_spoken",
+   "book": "Ce este aceasta?",
+   "spoken": "Ce-i asta?",
+   "gloss": "What's this?",
+   "note": "For objects this is the everyday form: este contracts to -i, and aceasta shortens to asta. You will hear 'Ce-i asta?' far more than the textbook's full 'Ce este aceasta?'. Fully neutral for things. The book itself shows the halfway step, 'Acesta-i un stilou', so the contraction is already in the source.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "spoken": "Cine e? / Cine-i ăsta?",
+   "gloss": "Who is it? / Who's this (guy)?",
+   "note": "The same asta/ăsta shortening is fine for objects but turns familiar and can sound dismissive about a person ('who's this guy?'). With someone you have just met, keep 'Cine e?' or name the person. Save ăsta/asta-for-people for friends.",
+   "confidence": "check"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum se spune ... în română?",
+   "gloss": "How do you say ... in Romanian?",
+   "note": "The chapter teaches you to ask 'what is this?' when the thing is in front of you, but never how to ask for a word you don't know. This is the phrase that actually unblocks you in a class. Grammar beyond this lesson; take it whole.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Ce înseamnă ...?",
+   "gloss": "What does ... mean?",
+   "note": "The other half of asking about words: point at a word rather than a thing. Deliver as a fixed chunk, no analysis.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "o radieră",
+   "spoken": "o gumă (de șters)",
+   "gloss": "an eraser / rubber",
+   "note": "'Radieră' is the textbook word and not wrong, but almost everyone says 'gumă' (literally 'gum'), or 'gumă de șters' to be explicit. Learn both, since the book keeps using radieră.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "un pix (nu un stilou)",
+   "gloss": "a ballpoint pen (not a fountain pen)",
+   "note": "The book lists pix and stilou side by side as if equal. In practice 'pix' is the pen everyone actually uses; 'stilou' is a fountain pen and now fairly rare. Default to pix.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "dicționarul, manualul, caietul, scaunul",
+   "spoken": "dicționaru', manualu', caietu', scaunu'",
+   "gloss": "the dictionary, the textbook, the notebook, the chair",
+   "note": "The dropped final -l from lessons 1-2, now on this chapter's masculine and neuter nouns. Same rule, more words.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "o sală de curs",
+   "spoken": "o clasă / o sală",
+   "gloss": "a classroom / lecture room",
+   "note": "'Sală de curs' fits an adult course or lecture hall, which is our setting. In a school you'd say 'clasă' or 'sală de clasă'. Not wrong, just pick by context.",
+   "confidence": "check"
+  }
+ ],
+ "4": [
+  {
+   "type": "missing_from_book",
+   "spoken": "Unde locuiești? / Unde stai?",
+   "gloss": "Where do you live?",
+   "note": "The whole chapter is about the home but never teaches how to ask where someone lives. 'Locuiești' is the textbook verb; in everyday speech 'Unde stai?' (literally where do you stay) is just as common for where you live. Answer with the dwelling words: la bloc, într-un apartament. Take the question whole.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "dumnealui / dumneaei / dumnealor",
+   "spoken": "el / ea / ei — or dânsul / dânsa",
+   "gloss": "he / she / they (respectful)",
+   "note": "The book's dumnealui, dumneaei, dumnealor are correct and genuinely polite, but formal — for a superior, an elderly person, an office. In ordinary talk el and ea are neutral and fine for most people. 'Dânsul / dânsa' is a common middle-politeness option in Romania, though some treat it as regional. With a stranger, dumnealui/dumneaei is never wrong.",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "apartamentul, dormitorul, frigiderul, dulapul, ziarul",
+   "spoken": "apartamentu', dormitoru', frigideru', dulapu', ziaru'",
+   "gloss": "the apartment, the bedroom, the fridge, the wardrobe, the newspaper",
+   "note": "The dropped final -l from earlier lessons, now on this chapter's masculine and neuter nouns. Feminine -a stays put: camera, baia, oglinda.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "casă",
+   "spoken": "apartament / bloc (vs. casă)",
+   "gloss": "house vs. flat",
+   "note": "'Acasă' means home, wherever that is — but most city people live in an 'apartament' in a 'bloc' (an apartment building), not a detached 'casă'. 'Casă' still doubles as home/household in fixed phrases (la mine acasă), so 'merg acasă' is 'I'm going home' even when home is a flat.",
+   "confidence": "high"
+  }
+ ],
+ "5": [
+  {
+   "type": "register_scale",
+   "book": "îmbrăcăminte",
+   "spoken": "haine",
+   "gloss": "clothes",
+   "note": "The chapter's headword 'îmbrăcăminte' is the formal, collective word — you see it on shop signs and forms. In speech everyone says 'haine' for clothes ('unde sunt hainele?'). 'O haină' on its own colloquially means a coat or jacket. Learn haine first; keep îmbrăcăminte for reading.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "roșu, verde, maro, gri",
+   "gloss": "red, green, brown, grey",
+   "note": "The book gives only alb, negru, albastru, galben. You will want at least red and green immediately. Note the agreement quirks: roșu / roșie / roșii behaves like negru; verde has just verde / verzi; maro and gri don't change at all (o rochie maro, niște pantaloni gri).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "paltonul, puloverul, fularul, tricoul, impermeabilul",
+   "spoken": "paltonu', puloveru', fularu', tricou', impermeabilu'",
+   "gloss": "the coat, the sweater, the scarf, the t-shirt, the raincoat",
+   "note": "This is the chapter that formally teaches the -ul 'the' ending — and it is exactly the ending spoken Romanian clips. You will learn 'paltonul' and hear 'paltonu''. Both are the same word; the full -l is the careful/written form. Feminine -a stays (cămașa, rochia).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "rău",
+   "spoken": "urât (for clothes) / nu-mi place",
+   "gloss": "bad → ugly / I don't like it",
+   "note": "'Rău' is the book's word for bad, but about a person it leans toward mean/evil, and about clothes it sounds odd. A garment you dislike is 'urât' (ugly), or you just say 'nu-mi place' (I don't like it). Keep rău as the opposite of bun in the abstract; reach for urât in front of a wardrobe.",
+   "confidence": "check"
+  }
+ ],
+ "6": [
+  {
+   "type": "written_vs_spoken",
+   "book": "frate / soră",
+   "spoken": "frați",
+   "gloss": "siblings (lit. brothers)",
+   "note": "'Ai frați?' asks about brothers AND sisters — siblings — not only brothers. The default way to ask about someone's family.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "bunic, copil",
+   "spoken": "bunicii, copiii",
+   "gloss": "the grandparents, the children",
+   "note": "Used constantly in the plural: 'bunicii' = both grandparents together, 'copiii' = the children. Worth hearing early since the singulars alone sound incomplete in family talk.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "mamă, tată",
+   "spoken": "mama, tata",
+   "gloss": "mum, dad",
+   "note": "Family words are almost always used with the definite article: mama, tata, not 'o mamă'. 'mama/tata' also serve as the everyday 'mum/dad'.",
+   "confidence": "high"
+  }
+ ]
+}

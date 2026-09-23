@@ -1,0 +1,2379 @@
+{
+ "episode": 2,
+ "lesson": 2,
+ "title": "Eu sunt manager",
+ "source": "Limba care ne unește, nivelul I — Lecția 2",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "poftiți": "come in / here you are",
+  "mulțumesc": "thank you",
+  "bine": "good, fine",
+  "Andreea / Dan / Mihai": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "missing_from_book",
+   "spoken": "Cu ce vă ocupați?",
+   "gloss": "What do you do for a living?",
+   "note": "The chapter teaches you to state a profession but never to ask about one — there is no question form anywhere in it. This is the polite, neutral way. Ce faceți? is shorter and also common, but it can also just mean 'what are you doing right now', so this one is safer.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Unde lucrați?",
+   "gloss": "Where do you work?",
+   "note": "In practice this comes up as often as the profession question itself, and the answer can be a place name the learner already has: la teatru, la școală, în magazin.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Mulțumesc. — Cu plăcere.",
+   "gloss": "Thank you. — You're welcome.",
+   "note": "Absent from the first two chapters entirely. Cu plăcere is the standard reply; Pentru puțin also exists and sounds slightly warmer.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are. / Come in. / Go ahead.",
+   "note": "Does a lot of work with no single English equivalent: handing something over, showing someone in, inviting them to speak. Poftiți is the polite form, poftim the familiar one. You will hear it constantly in shops and offices.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "biroul, magazinul, orașul",
+   "spoken": "birou', magazinu', orașu'",
+   "gloss": "the office, the shop, the town",
+   "note": "The dropped final -l from lesson one, now on the chapter's own nouns. Same rule, wider application.",
+   "confidence": "high"
+  },
+  {
+   "type": "grammar_gap",
+   "book": "Aici este un inginer. / Eu sunt inginer.",
+   "spoken": "Eu sunt inginer. — never 'un inginer'.",
+   "gloss": "I am an engineer.",
+   "note": "The chapter drills un and o, then states professions with no article at all, and never points out that this is deliberate. Romanian omits the article when the noun names your role. English and Russian speakers both put one in by reflex. Worth saying out loud.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua, domnu' Radu! Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aici e biroul. Acolo e Andreea. Ea e arhitect.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar el?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "El e Dan, e jurist. Iar aici e Mihai. Mihai e inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dumneavoastră sunteți manager?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Dar dumneavoastră? Sunteți economist?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu, nu sunt economist. Sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu sunteți din oraș?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci... Andreea e la teatru, Dan e la medic, iar Mihai e în magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s013",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine. Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s014",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "An office, and someone being shown around it. You will have caught more than last time — the greetings are yours now. By the end you will have the jobs too.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s015",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Jobs. There are a lot of them, but most you can almost guess.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Jobs"
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e manager.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a manager.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e manager.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is an engineer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e inginer.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e arhitect.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is an architect.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e arhitect.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e economist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is an economist.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e economist.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is an accountant.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e contabil.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e jurist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a lawyer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e jurist.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e medic.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e actor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is an actor.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e actor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a journalist.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e ziarist.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e sportiv.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a sportsman.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s045",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e sportiv.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Notice how many of those you understood before I said them. Romanian is a Romance language and the professional vocabulary is largely shared with English. Lean on that.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s047",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e funcționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a clerk.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s049",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e funcționar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e vânzător.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a shop assistant.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s052",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e vânzător.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e șofer.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a driver.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e șofer.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e ministru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a minister.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s058",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e ministru.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e președinte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a president.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e președinte.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e profesor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e profesor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e profesoară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e educatoare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a nursery teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e educatoare.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Profesor, profesoară. Same move as moldovean, moldoveancă last time — the feminine adds an ending. Ziarist becomes ziaristă, contabil becomes contabilă.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now places.",
+   "rate": 1.0,
+   "pause_after_ms": 600,
+   "chapter": "Places"
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is an office.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s075",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un birou.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acolo e un magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There is a shop.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acolo e un magazin.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is a theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s081",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acolo e un oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There is a city.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s084",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acolo e un oraș.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un sat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is a village.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s087",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un sat.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acolo e o școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There is a school.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s090",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acolo e o școală.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aici e o țară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is a country.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s093",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aici e o țară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You just heard two little words doing the same job: un and o. Both mean 'a'. Which one you use depends on the gender of the noun.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "un and o"
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Un for masculine and for neuter.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s096",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un contabil",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s097",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un ministru",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un birou",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s099",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un sat",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "O for feminine.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s101",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o țară",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s102",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o profesoară",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s103",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o educatoare",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s104",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o școală",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s105",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Romanian has three genders, not two. The third one, neuter, covers most inanimate things: birou, sat, oraș, magazin, teatru. In the singular it takes un, exactly like masculine, so for now you have a simple choice between un and o. The neuter will show its true colours when we reach plurals.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s106",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There is no reliable rule for guessing gender, so learn each noun with its article attached. Not birou but un birou. Not școală but o școală. It costs nothing now and saves a great deal later.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s107",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And one thing the book shows but never says out loud. Look at these two sentences.",
+   "rate": 1.0,
+   "pause_after_ms": 600,
+   "chapter": "No article for jobs"
+  },
+  {
+   "id": "s108",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Pointing at a person: un inginer. Saying what you are: inginer, with no article at all. Never eu sunt un inginer. English puts one in, Russian leaves it out — here Romanian sides with Russian. If you are translating from English in your head, this is the mistake you will make.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s111",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am an accountant.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s113",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt contabil.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s116",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e profesoară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți medic?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a doctor?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți medic?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two prepositions, and the difference is not the one English gives you.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "în and la"
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "În is inside something — a country, a building, a room.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în România",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în birou",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în magazin",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "în oraș",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s126",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "La is at a place you go to for a purpose, and with towns.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "la București",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "la teatru",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "la școală",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "la medic",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So: în România, la București. The country takes în, the city takes la. And la medic means at the doctor's — you went there to be seen, not merely to stand inside the building.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s132",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now a word English simply does not have, and you heard it in the dialogue.",
+   "rate": 1.0,
+   "pause_after_ms": 600,
+   "chapter": "ba da"
+  },
+  {
+   "id": "s133",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu sunteți din oraș?",
+   "rate": 1.0,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s134",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s135",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The question was negative: aren't you from the city. In English you answer 'yes' and hope to be understood, because yes is ambiguous there. Romanian has a dedicated word: ba da, meaning 'no — on the contrary, I am'. French does the same thing with si.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s136",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ba da.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s137",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes I am — contradicting a negative question.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s138",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ba da.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Answering just da to a negative question is confusing. Use ba da.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The part that is not from the book. Bucharest, not Chișinău, and how people actually talk.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s141",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "First, the biggest gap in this chapter: it teaches you to say your job, but never to ask about someone else's. There is no question form anywhere in it. Here it is.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s142",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s143",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do for a living?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s144",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s145",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Literally, what do you occupy yourself with. Polite and neutral — safe with anyone.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s146",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde lucrați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s147",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you work?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s148",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde lucrați?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s149",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And that one you can already answer: la teatru, în magazin, la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Second, two words the book has still not given you.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s151",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Thank you.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s153",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mulțumesc.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu plăcere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s155",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You're welcome.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s156",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu plăcere.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s157",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And poftiți, which does several jobs at once — here you are, come in, go ahead. You will hear it in every shop and office in the country.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s158",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s159",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here you are. / Come in.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s160",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s161",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Last, the dropped L from episode one, now on this chapter's nouns. The book writes biroul, magazinul, orașul. What comes out is:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s162",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "birou'",
+   "rate": 0.8,
+   "pause_after_ms": 1100
+  },
+  {
+   "id": "s163",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "magazinu'",
+   "rate": 0.8,
+   "pause_after_ms": 1100
+  },
+  {
+   "id": "s164",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "orașu'",
+   "rate": 0.8,
+   "pause_after_ms": 1100
+  },
+  {
+   "id": "s165",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Same rule, more places to use it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s166",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the work. English in, Romanian out loud, then the answer. Do not wait until you are certain.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s167",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am a manager.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s168",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt manager.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s169",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is an architect.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s170",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e arhitect.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s171",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a lawyer.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s172",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e jurist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s173",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s174",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s175",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am not an economist, I am an accountant.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s176",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunt economist, sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s177",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is an office.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s178",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s179",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There is a school.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s180",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acolo e o școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s181",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is a village, there is a city.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s182",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un sat, acolo e un oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s183",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We are in the office.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s184",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi suntem în birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s185",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is at the theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s186",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s187",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They are at the doctor's.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s188",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei sunt la medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s189",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am in Romania, in Bucharest.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s190",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt în România, la București.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s191",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a driver? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s192",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți șofer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s193",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do for a living?",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s194",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s195",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you work?",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s196",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde lucrați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s197",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Aren't you from the city? — Yes I am.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s198",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ba da, sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s199",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a shop assistant, he is a journalist.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s200",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e vânzătoare, el e ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s201",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Thank you. — You're welcome.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s202",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mulțumesc. Cu plăcere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s203",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, a few things from earlier. Same rules — answer out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s204",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — a woman speaking.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s205",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu sunt moldoveancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s206",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Ukrainian.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s207",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e ucrainean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s208",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good morning, madam!",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s209",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața, doamnă!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s210",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is not from Russia.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s211",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea nu e din Rusia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s212",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nice to meet you.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s213",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s214",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Well... I am not from Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s215",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Păi, nu sunt din Chișinău.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s216",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you English? Respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 3500
+  },
+  {
+   "id": "s217",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți englez?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s218",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chapter's own text. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s219",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici este un birou. În birou sunt: un inginer, un arhitect și un jurist.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s220",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este Dan. Dan este jurist.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s221",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea e Andreea. Andreea este arhitect, iar eu sunt manager.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s222",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi suntem din oraș. Ei sunt Ion și Mihai. Ei sunt din sat.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s223",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici este un teatru. Dumneavoastră sunteți actor. Noi suntem la teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s224",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneata ești vânzător, iar el este medic.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s225",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei sunt în magazin. Voi sunteți la medic.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s226",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici este un sportiv. Acolo este un ziarist.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s227",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s228",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici este un birou. În birou sunt: un inginer, un arhitect și un jurist.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s229",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este Dan. Dan este jurist.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s230",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea e Andreea. Andreea este arhitect, iar eu sunt manager.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s231",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi suntem din oraș. Ei sunt Ion și Mihai. Ei sunt din sat.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s232",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici este un teatru. Dumneavoastră sunteți actor. Noi suntem la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s233",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneata ești vânzător, iar el este medic.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s234",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei sunt în magazin. Voi sunteți la medic.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s235",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici este un sportiv. Acolo este un ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s236",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The book also gives a proverb for this chapter. Meseria este brățară de aur — a trade is a bracelet of gold. Worth having, even if the grammar in it is months away.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s237",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Meseria este brățară de aur.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s238",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The office again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s239",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua, domnu' Radu! Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s240",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s241",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aici e biroul. Acolo e Andreea. Ea e arhitect.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s242",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar el?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s243",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "El e Dan, e jurist. Iar aici e Mihai. Mihai e inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s244",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dumneavoastră sunteți manager?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s245",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Dar dumneavoastră? Sunteți economist?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s246",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu, nu sunt economist. Sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s247",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu sunteți din oraș?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s248",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s249",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci... Andreea e la teatru, Dan e la medic, iar Mihai e în magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s250",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine. Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s251",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Notice what Dana said without our ever teaching it as grammar: domnu' instead of domnul, e instead of este, deci while she thought. That was last episode's spoken section, used as ordinary speech.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s252",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: say what you do. Sunt, then your job, no article. Then ask it back — cu ce vă ocupați. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

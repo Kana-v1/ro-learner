@@ -1,0 +1,1335 @@
+{
+ "episode": 5,
+ "part": "a",
+ "lesson": 5,
+ "title": "Unde e paltonul?",
+ "source": "Limba care ne unește, nivelul I — Lecția 5 (partea A)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "register_scale",
+   "book": "îmbrăcăminte",
+   "spoken": "haine",
+   "gloss": "clothes",
+   "note": "The chapter's headword 'îmbrăcăminte' is the formal, collective word — you see it on shop signs and forms. In speech everyone says 'haine' for clothes ('unde sunt hainele?'). 'O haină' on its own colloquially means a coat or jacket. Learn haine first; keep îmbrăcăminte for reading.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "roșu, verde, maro, gri",
+   "gloss": "red, green, brown, grey",
+   "note": "The book gives only alb, negru, albastru, galben. You will want at least red and green immediately. Note the agreement quirks: roșu / roșie / roșii behaves like negru; verde has just verde / verzi; maro and gri don't change at all (o rochie maro, niște pantaloni gri).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "paltonul, puloverul, fularul, tricoul, impermeabilul",
+   "spoken": "paltonu', puloveru', fularu', tricou', impermeabilu'",
+   "gloss": "the coat, the sweater, the scarf, the t-shirt, the raincoat",
+   "note": "This is the chapter that formally teaches the -ul 'the' ending — and it is exactly the ending spoken Romanian clips. You will learn 'paltonul' and hear 'paltonu''. Both are the same word; the full -l is the careful/written form. Feminine -a stays (cămașa, rochia).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "rău",
+   "spoken": "urât (for clothes) / nu-mi place",
+   "gloss": "bad → ugly / I don't like it",
+   "note": "'Rău' is the book's word for bad, but about a person it leans toward mean/evil, and about clothes it sounds odd. A garment you dislike is 'urât' (ugly), or you just say 'nu-mi place' (I don't like it). Keep rău as the opposite of bun in the abstract; reach for urât in front of a wardrobe.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună dimineața, Radu!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună dimineața, Sanda! Unde e paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Paltonul e în dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și puloverul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Puloverul e pe scaun. Iată puloverul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Unde e cămașa?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cămașa e în dulap, de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar pantalonii?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Pantalonii sunt pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cu plăcere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s013",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A morning, and someone who cannot find his clothes. Just four things today — a coat, a sweater, a shirt, trousers — and the word for 'the' that rides on the end of each. Most of this episode is you producing, not me explaining.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s014",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four things, one at a time. You will say each one back before we move on.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Four garments"
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweater",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweater",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cămașă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a shirt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cămașă",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cămașă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the one that is always plural, like in English — trousers.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pantaloni",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a pair of trousers",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pantaloni",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "trousers",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pantaloni",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The four together now, mixed up. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cămașă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "trousers",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pantaloni",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweater",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two small words for looking. Unde — where. And iată — here it is, said as you find or point at something.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "unde and iată"
+  },
+  {
+   "id": "s046",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the coat?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s048",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e paltonul?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "where",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "unde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iată paltonul!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the coat!",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s053",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iată paltonul!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "here it is",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s055",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "iată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now that little ending. Since episode one you have heard -ul stuck on the end of words, and I called it 'the' and moved on. Here it is: Romanian's word for 'the' does not stand in front of the noun, it rides on the back of it. Masculine and neuter add -ul.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The article: -ul"
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton, paltonul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat, the coat",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton, paltonul",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover, puloverul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweater, the sweater",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover, puloverul",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Trousers, being plural, take -i on the end: pantaloni, pantalonii.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pantaloni, pantalonii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some trousers, the trousers",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "niște pantaloni, pantalonii",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So: the ending is the article. Say each one both ways.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat, the coat",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un palton, paltonul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweater, the sweater",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un pulover, puloverul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the trousers",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pantalonii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The feminine ending is different — that is next episode. Today you have heard cămașa; just hold it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s075",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the whole thing out loud — where is it, and the answer with the article on the end.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the coat?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the coat? — In the wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e paltonul? În dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the sweater? — On the chair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e puloverul? Pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the sweater.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iată puloverul!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the shirt?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e cămașa?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where are the trousers?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde sunt pantalonii?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where are the trousers? — On the chair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde sunt pantalonii? Pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the coat!",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iată paltonul!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coat is in the wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e în dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The trousers are on the chair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pantalonii sunt pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes in Bucharest. The -ul ending you just learned is exactly the one speech clips off. You learn paltonul, you hear:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s097",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "paltonu'",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "puloveru'",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s099",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Same word, dropped L. The full form is the careful one; the clipped one is the street. And the word for clothes as a whole is haine — unde sunt hainele — but that is for later.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a classroom.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o sală de curs.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On the table there is a flower.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe masă e o floare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is next to the window? — A bench.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce e lângă fereastră? O bancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a good course.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un curs bun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Next to the school there is a building.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Lângă școală e o clădire.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is this? — A course student.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e acesta? Un cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a sofa.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o canapea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences run together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s116",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e paltonul? Paltonul e în dulap.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puloverul e pe scaun. Iată puloverul.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e cămașa? Cămașa e în dulap.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pantalonii sunt pe scaun.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s120",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e paltonul? Paltonul e în dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puloverul e pe scaun. Iată puloverul.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e cămașa? Cămașa e în dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pantalonii sunt pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s125",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The morning again. Same recording — notice how much of it you now follow.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s126",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună dimineața, Radu!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s127",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună dimineața, Sanda! Unde e paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s128",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Paltonul e în dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s129",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și puloverul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s130",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Puloverul e pe scaun. Iată puloverul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s131",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Unde e cămașa?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cămașa e în dulap, de asemenea.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s133",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar pantalonii?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s134",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Pantalonii sunt pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cu plăcere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four words, and every answer wore the article — paltonul, puloverul. Next time: the feminine ending, and more of the wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s138",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: open your own wardrobe and, out loud, ask unde e — then answer with the article on the end. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

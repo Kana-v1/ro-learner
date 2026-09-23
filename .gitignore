@@ -1,0 +1,27 @@
+# synthesised audio, keyed by content hash — safe to delete, costs characters to rebuild
+.cache/
+# ffmpeg scratch
+.build/
+# rendered episodes and the feed
+out/
+
+# The textbook itself, and everything parsed straight out of it. Big, and not
+# ours to publish; regenerate with prep_book.py from your own copy of the book.
+# state.json (spaced-review progress) and spoken.json (authored register notes)
+# stay tracked: they are small and are this project's own work.
+data/rom_book_parsed_raw.txt
+data/book_fixed.txt
+data/lessons.json
+data/glossary.json
+
+# episode packs exported for the iOS app (audio + cue timings)
+packs/
+
+# Windows download metadata and Python caches
+*:Zone.Identifier
+__pycache__/
+
+# iOS build products
+app/build/
+*.ipa
+*.xcodeproj/xcuserdata/

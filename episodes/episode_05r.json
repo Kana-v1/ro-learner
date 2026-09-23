@@ -1,0 +1,1271 @@
+{
+ "episode": 5,
+ "part": "r",
+ "lesson": 5,
+ "title": "Recapitulare (1–5)",
+ "source": "Limba care ne unește, nivelul I — Recapitulare, lecțiile 1–5",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Și mie": "likewise — the reply to 'nice to meet you'",
+  "Sanda / Mihai / Ana / Radu": "names"
+ },
+ "spoken_layer": [],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua, domnu' Radu! Poftiți. Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua, Sanda! Și mie. Ce mai faceți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine, mulțumesc! Deci, acesta e apartamentul. Aici e salonul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Frumos! Cine e dumnealui?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Dumnealui e Mihai. E inginer. Iar dumneaei e Ana, e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare bine. Cu ce vă ocupați, Sanda?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Sunt manager. Dar dumneavoastră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Sunt contabil. Nu sunt din Chișinău — sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu sunteți moldovean?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt moldovean. Deci, unde e paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Paltonul e în cuier. Pe scaun sunt niște cămăși albe.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s013",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Un apartament modern și comod!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s014",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Everything in that visit came from the first five lessons — a greeting, who does what, whose home this is, where the coat is, what colour the shirts are. No new words today. Today you get it all back out.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s015",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The verb everything runs on: a fi, to be. All the persons.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "a fi"
+  },
+  {
+   "id": "s016",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am a teacher — a woman.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s017",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu sunt profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are an engineer. — tu.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tu ești inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is Moldovan.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We are at home.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s023",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi suntem acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are from the city. — voi.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Voi sunteți din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A, an, and some — and the gender behind them.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "un, o, niște"
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat, a shirt",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un palton, o cămașă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some coats, some shirts",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Niște paltoane, niște cămăși.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a chair, some chairs",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s032",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un scaun, niște scaune.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a flower, some flowers",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O floare, niște flori.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And 'the', riding on the back of the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "the article"
+  },
+  {
+   "id": "s036",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the coat, the shirt",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s037",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul, cămașa.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the office, the school",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Biroul, școala.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the dictionary?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e dicționarul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Pointing, and the two questions that go with it.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "acesta, cine, ce"
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is this? — A course student.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e acesta? Un cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? — A mirror.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce e aceasta? O oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are some magazines.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acestea sunt niște reviste.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Respect — for the person you speak to, and the person you speak about.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "politeness"
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a doctor? — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți medic?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is at home. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a teacher. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s055",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneaei e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All the placing words at once — in, at, from, on, next to, under, behind, for.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "prepositions"
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am in Romania, in Bucharest.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt în România, la București.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On the table there is a newspaper.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pe masă e un ziar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Next to the window there is an armchair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lângă fereastră e un fotoliu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Under the table there is a carpet.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sub masă e un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Behind the door there is a coat rack.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După ușă e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The whole wardrobe now, the thing Lecția 5 spent five parts on — name it, put the article on it, ask where it is.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "the wardrobe"
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat, a blouse, a scarf",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un palton, o bluză, un fular.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the coat, the blouse",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul, bluza.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the dress? — In the wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e rochia? În dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where are the gloves? — On the shelf.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde sunt mănușile? Pe raft.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the skirt, and here is the t-shirt.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iată fusta, iar iată tricoul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Describing things, endings matching.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "adjectives"
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The shirt is white.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cămașa e albă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coat is black.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e negru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The trousers are black.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pantalonii sunt negri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "some yellow dresses",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Niște rochii galbene.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a nice scarf, a nice shirt",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un fular frumos, o cămașă frumoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How is the coat? — It's elegant and modern.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum e paltonul? E elegant și modern.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a good, comfortable apartment",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un apartament bun și comod.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the spoken turns from across the block — the ones the book does not give you. Still the ones that matter most.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do for a living?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Aren't you from the city? — Yes I am.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunteți din oraș? Ba da.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you live? — casually.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde stai?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nice to meet you. — Likewise.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare bine. — Și mie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What's this? — casually.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce-i asta?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And keep the ear for e over este, and the dropped L — paltonu', apartamentu', domnu'. That is how all of it actually sounds.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s105",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now all five lessons in one breath — a person introducing himself, his home, his day. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s106",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bună ziua! Sunt Radu. Sunt moldovean, din oraș. Sunt contabil.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s107",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum sunt acasă. Aceasta e o casă modernă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s108",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un salon și o bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În salon sunt o canapea, niște fotolii și un covor.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s110",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e în cuier. Pe scaun sunt niște cămăși albe.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s111",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e Mihai. E inginer. Dumneaei e Ana, e profesoară.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s112",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Îmbrăcămintea e comodă. Deci, e bine!",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s113",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s114",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bună ziua! Sunt Radu. Sunt moldovean, din oraș. Sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s115",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum sunt acasă. Aceasta e o casă modernă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s116",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un salon și o bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În salon sunt o canapea, niște fotolii și un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paltonul e în cuier. Pe scaun sunt niște cămăși albe.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e Mihai. E inginer. Dumneaei e Ana, e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Îmbrăcămintea e comodă. Deci, e bine!",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The visit again. Same recording — five lessons, and you followed it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s122",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua, domnu' Radu! Poftiți. Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s123",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua, Sanda! Și mie. Ce mai faceți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s124",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine, mulțumesc! Deci, acesta e apartamentul. Aici e salonul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s125",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Frumos! Cine e dumnealui?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s126",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Dumnealui e Mihai. E inginer. Iar dumneaei e Ana, e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s127",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare bine. Cu ce vă ocupați, Sanda?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s128",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Sunt manager. Dar dumneavoastră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s129",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Sunt contabil. Nu sunt din Chișinău — sunt din oraș.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s130",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu sunteți moldovean?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s131",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt moldovean. Deci, unde e paltonul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Paltonul e în cuier. Pe scaun sunt niște cămăși albe.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s133",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Un apartament modern și comod!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s134",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before the next lesson: introduce yourself out loud, the whole way through — who you are, where you're from, your job, your home, what you're wearing. Everything you need is now yours. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

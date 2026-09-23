@@ -1,0 +1,1869 @@
+{
+ "episode": 4,
+ "part": "b",
+ "lesson": 4,
+ "title": "Sunt acasă (B)",
+ "source": "Limba care ne unește, nivelul I — Lecția 4 (partea B)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "familie": "family",
+  "mare": "big",
+  "frumos": "nice",
+  "Sanda / Radu": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "missing_from_book",
+   "spoken": "Unde locuiești? / Unde stai?",
+   "gloss": "Where do you live?",
+   "note": "The whole chapter is about the home but never teaches how to ask where someone lives. 'Locuiești' is the textbook verb; in everyday speech 'Unde stai?' (literally where do you stay) is just as common for where you live. Answer with the dwelling words: la bloc, într-un apartament. Take the question whole.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "dumnealui / dumneaei / dumnealor",
+   "spoken": "el / ea / ei — or dânsul / dânsa",
+   "gloss": "he / she / they (respectful)",
+   "note": "The book's dumnealui, dumneaei, dumnealor are correct and genuinely polite, but formal — for a superior, an elderly person, an office. In ordinary talk el and ea are neutral and fine for most people. 'Dânsul / dânsa' is a common middle-politeness option in Romania, though some treat it as regional. With a stranger, dumnealui/dumneaei is never wrong.",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "apartamentul, dormitorul, frigiderul, dulapul, ziarul",
+   "spoken": "apartamentu', dormitoru', frigideru', dulapu', ziaru'",
+   "gloss": "the apartment, the bedroom, the fridge, the wardrobe, the newspaper",
+   "note": "The dropped final -l from earlier lessons, now on this chapter's masculine and neuter nouns. Feminine -a stays put: camera, baia, oglinda.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "casă",
+   "spoken": "apartament / bloc (vs. casă)",
+   "gloss": "house vs. flat",
+   "note": "'Acasă' means home, wherever that is — but most city people live in an 'apartament' in a 'bloc' (an apartment building), not a detached 'casă'. 'Casă' still doubles as home/household in fixed phrases (la mine acasă), so 'merg acasă' is 'I'm going home' even when home is a flat.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci, în dormitor e un dulap și niște noptiere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce e pe noptiere?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Pe noptiere sunt niște reviste și niște ziare.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar în salon? Ce e acolo?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "În salon sunt o canapea, niște fotolii și un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Frumos. Și în bucătărie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Un frigider, o chiuvetă și mobilă de bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce e sub raft?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Sub raft e un fotoliu. Iar după ușă e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar oglinda? E în baie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, oglinda e în baie, lângă cadă. Acolo e și un robinet.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s013",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Un apartament pentru o familie mare!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s014",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tour again, now into the rooms — the wardrobe and the nightstands, the sofa and the armchairs. Notice how often one thing becomes several: niște, some. That is this episode's grammar, and it is everywhere.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s015",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What fills the rooms, each inside a sentence.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The furniture"
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o canapea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a sofa.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o canapea.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un fotoliu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an armchair.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un fotoliu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dulap.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o noptieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a nightstand.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o noptieră.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un frigider.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a fridge.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un frigider.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a mirror.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o oglindă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o chiuvetă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a sink.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o chiuvetă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o cadă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a bathtub.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o cadă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un robinet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a tap.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un robinet.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a coat rack.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s045",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un cuier.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un raft.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a shelf.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s048",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un raft.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o revistă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a magazine.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s051",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o revistă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un ziar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a newspaper.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un ziar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e mobilă de bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is kitchen furniture.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e mobilă de bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Three more placing words, on top of pe and lângă from last time. Sub — under. După — behind. Pentru — for.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "sub, după, pentru"
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sub masă e un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Under the table there is a carpet.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sub masă e un covor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După ușă e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Behind the door there is a coat rack.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După ușă e un cuier.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pe raft e o revistă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On the shelf there is a magazine.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pe raft e o revistă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un ziar pentru domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A newspaper for Mr Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un ziar pentru domnu' Radu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the big one. One becomes many. Un and o give way to niște — some — and the end of the word changes with the gender.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The plural"
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Masculine adds -i.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un cursant, niște cursanți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a student, some students",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s075",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un cursant, niște cursanți",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un profesor, niște profesori",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a teacher, some teachers",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un profesor, niște profesori",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Feminine goes to -e, or sometimes -i.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o revistă, niște reviste",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a magazine, some magazines",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s082",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o revistă, niște reviste",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o canapea, niște canapele",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sofa, some sofas",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s085",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o canapea, niște canapele",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o oglindă, niște oglinzi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a mirror, some mirrors",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s088",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o oglindă, niște oglinzi",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Neuter adds -uri or -e.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s090",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un ziar, niște ziare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a newspaper, some newspapers",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s092",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un ziar, niște ziare",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un fotoliu, niște fotolii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an armchair, some armchairs",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s095",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un fotoliu, niște fotolii",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un dulap, niște dulapuri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a wardrobe, some wardrobes",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un dulap, niște dulapuri",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The vowel sometimes shifts inside the word too — masă becomes mese, sală becomes săli. Do not memorise a table; you will catch these by ear. What matters now: niște means some, and the ending moves.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And this from earlier becomes plural to match. Acesta and aceasta turn into aceștia and acestea.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s101",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un fotoliu. Acestea sunt niște fotolii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an armchair. These are some armchairs.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s103",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un fotoliu. Acestea sunt niște fotolii.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e o revistă. Acestea sunt niște reviste.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a magazine. These are some magazines.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s106",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e o revistă. Acestea sunt niște reviste.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un cursant. Aceștia sunt niște cursanți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a student. These are some students.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un cursant. Aceștia sunt niște cursanți.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Aceștia only for a group of men. Acestea for feminine and for neuter — for things, in other words. So chairs and magazines are always acestea.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s111",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dropped L once more, now on this chapter's things. The book writes frigiderul, dulapul, robinetul, ziarul. What you hear is:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s112",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "frigideru'",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s113",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "dulapu'",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s114",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "robinetu'",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s115",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ziaru'",
+   "rate": 0.8,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s116",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Feminine keeps its ending — oglinda, canapeaua, not clipped. Same rule as always, more rooms to use it in.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s117",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work, and the plural runs all through it. A whole sentence out loud each time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a sofa.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o canapea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an armchair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un fotoliu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a wardrobe, and this is a fridge.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dulap, iar acesta e un frigider.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a nightstand.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o noptieră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a mirror.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a sink, and this is a bathtub.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o chiuvetă, iar aceasta e o cadă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a tap.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un robinet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a shelf, and this is a coat rack.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un raft, iar acesta e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a magazine, and this is a newspaper.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o revistă, iar acesta e un ziar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are some magazines.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acestea sunt niște reviste.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are some armchairs.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acestea sunt niște fotolii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are some newspapers.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acestea sunt niște ziare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "In the bedroom there are some nightstands.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "În dormitor sunt niște noptiere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On the shelf there are some magazines and newspapers.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s145",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe raft sunt niște reviste și niște ziare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Under the table there is a carpet.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s147",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sub masă e un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s148",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Behind the door there is a coat rack.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s149",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După ușă e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s150",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A shelf for books.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s151",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un raft pentru cărți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is kitchen furniture.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e mobilă de bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, a few things from earlier. Same rules — answer out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s155",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a house.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s156",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o casă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s157",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is at home. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s158",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s159",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The apartment is near, the house is far.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s160",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apartamentul e aproape, casa e departe.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s161",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On the wall there is a picture.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s162",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pe perete e un tablou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s163",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? — A dictionary.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s164",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s165",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you live?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s166",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde locuiești?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s167",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the chapter's own text, whole. Every word in it you have across both halves. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s168",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă. În apartament sunt: un antreu, o bucătărie, un dormitor, un salon și o baie.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s169",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În antreu este un cuier. Lângă cuier este o oglindă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s170",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În bucătărie sunt o masă, niște scaune, un frigider, o chiuvetă și mobilă de bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s171",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În dormitor sunt un dulap și niște noptiere.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s172",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pe noptiere sunt niște reviste și niște ziare. Pe perete este un tablou.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s173",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În salon sunt o canapea, niște fotolii, o masă și niște scaune.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s174",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În baie sunt o cadă, o chiuvetă, o oglindă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s175",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s176",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă. În apartament sunt: un antreu, o bucătărie, un dormitor, un salon și o baie.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s177",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În antreu este un cuier. Lângă cuier este o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s178",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În bucătărie sunt o masă, niște scaune, un frigider, o chiuvetă și mobilă de bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s179",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În dormitor sunt un dulap și niște noptiere.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s180",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pe noptiere sunt niște reviste și niște ziare. Pe perete este un tablou.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s181",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În salon sunt o canapea, niște fotolii, o masă și niște scaune.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s182",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În baie sunt o cadă, o chiuvetă, o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s183",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The rooms again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s184",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci, în dormitor e un dulap și niște noptiere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s185",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce e pe noptiere?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s186",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Pe noptiere sunt niște reviste și niște ziare.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s187",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar în salon? Ce e acolo?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s188",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "În salon sunt o canapea, niște fotolii și un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s189",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Frumos. Și în bucătărie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s190",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Un frigider, o chiuvetă și mobilă de bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s191",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce e sub raft?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s192",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Sub raft e un fotoliu. Iar după ușă e un cuier.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s193",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar oglinda? E în baie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s194",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, oglinda e în baie, lângă cadă. Acolo e și un robinet.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s195",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Un apartament pentru o familie mare!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s196",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That closes Lecția 4. You can furnish a room and say how many of everything there are.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s197",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: name what is in one room of your home, and count it up — un fotoliu, niște fotolii. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

@@ -1,0 +1,1289 @@
+{
+ "episode": 5,
+ "part": "b",
+ "lesson": 5,
+ "title": "O bluză, bluza",
+ "source": "Limba care ne unește, nivelul I — Lecția 5 (partea B)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "register_scale",
+   "book": "îmbrăcăminte",
+   "spoken": "haine",
+   "gloss": "clothes",
+   "note": "The chapter's headword 'îmbrăcăminte' is the formal, collective word — you see it on shop signs and forms. In speech everyone says 'haine' for clothes ('unde sunt hainele?'). 'O haină' on its own colloquially means a coat or jacket. Learn haine first; keep îmbrăcăminte for reading.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "roșu, verde, maro, gri",
+   "gloss": "red, green, brown, grey",
+   "note": "The book gives only alb, negru, albastru, galben. You will want at least red and green immediately. Note the agreement quirks: roșu / roșie / roșii behaves like negru; verde has just verde / verzi; maro and gri don't change at all (o rochie maro, niște pantaloni gri).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "paltonul, puloverul, fularul, tricoul, impermeabilul",
+   "spoken": "paltonu', puloveru', fularu', tricou', impermeabilu'",
+   "gloss": "the coat, the sweater, the scarf, the t-shirt, the raincoat",
+   "note": "This is the chapter that formally teaches the -ul 'the' ending — and it is exactly the ending spoken Romanian clips. You will learn 'paltonul' and hear 'paltonu''. Both are the same word; the full -l is the careful/written form. Feminine -a stays (cămașa, rochia).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "rău",
+   "spoken": "urât (for clothes) / nu-mi place",
+   "gloss": "bad → ugly / I don't like it",
+   "note": "'Rău' is the book's word for bad, but about a person it leans toward mean/evil, and about clothes it sounds odd. A garment you dislike is 'urât' (ugly), or you just say 'nu-mi place' (I don't like it). Keep rău as the opposite of bun in the abstract; reach for urât in front of a wardrobe.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Unde e bluza?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bluza e pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și rochia? Și fusta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Rochia e în dulap. Iată fusta!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mulțumesc. Unde e cravata?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cravata e pe masă. Iar tricoul e pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bun. Cravata, tricoul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The same morning. Yesterday the coat and the sweater took -ul on the end for 'the'. Today the other ending — the feminine -a — on a blouse, a dress, a skirt. Most of this is you producing, out loud.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Five things, one at a time. Say each back before we move on.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Five garments"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tie",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tie",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And one that is neuter — it behaves like a masculine.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The five together, mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tie",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse",
+   "rate": 1.0,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the ending. A feminine noun swaps its final vowel for -a. Not in front of the word — on the end of it, the same place -ul goes.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The article: -a"
+  },
+  {
+   "id": "s049",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză, bluza",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse, the blouse",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s051",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză, bluza",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă, fusta",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt, the skirt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă, fusta",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată, cravata",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tie, the tie",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată, cravata",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A word ending in -e, like rochie, shifts to -ia: rochie, rochia.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie, rochia",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress, the dress",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie, rochia",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the neuter tricou takes -ul, exactly like the masculine paltonul: un tricou, tricoul.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou, tricoul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt, the t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou, tricoul",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So both endings now. Masculine and neuter -ul; feminine -a. Say each one both ways.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse, the blouse",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O bluză, bluza.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress, the dress",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O rochie, rochia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt, the skirt",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O fustă, fusta.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt, the t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un tricou, tricoul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tie, the tie",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O cravată, cravata.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the whole question and answer, out loud.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the blouse?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e bluza?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the blouse? — On the chair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e bluza? Pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the dress? — In the wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e rochia? În dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the skirt!",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iată fusta!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the tie? — On the table.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde e cravata? Pe masă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the t-shirt? — On the chair.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e tricoul? Pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dress is in the wardrobe.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Rochia e în dulap.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is the blouse, and here is the skirt.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iată bluza, iar iată fusta.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tie is on the table.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cravata e pe masă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the t-shirt?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e tricoul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. The masculine -ul gets clipped in speech — tricou' for tricoul — but the feminine -a stays put. Bluza, rochia, fusta, said in full. So the ending you have to hold onto is the feminine one; the masculine one you will often not even hear.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s099",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — you are a man.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is from Russia.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este din Rusia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tu ești fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you from Ukraine? Politely, to one person.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneata ești din Ucraina?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, I am from Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Da, eu sunt din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am in Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt în Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a house.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o casă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s115",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e bluza? Bluza e pe scaun.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s116",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rochia e în dulap. Iată fusta!",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e cravata? Cravata e pe masă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iar tricoul e pe scaun.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s119",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e bluza? Bluza e pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rochia e în dulap. Iată fusta!",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e cravata? Cravata e pe masă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iar tricoul e pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s124",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The morning again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s125",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Unde e bluza?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s126",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bluza e pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s127",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și rochia? Și fusta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s128",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Rochia e în dulap. Iată fusta!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s129",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mulțumesc. Unde e cravata?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s130",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cravata e pe masă. Iar tricoul e pe scaun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s131",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bun. Cravata, tricoul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Feminine -a, masculine -ul. Next time: what these things look like — white, black, blue.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s133",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: name three of your own things with 'the' on the end — bluza, tricoul, whatever they are. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}

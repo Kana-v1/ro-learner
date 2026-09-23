@@ -1,0 +1,1652 @@
+{
+ "episode": 4,
+ "part": "a",
+ "lesson": 4,
+ "title": "Sunt acasă",
+ "source": "Limba care ne unește, nivelul I — Lecția 4 (partea A)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "frumos / frumoasă": "nice, lovely",
+  "bun": "good",
+  "Sanda / Mihai / Ana": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "missing_from_book",
+   "spoken": "Unde locuiești? / Unde stai?",
+   "gloss": "Where do you live?",
+   "note": "The whole chapter is about the home but never teaches how to ask where someone lives. 'Locuiești' is the textbook verb; in everyday speech 'Unde stai?' (literally where do you stay) is just as common for where you live. Answer with the dwelling words: la bloc, într-un apartament. Take the question whole.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "dumnealui / dumneaei / dumnealor",
+   "spoken": "el / ea / ei — or dânsul / dânsa",
+   "gloss": "he / she / they (respectful)",
+   "note": "The book's dumnealui, dumneaei, dumnealor are correct and genuinely polite, but formal — for a superior, an elderly person, an office. In ordinary talk el and ea are neutral and fine for most people. 'Dânsul / dânsa' is a common middle-politeness option in Romania, though some treat it as regional. With a stranger, dumnealui/dumneaei is never wrong.",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "apartamentul, dormitorul, frigiderul, dulapul, ziarul",
+   "spoken": "apartamentu', dormitoru', frigideru', dulapu', ziaru'",
+   "gloss": "the apartment, the bedroom, the fridge, the wardrobe, the newspaper",
+   "note": "The dropped final -l from earlier lessons, now on this chapter's masculine and neuter nouns. Feminine -a stays put: camera, baia, oglinda.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "casă",
+   "spoken": "apartament / bloc (vs. casă)",
+   "gloss": "house vs. flat",
+   "note": "'Acasă' means home, wherever that is — but most city people live in an 'apartament' in a 'bloc' (an apartment building), not a detached 'casă'. 'Casă' still doubles as home/household in fixed phrases (la mine acasă), so 'merg acasă' is 'I'm going home' even when home is a flat.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua, domnu' Radu! Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua, Sanda! Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci, acesta e apartamentul. Aici e antreul, iar acolo e bucătăria.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Frumos! Camera e aproape?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, dormitorul e aici, aproape. Salonul e acolo, iar baia e departe.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar acum? Cine e acasă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Dumnealui e Mihai. E inginer. Dumneaei e Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftiți în salon. E o casă frumoasă, nu?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da! Un bloc bun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A visit. Sanda is showing Radu round her apartment — the hall, the kitchen, which room is near and which is far — and mentioning, politely, who is home. By the end you will do the same walk.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s013",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A home, room by room. Each inside a sentence — say it out loud in the gap.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The rooms"
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o casă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a house.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o casă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un bloc.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an apartment block.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un bloc.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un apartament.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an apartment.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un apartament.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un antreu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an entrance hall.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un antreu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o cameră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a room.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o cameră.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o baie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a bathroom.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o baie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a kitchen.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dormitor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a bedroom.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dormitor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un salon.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a living room.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s040",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un salon.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the surfaces of a room.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a carpet.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s044",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un covor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o podea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a floor.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s047",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o podea.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un tavan.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a ceiling.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s050",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un tavan.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now where things are, and where you are. Home, near, far, now.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "acasă, aproape, departe"
+  },
+  {
+   "id": "s052",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am at home.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum sunt în bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now I am in the kitchen.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum sunt în bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dormitorul e aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bedroom is near.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dormitorul e aproape.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Baia e departe.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bathroom is far.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Baia e departe.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Salonul e aproape, iar baia e departe.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The living room is near, and the bathroom is far.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Salonul e aproape, iar baia e departe.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now people. In episode one you met dumneavoastră and dumneata — the respectful ways to say you. Romanian does the same for he, she and they: a polite set for speaking about someone with respect.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "dumnealui, dumneaei, dumnealor"
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is at home. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e inginer.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is an engineer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e inginer.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneaei e în bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is in the kitchen.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s076",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneaei e în bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneaei e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneaei e profesoară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealor sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They are at home.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s082",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealor sunt acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dumnealui, he. Dumneaei, she. Dumnealor, they — and dumnealor takes sunt, the plural, like dumneavoastră did. They point back at a person you are treating with respect.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s084",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is he? He is Mr Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s086",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes in Bucharest — and the question the chapter forgot.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s088",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The whole lesson is about the home, yet it never teaches you to ask where someone lives. Here it is:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s089",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde locuiești?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you live?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s091",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde locuiești?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Locuiești is the book's verb. In speech, unde stai — where do you stay — is just as common. Answer with what you have: la bloc, într-un apartament.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And those polite pronouns. Dumnealui and dumneaei are correct and genuinely respectful — but formal. You would use them about someone older, a superior, in an office. Among people your own age, el and ea are perfectly neutral.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s094",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "el",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s095",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ea",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s096",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "With a stranger, though, dumnealui is never wrong. Keep both.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s097",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. English in, a whole Romanian sentence out loud, then the answer. Take your time — the gap is long on purpose.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a house.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o casă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an apartment.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un apartament.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is an apartment block.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un bloc.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here is a hall, there is a kitchen.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un antreu, acolo e o bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a room.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o cameră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a bedroom, and this is a living room.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un dormitor, iar acesta e un salon.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a bathroom.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o baie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a carpet.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e un covor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a floor, and this is a ceiling.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o podea, iar acesta e un tavan.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am at home.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The apartment is near.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apartamentul e aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The house is far.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Casa e departe.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now I am in the kitchen.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum sunt în bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is at home. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is in the kitchen. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneaei e în bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They are at home. — respectfully.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealor sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is he? — He is Mr Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you live?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde locuiești?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, a few things from earlier. Same rules — answer out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s135",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is this? — A dictionary.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s136",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce e acesta? Un dicționar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s137",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On the table there is a flower.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s138",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe masă e o floare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s139",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Next to the window there is a bench.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s140",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Lângă fereastră e o bancă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s141",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is this? — A course student.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s142",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e acesta? Un cursant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s143",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do for a living?",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s144",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s145",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a lawyer, she is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 5000
+  },
+  {
+   "id": "s146",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e jurist, ea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s147",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences run together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s148",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă. Acesta e apartamentul.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s149",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un antreu și o bucătărie.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s150",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acolo e un dormitor, un salon și o baie. Camera e aproape.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s151",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e Mihai. E inginer. Dumneaei e Ana.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s152",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum, dumnealor sunt acasă. E o casă frumoasă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s153",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s154",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt acasă. Acesta e apartamentul.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s155",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aici e un antreu și o bucătărie.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s156",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acolo e un dormitor, un salon și o baie. Camera e aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s157",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumnealui e Mihai. E inginer. Dumneaei e Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s158",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acum, dumnealor sunt acasă. E o casă frumoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s159",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chapter's proverb, and it fits the lesson's name. Acasă este ca în rai — home is like paradise. There's no place like home.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s160",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acasă este ca în rai.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s161",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The visit again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s162",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua, domnu' Radu! Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s163",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua, Sanda! Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s164",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci, acesta e apartamentul. Aici e antreul, iar acolo e bucătăria.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s165",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Frumos! Camera e aproape?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s166",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, dormitorul e aici, aproape. Salonul e acolo, iar baia e departe.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s167",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Dar acum? Cine e acasă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s168",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Dumnealui e Mihai. E inginer. Dumneaei e Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s169",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s170",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftiți în salon. E o casă frumoasă, nu?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s171",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da! Un bloc bun.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s172",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Next time, the other half — the furniture in these rooms, and how one chair becomes some chairs.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s173",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before next time: walk through your own home out loud. Aici e..., acolo e..., camera e aproape. And say where you live — unde stai. Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1500,
+   "chapter": "Close"
+  }
+ ]
+}
