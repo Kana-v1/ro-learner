@@ -192,7 +192,7 @@ drill. It resumes where it stopped.
 - **Sync folder = iCloud Drive.** The app links one folder with `lessons/`
   (episodes in), `results/` (one JSON per finished session out) and `notes/`
   (Claude's notes in). It is in iCloud Drive, synced to this PC by iCloud for
-  Windows: `/mnt/c/Users/<you>/iCloudDrive/Vorbește`, named in the gitignored
+  Windows (e.g. `/mnt/c/Users/<you>/iCloudDrive/Vorbește`), named in the gitignored
   `sync_folder.txt` (or `$VORBESTE_SYNC`); `tools/sync_folder.py` resolves it.
   Google Drive does not work: its iPhone app won't let other apps open its
   folders. **`tools/render.py` packs every full render into `lessons/` by
