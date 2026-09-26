@@ -1,52 +1,174 @@
 import Foundation
 
-/// Compares what the recogniser heard with the expected answer, word by word.
+/// Judges what the recogniser heard against a drill's answers.
 ///
-/// Lenient where the recogniser or real speech differ from the script, strict
-/// where the learner could actually be wrong:
-/// - diacritics are folded (the recogniser is inconsistent with ă/â/î/ș/ț, and
-///   agreement endings still differ in letters: alb / albă / albi / albe)
-/// - a subject pronoun the learner dropped is not required — Romanian is
-///   pro-drop and the dialogue teaches exactly that
-/// - este and e count as the same word
+/// Three outcomes, because "not the exact sentence" is not the same as wrong:
+///
+/// - **right**: every word of the answer, or of one of the drill's accepted
+///   alternatives (`accept`, written into the episode when it is generated).
+/// - **almost**: the meaning is there but something needs correcting — a
+///   small word left out (un, o, niște, e), one word with the right stem but
+///   the wrong ending (alb for albă: in Romanian that ending *is* the grammar,
+///   so it is never silently accepted), or a phrasing the episode marked as
+///   understandable-but-not-the-lesson (`almost`). No retry: the learner is
+///   told the fix and hears the answer.
+/// - **not quite**: a content word missing or different. This gets a retry.
+///
+/// Lenient where the recogniser or real speech differ from the script:
+/// diacritics are folded (the recogniser is inconsistent with ă/â/î/ș/ț, and
+/// can't hear sora from soră anyway), a subject pronoun the learner dropped
+/// is not required (Romanian is pro-drop), este and e are the same word, and
+/// extra words around the answer are ignored.
 enum Grader {
-    static let optionalPronouns: Set<String> = ["eu", "tu", "el", "ea", "noi", "voi", "ei", "ele"]
+    struct Judgement {
+        let verdict: Verdict
+        let score: Double         // 0...1, for the log and results
+        let hint: String?         // what to fix, for an "almost"
+    }
 
-    static func tokens(_ s: String) -> [String] {
-        let normalised = s.lowercased()
-            .replacingOccurrences(of: "ş", with: "ș")
-            .replacingOccurrences(of: "ţ", with: "ț")
+    static let optionalPronouns: Set<String> = ["eu", "tu", "el", "ea", "noi", "voi", "ei", "ele"]
+    /// Words the recogniser often drops and whose absence is a slip, not a
+    /// wrong answer.
+    static let smallWords: Set<String> = ["un", "o", "niste", "e"]
+
+    /// (folded form for comparing, original form for showing)
+    static func words(_ s: String) -> [(key: String, shown: String)] {
+        let normalised = s
+            .replacingOccurrences(of: "ş", with: "ș").replacingOccurrences(of: "ţ", with: "ț")
+            .replacingOccurrences(of: "Ş", with: "Ș").replacingOccurrences(of: "Ţ", with: "Ț")
         var spaced = ""
         for ch in normalised { spaced.append(ch.isLetter ? ch : " ") }
-        return spaced.split(separator: " ").map { word in
-            let folded = String(word).folding(options: .diacriticInsensitive, locale: nil)
-            return folded == "este" ? "e" : folded
+        return spaced.split(separator: " ").map { w in
+            let shown = String(w)
+            let folded = shown.lowercased().folding(options: .diacriticInsensitive, locale: nil)
+            return (key: folded == "este" ? "e" : folded, shown: shown.lowercased())
         }
     }
 
-    /// 0...1. Mostly recall of the expected words (in order), with a small
-    /// penalty for extra words so rambling past the answer is not full marks.
-    static func score(expected: String, heard: String) -> Double {
-        let h = tokens(heard)
-        let e = tokens(expected).filter { !optionalPronouns.contains($0) || h.contains($0) }
-        guard !e.isEmpty, !h.isEmpty else { return 0 }
+    static func tokens(_ s: String) -> [String] { words(s).map(\.key) }
 
-        var dp = Array(repeating: Array(repeating: 0, count: h.count + 1), count: e.count + 1)
-        for i in 1...e.count {
-            for j in 1...h.count {
-                dp[i][j] = e[i - 1] == h[j - 1] ? dp[i - 1][j - 1] + 1 : max(dp[i - 1][j], dp[i][j - 1])
+    static func judge(_ d: Drill, heard: String?) -> Judgement {
+        guard let heard, !tokens(heard).isEmpty else {
+            return Judgement(verdict: .noAnswer, score: 0, hint: nil)
+        }
+        var best = compare(expected: d.expected, heard: heard)
+        for alt in d.accept {
+            let j = compare(expected: alt, heard: heard)
+            if rank(j.verdict) > rank(best.verdict) || (j.verdict == best.verdict && j.score > best.score) {
+                best = j
             }
         }
-        let common = Double(dp[e.count][h.count])
-        let recall = common / Double(e.count)
-        let precision = common / Double(h.count)
-        return recall * (0.8 + 0.2 * precision)
+        // An understandable phrasing the episode flagged: say it the lesson's way.
+        if best.verdict != .correct {
+            for alt in d.almost where compare(expected: alt, heard: heard).verdict == .correct {
+                return Judgement(verdict: .close, score: 0.8, hint: "Say it as the lesson does: \(d.expected)")
+            }
+        }
+        return best
     }
 
-    static func verdict(score: Double, heard: String?) -> Verdict {
-        guard let heard, !tokens(heard).isEmpty else { return .noAnswer }
-        if score >= 0.85 { return .correct }
-        if score >= 0.5 { return .close }
-        return .missed
+    private static func rank(_ v: Verdict) -> Int {
+        switch v {
+        case .correct: return 3
+        case .close: return 2
+        case .missed: return 1
+        case .noAnswer, .unmarked: return 0
+        }
+    }
+
+    /// Align the answer's words with what was heard, allowing a word to match
+    /// exactly (2) or by stem with a different ending (1), and classify each
+    /// answer word as exact, near, or missing.
+    static func compare(expected: String, heard: String) -> Judgement {
+        let h = words(heard)
+        let hKeys = Set(h.map(\.key))
+        let e = words(expected).filter { !optionalPronouns.contains($0.key) || hKeys.contains($0.key) }
+        guard !e.isEmpty else { return Judgement(verdict: .missed, score: 0, hint: nil) }
+
+        let n = e.count, m = h.count
+        var dp = Array(repeating: Array(repeating: 0, count: m + 1), count: n + 1)
+        for i in 1...n {
+            for j in 1...m {
+                let w = e[i - 1].key == h[j - 1].key ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1], w > 0 ? dp[i - 1][j - 1] + w : 0)
+            }
+        }
+        // walk back to see what happened to each answer word
+        var near: [(want: String, got: String)] = []
+        var missing: [(key: String, shown: String)] = []
+        var i = n, j = m
+        while i > 0 {
+            if j > 0 {
+                let w = e[i - 1].key == h[j - 1].key ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
+                if w > 0 && dp[i][j] == dp[i - 1][j - 1] + w {
+                    if w == 1 { near.append((want: e[i - 1].shown, got: h[j - 1].shown)) }
+                    i -= 1; j -= 1
+                    continue
+                }
+                if dp[i][j] == dp[i][j - 1] { j -= 1; continue }
+            }
+            missing.append(e[i - 1])
+            i -= 1
+        }
+
+        let missingSmall = missing.filter { smallWords.contains($0.key) }
+        let missingContent = missing.filter { !smallWords.contains($0.key) }
+        let score = Double(dp[n][m]) / Double(2 * n)
+
+        if missing.isEmpty && near.isEmpty {
+            return Judgement(verdict: .correct, score: 1, hint: nil)
+        }
+        if missingContent.isEmpty && near.count <= 1 {
+            var parts: [String] = []
+            if !missingSmall.isEmpty {
+                // A small word said in place of the right one is usually the
+                // gender slip these lessons drill (un soră for o soră).
+                let expectedSmall = Set(e.map(\.key)).intersection(smallWords)
+                let wrongSmall = h.filter { smallWords.contains($0.key) && !expectedSmall.contains($0.key) }
+                let want = missingSmall.reversed().map(\.shown).joined(separator: ", ")
+                if let said = wrongSmall.first {
+                    parts.append("Say \(want), not \(said.shown)")
+                } else {
+                    parts.append("Left out: \(want)")
+                }
+            }
+            if let x = near.first {
+                parts.append("Check the ending: \(x.want) (heard \(x.got))")
+            }
+            return Judgement(verdict: .close, score: score, hint: parts.joined(separator: " · "))
+        }
+        return Judgement(verdict: .missed, score: score, hint: nil)
+    }
+
+    /// Same word, different ending — judged relative to the words' length, not
+    /// by fixed letter counts, so short words and long ones are treated alike:
+    /// - both at least 2 letters (a floor, so the article o is never a "near"
+    ///   un),
+    /// - they share a start of at least half the shorter word (and never
+    ///   fewer than 2 letters): the stem,
+    /// - and differ by at most 40% of the longer word (edit distance).
+    /// alb/albă, bun/bună, negri/negre, profesor/profesoară are near;
+    /// soră/sare, am/ai, mama/tata are not.
+    static func sameStem(_ a: String, _ b: String) -> Bool {
+        guard a != b else { return false }
+        let x = Array(a), y = Array(b)
+        let shorter = min(x.count, y.count), longer = max(x.count, y.count)
+        guard shorter >= 2 else { return false }
+        var k = 0
+        while k < shorter && x[k] == y[k] { k += 1 }
+        guard k >= max(2, (shorter + 1) / 2) else { return false }
+        return Double(editDistance(x, y)) <= 0.4 * Double(longer)
+    }
+
+    static func editDistance(_ x: [Character], _ y: [Character]) -> Int {
+        var prev = Array(0...y.count)
+        for i in 1...max(x.count, 1) where !x.isEmpty {
+            var row = [i] + Array(repeating: 0, count: y.count)
+            for j in 1...max(y.count, 1) where !y.isEmpty {
+                row[j] = min(prev[j] + 1, row[j - 1] + 1, prev[j - 1] + (x[i - 1] == y[j - 1] ? 0 : 1))
+            }
+            prev = row
+        }
+        return x.isEmpty ? y.count : prev[y.count]
     }
 }

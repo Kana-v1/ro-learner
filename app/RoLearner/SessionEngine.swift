@@ -26,6 +26,7 @@ final class SessionEngine: ObservableObject {
     @Published private(set) var liveHeard: String?
     @Published private(set) var lastHeard: String?
     @Published private(set) var lastVerdict: Verdict?
+    @Published private(set) var lastHint: String?
     @Published private(set) var inRound = false
     @Published private(set) var roundDone = 0
     @Published private(set) var roundTotal = 0
@@ -440,6 +441,7 @@ final class SessionEngine: ObservableObject {
         liveHeard = nil
         lastHeard = nil
         lastVerdict = nil
+        lastHint = nil
         record.items.append(DrillResult(seg: d.id, cue: d.cue, expected: d.expected, attempts: [],
                                         correction: nil, round: round, chapter: d.chapter))
         let idx = record.items.count - 1
@@ -463,14 +465,17 @@ final class SessionEngine: ObservableObject {
                 [weak self] partial in self?.liveHeard = partial
             }
             if Task.isCancelled { return }
-            let score = heard.map { Grader.score(expected: d.expected, heard: $0) } ?? 0
-            let v = Grader.verdict(score: score, heard: heard)
-            record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v))
+            let judgement = Grader.judge(d, heard: heard)
+            let score = judgement.score
+            let v = judgement.verdict
+            record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v, hint: judgement.hint))
             lastHeard = heard
             lastVerdict = v
+            lastHint = judgement.hint
             Log.write("drill \(drillLabel) try \(n): heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score)))", "drill")
             persist()
-            if v == .correct || record.items[idx].correction != nil { break }
+            // "Almost" is not retried: the fix is shown and the answer plays.
+            if v == .correct || v == .close || record.items[idx].correction != nil { break }
         }
 
         let outcome = record.items[idx].outcome

@@ -12,6 +12,11 @@ struct PackSegment: Codable {
     let pause: Int            // ms of silence after this segment
     let voice: String
     let chapter: String?
+    /// On an answer: other fully correct phrasings, and understandable ones that
+    /// still deserve a correction. Written by the episode builders; absent in
+    /// older packs.
+    let accept: [String]?
+    let almost: [String]?
 }
 
 struct PackHeader: Codable {
@@ -36,6 +41,8 @@ struct Drill: Identifiable, Equatable {
     let answerEnd: Double
     let thinkSeconds: Double  // the pause the episode was designed with
     let chapter: String?
+    var accept: [String] = []
+    var almost: [String] = []
 }
 
 struct Chapter: Identifiable {
@@ -58,7 +65,8 @@ extension PackHeader {
                              promptStart: s.start, promptEnd: s.end,
                              answerStart: a.start, answerEnd: a.end,
                              thinkSeconds: Double(s.pause) / 1000,
-                             chapter: chapter))
+                             chapter: chapter,
+                             accept: a.accept ?? [], almost: a.almost ?? []))
         }
         return out
     }
@@ -84,6 +92,7 @@ struct Attempt: Codable {
     var heard: String?
     var score: Double
     var verdict: Verdict
+    var hint: String?         // for "almost": what to fix
 }
 
 /// One drill as the learner met it: up to two spoken attempts, and an optional

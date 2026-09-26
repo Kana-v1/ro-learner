@@ -134,6 +134,10 @@ struct PlayerView: View {
                     StatusDisc(color: v.color, ink: v.ink, symbol: v.symbol)
                     Text(v.title).font(Theme.display(44)).foregroundStyle(v.color)
                     answerBlock(d.expected)
+                    if v == .close, let hint = engine.lastHint, !hint.isEmpty {
+                        Text(hint).font(.system(size: 16, weight: .semibold)).foregroundStyle(Theme.accent)
+                            .multilineTextAlignment(.center)
+                    }
                     if engine.voiceMode {
                         Text("Heard: \(engine.lastHeard ?? "nothing")").font(.system(size: 15))
                             .foregroundStyle(Theme.text2).multilineTextAlignment(.center)
