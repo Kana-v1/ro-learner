@@ -659,8 +659,19 @@ final class SessionEngine: ObservableObject {
             return .success
         }
         c.pauseCommand.addTarget { [weak self] _ in
-            Log.write("remote: pause", "audio")
-            Task { @MainActor in self?.pauseIfRunning() }
+            Task { @MainActor in
+                guard let self else { return }
+                // AirPods send "pause" even when we are already paused (iOS
+                // decides from its own idea of whether the app is playing), so
+                // a pause while paused means the learner wants to go on.
+                if self.phase == .paused {
+                    Log.write("remote: pause while paused -> resume", "audio")
+                    self.togglePause()
+                } else {
+                    Log.write("remote: pause", "audio")
+                    self.pauseIfRunning()
+                }
+            }
             return .success
         }
         c.nextTrackCommand.addTarget { [weak self] _ in
