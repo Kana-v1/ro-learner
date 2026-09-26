@@ -32,8 +32,8 @@ struct OnboardingView: View {
                      permission == false ? "Off for now: episodes play through and you mark misses yourself. You can allow it later in Settings."
                                          : "Only the text of your answers is kept, never the audio.")
                 step(2, done: hasEpisodes, active: permission != nil && !hasEpisodes,
-                     "Link your Google Drive folder",
-                     "New episodes arrive there, and your results go back there for Claude.")
+                     "Link your iCloud Drive folder",
+                     "New episodes arrive there, and your results go back there for Claude. (Google Drive doesn't allow this.)")
                 step(3, done: false, active: false, "Put the phone away",
                      "A rising chime means it's your turn. Every verdict is spoken aloud.")
             }
@@ -48,7 +48,7 @@ struct OnboardingView: View {
                     Button {
                         Log.write("tapped Link Drive folder (onboarding)", "ui")
                         linking = true
-                    } label: { Label("Link Drive folder", systemImage: "folder") }
+                    } label: { Label("Link iCloud Drive folder", systemImage: "folder") }
                         .buttonStyle(AccentButtonStyle())
                     Button("Import files instead") { importing = true }
                         .font(.system(size: 15, weight: .medium)).foregroundStyle(Theme.text2)

@@ -7,6 +7,25 @@ struct ResultsView: View {
     @State private var share: ShareItem?
     @State private var importing = false
     @State private var opened: SessionRecord?
+    @State private var episode: String?            // nil = all episodes
+
+    private var shown: [SessionRecord] {
+        store.sessions.filter { episode == nil || $0.episode == episode }
+    }
+
+    /// Sessions by calendar day, newest day first.
+    private var days: [(day: Date, sessions: [SessionRecord])] {
+        let cal = Calendar.current
+        let groups = Dictionary(grouping: shown) { cal.startOfDay(for: $0.started) }
+        return groups.keys.sorted(by: >).map { (day: $0, sessions: groups[$0] ?? []) }
+    }
+
+    private func dayTitle(_ day: Date) -> String {
+        let cal = Calendar.current
+        if cal.isDateInToday(day) { return "Today" }
+        if cal.isDateInYesterday(day) { return "Yesterday" }
+        return day.formatted(date: .abbreviated, time: .omitted)
+    }
 
     var body: some View {
         ScrollView {
@@ -24,14 +43,14 @@ struct ResultsView: View {
                         VStack(alignment: .leading, spacing: 2) {
                             Text(store.unsent.count == 1 ? "1 session not sent" : "\(store.unsent.count) sessions not sent")
                                 .font(.system(size: 16, weight: .semibold))
-                            Text("Claude can only use what is on Drive.").font(.system(size: 13)).foregroundStyle(Theme.text2)
+                            Text("Claude reads them from your sync folder.").font(.system(size: 13)).foregroundStyle(Theme.text2)
                         }
                         Spacer()
                         Button {
                             if store.linkedFolder != nil { Task { await store.sync() } }
                             else { share = store.exportUnsent() }
                         } label: {
-                            Label(store.linkedFolder != nil ? "Sync" : "Upload", systemImage: "arrow.up.doc")
+                            Label(store.linkedFolder != nil ? "Sync" : "Share", systemImage: "arrow.up.doc")
                                 .font(.system(size: 15, weight: .semibold))
                                 .padding(.horizontal, 14).frame(height: 44)
                                 .background(Theme.accent, in: RoundedRectangle(cornerRadius: 12))
@@ -52,7 +71,22 @@ struct ResultsView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Sessions").font(.system(size: 17, weight: .semibold))
+                    HStack {
+                        Text("Sessions").font(.system(size: 17, weight: .semibold))
+                        Spacer()
+                        Menu {
+                            Button("All episodes") { episode = nil }
+                            ForEach(Array(Set(store.sessions.map(\.episode))).sorted(), id: \.self) { slug in
+                                Button(slug.uppercased()) { episode = slug }
+                            }
+                        } label: {
+                            Label(episode.map { $0.uppercased() } ?? "All episodes", systemImage: "line.3.horizontal.decrease")
+                                .font(.system(size: 14, weight: .medium))
+                                .padding(.horizontal, 12).frame(height: 34)
+                                .overlay(Capsule().stroke(Theme.line))
+                        }
+                        .foregroundStyle(Theme.text)
+                    }
                     Text("Every answer is kept. A session is one listen-through of an episode; tap it to see each drill, what was heard on each try, and your corrections.")
                         .font(.system(size: 13)).foregroundStyle(Theme.muted)
                 }
@@ -60,8 +94,11 @@ struct ResultsView: View {
                 if store.sessions.isEmpty {
                     Text("Nothing yet. Practise an episode and it shows up here.").foregroundStyle(Theme.muted)
                 } else {
+                  ForEach(days, id: \.day) { group in
+                    Text(dayTitle(group.day)).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
+                        .padding(.top, 6)
                     VStack(spacing: 0) {
-                        ForEach(Array(store.sessions.enumerated()), id: \.element.key) { k, s in
+                        ForEach(Array(group.sessions.enumerated()), id: \.element.key) { k, s in
                             Button { opened = s } label: {
                                 SessionRow(session: s, stage: store.stage(of: s))
                             }
@@ -73,6 +110,7 @@ struct ResultsView: View {
                     }
                     .background(Theme.surface, in: RoundedRectangle(cornerRadius: 18))
                     .overlay(RoundedRectangle(cornerRadius: 18).stroke(Theme.line))
+                  }
                 }
             }
             .padding(20)

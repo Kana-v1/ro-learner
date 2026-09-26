@@ -20,6 +20,10 @@ struct HomeView: View {
     @State private var pendingLaunch: PlayerLaunch?
     @State private var share: ShareItem?
     @State private var showResults = false
+    @State private var filter: EpisodeFilter = .all
+    @State private var sort: EpisodeSort = .course
+    @State private var query = ""
+    @State private var flipped: Set<Int> = []    // lessons opened/closed against their default
 
     var body: some View {
         ScrollView {
@@ -108,11 +112,42 @@ struct HomeView: View {
         }
     }
 
+    // MARK: episodes — grouped, filtered, searchable, for a course of ~200 parts
+
+    private var visiblePacks: [Pack] {
+        let q = query.trimmingCharacters(in: .whitespaces).lowercased()
+        let list = store.packs.filter { pack in
+            (filter.state.map { store.state(of: pack) == $0 } ?? true)
+                && (q.isEmpty || pack.header.title.lowercased().contains(q)
+                    || pack.header.slug.lowercased().contains(q))
+        }
+        switch sort {
+        case .course:
+            return list
+        case .recent:
+            return list.sorted { (store.lastPlayed($0) ?? .distantPast) > (store.lastPlayed($1) ?? .distantPast) }
+        case .weakest:
+            // practised episodes, lowest score first; never-played ones after
+            return list.sorted { (store.lastScore($0) ?? 2) < (store.lastScore($1) ?? 2) }
+        }
+    }
+
     private var episodes: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Text("Episodes").font(.system(size: 17, weight: .semibold))
+                Text("\(store.packs.count)").font(.system(size: 15)).foregroundStyle(Theme.muted)
                 Spacer()
+                Menu {
+                    Picker("Sort", selection: $sort) {
+                        ForEach(EpisodeSort.allCases) { Text($0.rawValue).tag($0) }
+                    }
+                } label: {
+                    Image(systemName: "arrow.up.arrow.down").font(.system(size: 15, weight: .medium))
+                        .frame(width: 36, height: 36).overlay(Circle().stroke(Theme.line))
+                }
+                .foregroundStyle(Theme.text)
+                .accessibilityLabel("Sort episodes")
                 Button { importing = true } label: {
                     Label("Import", systemImage: "plus").font(.system(size: 14, weight: .medium))
                         .padding(.horizontal, 12).frame(height: 36)
@@ -120,28 +155,111 @@ struct HomeView: View {
                 }
                 .foregroundStyle(Theme.text)
             }
-            if store.packs.isEmpty {
-                Text("No episodes yet.").foregroundStyle(Theme.muted)
-            } else {
-                VStack(spacing: 0) {
-                    ForEach(Array(store.packs.enumerated()), id: \.element.id) { k, pack in
-                        EpisodeRow(pack: pack, subtitle: store.subtitle(for: pack), isNew: store.isNew(pack)) {
-                            open(pack)
-                        }
-                        .overlay(alignment: .top) {
-                            if k > 0 { Rectangle().fill(Color(hex: 0x232934)).frame(height: 1) }
-                        }
-                        .contextMenu {
-                            Button(role: .destructive) { store.delete(pack) } label: {
-                                Label("Remove episode", systemImage: "trash")
+            if store.packs.count > 6 {
+                HStack(spacing: 8) {
+                    Image(systemName: "magnifyingglass").foregroundStyle(Theme.muted)
+                    TextField("Search episodes", text: $query)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                    if !query.isEmpty {
+                        Button { query = "" } label: { Image(systemName: "xmark.circle.fill") }
+                            .foregroundStyle(Theme.muted)
+                            .accessibilityLabel("Clear search")
+                    }
+                }
+                .padding(.horizontal, 12).frame(height: 40)
+                .background(Theme.surface, in: RoundedRectangle(cornerRadius: 12))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.line))
+            }
+            if !store.packs.isEmpty {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(EpisodeFilter.allCases) { f in
+                            let count = f.state.map { st in store.packs.filter { store.state(of: $0) == st }.count }
+                                ?? store.packs.count
+                            Button { filter = f } label: {
+                                Text("\(f.rawValue) \(count)")
+                                    .font(.system(size: 13, weight: .semibold))
+                                    .padding(.horizontal, 12).frame(height: 32)
+                                    .foregroundStyle(filter == f ? Theme.onAccent : Theme.text2)
+                                    .background(filter == f ? Theme.accent : Theme.surface, in: Capsule())
+                                    .overlay(Capsule().stroke(filter == f ? Color.clear : Theme.line))
                             }
                         }
                     }
                 }
-                .background(Theme.surface, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
+            }
+            if store.packs.isEmpty {
+                Text("No episodes yet.").foregroundStyle(Theme.muted)
+            } else if visiblePacks.isEmpty {
+                Text("Nothing matches.").foregroundStyle(Theme.muted)
+            } else if sort == .course {
+                ForEach(lessons, id: \.self) { lesson in
+                    lessonGroup(lesson)
+                }
+            } else {
+                episodeList(visiblePacks)
             }
         }
+    }
+
+    private var lessons: [Int] {
+        Array(Set(visiblePacks.map(\.header.lesson))).sorted()
+    }
+
+    /// A lesson is folded when every part of it is done, unless the user
+    /// opened it; while filtering or searching everything is shown open.
+    private func isOpen(_ lesson: Int) -> Bool {
+        if filter != .all || !query.isEmpty { return true }
+        let parts = store.packs.filter { $0.header.lesson == lesson }
+        let allDone = !parts.isEmpty && parts.allSatisfy { store.state(of: $0) == .done }
+        return allDone == flipped.contains(lesson)
+    }
+
+    private func lessonGroup(_ lesson: Int) -> some View {
+        let parts = visiblePacks.filter { $0.header.lesson == lesson }
+        let all = store.packs.filter { $0.header.lesson == lesson }
+        let done = all.filter { store.state(of: $0) == .done }.count
+        let open = isOpen(lesson)
+        return VStack(alignment: .leading, spacing: 8) {
+            Button {
+                if flipped.contains(lesson) { flipped.remove(lesson) } else { flipped.insert(lesson) }
+            } label: {
+                HStack {
+                    Text(lesson == 0 ? "Other" : "Lesson \(lesson)").font(.system(size: 15, weight: .semibold))
+                    Text("\(done)/\(all.count) done").font(.system(size: 13)).foregroundStyle(Theme.muted)
+                    Spacer()
+                    Image(systemName: open ? "chevron.up" : "chevron.down")
+                        .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
+                }
+                .frame(minHeight: 36)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .foregroundStyle(Theme.text)
+            .accessibilityLabel("Lesson \(lesson), \(done) of \(all.count) done, \(open ? "open" : "closed")")
+            if open { episodeList(parts) }
+        }
+    }
+
+    private func episodeList(_ packs: [Pack]) -> some View {
+        VStack(spacing: 0) {
+            ForEach(Array(packs.enumerated()), id: \.element.id) { k, pack in
+                EpisodeRow(pack: pack, subtitle: store.subtitle(for: pack), state: store.state(of: pack)) {
+                    open(pack)
+                }
+                .overlay(alignment: .top) {
+                    if k > 0 { Rectangle().fill(Color(hex: 0x232934)).frame(height: 1) }
+                }
+                .contextMenu {
+                    Button(role: .destructive) { store.delete(pack) } label: {
+                        Label("Remove episode", systemImage: "trash")
+                    }
+                }
+            }
+        }
+        .background(Theme.surface, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
     }
 
     private var settings: some View {
@@ -151,14 +269,14 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("Google Drive folder").font(.system(size: 15, weight: .semibold))
+                            Text("Sync folder").font(.system(size: 15, weight: .semibold))
                             Text(driveStatus).font(.system(size: 13)).foregroundStyle(Theme.muted)
                         }
                         Spacer()
                         if store.syncing { ProgressView().tint(Theme.accent) }
                     }
                     if store.linkedFolder == nil {
-                        Button("Link Drive folder") {
+                        Button("Link iCloud Drive folder") {
                             Log.write("tapped Link Drive folder", "ui")
                             linking = true
                         }
@@ -173,7 +291,7 @@ struct HomeView: View {
                             Button("Unlink") { store.unlinkFolder() }.buttonStyle(OutlineButtonStyle())
                         }
                     }
-                    Text("Pick a folder holding lessons/. New episodes are picked up from it and your results are written into results/ whenever the app is open.")
+                    Text("A folder in iCloud Drive (Google Drive doesn't let other apps open its folders). Whenever the app is open, new episodes come in from its lessons/ and your results go out to results/, where Claude reads them.")
                         .font(.system(size: 12)).foregroundStyle(Theme.muted)
                 }
                 Divider().overlay(Theme.line)
@@ -274,18 +392,18 @@ struct NextStepCard: View {
     private var detail: String {
         switch step {
         case .importEpisodes:
-            return linked ? "New episodes arrive in your Drive folder's lessons/. Pull down or tap below to check for them."
-                          : "Pick the .rolesson files from Google Drive. You can choose several at once."
+            return linked ? "New episodes arrive in your sync folder by themselves. Pull down or tap below to check now."
+                          : "Import .rolesson files — or link an iCloud Drive folder in Settings and they arrive by themselves."
         case .continueEpisode(let p, let progress):
             let done = progress.record.mainItems.count
             return "\(p.header.slug) · drill \(min(done + 1, p.header.drills.count)) of \(p.header.drills.count) · stopped at \(timeString(progress.position))"
         case .practise(let p):
             return "\(p.header.slug) · \(p.header.drills.count) drills · \(Int((p.header.duration / 60).rounded())) min"
         case .upload:
-            return linked ? "They go into your Drive folder's results/. Then ask Claude to read them; your next episodes will focus on what you missed."
-                          : "Send them to Google Drive, then ask Claude to read them. Your next episodes will focus on what you missed."
+            return linked ? "They go into your sync folder for Claude. Then ask Claude to read them; your next episodes will focus on what you missed."
+                          : "Share them to where Claude can read them — or link an iCloud Drive folder in Settings and this happens by itself."
         case .askClaude:
-            return "Your results are on Drive. In Claude, say:"
+            return "Your results are synced. In Claude, say:"
         case .allDone:
             return "Ask Claude for the next episodes, then import them."
         }
@@ -293,10 +411,10 @@ struct NextStepCard: View {
 
     private var buttonTitle: String {
         switch step {
-        case .importEpisodes, .allDone: return linked ? "Check Drive for episodes" : "Import from Drive"
+        case .importEpisodes, .allDone: return linked ? "Check for new episodes" : "Import files"
         case .continueEpisode: return "Continue"
         case .practise: return "Start"
-        case .upload: return linked ? "Sync to Drive" : "Upload to Drive"
+        case .upload: return linked ? "Sync now" : "Share results"
         case .askClaude: return ""
         }
     }
@@ -343,7 +461,7 @@ struct ContinueCard: View {
 struct EpisodeRow: View {
     let pack: Pack
     let subtitle: String
-    let isNew: Bool
+    let state: PackStore.EpisodeState
     let action: () -> Void
 
     var body: some View {
@@ -358,10 +476,15 @@ struct EpisodeRow: View {
                     Text(subtitle).font(.system(size: 13)).foregroundStyle(Theme.muted)
                 }
                 Spacer()
-                if isNew {
+                switch state {
+                case .new:
                     Pill(text: "New", foreground: Theme.onAccent, background: Theme.accent)
-                } else {
-                    Image(systemName: "chevron.right").font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.muted)
+                case .inProgress:
+                    Image(systemName: "play.circle").font(.system(size: 18)).foregroundStyle(Theme.accent)
+                case .needsWork:
+                    Pill(text: "Needs work", foreground: Color(hex: 0xFFB08F), background: Theme.notQuite.opacity(0.14))
+                case .done:
+                    Image(systemName: "checkmark.circle.fill").font(.system(size: 18)).foregroundStyle(Theme.right)
                 }
             }
             .padding(.horizontal, 14)
@@ -369,7 +492,27 @@ struct EpisodeRow: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .accessibilityValue(state.rawValue)
     }
+}
+
+enum EpisodeFilter: String, CaseIterable, Identifiable {
+    case all = "All", new = "New", inProgress = "In progress", needsWork = "Needs work", done = "Done"
+    var id: String { rawValue }
+    var state: PackStore.EpisodeState? {
+        switch self {
+        case .all: return nil
+        case .new: return .new
+        case .inProgress: return .inProgress
+        case .needsWork: return .needsWork
+        case .done: return .done
+        }
+    }
+}
+
+enum EpisodeSort: String, CaseIterable, Identifiable {
+    case course = "Course order", recent = "Recently played", weakest = "Needs most work"
+    var id: String { rawValue }
 }
 
 struct ResumeSheet: View {

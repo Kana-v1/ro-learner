@@ -31,7 +31,7 @@ enum Theme {
         .system(size: size, weight: .semibold, design: .serif)
     }
 
-    static let claudePhrase = "Read my Romanian results from Google Drive"
+    static let claudePhrase = "Read my Romanian results"
 }
 
 extension Color {

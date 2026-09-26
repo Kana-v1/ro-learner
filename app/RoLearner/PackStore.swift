@@ -380,6 +380,43 @@ final class PackStore: ObservableObject {
         return .allDone
     }
 
+    // MARK: episode status, for filtering and sorting a long list
+
+    enum EpisodeState: String, CaseIterable {
+        case new = "New", inProgress = "In progress", needsWork = "Needs work", done = "Done"
+    }
+
+    /// The latest finished session of each episode (sessions are newest first).
+    func lastFinished(_ slug: String) -> SessionRecord? {
+        sessions.first { $0.episode == slug && $0.finished != nil }
+    }
+
+    /// Share of drills right first time in the latest finished session, over all
+    /// the episode's drills, so skipping most of an episode doesn't count as done.
+    func lastScore(_ pack: Pack) -> Double? {
+        guard let s = lastFinished(pack.header.slug) else { return nil }
+        let total = max(pack.header.drills.count, 1)
+        if s.mode == "voice" { return Double(s.rightFirstTime) / Double(total) }
+        let heard = s.mainItems.count
+        let wrong = s.mainItems.filter { $0.outcome == .missed }.count
+        return Double(heard - wrong) / Double(total)
+    }
+
+    func state(of pack: Pack) -> EpisodeState {
+        let slug = pack.header.slug
+        if progress[slug] != nil { return .inProgress }
+        guard let score = lastScore(pack) else { return .new }
+        return score >= 0.8 ? .done : .needsWork
+    }
+
+    /// When the episode was last listened to (finished or not).
+    func lastPlayed(_ pack: Pack) -> Date? {
+        let slug = pack.header.slug
+        let session = sessions.first { $0.episode == slug }?.started
+        let saved = progress[slug]?.savedAt
+        return [session, saved].compactMap { $0 }.max()
+    }
+
     func isNew(_ pack: Pack) -> Bool {
         let slug = pack.header.slug
         return progress[slug] == nil && !sessions.contains { $0.episode == slug }

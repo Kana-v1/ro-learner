@@ -364,14 +364,14 @@ struct FinishedPanel: View {
                     HStack(alignment: .top, spacing: 12) {
                         NumberBadge(number: 1, active: !uploaded, done: uploaded)
                         VStack(alignment: .leading, spacing: 10) {
-                            Text(uploaded ? "Results are on Google Drive" : "Upload results to Google Drive")
+                            Text(uploaded ? "Results are synced for Claude" : "Send results to Claude")
                                 .font(.system(size: 16, weight: .semibold))
                             if !uploaded {
                                 Button(action: onUpload) {
                                     HStack(spacing: 8) {
                                         if store.syncing { ProgressView().tint(Theme.onAccent) }
                                         else { Image(systemName: "arrow.up.doc") }
-                                        Text(store.linkedFolder != nil ? "Sync to Drive" : "Upload to Drive")
+                                        Text(store.linkedFolder != nil ? "Sync now" : "Share results")
                                     }
                                 }
                                 .buttonStyle(AccentButtonStyle())
