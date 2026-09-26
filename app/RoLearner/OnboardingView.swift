@@ -62,6 +62,7 @@ struct OnboardingView: View {
         .padding(.horizontal, 24)
         .padding(.vertical, 28)
         .background(Theme.bg.ignoresSafeArea())
+        .shakeForLog()
         .foregroundStyle(Theme.text)
         .fileImporter(isPresented: $linking, allowedContentTypes: [.folder]) { result in
             if case .success(let url) = result {

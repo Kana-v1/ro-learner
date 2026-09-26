@@ -57,6 +57,7 @@ final class Listener {
         engine.prepare()
         try engine.start()
         running = true
+        Log.write("mic on: \(Int(format.sampleRate)) Hz, \(format.channelCount) ch; ro-RO available \(isAvailable), on-device \(onDevice)", "speech")
     }
 
     func stop() {
@@ -131,6 +132,13 @@ final class Listener {
             let text = result?.bestTranscription.formattedString
             let isFinal = result?.isFinal ?? false
             let failed = error != nil
+            if let error {
+                let e = error as NSError
+                // 1110 "no speech detected" and 216/301 "cancelled" are routine.
+                if ![1110, 216, 301].contains(e.code) {
+                    Log.write("recognition error \(e.domain) \(e.code): \(e.localizedDescription)", "speech")
+                }
+            }
             Task { @MainActor in
                 listener?.update(gen: gen, text: text, isFinal: isFinal, failed: failed)
             }

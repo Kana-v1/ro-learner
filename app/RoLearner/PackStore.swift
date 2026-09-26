@@ -102,12 +102,17 @@ final class PackStore: ObservableObject {
     func linkFolder(_ url: URL) {
         let scoped = url.startAccessingSecurityScopedResource()
         defer { if scoped { url.stopAccessingSecurityScopedResource() } }
+        Log.write("link folder \(url.path) (scoped access: \(scoped))", "drive")
         do {
-            let data = try url.bookmarkData(options: [], includingResourceValuesForKeys: nil, relativeTo: nil)
+            // Apple's own sample for folders picked in the Files app keeps a
+            // minimal bookmark; that is what survives relaunches for them.
+            let data = try url.bookmarkData(options: .minimalBookmark, includingResourceValuesForKeys: nil, relativeTo: nil)
             try data.write(to: bookmarkURL, options: .atomic)
             linkedFolder = url.lastPathComponent
             syncProblem = nil
+            Log.write("linked: bookmark \(data.count) bytes", "drive")
         } catch {
+            Log.write("link failed: \(error)", "drive")
             lastError = "Couldn't link that folder: \(error.localizedDescription)"
         }
     }
@@ -121,10 +126,16 @@ final class PackStore: ObservableObject {
     private func resolveLinkedFolder() -> URL? {
         guard let data = try? Data(contentsOf: bookmarkURL) else { return nil }
         var stale = false
-        guard let url = try? URL(resolvingBookmarkData: data, options: [], relativeTo: nil,
-                                 bookmarkDataIsStale: &stale) else { return nil }
+        let url: URL
+        do {
+            url = try URL(resolvingBookmarkData: data, options: [], relativeTo: nil, bookmarkDataIsStale: &stale)
+        } catch {
+            Log.write("can't open the linked folder's bookmark: \(error)", "drive")
+            return nil
+        }
         if stale, url.startAccessingSecurityScopedResource() {
-            if let fresh = try? url.bookmarkData(options: [], includingResourceValuesForKeys: nil, relativeTo: nil) {
+            Log.write("bookmark was stale; refreshing", "drive")
+            if let fresh = try? url.bookmarkData(options: .minimalBookmark, includingResourceValuesForKeys: nil, relativeTo: nil) {
                 try? fresh.write(to: bookmarkURL, options: .atomic)
             }
             url.stopAccessingSecurityScopedResource()
@@ -151,7 +162,10 @@ final class PackStore: ObservableObject {
 
         for f in outcome.lessons {
             do { try importPack(from: f.local); status.pulled[f.name] = f.modified }
-            catch { lastError = "\(f.name): \(error.localizedDescription)" }
+            catch {
+                Log.write("import \(f.name) failed: \(error)", "drive")
+                lastError = "\(f.name): \(error.localizedDescription)"
+            }
         }
         for f in outcome.notes {
             do { try importNote(from: f.local); status.pulled[f.name] = f.modified }
@@ -161,6 +175,7 @@ final class PackStore: ObservableObject {
         for k in outcome.pushed { status.sent[k] = now }
         saveStatus()
         syncProblem = outcome.problem
+        Log.write("sync done: \(outcome.lessons.count) lesson(s), \(outcome.notes.count) note(s) in, \(outcome.pushed.count)/\(outgoing.count) result(s) out\(outcome.problem.map { "; problem: \($0)" } ?? "")", "drive")
         lastSync = now
         reload()
     }

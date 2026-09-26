@@ -60,7 +60,7 @@ final class SessionEngine: ObservableObject {
     private let headsetMic: Bool
     private let listener = Listener()
     private let tones = Tones()
-    private let voice = Announcer()
+    private let coach = Coach()
     private let player: AVPlayer
     private let startAt: Double
     private var timeObserver: Any?
@@ -71,6 +71,10 @@ final class SessionEngine: ObservableObject {
     private var roundQueue: [Drill] = []
     private var resumeDrill: Drill?            // paused mid-drill: its cue replays on resume
     private var lastPersist = Date()
+    // While a seek is on its way the player still reports the old position;
+    // acting on it would start a drill the learner just jumped away from.
+    private var seeking = false
+    private var relocateGen = 0
 
     init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: SavedProgress?) {
         self.pack = pack
@@ -105,6 +109,7 @@ final class SessionEngine: ObservableObject {
             note = "Romanian recognition runs on Apple's servers on this phone, so it needs mobile data."
         }
         record.mode = voiceMode ? "voice" : "tap"
+        Log.write("start \(pack.header.slug) in \(record.mode) mode at \(timeString(startAt)); \(total) drills; on-device recognition: \(listener.onDevice)", "player")
 
         timeObserver = player.addPeriodicTimeObserver(
             forInterval: CMTime(value: 1, timescale: 10), queue: .main
@@ -159,6 +164,7 @@ final class SessionEngine: ObservableObject {
                 try session.setActive(true)
             }
         } catch {
+            Log.write("audio setup failed: \(error)", "audio")
             voiceMode = false
             note = "Couldn't start the microphone (\(error.localizedDescription)), so this is tap mode."
             try? session.setCategory(.playback, mode: .spokenAudio)
@@ -175,7 +181,7 @@ final class SessionEngine: ObservableObject {
         observers.forEach { NotificationCenter.default.removeObserver($0) }
         observers = []
         listener.stop()
-        voice.stop()
+        coach.stop()
         let c = MPRemoteCommandCenter.shared()
         for cmd in [c.playCommand, c.pauseCommand, c.togglePlayPauseCommand,
                     c.nextTrackCommand, c.previousTrackCommand, c.changePlaybackPositionCommand] {
@@ -240,13 +246,7 @@ final class SessionEngine: ObservableObject {
         }
         resumeDrill = nil
         if let k = index(of: d) { next = k }
-        Task { [weak self] in
-            guard let self else { return }
-            await self.seekTo(d.promptStart)
-            self.phase = .playing
-            self.player.play()
-            self.updateNowPlaying()
-        }
+        relocate(to: d.promptStart, play: true)
     }
 
     func nextDrill() {
@@ -256,6 +256,7 @@ final class SessionEngine: ObservableObject {
             startRound()
             return
         }
+        if seeking { goToDrill(next + 1); return }      // pressed again mid-jump
         let k: Int
         if flow != nil, let c = current, let i = index(of: c) { k = i + 1 }
         else { k = drills.firstIndex { $0.promptStart > position + 0.3 } ?? drills.count }
@@ -269,6 +270,7 @@ final class SessionEngine: ObservableObject {
             startRound()
             return
         }
+        if seeking { goToDrill(max(next - 1, 0)); return }
         let k: Int
         if flow != nil, let c = current, let i = index(of: c) { k = i - 1 }
         else { k = drills.lastIndex { $0.promptEnd <= position + 0.05 } ?? 0 }
@@ -280,6 +282,7 @@ final class SessionEngine: ObservableObject {
             seek(to: max(duration - 0.3, 0))
             return
         }
+        let wasPaused = phase == .paused
         cancelFlow()
         resumeDrill = nil
         let d = drills[k]
@@ -287,30 +290,40 @@ final class SessionEngine: ObservableObject {
         current = d
         lastVerdict = nil
         lastHeard = nil
-        let wasPaused = phase == .paused
-        Task { [weak self] in
-            guard let self else { return }
-            await self.seekTo(d.promptStart)
-            if wasPaused { self.phase = .paused } else { self.phase = .playing; self.player.play() }
-            self.updateNowPlaying()
-        }
+        Log.write("jump to drill \(k + 1)/\(total): \(d.cue)", "player")
+        relocate(to: d.promptStart, play: !wasPaused)
     }
 
     /// Scrubbing, ±10 s and chapter jumps. Not during the second-chance round,
     /// which plays its own short pieces of the episode.
     func seek(to t: Double) {
         guard !inRound, phase != .finished, phase != .idle else { return }
+        let wasPaused = phase == .paused
         cancelFlow()
         resumeDrill = nil
         lastVerdict = nil
         lastHeard = nil
         let target = max(0, min(t, duration - 0.1))
         next = firstDrill(endingAfter: target)
-        let wasPaused = phase == .paused
+        Log.write("seek to \(timeString(target)), next drill \(next + 1)", "player")
+        relocate(to: target, play: !wasPaused)
+    }
+
+    /// Move the playhead: pause, seek, and only then play (or stay paused). Until
+    /// the seek lands, tick() ignores the old position; if another jump comes
+    /// in meanwhile, only the latest one takes effect.
+    private func relocate(to t: Double, play: Bool) {
+        seeking = true
+        relocateGen += 1
+        let gen = relocateGen
+        player.pause()
         Task { [weak self] in
             guard let self else { return }
-            await self.seekTo(target)
-            if wasPaused { self.phase = .paused } else { self.phase = .playing; self.player.play() }
+            await self.seekTo(t)
+            guard gen == self.relocateGen else { return }
+            self.seeking = false
+            self.phase = play ? .playing : .paused
+            if play { self.player.play() }
             self.updateNowPlaying()
         }
     }
@@ -346,19 +359,13 @@ final class SessionEngine: ObservableObject {
             return
         }
         lastVerdict = record.items.last?.outcome
-        Task { [weak self] in
-            guard let self else { return }
-            await self.seekTo(d.answerStart)
-            self.phase = .playing
-            self.player.play()
-            self.updateNowPlaying()
-        }
+        relocate(to: d.answerStart, play: true)
     }
 
     // MARK: the drill loop
 
     private func tick(_ t: Double) {
-        guard t.isFinite else { return }
+        guard t.isFinite, !seeking else { return }
         position = t
         if let w = waiter, player.rate > 0, t >= w.time - 0.02 {
             waiter = nil
@@ -410,8 +417,7 @@ final class SessionEngine: ObservableObject {
             attempt = n
             if n == 2 {
                 phase = .secondTry
-                try? await Task.sleep(nanoseconds: 250_000_000)
-                await voice.say(lastVerdict == .noAnswer ? "I didn't catch that. Once more." : "Not quite. Once more.")
+                await coach.say(lastVerdict == .noAnswer ? .onceMoreSilence : .onceMoreMiss)
                 if Task.isCancelled { return }
                 guard await playSpan(from: d.promptStart, to: d.promptEnd) else { return }
                 if Task.isCancelled { return }
@@ -430,17 +436,16 @@ final class SessionEngine: ObservableObject {
             record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v))
             lastHeard = heard
             lastVerdict = v
+            Log.write("drill \(drillLabel) try \(n): heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score)))", "drill")
             persist()
             if v == .correct || record.items[idx].correction != nil { break }
-            if n == 1 { tones.play(Cue(v)) }
         }
 
         let outcome = record.items[idx].outcome
         lastVerdict = outcome
         phase = .feedback
         tones.play(Cue(outcome))
-        try? await Task.sleep(nanoseconds: 250_000_000)
-        await voice.say(spoken(outcome))
+        if let line = Coach.Line.verdict(outcome) { await coach.say(line) }
         if Task.isCancelled { return }
 
         if round == 0 {
@@ -451,16 +456,6 @@ final class SessionEngine: ObservableObject {
             updateNowPlaying()
         } else {
             _ = await playSpan(from: d.answerStart, to: min(d.answerEnd + 0.3, duration))
-        }
-    }
-
-    private func spoken(_ v: Verdict) -> String {
-        switch v {
-        case .correct: return "Right."
-        case .close: return "Almost."
-        case .missed: return "Not quite."
-        case .noAnswer: return "Didn't catch that."
-        case .unmarked: return ""
         }
     }
 
@@ -487,6 +482,7 @@ final class SessionEngine: ObservableObject {
             return v != .correct && v != .unmarked
         }
         guard !roundQueue.isEmpty else { finish(); return }
+        Log.write("second chance: \(roundQueue.count) drills", "player")
         inRound = true
         roundTotal = roundQueue.count
         roundDone = 0
@@ -498,8 +494,7 @@ final class SessionEngine: ObservableObject {
         flow = Task { [weak self] in
             guard let self else { return }
             if announce {
-                let n = self.roundTotal
-                await self.voice.say("Second chance. \(n) to try again.")
+                await self.coach.say(.secondChance)
                 if Task.isCancelled { return }
             }
             while self.roundDone < self.roundQueue.count {
@@ -531,12 +526,10 @@ final class SessionEngine: ObservableObject {
         store.clearProgress(pack.header.slug)
         listener.stop()
         updateNowPlaying()
-        let summary = voiceMode
-            ? "Episode done. \(rightFirstTime) of \(total) right first time."
-            : "Episode done."
+        Log.write("finished \(pack.header.slug): \(rightFirstTime)/\(total) right first time, \(record.items.count) results saved", "player")
         Task { [weak self] in
             guard let self else { return }
-            await self.voice.say(summary)
+            await self.coach.say(.episodeDone)
             await self.store.sync()      // results go to the linked Drive folder, if any
         }
     }
@@ -551,7 +544,7 @@ final class SessionEngine: ObservableObject {
             w.cont.resume(returning: false)
         }
         listener.abort()
-        voice.stop()
+        coach.stop()
         // A drill that was interrupted before any answer is not a result.
         if voiceMode, let last = record.items.last, last.attempts.isEmpty, last.correction == nil {
             record.items.removeLast()

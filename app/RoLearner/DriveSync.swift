@@ -42,18 +42,35 @@ enum DriveSync {
         let tmp = fm.temporaryDirectory.appendingPathComponent("drive-pull", isDirectory: true)
         try? fm.createDirectory(at: tmp, withIntermediateDirectories: true)
 
+        Log.write("sync: folder \(root.path) (scoped access: \(scoped))", "drive")
+
+        /// `sub` "" means the linked folder itself: lessons dropped straight in,
+        /// or a lessons folder linked directly, are found too.
         func pull(_ sub: String, ext: String) -> [Pulled] {
-            let dir = root.appendingPathComponent(sub, isDirectory: true)
+            let dir = sub.isEmpty ? root : root.appendingPathComponent(sub, isDirectory: true)
             var items: [URL] = []
             var listError: NSError?
+            var innerError: Error?
             coordinator.coordinate(readingItemAt: dir, options: [], error: &listError) { url in
-                items = (try? fm.contentsOfDirectory(
-                    at: url, includingPropertiesForKeys: [.contentModificationDateKey],
-                    options: [.skipsHiddenFiles])) ?? []
+                do {
+                    items = try fm.contentsOfDirectory(
+                        at: url, includingPropertiesForKeys: [.contentModificationDateKey],
+                        options: [.skipsHiddenFiles])
+                } catch {
+                    innerError = error
+                }
+            }
+            let label = sub.isEmpty ? "(folder itself)" : sub
+            if let e = listError ?? innerError.map({ $0 as NSError }) {
+                if !(e.domain == NSCocoaErrorDomain && e.code == NSFileReadNoSuchFileError) {
+                    Log.write("list \(label) failed: \(e.domain) \(e.code) \(e.localizedDescription)", "drive")
+                }
+            } else {
+                Log.write("list \(label): \(items.count) item(s), \(items.filter { $0.pathExtension == ext }.count) .\(ext)", "drive")
             }
             var found: [Pulled] = []
             for item in items where item.pathExtension == ext {
-                let name = "\(sub)/\(item.lastPathComponent)"
+                let name = sub.isEmpty ? item.lastPathComponent : "\(sub)/\(item.lastPathComponent)"
                 let modified = (try? item.resourceValues(forKeys: [.contentModificationDateKey]))?
                     .contentModificationDate ?? .distantPast
                 if let seen = known[name], seen >= modified { continue }
@@ -65,13 +82,18 @@ enum DriveSync {
                         found.append(Pulled(name: name, modified: modified, local: dest))
                     }
                 }
-                if let readError { outcome.problem = readError.localizedDescription }
+                if let readError {
+                    outcome.problem = readError.localizedDescription
+                    Log.write("read \(name) failed: \(readError.domain) \(readError.code) \(readError.localizedDescription)", "drive")
+                } else {
+                    Log.write("pulled \(name)", "drive")
+                }
             }
             return found
         }
 
-        outcome.lessons = pull("lessons", ext: "rolesson")
-        outcome.notes = pull("notes", ext: "roanalysis")
+        outcome.lessons = pull("lessons", ext: "rolesson") + pull("", ext: "rolesson")
+        outcome.notes = pull("notes", ext: "roanalysis") + pull("", ext: "roanalysis")
 
         guard !outgoing.isEmpty else { return outcome }
         let resultsDir = root.appendingPathComponent("results", isDirectory: true)
@@ -86,8 +108,13 @@ enum DriveSync {
             coordinator.coordinate(writingItemAt: target, options: [.forReplacing], error: &writeError) { url in
                 ok = (try? o.data.write(to: url)) != nil
             }
-            if ok { outcome.pushed.append(o.key) }
-            else { outcome.problem = writeError?.localizedDescription ?? "Couldn't write \(o.fileName)" }
+            if ok {
+                outcome.pushed.append(o.key)
+                Log.write("wrote results/\(o.fileName)", "drive")
+            } else {
+                outcome.problem = writeError?.localizedDescription ?? "Couldn't write \(o.fileName)"
+                Log.write("write results/\(o.fileName) failed: \(writeError.map { "\($0.domain) \($0.code) \($0.localizedDescription)" } ?? "no error given")", "drive")
+            }
         }
         return outcome
     }

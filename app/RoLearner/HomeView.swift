@@ -38,6 +38,7 @@ struct HomeView: View {
             .padding(.bottom, 32)
         }
         .refreshable { await store.sync() }
+        .shakeForLog()
         .background(Theme.bg.ignoresSafeArea())
         .foregroundStyle(Theme.text)
         .fileImporter(isPresented: $importing, allowedContentTypes: [.item],

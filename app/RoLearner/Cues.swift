@@ -62,6 +62,14 @@ final class Tones {
 final class Announcer: NSObject, AVSpeechSynthesizerDelegate {
     private let synth = AVSpeechSynthesizer()
     private var pending: CheckedContinuation<Void, Never>?
+
+    /// The highest-quality US English voice installed (enhanced or premium if
+    /// the user has downloaded one), not the compact default.
+    private static let bestVoice: AVSpeechSynthesisVoice? =
+        AVSpeechSynthesisVoice.speechVoices()
+            .filter { $0.language == "en-US" }
+            .max { $0.quality.rawValue < $1.quality.rawValue }
+        ?? AVSpeechSynthesisVoice(language: "en-US")
     private var speaking: ObjectIdentifier?
 
     override init() {
@@ -73,7 +81,7 @@ final class Announcer: NSObject, AVSpeechSynthesizerDelegate {
         finishPending()
         guard !text.isEmpty else { return }
         let u = AVSpeechUtterance(string: text)
-        u.voice = AVSpeechSynthesisVoice(language: "en-US")
+        u.voice = Self.bestVoice
         speaking = ObjectIdentifier(u)
         await withCheckedContinuation { (c: CheckedContinuation<Void, Never>) in
             pending = c
