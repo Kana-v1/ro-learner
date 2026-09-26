@@ -16,11 +16,16 @@ ep.drill() in the builders emits a `prompt` segment followed by its `answer`.
     python3 make_lesson_pack.py episodes/episode_06a.json [more...]
     python3 make_lesson_pack.py --all            # every rendered episode
 
+With $VORBESTE_DRIVE set (a Google Drive for desktop "Mirror files" folder, e.g.
+"/mnt/c/Users/you/My Drive/Vorbește"), each pack is also written into its
+lessons/, which the app syncs from.
+
 File layout (read by PackStore.swift): b"ROLESSON1\\n", a 4-byte big-endian
 header length, the JSON header, then the mp3 to the end of the file.
 """
 import argparse
 import json
+import os
 import struct
 import subprocess
 import sys
@@ -74,7 +79,15 @@ def build(ep_path: Path) -> Path:
 
     PACKS.mkdir(exist_ok=True)
     out = PACKS / f"episode_{slug}.rolesson"
-    out.write_bytes(MAGIC + struct.pack(">I", len(header)) + header + mp3)
+    blob = MAGIC + struct.pack(">I", len(header)) + header + mp3
+    out.write_bytes(blob)
+    # With Google Drive for desktop mirroring a folder, the phone picks new
+    # episodes up from its lessons/ the next time the app is opened.
+    drive = os.environ.get("VORBESTE_DRIVE")
+    if drive:
+        lessons = Path(drive) / "lessons"
+        lessons.mkdir(parents=True, exist_ok=True)
+        (lessons / out.name).write_bytes(blob)
 
     drills = sum(1 for a, b in zip(segs, segs[1:])
                  if a["type"] == "prompt" and b["type"] == "answer")

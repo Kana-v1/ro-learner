@@ -34,6 +34,7 @@ final class Listener {
     private var startedAt = Date()
     private var maxSeconds = 5.0
     private var completion: ((String?) -> Void)?
+    private var onPartial: ((String) -> Void)?
     private(set) var running = false
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
@@ -59,8 +60,7 @@ final class Listener {
     }
 
     func stop() {
-        cancelCurrent()
-        completion = nil
+        abort()
         if running {
             engine.stop()
             engine.inputNode.removeTap(onBus: 0)
@@ -68,11 +68,28 @@ final class Listener {
         }
     }
 
-    /// Listens for one answer; `completion` gets the transcript, or nil if
-    /// nothing was heard. Ends after speech followed by a short silence, or at
-    /// the time limit (extended a little if the learner is mid-sentence).
-    func listen(expected: String, maxSeconds: Double, completion: @escaping (String?) -> Void) {
-        cancelCurrent()
+    /// Listens for one answer and returns the transcript, or nil if nothing was
+    /// heard (or the listen was aborted). Ends after speech followed by a short
+    /// silence, or at the time limit (extended a little if the learner is
+    /// mid-sentence). `onPartial` sees the transcript as it forms.
+    func listen(expected: String, maxSeconds: Double,
+                onPartial: ((String) -> Void)? = nil) async -> String? {
+        await withCheckedContinuation { (c: CheckedContinuation<String?, Never>) in
+            begin(expected: expected, maxSeconds: maxSeconds, onPartial: onPartial) {
+                c.resume(returning: $0)
+            }
+        }
+    }
+
+    /// Ends any listen in progress; its caller gets nil.
+    func abort() {
+        latest = nil
+        finish()
+    }
+
+    private func begin(expected: String, maxSeconds: Double, onPartial: ((String) -> Void)?,
+                       completion: @escaping (String?) -> Void) {
+        abort()
         guard let recognizer, recognizer.isAvailable, running else {
             completion(nil)
             return
@@ -91,6 +108,7 @@ final class Listener {
         startedAt = Date()
         self.maxSeconds = maxSeconds
         self.completion = completion
+        self.onPartial = onPartial
         box.set(req)
         task = recognizer.recognitionTask(with: req, resultHandler: Self.handler(for: self, gen: gen))
         ticker = Task { [weak self] in
@@ -124,6 +142,7 @@ final class Listener {
         if let text, !text.isEmpty, text != latest {
             latest = text
             lastChange = Date()
+            onPartial?(text)
         }
         if isFinal || failed { finish() }
     }
@@ -139,6 +158,7 @@ final class Listener {
     private func finish() {
         let done = completion
         completion = nil
+        onPartial = nil
         let heard = latest
         cancelCurrent()
         done?(heard)

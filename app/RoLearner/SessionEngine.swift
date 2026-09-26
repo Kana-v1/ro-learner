@@ -4,59 +4,87 @@ import SwiftUI
 
 /// Runs one listen-through of an episode.
 ///
-/// Voice mode: play until a cue has been spoken, pause, listen for the answer,
-/// grade it, play a short tone, then play the episode's own correct answer and
-/// carry on. At the end, drills that were missed or only close are asked again
-/// (the "second chance" round), replaying the cue from the episode audio.
+/// Voice mode: play until a cue has been spoken, pause, chime, listen, grade. A
+/// miss or a non-answer gets a second try straight away: a spoken "once more",
+/// the cue replayed from the episode, a second listen. Then the verdict is
+/// spoken and the episode's own answer plays. After the last drill, anything
+/// still wrong is asked again (the end-of-episode second chance).
+///
+/// Everything the learner needs is audible, so it works with the phone in a
+/// pocket. Headphone next/previous jump between drills.
 ///
 /// Tap mode (no microphone or no Romanian recognition): the episode plays
-/// straight through with its designed pauses; the learner marks misses with the
-/// on-screen button or the headphones' previous-track press.
+/// straight through with its designed pauses; misses are marked by hand.
 @MainActor
 final class SessionEngine: ObservableObject {
-    enum Phase { case idle, playing, listening, feedback, paused, finished }
+    enum Phase: Equatable { case idle, playing, paused, listening, secondTry, feedback, finished }
 
     @Published private(set) var phase: Phase = .idle
-    @Published private(set) var lastCue: String?
-    @Published private(set) var lastExpected: String?
+    @Published private(set) var position: Double = 0
+    @Published private(set) var current: Drill?
+    @Published private(set) var attempt = 1
+    @Published private(set) var liveHeard: String?
     @Published private(set) var lastHeard: String?
     @Published private(set) var lastVerdict: Verdict?
-    @Published private(set) var done = 0
-    @Published private(set) var correctCount = 0
-    @Published private(set) var inRetry = false
+    @Published private(set) var inRound = false
+    @Published private(set) var roundDone = 0
+    @Published private(set) var roundTotal = 0
     @Published private(set) var note: String?
     @Published private(set) var voiceMode: Bool
+    @Published private(set) var record: SessionRecord
 
     let pack: Pack
     let drills: [Drill]
+    let chapters: [Chapter]
+    var duration: Double { pack.header.duration }
     var total: Int { drills.count }
+    var rightFirstTime: Int { record.rightFirstTime }
+    var markedWrong: Int { record.mainItems.filter { $0.outcome == .missed }.count }
+    var fixedInRound: Int { record.items.filter { $0.round == 1 && $0.outcome == .correct }.count }
+    var currentChapter: Chapter? { chapters.last { $0.start <= position + 0.05 } }
+
+    var drillLabel: String {
+        if inRound { return "\(min(roundDone + 1, roundTotal))/\(roundTotal)" }
+        let k = current.flatMap(index(of:)) ?? max(next - 1, 0)
+        return "\(min(k + 1, total))/\(total)"
+    }
+
+    /// The most recent result for each drill that is still not right.
+    var stillToWorkOn: [DrillResult] {
+        var latest: [Int: DrillResult] = [:]
+        for it in record.items where it.outcome != .unmarked { latest[it.seg] = it }
+        return drills.compactMap { latest[$0.id] }.filter { $0.outcome != .correct }
+    }
 
     private let store: PackStore
     private let headsetMic: Bool
     private let listener = Listener()
     private let tones = Tones()
-    private let speech = AVSpeechSynthesizer()
+    private let voice = Announcer()
     private let player: AVPlayer
+    private let startAt: Double
     private var timeObserver: Any?
-    private var endObserver: NSObjectProtocol?
-    private var record: SessionRecord
+    private var observers: [NSObjectProtocol] = []
+    private var next = 0                       // main pass: the next cue to stop at
+    private var flow: Task<Void, Never>?       // the drill (or second-chance round) in progress
+    private var waiter: (time: Double, cont: CheckedContinuation<Bool, Never>)?
+    private var roundQueue: [Drill] = []
+    private var resumeDrill: Drill?            // paused mid-drill: its cue replays on resume
+    private var lastPersist = Date()
 
-    private var next = 0                  // main pass: the next cue to stop at
-    private var retryQueue: [Drill] = []
-    private var awaitingCue: Drill?       // retry: stop once this cue is spoken
-    private var stopAt: Double?           // retry: stop once the answer has played
-    private var busy = false              // listening or giving feedback
-
-    init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool) {
+    init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: SavedProgress?) {
         self.pack = pack
         self.store = store
         self.voiceMode = voiceMode
         self.headsetMic = headsetMic
         drills = pack.header.drills
+        chapters = pack.header.chapters
         player = AVPlayer(url: pack.audioURL)
-        record = SessionRecord(episode: pack.header.slug, title: pack.header.title,
-                               started: Date(), finished: nil,
-                               mode: voiceMode ? "voice" : "tap", items: [])
+        record = resume?.record ?? SessionRecord(episode: pack.header.slug, title: pack.header.title,
+                                                 started: Date(), finished: nil,
+                                                 mode: voiceMode ? "voice" : "tap", items: [])
+        startAt = resume?.position ?? 0
+        position = startAt
     }
 
     // MARK: lifecycle
@@ -66,7 +94,7 @@ final class SessionEngine: ObservableObject {
         if voiceMode {
             if await Listener.requestPermissions() == false {
                 voiceMode = false
-                note = "Microphone or speech recognition permission is off, so this is tap mode."
+                note = "Microphone or speech recognition is off, so this is tap mode."
             } else if !listener.isAvailable {
                 voiceMode = false
                 note = "Romanian speech recognition isn't available right now, so this is tap mode."
@@ -74,21 +102,42 @@ final class SessionEngine: ObservableObject {
         }
         configureAudio()
         if voiceMode && !listener.onDevice {
-            note = "Romanian recognition runs on Apple's servers here, so it needs mobile data."
+            note = "Romanian recognition runs on Apple's servers on this phone, so it needs mobile data."
         }
         record.mode = voiceMode ? "voice" : "tap"
 
         timeObserver = player.addPeriodicTimeObserver(
-            forInterval: CMTime(value: 1, timescale: 20), queue: .main
+            forInterval: CMTime(value: 1, timescale: 10), queue: .main
         ) { [weak self] time in
             MainActor.assumeIsolated { self?.tick(time.seconds) }
         }
-        endObserver = NotificationCenter.default.addObserver(
-            forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: .main
-        ) { [weak self] _ in
+        let nc = NotificationCenter.default
+        observers.append(nc.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
+                                        object: player.currentItem, queue: .main) { [weak self] _ in
             MainActor.assumeIsolated { self?.reachedEnd() }
-        }
+        })
+        // A phone call, or headphones unplugged: pause like any audio app.
+        observers.append(nc.addObserver(forName: AVAudioSession.interruptionNotification,
+                                        object: nil, queue: .main) { [weak self] n in
+            let type = n.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt
+            let began = type == AVAudioSession.InterruptionType.began.rawValue
+            MainActor.assumeIsolated { if began { self?.pauseIfRunning() } }
+        })
+        observers.append(nc.addObserver(forName: AVAudioSession.routeChangeNotification,
+                                        object: nil, queue: .main) { [weak self] n in
+            let reason = n.userInfo?[AVAudioSessionRouteChangeReasonKey] as? UInt
+            let lost = reason == AVAudioSession.RouteChangeReason.oldDeviceUnavailable.rawValue
+            MainActor.assumeIsolated { if lost { self?.pauseIfRunning() } }
+        })
         setupRemoteCommands()
+
+        next = firstDrill(endingAfter: startAt)
+        if startAt > 0 { await seekTo(startAt) }
+        if startAt >= duration - 0.5 {
+            phase = .playing
+            beginRound()
+            return
+        }
         phase = .playing
         player.play()
         updateNowPlaying()
@@ -117,197 +166,432 @@ final class SessionEngine: ObservableObject {
         }
     }
 
-    func stop() {
+    /// Leaving the player: remember where we were, release audio and controls.
+    func close() {
+        persist()
+        cancelFlow()
         player.pause()
         if let o = timeObserver { player.removeTimeObserver(o); timeObserver = nil }
-        if let o = endObserver { NotificationCenter.default.removeObserver(o); endObserver = nil }
+        observers.forEach { NotificationCenter.default.removeObserver($0) }
+        observers = []
         listener.stop()
-        speech.stopSpeaking(at: .immediate)
+        voice.stop()
         let c = MPRemoteCommandCenter.shared()
         for cmd in [c.playCommand, c.pauseCommand, c.togglePlayPauseCommand,
-                    c.nextTrackCommand, c.previousTrackCommand] {
+                    c.nextTrackCommand, c.previousTrackCommand, c.changePlaybackPositionCommand] {
             cmd.removeTarget(nil)
         }
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
-        if !record.items.isEmpty { store.save(record) }
-        store.reload()
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
     }
 
+    /// Save a resume point (and the results so far). Called after every answer,
+    /// on pause, every few seconds while playing, and when the app goes away.
+    func persist() {
+        lastPersist = Date()
+        guard phase != .idle, phase != .finished else { return }
+        guard position > 5 || !record.items.isEmpty else { return }
+        var point = position
+        if let d = current, flow != nil || (phase == .paused && resumeDrill != nil) {
+            point = d.promptStart      // an interrupted drill is asked again from its cue
+        }
+        if inRound { point = duration }
+        store.saveProgress(SavedProgress(record: record, position: point, savedAt: Date()))
+        if !record.items.isEmpty { store.save(record) }
+    }
+
+    // MARK: controls
+
     func togglePause() {
         switch phase {
-        case .playing: player.pause(); phase = .paused
-        case .paused: player.play(); phase = .playing
-        default: break
+        case .playing:
+            player.pause()
+            phase = .paused
+        case .listening, .secondTry, .feedback:
+            resumeDrill = current
+            cancelFlow()
+            player.pause()
+            phase = .paused
+        case .paused:
+            resumeFromPause()
+        default:
+            return
         }
+        persist()
         updateNowPlaying()
     }
 
-    /// Correct the automatic verdict on the most recent drill — the recogniser
-    /// will sometimes mishear a right answer, or accept a wrong one.
-    func override(_ v: Verdict) {
-        guard let i = record.items.indices.last else { return }
-        let old = record.items[i].verdict
-        guard old != v else { return }
-        record.items[i].verdict = v
-        record.items[i].overridden = true
-        if !record.items[i].retry {
-            if old == .correct { correctCount -= 1 }
-            if v == .correct { correctCount += 1 }
+    private func pauseIfRunning() {
+        if phase == .playing || phase == .listening || phase == .secondTry || phase == .feedback {
+            togglePause()
         }
-        lastVerdict = v
-        tones.play(v)
-        store.save(record)
     }
 
-    // MARK: the drill loop
-
-    private func tick(_ t: Double) {
-        guard phase == .playing, !busy else { return }
-        if inRetry {
-            if let d = awaitingCue, t >= d.promptEnd - 0.03 {
-                awaitingCue = nil
-                cue(d)
-            } else if let s = stopAt, t >= s {
-                stopAt = nil
-                player.pause()
-                nextRetry()
-            }
+    private func resumeFromPause() {
+        if inRound {
+            resumeDrill = nil
+            startRound()
             return
         }
-        guard next < drills.count else { return }
-        let d = drills[next]
-        if t >= d.promptEnd - 0.03 {
-            next += 1
-            cue(d)
-        }
-    }
-
-    private func cue(_ d: Drill) {
-        lastCue = d.cue
-        lastExpected = d.expected
-        guard voiceMode else {
-            append(d, heard: nil, score: 0, verdict: .unmarked)
-            lastHeard = nil
-            lastVerdict = nil
-            if inRetry { stopAt = d.answerEnd + 0.4 }
+        guard let d = resumeDrill else {
+            phase = .playing
+            player.play()
             return
         }
-        busy = true
-        player.pause()
-        phase = .listening
-        lastHeard = nil
-        lastVerdict = nil
-        updateNowPlaying()
-        listener.listen(expected: d.expected, maxSeconds: max(d.thinkSeconds + 1.5, 4)) { [weak self] heard in
-            self?.grade(d, heard: heard)
-        }
-    }
-
-    private func grade(_ d: Drill, heard: String?) {
-        let score = heard.map { Grader.score(expected: d.expected, heard: $0) } ?? 0
-        let verdict = Grader.verdict(score: score, heard: heard)
-        append(d, heard: heard, score: score, verdict: verdict)
-        lastHeard = heard
-        lastVerdict = verdict
-        phase = .feedback
-        tones.play(verdict)
-        Task { @MainActor [weak self] in
-            try? await Task.sleep(nanoseconds: 450_000_000)
-            await self?.playAnswer(d)
-        }
-    }
-
-    private func playAnswer(_ d: Drill) async {
-        guard phase == .feedback else { return }
-        _ = await player.seek(to: CMTime(seconds: d.answerStart, preferredTimescale: 600),
-                              toleranceBefore: .zero, toleranceAfter: .zero)
-        if inRetry { stopAt = d.answerEnd + 0.4 }
-        busy = false
-        phase = .playing
-        player.play()
-        updateNowPlaying()
-    }
-
-    private func append(_ d: Drill, heard: String?, score: Double, verdict: Verdict) {
-        record.items.append(DrillResult(seg: d.id, cue: d.cue, expected: d.expected,
-                                        heard: heard, score: score, verdict: verdict,
-                                        overridden: false, retry: inRetry, chapter: d.chapter))
-        if !inRetry {
-            done += 1
-            if verdict == .correct { correctCount += 1 }
-        }
-        store.save(record)
-    }
-
-    // MARK: second chance
-
-    private func reachedEnd() {
-        if inRetry {
-            if !busy && phase == .playing {
-                stopAt = nil
-                nextRetry()
-            }
-            return
-        }
-        beginRetry()
-    }
-
-    private func beginRetry() {
-        var latest: [Int: Verdict] = [:]
-        for it in record.items where !it.retry { latest[it.seg] = it.verdict }
-        retryQueue = drills.filter { d in
-            guard let v = latest[d.id] else { return false }
-            return v == .missed || v == .noAnswer || v == .close
-        }
-        guard !retryQueue.isEmpty else { finish(); return }
-        inRetry = true
-        player.pause()
-        say("Second chance. \(retryQueue.count) to try again.")
-        Task { @MainActor [weak self] in
-            try? await Task.sleep(nanoseconds: 3_000_000_000)
-            self?.nextRetry()
-        }
-    }
-
-    private func nextRetry() {
-        guard !retryQueue.isEmpty else { finish(); return }
-        let d = retryQueue.removeFirst()
-        awaitingCue = d
-        Task { @MainActor [weak self] in
+        resumeDrill = nil
+        if let k = index(of: d) { next = k }
+        Task { [weak self] in
             guard let self else { return }
-            _ = await self.player.seek(to: CMTime(seconds: d.promptStart, preferredTimescale: 600),
-                                       toleranceBefore: .zero, toleranceAfter: .zero)
+            await self.seekTo(d.promptStart)
             self.phase = .playing
             self.player.play()
             self.updateNowPlaying()
         }
     }
 
+    func nextDrill() {
+        guard phase != .finished, phase != .idle else { return }
+        if inRound {
+            roundDone = min(roundDone + 1, roundTotal)
+            startRound()
+            return
+        }
+        let k: Int
+        if flow != nil, let c = current, let i = index(of: c) { k = i + 1 }
+        else { k = drills.firstIndex { $0.promptStart > position + 0.3 } ?? drills.count }
+        goToDrill(k)
+    }
+
+    func previousDrill() {
+        guard phase != .finished, phase != .idle else { return }
+        if inRound {
+            roundDone = max(roundDone - 1, 0)
+            startRound()
+            return
+        }
+        let k: Int
+        if flow != nil, let c = current, let i = index(of: c) { k = i - 1 }
+        else { k = drills.lastIndex { $0.promptEnd <= position + 0.05 } ?? 0 }
+        goToDrill(max(k, 0))
+    }
+
+    private func goToDrill(_ k: Int) {
+        guard k < drills.count else {
+            seek(to: max(duration - 0.3, 0))
+            return
+        }
+        cancelFlow()
+        resumeDrill = nil
+        let d = drills[k]
+        next = k
+        current = d
+        lastVerdict = nil
+        lastHeard = nil
+        let wasPaused = phase == .paused
+        Task { [weak self] in
+            guard let self else { return }
+            await self.seekTo(d.promptStart)
+            if wasPaused { self.phase = .paused } else { self.phase = .playing; self.player.play() }
+            self.updateNowPlaying()
+        }
+    }
+
+    /// Scrubbing, ±10 s and chapter jumps. Not during the second-chance round,
+    /// which plays its own short pieces of the episode.
+    func seek(to t: Double) {
+        guard !inRound, phase != .finished, phase != .idle else { return }
+        cancelFlow()
+        resumeDrill = nil
+        lastVerdict = nil
+        lastHeard = nil
+        let target = max(0, min(t, duration - 0.1))
+        next = firstDrill(endingAfter: target)
+        let wasPaused = phase == .paused
+        Task { [weak self] in
+            guard let self else { return }
+            await self.seekTo(target)
+            if wasPaused { self.phase = .paused } else { self.phase = .playing; self.player.play() }
+            self.updateNowPlaying()
+        }
+    }
+
+    func skip(_ seconds: Double) { seek(to: position + seconds) }
+    func jump(to chapter: Chapter) { seek(to: chapter.start) }
+
+    /// Correct the automatic verdict — the recogniser sometimes mishears a
+    /// right answer, or accepts a wrong one. In tap mode this is how misses are
+    /// marked at all.
+    func correct(_ v: Verdict) {
+        guard !record.items.isEmpty else { return }
+        var i = record.items.count - 1
+        // While the current drill has no answer yet, the button means the last one.
+        if record.items[i].attempts.isEmpty && voiceMode && flow != nil && i > 0 { i -= 1 }
+        record.items[i].correction = v
+        lastVerdict = v
+        tones.play(Cue(v))
+        persist()
+        if v == .correct, phase == .secondTry || (phase == .listening && attempt == 2) {
+            skipRetry()
+        }
+    }
+
+    /// Go straight to the answer instead of trying a second time.
+    func skipRetry() {
+        guard let d = current, phase == .secondTry || (phase == .listening && attempt == 2) else { return }
+        let round = inRound
+        cancelFlow()
+        if round {
+            roundDone += 1
+            startRound()
+            return
+        }
+        lastVerdict = record.items.last?.outcome
+        Task { [weak self] in
+            guard let self else { return }
+            await self.seekTo(d.answerStart)
+            self.phase = .playing
+            self.player.play()
+            self.updateNowPlaying()
+        }
+    }
+
+    // MARK: the drill loop
+
+    private func tick(_ t: Double) {
+        guard t.isFinite else { return }
+        position = t
+        if let w = waiter, player.rate > 0, t >= w.time - 0.02 {
+            waiter = nil
+            player.pause()
+            w.cont.resume(returning: true)
+            return
+        }
+        guard phase == .playing, flow == nil, !inRound else { return }
+        if Date().timeIntervalSince(lastPersist) > 10 { persist() }
+        guard next < drills.count else { return }
+        let d = drills[next]
+        if t >= d.promptEnd - 0.03 {
+            next += 1
+            startDrill(d)
+        }
+    }
+
+    private func startDrill(_ d: Drill) {
+        current = d
+        guard voiceMode else {
+            record.items.append(DrillResult(seg: d.id, cue: d.cue, expected: d.expected, attempts: [],
+                                            correction: nil, round: 0, chapter: d.chapter))
+            lastVerdict = nil
+            lastHeard = nil
+            persist()
+            return
+        }
+        player.pause()
+        flow = Task { [weak self] in
+            guard let self else { return }
+            await self.drillFlow(d, round: 0)
+            if !Task.isCancelled { self.flow = nil }
+        }
+    }
+
+    /// Ask one drill: up to two listens, the verdict, then the right answer.
+    private func drillFlow(_ d: Drill, round: Int) async {
+        current = d
+        attempt = 1
+        liveHeard = nil
+        lastHeard = nil
+        lastVerdict = nil
+        record.items.append(DrillResult(seg: d.id, cue: d.cue, expected: d.expected, attempts: [],
+                                        correction: nil, round: round, chapter: d.chapter))
+        let idx = record.items.count - 1
+        updateNowPlaying()
+
+        for n in 1...2 {
+            attempt = n
+            if n == 2 {
+                phase = .secondTry
+                try? await Task.sleep(nanoseconds: 250_000_000)
+                await voice.say(lastVerdict == .noAnswer ? "I didn't catch that. Once more." : "Not quite. Once more.")
+                if Task.isCancelled { return }
+                guard await playSpan(from: d.promptStart, to: d.promptEnd) else { return }
+                if Task.isCancelled { return }
+            }
+            phase = .listening
+            liveHeard = nil
+            tones.play(.yourTurn)
+            try? await Task.sleep(nanoseconds: 400_000_000)
+            if Task.isCancelled { return }
+            let heard = await listener.listen(expected: d.expected, maxSeconds: max(d.thinkSeconds + 1.5, 4)) {
+                [weak self] partial in self?.liveHeard = partial
+            }
+            if Task.isCancelled { return }
+            let score = heard.map { Grader.score(expected: d.expected, heard: $0) } ?? 0
+            let v = Grader.verdict(score: score, heard: heard)
+            record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v))
+            lastHeard = heard
+            lastVerdict = v
+            persist()
+            if v == .correct || record.items[idx].correction != nil { break }
+            if n == 1 { tones.play(Cue(v)) }
+        }
+
+        let outcome = record.items[idx].outcome
+        lastVerdict = outcome
+        phase = .feedback
+        tones.play(Cue(outcome))
+        try? await Task.sleep(nanoseconds: 250_000_000)
+        await voice.say(spoken(outcome))
+        if Task.isCancelled { return }
+
+        if round == 0 {
+            await seekTo(d.answerStart)
+            if Task.isCancelled { return }
+            phase = .playing
+            player.play()
+            updateNowPlaying()
+        } else {
+            _ = await playSpan(from: d.answerStart, to: min(d.answerEnd + 0.3, duration))
+        }
+    }
+
+    private func spoken(_ v: Verdict) -> String {
+        switch v {
+        case .correct: return "Right."
+        case .close: return "Almost."
+        case .missed: return "Not quite."
+        case .noAnswer: return "Didn't catch that."
+        case .unmarked: return ""
+        }
+    }
+
+    // MARK: the second-chance round
+
+    private func reachedEnd() {
+        if let w = waiter {
+            waiter = nil
+            w.cont.resume(returning: true)
+            return
+        }
+        guard !inRound, phase == .playing else { return }
+        beginRound()
+    }
+
+    private func beginRound() {
+        cancelFlow()
+        player.pause()
+        guard voiceMode else { finish(); return }
+        var latest: [Int: Verdict] = [:]
+        for it in record.items where it.round == 0 { latest[it.seg] = it.outcome }
+        roundQueue = drills.filter { d in
+            guard let v = latest[d.id] else { return false }
+            return v != .correct && v != .unmarked
+        }
+        guard !roundQueue.isEmpty else { finish(); return }
+        inRound = true
+        roundTotal = roundQueue.count
+        roundDone = 0
+        startRound(announce: true)
+    }
+
+    private func startRound(announce: Bool = false) {
+        cancelFlow()
+        flow = Task { [weak self] in
+            guard let self else { return }
+            if announce {
+                let n = self.roundTotal
+                await self.voice.say("Second chance. \(n) to try again.")
+                if Task.isCancelled { return }
+            }
+            while self.roundDone < self.roundQueue.count {
+                let d = self.roundQueue[self.roundDone]
+                self.current = d
+                self.lastVerdict = nil
+                self.phase = .playing
+                guard await self.playSpan(from: d.promptStart, to: d.promptEnd) else { return }
+                if Task.isCancelled { return }
+                await self.drillFlow(d, round: 1)
+                if Task.isCancelled { return }
+                self.roundDone += 1
+                self.persist()
+            }
+            self.flow = nil
+            self.finish()
+        }
+    }
+
     private func finish() {
         guard phase != .finished else { return }
+        cancelFlow()
         player.pause()
+        inRound = false
         phase = .finished
+        current = nil
         record.finished = Date()
         store.save(record)
+        store.clearProgress(pack.header.slug)
         listener.stop()
-        if voiceMode {
-            say("Done. \(correctCount) of \(total) right first time.")
-        }
         updateNowPlaying()
+        let summary = voiceMode
+            ? "Episode done. \(rightFirstTime) of \(total) right first time."
+            : "Episode done."
+        Task { [weak self] in
+            guard let self else { return }
+            await self.voice.say(summary)
+            await self.store.sync()      // results go to the linked Drive folder, if any
+        }
     }
 
-    // MARK: system integration
+    // MARK: helpers
 
-    /// English only: the course never has an English voice speak Romanian.
-    private func say(_ text: String) {
-        let u = AVSpeechUtterance(string: text)
-        u.voice = AVSpeechSynthesisVoice(language: "en-US")
-        speech.speak(u)
+    private func cancelFlow() {
+        flow?.cancel()
+        flow = nil
+        if let w = waiter {
+            waiter = nil
+            w.cont.resume(returning: false)
+        }
+        listener.abort()
+        voice.stop()
+        // A drill that was interrupted before any answer is not a result.
+        if voiceMode, let last = record.items.last, last.attempts.isEmpty, last.correction == nil {
+            record.items.removeLast()
+        }
+        liveHeard = nil
     }
 
-    /// Headphone and lock-screen buttons: play/pause as usual; "next track"
-    /// says the last answer was right, "previous track" says it was wrong.
+    /// Play a stretch of the episode and wait until it has played (true) or the
+    /// flow was interrupted (false).
+    private func playSpan(from start: Double, to end: Double) async -> Bool {
+        await seekTo(start)
+        if Task.isCancelled { return false }
+        if let w = waiter {
+            waiter = nil
+            w.cont.resume(returning: false)
+        }
+        player.play()
+        updateNowPlaying()
+        return await withCheckedContinuation { (c: CheckedContinuation<Bool, Never>) in
+            waiter = (end, c)
+        }
+    }
+
+    private func seekTo(_ t: Double) async {
+        let target = max(0, min(t, duration))
+        _ = await player.seek(to: CMTime(seconds: target, preferredTimescale: 600),
+                              toleranceBefore: .zero, toleranceAfter: .zero)
+        position = target
+    }
+
+    private func index(of d: Drill) -> Int? { drills.firstIndex { $0.id == d.id } }
+
+    private func firstDrill(endingAfter t: Double) -> Int {
+        drills.firstIndex { $0.promptEnd > t + 0.05 } ?? drills.count
+    }
+
+    // MARK: lock screen and headphones
+
+    /// Headphone double-press = next drill, triple-press = previous drill; the
+    /// lock screen gets the same, plus a scrubber.
     private func setupRemoteCommands() {
         let c = MPRemoteCommandCenter.shared()
         c.togglePlayPauseCommand.addTarget { [weak self] _ in
@@ -319,68 +603,33 @@ final class SessionEngine: ObservableObject {
             return .success
         }
         c.pauseCommand.addTarget { [weak self] _ in
-            Task { @MainActor in if self?.phase == .playing { self?.togglePause() } }
+            Task { @MainActor in self?.pauseIfRunning() }
             return .success
         }
         c.nextTrackCommand.addTarget { [weak self] _ in
-            Task { @MainActor in self?.override(.correct) }
+            Task { @MainActor in self?.nextDrill() }
             return .success
         }
         c.previousTrackCommand.addTarget { [weak self] _ in
-            Task { @MainActor in self?.override(.missed) }
+            Task { @MainActor in self?.previousDrill() }
+            return .success
+        }
+        c.changePlaybackPositionCommand.addTarget { [weak self] event in
+            let t = (event as? MPChangePlaybackPositionCommandEvent)?.positionTime
+            Task { @MainActor in if let t { self?.seek(to: t) } }
             return .success
         }
     }
 
     private func updateNowPlaying() {
-        let info: [String: Any] = [
+        var info: [String: Any] = [
             MPMediaItemPropertyTitle: pack.header.title,
-            MPMediaItemPropertyArtist: inRetry ? "Second chance" : "Romanian · \(done)/\(total)",
-            MPMediaItemPropertyPlaybackDuration: pack.header.duration,
-            MPNowPlayingInfoPropertyElapsedPlaybackTime: player.currentTime().seconds,
+            MPMediaItemPropertyArtist: "Vorbește · \(drillLabel)",
+            MPMediaItemPropertyPlaybackDuration: duration,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: position,
             MPNowPlayingInfoPropertyPlaybackRate: phase == .playing ? 1.0 : 0.0,
         ]
+        if let c = currentChapter { info[MPMediaItemPropertyAlbumTitle] = c.name }
         MPNowPlayingInfoCenter.default().nowPlayingInfo = info
-    }
-}
-
-/// Short feedback tones, synthesised once at start-up so nothing needs bundling.
-final class Tones {
-    private var players: [Verdict: AVAudioPlayer] = [:]
-
-    init() {
-        players[.correct] = Self.make([880, 1320])
-        players[.close] = Self.make([660, 660])
-        players[.missed] = Self.make([330, 247])
-        players[.noAnswer] = Self.make([247])
-    }
-
-    func play(_ v: Verdict) {
-        guard let p = players[v] else { return }
-        p.currentTime = 0
-        p.play()
-    }
-
-    private static func make(_ freqs: [Double]) -> AVAudioPlayer? {
-        let rate = 44100.0
-        let noteLength = 0.12
-        var samples: [Int16] = []
-        for f in freqs {
-            let n = Int(rate * noteLength)
-            for i in 0..<n {
-                let envelope = min(1.0, Double(i) / 400.0, Double(n - i) / 400.0)
-                samples.append(Int16(sin(2 * .pi * f * Double(i) / rate) * envelope * 12000))
-            }
-        }
-        var d = Data()
-        func u32(_ v: UInt32) { withUnsafeBytes(of: v.littleEndian) { d.append(contentsOf: $0) } }
-        func u16(_ v: UInt16) { withUnsafeBytes(of: v.littleEndian) { d.append(contentsOf: $0) } }
-        let dataBytes = UInt32(samples.count * 2)
-        d.append(contentsOf: Array("RIFF".utf8)); u32(36 + dataBytes)
-        d.append(contentsOf: Array("WAVE".utf8))
-        d.append(contentsOf: Array("fmt ".utf8)); u32(16); u16(1); u16(1); u32(44100); u32(88200); u16(2); u16(16)
-        d.append(contentsOf: Array("data".utf8)); u32(dataBytes)
-        samples.withUnsafeBytes { d.append(contentsOf: $0) }
-        return try? AVAudioPlayer(data: d)
     }
 }

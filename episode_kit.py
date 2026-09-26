@@ -185,13 +185,16 @@ class Episode:
         for cue, ans, v in items:
             self.drill(cue, ans, v)
 
-    def review_auto(self, cap=7, intro=None):
+    def review_auto(self, cap=7, intro=None, struggle_cap=4):
         """Spaced retrieval, scheduled from state.json rather than hand-picked.
 
-        Pulls every item that comes due this episode (introduced +1, +3, +7 or
-        +16 episodes back, per the intervals), oldest gap first, capped. This is
-        the engine that turns a heard word into a recallable one: each new item
-        keeps coming back on an expanding schedule across later episodes.
+        First the learner's own misses: drills the Vorbește app recorded as
+        still wrong (state.json "struggles", written by ingest_results.py), most
+        missed first, up to `struggle_cap`. Then every item that comes due this
+        episode (introduced +1, +3, +7 or +16 episodes back, per the intervals),
+        oldest gap first, filling the block up to `cap` in total. The schedule
+        turns a heard word into a recallable one; the struggles make the course
+        answer to what the learner actually got wrong.
         """
         state = load_state()
         seq, intervals = state["sequence"], state["_meta"]["intervals"]
@@ -199,15 +202,22 @@ class Episode:
             print(f"  note: {self.slug} not in sequence; no scheduled review")
             return
         ci = seq.index(self.slug)
+        # Only misses from episodes played before this one: an episode cannot
+        # review drills the learner has not met yet.
+        struggles = [s for s in state.get("struggles", {}).values()
+                     if s["intro"] in seq and seq.index(s["intro"]) < ci][:struggle_cap]
+        taken = {s["answer"] for s in struggles}
         due = []
         for it in state["items"].values():
-            if it["intro"] not in seq:
+            if it["intro"] not in seq or it["answer"] in taken:
                 continue
             gap = ci - seq.index(it["intro"])
             if gap in intervals:
                 due.append((gap, it))
         due.sort(key=lambda gi: -gi[0])          # oldest gap surfaces first
-        due = [it for _, it in due][:cap]
+        due = struggles + [it for _, it in due][:max(cap - len(struggles), 0)]
+        if struggles:
+            print(f"  review: {len(struggles)} of your recent misses first")
         if not due:
             return
         self.narr(intro or "Before we finish, things from earlier episodes come "

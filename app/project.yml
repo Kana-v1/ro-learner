@@ -10,8 +10,8 @@ settings:
     # Swift 5 language mode: Swift 6 strict-concurrency errors would each cost
     # a full CI round-trip to discover, with no local compiler to catch them.
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "0.1"
-    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "0.2"
+    CURRENT_PROJECT_VERSION: "2"
 targets:
   RoLearner:
     type: application
@@ -20,16 +20,19 @@ targets:
     scheme: {}
     settings:
       base:
+        # kept from the MVP so an install updates in place and keeps episodes and results
         PRODUCT_BUNDLE_IDENTIFIER: io.github.kanav1.rolearner
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1"
     info:
       path: RoLearner/Info.plist
       properties:
-        CFBundleDisplayName: Română
+        CFBundleDisplayName: Vorbește
         CFBundlePackageType: APPL
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UILaunchScreen: {}
+        UIUserInterfaceStyle: Dark
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         # keep playing and listening with the screen locked
         UIBackgroundModes: [audio]

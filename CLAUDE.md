@@ -19,6 +19,9 @@ make_feed.py           out/*.mp3  ->  out/feed.xml
 list_voices.py         which Azure voices speak Romanian
 sample_voices.py       A/B a phrase across voices before committing
 make_review_sheet.py   data/spoken.json -> markdown for a native speaker
+make_lesson_pack.py    episodes + cached clips -> packs/*.rolesson for the app
+ingest_results.py      app results -> state.json "struggles" + a note back to the app
+app/                   Vorbește, the iOS drill player (Swift, built on GitHub Actions)
 
 data/       book_fixed.txt, lessons.json, glossary.json, spoken.json
 episodes/   generated scripts
@@ -156,6 +159,49 @@ schedule and append their own items — build episodes in `sequence` order so an
 item is registered before the episode that reviews it. Prior episodes 1–4 were
 seeded from their own validated drill answers. The old hand-picked `ep.review([
 …])` still exists for one-offs but new episodes use `review_auto()`.
+
+## The Vorbește app and the results loop
+
+`app/` is an iOS app that plays an episode, stops as each drill cue ends,
+listens (Apple's on-device Romanian recognition), grades the words
+(`Grader.swift`: diacritics folded, dropped pronouns allowed, `e` = `este`),
+gives an immediate second try, speaks the verdict, then plays the episode's own
+answer. Misses come back once more at the end. It works from a pocket: a
+chime for "your turn", spoken verdicts, headphone next/previous = next/previous
+drill. It resumes where it stopped.
+
+- **Episodes for the app** are `.rolesson` files from `make_lesson_pack.py`
+  (sample-exact audio + the prompt/answer marks from the episode JSON). Pack
+  after rendering: `python3 make_lesson_pack.py episodes/episode_06c.json`.
+- **Drive folder.** The app links one folder (normally Google Drive via the
+  Files app) with `lessons/` (episodes in), `results/` (one JSON per finished
+  session out) and `notes/` (Claude's notes in). With Google Drive for desktop
+  in "Mirror files" mode, set `VORBESTE_DRIVE` to that folder as seen from WSL
+  (e.g. `/mnt/c/Users/<you>/My Drive/Vorbește`) and the pack script writes
+  straight into `lessons/`. Episode audio is too big for the Drive connector.
+- **When the user says "Read my Romanian results from Google Drive":** run
+  `python3 ingest_results.py` (reads `$VORBESTE_DRIVE/results`; without the
+  mirror, fetch the small JSON files with the Google Drive connector into a
+  folder and pass `--results-dir`). It archives sessions under `data/results/`
+  (gitignored: transcripts of the user's speech), writes the drills still wrong
+  into `state.json` `struggles`, and prints a summary. Analyse it — patterns
+  (endings, agreement, a word that never sticks) matter more than single misses
+  — then send a short plain-English report back with
+  `python3 ingest_results.py --note "…"`; it lands in `notes/` (or `packs/`
+  without the mirror) and the app shows it and marks those sessions analysed.
+- **`review_auto()` puts struggles first** (up to 4, most missed first, only
+  from episodes before the one being built), then the +1/+3/+7/+16 schedule.
+  So building the next episodes after an ingest is what adapts the course.
+- **Building the app:** pushing changes under `app/` triggers
+  `.github/workflows/ios.yml` on a GitHub macOS runner; the unsigned `.ipa` is
+  the `RoLearner-ipa` artifact (`gh run download`). The user installs it with
+  Sideloadly (free Apple ID, refresh every 7 days). No Mac here, so the CI build
+  is the compiler: read its log with `gh run view --log-failed`. The bundle id
+  stays `io.github.kanav1.rolearner` so installs update in place. Swift 5
+  language mode on purpose.
+- **Repo is public** (Kana-v1/ro-learner). The book's raw files, rendered audio,
+  packs and results are gitignored; the builders do quote the book. Push only
+  when the user says so.
 
 ## Constraints
 

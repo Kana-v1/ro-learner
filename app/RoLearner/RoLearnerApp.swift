@@ -7,13 +7,18 @@ struct RoLearnerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LibraryView().environmentObject(store)
+            HomeView()
+                .environmentObject(store)
+                .preferredColorScheme(.dark)
+                .tint(Theme.accent)
         }
         .onChange(of: scenePhase) { _, phase in
-            // Pick up lessons dropped into the app's folder via the Files app.
+            // Coming back to the app is when new lessons and notes get picked up,
+            // from the Files-app folder and from the linked Drive folder.
             if phase == .active {
                 store.importDropped()
                 store.reload()
+                Task { await store.sync() }
             }
         }
     }

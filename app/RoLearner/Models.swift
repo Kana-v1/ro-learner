@@ -23,9 +23,10 @@ struct PackHeader: Codable {
     let segments: [PackSegment]
 }
 
-/// A drill is an English cue immediately followed by its Romanian answer.
-/// The player stops at `promptEnd`, listens, then plays from `answerStart`.
-struct Drill: Identifiable {
+/// A drill is an English cue immediately followed by its Romanian answer. The
+/// stops come from the episode script (every ep.drill() in the builders), not
+/// from listening to the audio.
+struct Drill: Identifiable, Equatable {
     let id: Int               // index of the cue segment
     let cue: String
     let expected: String
@@ -35,6 +36,13 @@ struct Drill: Identifiable {
     let answerEnd: Double
     let thinkSeconds: Double  // the pause the episode was designed with
     let chapter: String?
+}
+
+struct Chapter: Identifiable {
+    let id: Int
+    let name: String
+    let start: Double
+    let drillCount: Int
 }
 
 extension PackHeader {
@@ -54,6 +62,16 @@ extension PackHeader {
         }
         return out
     }
+
+    var chapters: [Chapter] {
+        let marks = segments.compactMap { s in s.chapter.map { (name: $0, start: s.start) } }
+        let ds = drills
+        return marks.enumerated().map { k, m in
+            let end = k + 1 < marks.count ? marks[k + 1].start : .infinity
+            let count = ds.filter { $0.promptStart >= m.start && $0.promptStart < end }.count
+            return Chapter(id: k, name: m.name, start: m.start, drillCount: count)
+        }
+    }
 }
 
 enum Verdict: String, Codable, Hashable {
@@ -62,21 +80,31 @@ enum Verdict: String, Codable, Hashable {
     case unmarked             // tap mode: nobody said it was wrong
 }
 
-struct DrillResult: Codable, Identifiable {
-    var id: String { "\(seg)-\(retry)" }
-    let seg: Int
-    let cue: String
-    let expected: String
+struct Attempt: Codable {
     var heard: String?
     var score: Double
     var verdict: Verdict
-    var overridden: Bool      // the learner corrected the automatic verdict
-    let retry: Bool           // asked again in the "second chance" round
+}
+
+/// One drill as the learner met it: up to two spoken attempts, and an optional
+/// correction when the recogniser misjudged.
+struct DrillResult: Codable, Identifiable {
+    var id: String { "\(seg)-\(round)" }
+    let seg: Int
+    let cue: String
+    let expected: String
+    var attempts: [Attempt]
+    var correction: Verdict?
+    let round: Int            // 0 = in the episode, 1 = the end-of-episode second chance
     let chapter: String?
+
+    var outcome: Verdict { correction ?? attempts.last?.verdict ?? .unmarked }
+    var heard: String? { attempts.last?.heard }
+    var rightFirstTime: Bool { attempts.count <= 1 && outcome == .correct }
 }
 
 /// One listen-through of one episode. Saved after every drill so a session cut
-/// short still counts; exported to Google Drive for the course to adapt to.
+/// short still counts; exported to Google Drive for Claude to read.
 struct SessionRecord: Codable {
     let episode: String
     let title: String
@@ -84,4 +112,34 @@ struct SessionRecord: Codable {
     var finished: Date?
     var mode: String          // "voice" or "tap"
     var items: [DrillResult]
+
+    /// Stable id shared with ingest_results.py: episode + start time in whole
+    /// seconds (the precision the ISO-8601 results file keeps).
+    var key: String { "\(episode)_\(Int(started.timeIntervalSince1970))" }
+    var mainItems: [DrillResult] { items.filter { $0.round == 0 } }
+    var rightFirstTime: Int { mainItems.filter(\.rightFirstTime).count }
+}
+
+/// Where an unfinished episode stopped, so it can pick up there.
+struct SavedProgress: Codable {
+    var record: SessionRecord
+    var position: Double
+    var savedAt: Date
+}
+
+/// Written by Claude after reading a batch of results (ingest_results.py
+/// --note); imported like a lesson file. Marks those sessions analysed and
+/// carries a short written report.
+struct AnalysisNote: Codable {
+    let format: Int
+    let created: Date
+    let analyzed: [String]
+    let report: String?
+}
+
+/// Each session's way to Claude. Kept on the phone.
+struct AnalysisStatus: Codable {
+    var sent: [String: Date] = [:]        // session key -> when it was uploaded
+    var analyzed: Set<String> = []
+    var pulled: [String: Date] = [:]      // Drive file ("lessons/x.rolesson") -> version imported
 }
