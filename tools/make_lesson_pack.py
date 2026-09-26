@@ -65,7 +65,8 @@ def build(ep_path: Path) -> Path:
         segs.append({"i": i, "type": s["type"], "lang": s["lang"], "text": s["text"],
                      "start": round(start, 3), "end": round(end, 3),
                      "pause": s["pause_after_ms"], "voice": s["voice"],
-                     "chapter": s.get("chapter")})
+                     "chapter": s.get("chapter"),
+                     **{k: s[k] for k in ("accept", "almost") if s.get(k)}})
 
     mp3 = subprocess.run(
         ["ffmpeg", "-v", "error", "-f", "s16le", "-ar", str(RATE), "-ac", "1", "-i", "-",

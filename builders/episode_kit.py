@@ -136,15 +136,26 @@ class Episode:
             self.narr(setup_en, pause=P_SHORT)
         self.ro(romanian, voice, NORMAL, pause)
 
-    def drill(self, cue, romanian, voice="m", pause=None):
+    def drill(self, cue, romanian, voice="m", pause=None, accept=None, almost=None):
         """Retrieval: cue, silence to produce, correct answer, silence to repeat.
 
         The production pause defaults to recall_pause(romanian) — proportional
         to the answer — unless an explicit pause is passed.
+
+        accept: other phrasings that are fully right (a different word order,
+        a synonym the chapter teaches). almost: phrasings a listener would
+        understand but that the lesson should correct. Neither is spoken; they
+        ride on the answer segment into the app's grader. Missing articles,
+        dropped subject pronouns, e/este and diacritics are handled by the
+        grader's own rules, so list only what those rules can't know.
         """
         self.add("prompt", cue, "en", "nar", NORMAL,
                  recall_pause(romanian) if pause is None else pause)
         self.add("answer", romanian, "ro", voice, NORMAL, P_REPEAT)
+        if accept:
+            self.seg[-1]["accept"] = list(accept)
+        if almost:
+            self.seg[-1]["almost"] = list(almost)
 
     def recall_word(self, cue, word, voice="m"):
         """Bare-word retrieval: the first, easiest recall of a new item.

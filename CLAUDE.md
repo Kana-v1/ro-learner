@@ -169,10 +169,20 @@ seeded from their own validated drill answers. The old hand-picked `ep.review([
 ## The Vorbește app and the results loop
 
 `app/` is an iOS app that plays an episode, stops as each drill cue ends,
-listens (Apple's on-device Romanian recognition), grades the words
-(`Grader.swift`: diacritics folded, dropped pronouns allowed, `e` = `este`),
-gives an immediate second try, speaks the verdict, then plays the episode's own
-answer. Misses come back once more at the end. It works from a pocket: a
+listens (Apple's on-device Romanian recognition), grades the words, speaks
+the verdict, then plays the episode's own answer. `Grader.swift` has three
+verdicts: **right** (every word of the answer or of an `accept=` alternative),
+**almost** (only a small word — un, o, niște, e — missing or swapped, or one
+word with the right stem but a different ending, judged relative to word
+length; or an `almost=` phrasing): the fix is shown and there is no retry;
+**not quite** (a content word missing or different): an immediate second try.
+Diacritics are folded, dropped subject pronouns are fine, `e` = `este`.
+
+**When writing drills, give the grader the alternatives only you know:**
+`ep.drill(cue, answer, voice, accept=[...], almost=[...])` — `accept` for other
+fully correct phrasings (word order, a synonym the chapter teaches), `almost`
+for ones a listener would understand but the lesson should correct. Don't list
+what the rules already cover (articles, pronouns, e/este, endings). Misses come back once more at the end. It works from a pocket: a
 chime for "your turn", spoken verdicts, headphone next/previous = next/previous
 drill. It resumes where it stopped.
 
