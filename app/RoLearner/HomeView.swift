@@ -43,7 +43,13 @@ struct HomeView: View {
         .foregroundStyle(Theme.text)
         .fileImporter(isPresented: $importing, allowedContentTypes: [.item],
                       allowsMultipleSelection: true) { result in
-            if case .success(let urls) = result { store.importPicked(urls) }
+            switch result {
+            case .success(let urls):
+                Log.write("import picked \(urls.count) file(s)", "ui")
+                store.importPicked(urls)
+            case .failure(let error):
+                Log.write("import picker failed: \(error)", "ui")
+            }
         }
         .fullScreenCover(item: $launch) { l in
             PlayerView(launch: l, store: store, voiceMode: voiceMode, headsetMic: headsetMic)
@@ -152,10 +158,18 @@ struct HomeView: View {
                         if store.syncing { ProgressView().tint(Theme.accent) }
                     }
                     if store.linkedFolder == nil {
-                        Button("Link Drive folder") { linking = true }.buttonStyle(OutlineButtonStyle())
+                        Button("Link Drive folder") {
+                            Log.write("tapped Link Drive folder", "ui")
+                            linking = true
+                        }
+                        .buttonStyle(OutlineButtonStyle())
                     } else {
                         HStack(spacing: 10) {
-                            Button("Sync now") { Task { await store.sync() } }.buttonStyle(OutlineButtonStyle())
+                            Button("Sync now") {
+                                Log.write("tapped Sync now", "ui")
+                                Task { await store.sync() }
+                            }
+                            .buttonStyle(OutlineButtonStyle())
                             Button("Unlink") { store.unlinkFolder() }.buttonStyle(OutlineButtonStyle())
                         }
                     }
@@ -169,13 +183,7 @@ struct HomeView: View {
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
             }
         }
-        // Its own picker: two .fileImporter modifiers on one view, and only one works.
-        .fileImporter(isPresented: $linking, allowedContentTypes: [.folder]) { result in
-            if case .success(let url) = result {
-                store.linkFolder(url)
-                Task { await store.sync() }
-            }
-        }
+        .linkFolderPicker(isPresented: $linking, store: store)
     }
 
     private var driveStatus: String {

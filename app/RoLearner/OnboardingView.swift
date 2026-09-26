@@ -45,7 +45,10 @@ struct OnboardingView: View {
                     } label: { Label("Allow microphone & speech", systemImage: "mic.fill") }
                     .buttonStyle(AccentButtonStyle())
                 } else if !hasEpisodes {
-                    Button { linking = true } label: { Label("Link Drive folder", systemImage: "folder") }
+                    Button {
+                        Log.write("tapped Link Drive folder (onboarding)", "ui")
+                        linking = true
+                    } label: { Label("Link Drive folder", systemImage: "folder") }
                         .buttonStyle(AccentButtonStyle())
                     Button("Import files instead") { importing = true }
                         .font(.system(size: 15, weight: .medium)).foregroundStyle(Theme.text2)
@@ -64,18 +67,11 @@ struct OnboardingView: View {
         .background(Theme.bg.ignoresSafeArea())
         .shakeForLog()
         .foregroundStyle(Theme.text)
-        .fileImporter(isPresented: $linking, allowedContentTypes: [.folder]) { result in
-            if case .success(let url) = result {
-                store.linkFolder(url)
-                Task { await store.sync() }
-            }
+        .linkFolderPicker(isPresented: $linking, store: store)
+        .fileImporter(isPresented: $importing, allowedContentTypes: [.item],
+                      allowsMultipleSelection: true) { result in
+            if case .success(let urls) = result { store.importPicked(urls) }
         }
-        .background(
-            Color.clear.fileImporter(isPresented: $importing, allowedContentTypes: [.item],
-                                     allowsMultipleSelection: true) { result in
-                if case .success(let urls) = result { store.importPicked(urls) }
-            }
-        )
     }
 
     private func step(_ n: Int, done: Bool, active: Bool, _ title: String, _ detail: String) -> some View {
