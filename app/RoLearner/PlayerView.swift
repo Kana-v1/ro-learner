@@ -38,6 +38,7 @@ struct PlayerView: View {
         .background(Theme.bg.ignoresSafeArea())
         .foregroundStyle(Theme.text)
         .task { await engine.start() }
+        .onDisappear { engine.close() }      // swiped down: same as the X
         .shakeForLog()
         .onChange(of: scenePhase) { _, p in
             if p != .active { engine.persist() }

@@ -77,6 +77,7 @@ final class SessionEngine: ObservableObject {
     private var seeking = false
     private var relocateGen = 0
     private var pausedByInterruption = false
+    private var closed = false
 
     init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: SavedProgress?) {
         self.pack = pack
@@ -155,15 +156,19 @@ final class SessionEngine: ObservableObject {
         updateNowPlaying()
     }
 
+    /// Listening needs play-and-record; the headphone mic hears you far better
+    /// while walking, at the cost of call-quality playback on Bluetooth.
+    private func setListeningCategory() throws {
+        var options: AVAudioSession.CategoryOptions = [.allowBluetoothA2DP, .defaultToSpeaker]
+        if headsetMic { options.insert(.allowBluetooth) }
+        try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: options)
+    }
+
     private func configureAudio() {
         let session = AVAudioSession.sharedInstance()
         do {
             if voiceMode {
-                var options: AVAudioSession.CategoryOptions = [.allowBluetoothA2DP, .defaultToSpeaker]
-                // The headphone mic hears you far better while walking, at the
-                // cost of call-quality playback on Bluetooth headphones.
-                if headsetMic { options.insert(.allowBluetooth) }
-                try session.setCategory(.playAndRecord, mode: .default, options: options)
+                try setListeningCategory()
                 try session.setActive(true)
                 try listener.start()
             } else {
@@ -180,7 +185,10 @@ final class SessionEngine: ObservableObject {
     }
 
     /// Leaving the player: remember where we were, release audio and controls.
+    /// Called by the X and by swiping the player away; safe to call twice.
     func close() {
+        guard !closed else { return }
+        closed = true
         persist()
         cancelFlow()
         player.pause()
@@ -220,11 +228,13 @@ final class SessionEngine: ObservableObject {
         case .playing:
             player.pause()
             phase = .paused
+            releaseAudioForPause()
         case .listening, .secondTry, .feedback:
             resumeDrill = current
             cancelFlow()
             player.pause()
             phase = .paused
+            releaseAudioForPause()
         case .paused:
             resumeFromPause()
         default:
@@ -251,11 +261,25 @@ final class SessionEngine: ObservableObject {
 
     private func reactivateAudio() {
         do {
+            if voiceMode { try setListeningCategory() }
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             Log.write("reactivating audio failed: \(error)", "audio")
         }
         if voiceMode { listener.ensureRunning() }
+    }
+
+    /// While paused the app is just a player: the mic is released and the
+    /// session drops to plain playback, so AirPods leave call mode and their
+    /// next press arrives as "play". reactivateAudio() switches back on resume.
+    private func releaseAudioForPause() {
+        guard voiceMode else { return }
+        listener.releaseMic()
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
+        } catch {
+            Log.write("switching to playback while paused failed: \(error)", "audio")
+        }
     }
 
     private func pauseIfRunning() {

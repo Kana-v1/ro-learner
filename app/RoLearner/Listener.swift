@@ -78,6 +78,16 @@ final class Listener {
         }
     }
 
+    /// Give up the microphone while paused. With it open, AirPods stay in call
+    /// mode and treat a press as a call control, so "play" never arrives.
+    /// ensureRunning() takes it back.
+    func releaseMic() {
+        abort()
+        guard running, engine.isRunning else { return }
+        engine.stop()
+        Log.write("mic released while paused", "speech")
+    }
+
     func stop() {
         abort()
         if running {

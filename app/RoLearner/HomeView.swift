@@ -55,9 +55,13 @@ struct HomeView: View {
                 Log.write("import picker failed: \(error)", "ui")
             }
         }
-        .fullScreenCover(item: $launch) { l in
+        // A sheet rather than a full-screen cover, so it can be swiped down;
+        // swiping closes the player exactly like its X (PlayerView.onDisappear).
+        .sheet(item: $launch) { l in
             PlayerView(launch: l, store: store, voiceMode: voiceMode, headsetMic: headsetMic)
                 .environmentObject(store)
+                .presentationDragIndicator(.visible)
+                .presentationBackground(Theme.bg)
         }
         .sheet(item: $resumeCandidate, onDismiss: {
             launch = pendingLaunch
@@ -368,13 +372,23 @@ struct NextStepCard: View {
             } else {
                 Button { act(step) } label: {
                     HStack(spacing: 8) {
-                        if syncing { ProgressView().tint(Theme.onAccent) } else { Image(systemName: symbol) }
+                        if syncing && syncs { ProgressView().tint(Theme.onAccent) } else { Image(systemName: symbol) }
                         Text(buttonTitle)
                     }
                 }
                 .buttonStyle(AccentButtonStyle())
-                .disabled(syncing)
+                .disabled(syncing && syncs)
             }
+        }
+    }
+
+    /// Only these buttons run a sync; Continue or Start must not wait for the
+    /// background check the app does on opening.
+    private var syncs: Bool {
+        guard linked else { return false }
+        switch step {
+        case .importEpisodes, .allDone, .upload: return true
+        default: return false
         }
     }
 
