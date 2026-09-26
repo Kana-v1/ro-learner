@@ -2,8 +2,8 @@
 Render the same Romanian test phrase in several voices, side by side, so you
 can pick by ear instead of by name.
 
-    python sample_voices.py ro-RO-EmilNeural ro-RO-AlinaNeural en-US-AndrewMultilingualNeural
-    python sample_voices.py --rate 0.9 ro-RO-EmilNeural
+    python tools/sample_voices.py ro-RO-EmilNeural ro-RO-AlinaNeural en-US-AndrewMultilingualNeural
+    python tools/sample_voices.py --rate 0.9 ro-RO-EmilNeural
 
 Writes samples/<voice>__<rate>.mp3. Costs about 200 characters per voice.
 """

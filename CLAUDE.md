@@ -11,20 +11,24 @@ consolidate what I half-know.
 ## Layout
 
 ```
-prep_book.py           raw pdftotext output  ->  data/
-build_episode_NN.py    one per episode, content only  ->  episodes/
-episode_kit.py         shared builder machinery + the checks
-render.py              episodes/*.json  ->  out/*.mp3 + .srt
-make_feed.py           out/*.mp3  ->  out/feed.xml
-list_voices.py         which Azure voices speak Romanian
-sample_voices.py       A/B a phrase across voices before committing
-make_review_sheet.py   data/spoken.json -> markdown for a native speaker
-make_lesson_pack.py    episodes + cached clips -> packs/*.rolesson for the app
-ingest_results.py      app results -> state.json "struggles" + a note back to the app
-app/                   Vorbește, the iOS drill player (Swift, built on GitHub Actions)
+builders/
+  episode_kit.py         shared builder machinery + the checks
+  build_episode_NN.py    one per episode, content only  ->  episodes/
+tools/
+  prep_book.py           raw pdftotext output  ->  data/
+  render.py              episodes/*.json  ->  out/*.mp3 + .srt
+  make_feed.py           out/*.mp3  ->  out/feed.xml
+  make_lesson_pack.py    episodes + cached clips  ->  packs/*.rolesson for the app
+  ingest_results.py      app results  ->  state.json "struggles" + a note back to the app
+  make_review_sheet.py   data/spoken.json  ->  markdown for a native speaker
+  list_voices.py         which Azure voices speak Romanian
+  sample_voices.py       A/B a phrase across voices before committing
+app/                     Vorbește, the iOS drill player (Swift, built on GitHub Actions)
+lesson-audio-script/     the pedagogy skill
 
 data/       book_fixed.txt, lessons.json, glossary.json, spoken.json
 episodes/   generated scripts
+packs/      .rolesson files for the app               (gitignored)
 out/        rendered audio, subtitles, feed        (gitignored)
 .cache/     synthesised segments keyed by content hash (gitignored)
 .build/     ffmpeg scratch                          (gitignored)
@@ -33,10 +37,12 @@ out/        rendered audio, subtitles, feed        (gitignored)
 ## Commands
 
 ```bash
-python3 prep_book.py ~/path/rom_book_parsed.txt
-python3 build_episode_02.py
-python3 render.py episodes/episode_02.json          # --only 0:13 for a cheap trial
-python3 make_feed.py --base-url https://.../ro-a7f3c1
+python3 tools/prep_book.py ~/path/rom_book_parsed.txt
+python3 builders/build_episode_02.py
+python3 tools/render.py episodes/episode_02.json          # --only 0:13 for a cheap trial
+python3 tools/make_feed.py --base-url https://.../ro-a7f3c1
+python3 tools/make_lesson_pack.py episodes/episode_06a.json   # app episode; --all for every rendered one
+python3 tools/ingest_results.py                              # read app results (see the app section)
 ```
 
 ## Environment
@@ -172,7 +178,7 @@ drill. It resumes where it stopped.
 
 - **Episodes for the app** are `.rolesson` files from `make_lesson_pack.py`
   (sample-exact audio + the prompt/answer marks from the episode JSON). Pack
-  after rendering: `python3 make_lesson_pack.py episodes/episode_06c.json`.
+  after rendering: `python3 tools/make_lesson_pack.py episodes/episode_06c.json`.
 - **Drive folder.** The app links one folder (normally Google Drive via the
   Files app) with `lessons/` (episodes in), `results/` (one JSON per finished
   session out) and `notes/` (Claude's notes in). With Google Drive for desktop
@@ -180,14 +186,14 @@ drill. It resumes where it stopped.
   (e.g. `/mnt/c/Users/<you>/My Drive/Vorbește`) and the pack script writes
   straight into `lessons/`. Episode audio is too big for the Drive connector.
 - **When the user says "Read my Romanian results from Google Drive":** run
-  `python3 ingest_results.py` (reads `$VORBESTE_DRIVE/results`; without the
+  `python3 tools/ingest_results.py` (reads `$VORBESTE_DRIVE/results`; without the
   mirror, fetch the small JSON files with the Google Drive connector into a
   folder and pass `--results-dir`). It archives sessions under `data/results/`
   (gitignored: transcripts of the user's speech), writes the drills still wrong
   into `state.json` `struggles`, and prints a summary. Analyse it — patterns
   (endings, agreement, a word that never sticks) matter more than single misses
   — then send a short plain-English report back with
-  `python3 ingest_results.py --note "…"`; it lands in `notes/` (or `packs/`
+  `python3 tools/ingest_results.py --note "…"`; it lands in `notes/` (or `packs/`
   without the mirror) and the app shows it and marks those sessions analysed.
 - **`review_auto()` puts struggles first** (up to 4, most missed first, only
   from episodes before the one being built), then the +1/+3/+7/+16 schedule.

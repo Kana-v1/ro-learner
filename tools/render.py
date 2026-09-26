@@ -5,9 +5,9 @@ Render an episode JSON into an mp3 with pauses, chapter marks and an .srt.
     export AZURE_SPEECH_REGION=westeurope
     export ELEVENLABS_API_KEY=...
 
-    python render.py episode_01.json
-    python render.py episode_01.json --only 0:20    # first 20 segments only
-    python render.py episode_01.json --dry-run      # silent stubs, no API calls
+    python tools/render.py episode_01.json
+    python tools/render.py episode_01.json --only 0:20    # first 20 segments only
+    python tools/render.py episode_01.json --dry-run      # silent stubs, no API calls
 
 Each voice declares its own provider in the episode JSON. Azure carries the
 bulk — narration, vocabulary, drills — on its 500k free characters a month.
@@ -22,7 +22,7 @@ import argparse, hashlib, json, os, subprocess, sys, time
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent   # the project root
 CACHE = ROOT / ".cache"      # synthesised segments, keyed by content hash
 WORK = ROOT / ".build"       # ffmpeg scratch: silence clips, concat lists
 OUT = ROOT / "out"           # finished audio, subtitles and the feed

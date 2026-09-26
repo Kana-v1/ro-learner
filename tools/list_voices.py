@@ -1,7 +1,7 @@
 """
 List every voice in your Azure region that can speak Romanian.
 
-    python list_voices.py
+    python tools/list_voices.py
 
 Beyond the two dedicated ro-RO voices, Azure's multilingual and HD voices
 (names containing MultilingualNeural or DragonHD) speak the auto-detected

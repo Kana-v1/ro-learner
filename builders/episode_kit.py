@@ -10,7 +10,7 @@ import json
 import pathlib
 import unicodedata
 
-ROOT = pathlib.Path(__file__).resolve().parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent     # the project root
 DATA = ROOT / "data"
 EPISODES = ROOT / "episodes"
 

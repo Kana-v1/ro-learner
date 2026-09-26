@@ -1,7 +1,7 @@
 """
 Turn data/spoken.json into a markdown sheet a native speaker can mark up.
 
-    python make_review_sheet.py > out/spoken_review.md
+    python tools/make_review_sheet.py > out/spoken_review.md
 
 The colloquial layer is the part of this project a language model is least
 reliable about, and the part where an error is most socially expensive. Build
@@ -10,7 +10,7 @@ whole sheet in a single sitting rather than second-guessing each episode.
 """
 import json, pathlib, sys
 
-HERE = pathlib.Path(__file__).resolve().parent
+HERE = pathlib.Path(__file__).resolve().parent.parent   # the project root
 data = json.loads((HERE / "data" / "spoken.json").read_text(encoding="utf-8"))
 meta = data.pop("_meta", {})
 

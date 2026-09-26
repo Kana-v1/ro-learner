@@ -1,7 +1,7 @@
 """
 Build a podcast RSS feed from the rendered episodes.
 
-    python make_feed.py --base-url https://pub-xxxx.r2.dev/ro-a7f3c1
+    python tools/make_feed.py --base-url https://pub-xxxx.r2.dev/ro-a7f3c1
 
 Scans out/ for episode_NN.mp3, reads the matching script in episodes/ for the
 title and chapter list, and writes out/feed.xml. Upload everything in out/ to
@@ -42,7 +42,7 @@ def main():
     ap.add_argument("--scripts", default=None, help="directory of episode JSON")
     args = ap.parse_args()
 
-    here = Path(__file__).resolve().parent
+    here = Path(__file__).resolve().parent.parent   # the project root
     base = args.base_url.rstrip("/")
     root = Path(args.dir) if args.dir else here / "out"
     scripts = Path(args.scripts) if args.scripts else here / "episodes"

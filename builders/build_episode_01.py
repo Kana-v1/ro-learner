@@ -18,7 +18,7 @@ import json
 import pathlib
 import unicodedata
 
-ROOT = pathlib.Path(__file__).resolve().parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent     # the project root
 OUT = ROOT / "episodes"
 SPOKEN = json.loads((ROOT / "data" / "spoken.json").read_text(encoding="utf-8"))
 

@@ -14,8 +14,8 @@ results/ (or hands over an export bundle through the share sheet). This script:
   4. with --note, writes a .roanalysis file into the Drive folder's notes/ so
      the app marks those sessions analysed and shows the note.
 
-    python3 ingest_results.py                  # read, update state.json, summarise
-    python3 ingest_results.py --note "text"    # ...and send a note back to the app
+    python3 tools/ingest_results.py                  # read, update state.json, summarise
+    python3 tools/ingest_results.py --note "text"    # ...and send a note back to the app
 
 The Drive folder comes from $VORBESTE_DRIVE (a Google Drive for desktop "Mirror
 files" folder, e.g. "/mnt/c/Users/you/My Drive/Vorbește"); --results-dir points
@@ -28,7 +28,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent   # the project root
 ARCHIVE = ROOT / "data" / "results"
 STATE = ROOT / "data" / "state.json"
 GENDER = {"ro_male": "m", "ro_radu": "m", "ro_female": "f", "ro_dana": "f", "ro_elena": "f"}

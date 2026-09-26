@@ -5,12 +5,12 @@ Prepare 'Limba care ne unește' (nivelul I) for the podcast pipeline.
 2. Splits the book into lessons.
 3. Parses the trilingual back glossary (RO - RU - EN) into JSON keyed by lesson.
 
-Usage: python prep_book.py rom_book_parsed.txt
+Usage: python tools/prep_book.py rom_book_parsed.txt
 """
 import json, pathlib, re, sys
 from collections import Counter, defaultdict
 
-DATA = pathlib.Path(__file__).resolve().parent / "data"
+DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 
 # --- 1. diacritic repair -----------------------------------------------------
 # The PDF used a legacy Romanian font; pdftotext mapped the glyphs onto

@@ -13,8 +13,8 @@ exact by construction.
 The stops themselves come from the episode script, not from the audio: every
 ep.drill() in the builders emits a `prompt` segment followed by its `answer`.
 
-    python3 make_lesson_pack.py episodes/episode_06a.json [more...]
-    python3 make_lesson_pack.py --all            # every rendered episode
+    python3 tools/make_lesson_pack.py episodes/episode_06a.json [more...]
+    python3 tools/make_lesson_pack.py --all            # every rendered episode
 
 With $VORBESTE_DRIVE set (a Google Drive for desktop "Mirror files" folder, e.g.
 "/mnt/c/Users/you/My Drive/Vorbește"), each pack is also written into its
@@ -33,7 +33,7 @@ from pathlib import Path
 
 import render
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent   # the project root
 PACKS = ROOT / "packs"
 MAGIC = b"ROLESSON1\n"
 # Mono 24 kHz is what Azure delivers for speech anyway; 48 kbps constant bitrate
