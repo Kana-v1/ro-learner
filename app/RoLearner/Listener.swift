@@ -60,6 +60,24 @@ final class Listener {
         Log.write("mic on: \(Int(format.sampleRate)) Hz, \(format.channelCount) ch; ro-RO available \(isAvailable), on-device \(onDevice)", "speech")
     }
 
+    /// After an interruption or a route change (AirPods switching between call
+    /// and music mode) iOS stops the engine, and the mic's format can change.
+    /// Reinstall the tap with the current format and start again.
+    func ensureRunning() {
+        guard running, !engine.isRunning else { return }
+        let input = engine.inputNode
+        input.removeTap(onBus: 0)
+        let format = input.outputFormat(forBus: 0)
+        input.installTap(onBus: 0, bufferSize: 1024, format: format, block: Self.tap(into: box))
+        engine.prepare()
+        do {
+            try engine.start()
+            Log.write("mic restarted: \(Int(format.sampleRate)) Hz, \(format.channelCount) ch", "speech")
+        } catch {
+            Log.write("mic restart failed: \(error)", "speech")
+        }
+    }
+
     func stop() {
         abort()
         if running {
@@ -91,6 +109,7 @@ final class Listener {
     private func begin(expected: String, maxSeconds: Double, onPartial: ((String) -> Void)?,
                        completion: @escaping (String?) -> Void) {
         abort()
+        ensureRunning()        // a stopped mic would only ever hear silence
         guard let recognizer, recognizer.isAvailable, running else {
             completion(nil)
             return

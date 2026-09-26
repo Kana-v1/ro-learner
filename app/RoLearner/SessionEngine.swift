@@ -75,6 +75,7 @@ final class SessionEngine: ObservableObject {
     // acting on it would start a drill the learner just jumped away from.
     private var seeking = false
     private var relocateGen = 0
+    private var pausedByInterruption = false
 
     init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: SavedProgress?) {
         self.pack = pack
@@ -126,12 +127,17 @@ final class SessionEngine: ObservableObject {
                                         object: nil, queue: .main) { [weak self] n in
             let type = n.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt
             let began = type == AVAudioSession.InterruptionType.began.rawValue
-            MainActor.assumeIsolated { if began { self?.pauseIfRunning() } }
+            let options = n.userInfo?[AVAudioSessionInterruptionOptionKey] as? UInt ?? 0
+            let shouldResume = AVAudioSession.InterruptionOptions(rawValue: options).contains(.shouldResume)
+            MainActor.assumeIsolated { self?.interrupted(began: began, shouldResume: shouldResume) }
         })
         observers.append(nc.addObserver(forName: AVAudioSession.routeChangeNotification,
                                         object: nil, queue: .main) { [weak self] n in
             let reason = n.userInfo?[AVAudioSessionRouteChangeReasonKey] as? UInt
             let lost = reason == AVAudioSession.RouteChangeReason.oldDeviceUnavailable.rawValue
+            let route = AVAudioSession.sharedInstance().currentRoute
+            let desc = "out \(route.outputs.map(\.portName)) in \(route.inputs.map(\.portName))"
+            Log.write("route change (reason \(reason ?? 0)): \(desc)", "audio")
             MainActor.assumeIsolated { if lost { self?.pauseIfRunning() } }
         })
         setupRemoteCommands()
@@ -227,6 +233,30 @@ final class SessionEngine: ObservableObject {
         updateNowPlaying()
     }
 
+    /// A call, Siri, or AirPods in call mode taking the audio. iOS deactivates
+    /// the session and stops the mic engine; both have to be brought back
+    /// before anything plays again.
+    private func interrupted(began: Bool, shouldResume: Bool) {
+        Log.write("interruption \(began ? "began" : "ended")\(shouldResume ? " (may resume)" : ""), phase \(phase)", "audio")
+        if began {
+            if phase == .playing || phase == .listening || phase == .secondTry || phase == .feedback {
+                pausedByInterruption = true
+                togglePause()
+            }
+        } else if shouldResume, pausedByInterruption, phase == .paused {
+            togglePause()
+        }
+    }
+
+    private func reactivateAudio() {
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            Log.write("reactivating audio failed: \(error)", "audio")
+        }
+        if voiceMode { listener.ensureRunning() }
+    }
+
     private func pauseIfRunning() {
         if phase == .playing || phase == .listening || phase == .secondTry || phase == .feedback {
             togglePause()
@@ -234,6 +264,8 @@ final class SessionEngine: ObservableObject {
     }
 
     private func resumeFromPause() {
+        pausedByInterruption = false
+        reactivateAudio()
         if inRound {
             resumeDrill = nil
             startRound()
@@ -588,22 +620,27 @@ final class SessionEngine: ObservableObject {
     private func setupRemoteCommands() {
         let c = MPRemoteCommandCenter.shared()
         c.togglePlayPauseCommand.addTarget { [weak self] _ in
+            Log.write("remote: play/pause", "audio")
             Task { @MainActor in self?.togglePause() }
             return .success
         }
         c.playCommand.addTarget { [weak self] _ in
+            Log.write("remote: play", "audio")
             Task { @MainActor in if self?.phase == .paused { self?.togglePause() } }
             return .success
         }
         c.pauseCommand.addTarget { [weak self] _ in
+            Log.write("remote: pause", "audio")
             Task { @MainActor in self?.pauseIfRunning() }
             return .success
         }
         c.nextTrackCommand.addTarget { [weak self] _ in
+            Log.write("remote: next", "audio")
             Task { @MainActor in self?.nextDrill() }
             return .success
         }
         c.previousTrackCommand.addTarget { [weak self] _ in
+            Log.write("remote: previous", "audio")
             Task { @MainActor in self?.previousDrill() }
             return .success
         }
