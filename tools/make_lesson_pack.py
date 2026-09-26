@@ -16,22 +16,22 @@ ep.drill() in the builders emits a `prompt` segment followed by its `answer`.
     python3 tools/make_lesson_pack.py episodes/episode_06a.json [more...]
     python3 tools/make_lesson_pack.py --all            # every rendered episode
 
-With $VORBESTE_DRIVE set (a Google Drive for desktop "Mirror files" folder, e.g.
-"/mnt/c/Users/you/My Drive/Vorbește"), each pack is also written into its
-lessons/, which the app syncs from.
+With a sync folder configured (tools/sync_folder.py: iCloud Drive via iCloud
+for Windows), each pack is also written into its lessons/, which the app picks
+up the next time it is opened. render.py calls this itself after a full render.
 
 File layout (read by PackStore.swift): b"ROLESSON1\\n", a 4-byte big-endian
 header length, the JSON header, then the mp3 to the end of the file.
 """
 import argparse
 import json
-import os
 import struct
 import subprocess
 import sys
 from pathlib import Path
 
 import render
+from sync_folder import sync_folder
 
 ROOT = Path(__file__).resolve().parent.parent   # the project root
 PACKS = ROOT / "packs"
@@ -81,13 +81,14 @@ def build(ep_path: Path) -> Path:
     out = PACKS / f"episode_{slug}.rolesson"
     blob = MAGIC + struct.pack(">I", len(header)) + header + mp3
     out.write_bytes(blob)
-    # With Google Drive for desktop mirroring a folder, the phone picks new
-    # episodes up from its lessons/ the next time the app is opened.
-    drive = os.environ.get("VORBESTE_DRIVE")
-    if drive:
-        lessons = Path(drive) / "lessons"
+    # Into the phone's sync folder too, if there is one: the app picks it up
+    # from lessons/ the next time it is opened.
+    folder = sync_folder()
+    if folder:
+        lessons = folder / "lessons"
         lessons.mkdir(parents=True, exist_ok=True)
         (lessons / out.name).write_bytes(blob)
+        print(f"  -> {lessons / out.name}")
 
     drills = sum(1 for a, b in zip(segs, segs[1:])
                  if a["type"] == "prompt" and b["type"] == "answer")

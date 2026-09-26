@@ -42,7 +42,7 @@ python3 builders/build_episode_02.py
 python3 tools/render.py episodes/episode_02.json          # --only 0:13 for a cheap trial
 python3 tools/make_feed.py --base-url https://.../ro-a7f3c1
 python3 tools/make_lesson_pack.py episodes/episode_06a.json   # app episode; --all for every rendered one
-python3 tools/ingest_results.py                              # read app results (see the app section)
+python3 tools/ingest_results.py                              # "Read my Romanian results" (see the app section)
 ```
 
 ## Environment
@@ -179,22 +179,23 @@ drill. It resumes where it stopped.
 - **Episodes for the app** are `.rolesson` files from `make_lesson_pack.py`
   (sample-exact audio + the prompt/answer marks from the episode JSON). Pack
   after rendering: `python3 tools/make_lesson_pack.py episodes/episode_06c.json`.
-- **Drive folder.** The app links one folder (normally Google Drive via the
-  Files app) with `lessons/` (episodes in), `results/` (one JSON per finished
-  session out) and `notes/` (Claude's notes in). With Google Drive for desktop
-  in "Mirror files" mode, set `VORBESTE_DRIVE` to that folder as seen from WSL
-  (e.g. `/mnt/c/Users/<you>/My Drive/Vorbește`) and the pack script writes
-  straight into `lessons/`. Episode audio is too big for the Drive connector.
-- **When the user says "Read my Romanian results from Google Drive":** run
-  `python3 tools/ingest_results.py` (reads `$VORBESTE_DRIVE/results`; without the
-  mirror, fetch the small JSON files with the Google Drive connector into a
-  folder and pass `--results-dir`). It archives sessions under `data/results/`
+- **Sync folder = iCloud Drive.** The app links one folder with `lessons/`
+  (episodes in), `results/` (one JSON per finished session out) and `notes/`
+  (Claude's notes in). It is in iCloud Drive, synced to this PC by iCloud for
+  Windows: `/mnt/c/Users/<you>/iCloudDrive/Vorbește`, named in the gitignored
+  `sync_folder.txt` (or `$VORBESTE_SYNC`); `tools/sync_folder.py` resolves it.
+  Google Drive does not work: its iPhone app won't let other apps open its
+  folders. **`tools/render.py` packs every full render into `lessons/` by
+  itself**, so rendering an episode is all it takes for it to reach the phone.
+- **When the user says "Read my Romanian results":** run
+  `python3 tools/ingest_results.py` (reads the sync folder's `results/`;
+  `--results-dir` for anywhere else). It archives sessions under `data/results/`
   (gitignored: transcripts of the user's speech), writes the drills still wrong
   into `state.json` `struggles`, and prints a summary. Analyse it — patterns
   (endings, agreement, a word that never sticks) matter more than single misses
   — then send a short plain-English report back with
-  `python3 tools/ingest_results.py --note "…"`; it lands in `notes/` (or `packs/`
-  without the mirror) and the app shows it and marks those sessions analysed.
+  `python3 tools/ingest_results.py --note "…"`; it lands in `notes/` and the
+  app shows it and marks those sessions analysed.
 - **`review_auto()` puts struggles first** (up to 4, most missed first, only
   from episodes before the one being built), then the +1/+3/+7/+16 schedule.
   So building the next episodes after an ingest is what adapts the course.

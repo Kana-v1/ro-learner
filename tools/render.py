@@ -269,6 +269,13 @@ def main():
     if chapters:
         print("chapters: " + ", ".join(c[1] for c in chapters))
 
+    # A full real render also becomes an app episode, dropped into the phone's
+    # sync folder: rendering is all it takes for it to appear in Vorbește.
+    if not args.only and not args.dry_run:
+        import make_lesson_pack
+        print()
+        make_lesson_pack.build(Path(args.episode))
+
 
 if __name__ == "__main__":
     main()

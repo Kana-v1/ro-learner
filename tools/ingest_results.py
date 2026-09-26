@@ -17,26 +17,21 @@ results/ (or hands over an export bundle through the share sheet). This script:
     python3 tools/ingest_results.py                  # read, update state.json, summarise
     python3 tools/ingest_results.py --note "text"    # ...and send a note back to the app
 
-The Drive folder comes from $VORBESTE_DRIVE (a Google Drive for desktop "Mirror
-files" folder, e.g. "/mnt/c/Users/you/My Drive/Vorbește"); --results-dir points
-somewhere else, e.g. files fetched through the Google Drive connector.
+The app's sync folder (iCloud Drive via iCloud for Windows) comes from
+tools/sync_folder.py; --results-dir reads result files from anywhere else.
 """
 import argparse
 import json
-import os
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+
+from sync_folder import sync_folder
 
 ROOT = Path(__file__).resolve().parent.parent   # the project root
 ARCHIVE = ROOT / "data" / "results"
 STATE = ROOT / "data" / "state.json"
 GENDER = {"ro_male": "m", "ro_radu": "m", "ro_female": "f", "ro_dana": "f", "ro_elena": "f"}
-
-
-def drive_dir():
-    d = os.environ.get("VORBESTE_DRIVE")
-    return Path(d) if d else None
 
 
 def load_sessions(paths):
@@ -78,7 +73,7 @@ def main():
     ap.add_argument("--note", help="write this report back to the app as a .roanalysis")
     args = ap.parse_args()
 
-    drive = drive_dir()
+    drive = sync_folder()
     source = args.results_dir or (drive / "results" if drive else None)
     ARCHIVE.mkdir(parents=True, exist_ok=True)
 

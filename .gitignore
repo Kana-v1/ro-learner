@@ -33,3 +33,6 @@ app/build.log
 
 # app results: transcripts of your own speech, kept local
 data/results/
+
+# personal path to the app sync folder (see tools/sync_folder.py)
+sync_folder.txt
