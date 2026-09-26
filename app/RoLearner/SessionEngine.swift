@@ -77,6 +77,10 @@ final class SessionEngine: ObservableObject {
     private var seeking = false
     private var relocateGen = 0
     private var pausedByInterruption = false
+    // Short pauses keep the mic ready so resuming is instant; only a long pause
+    // hands it back (and pays the few seconds of Bluetooth switching on resume).
+    private var releaseTimer: Task<Void, Never>?
+    private var audioReleased = false
     private var closed = false
 
     init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: SavedProgress?) {
@@ -189,6 +193,7 @@ final class SessionEngine: ObservableObject {
     func close() {
         guard !closed else { return }
         closed = true
+        releaseTimer?.cancel()
         persist()
         cancelFlow()
         player.pause()
@@ -228,13 +233,13 @@ final class SessionEngine: ObservableObject {
         case .playing:
             player.pause()
             phase = .paused
-            releaseAudioForPause()
+            scheduleRelease()
         case .listening, .secondTry, .feedback:
             resumeDrill = current
             cancelFlow()
             player.pause()
             phase = .paused
-            releaseAudioForPause()
+            scheduleRelease()
         case .paused:
             resumeFromPause()
         default:
@@ -260,8 +265,13 @@ final class SessionEngine: ObservableObject {
     }
 
     private func reactivateAudio() {
+        releaseTimer?.cancel()
+        releaseTimer = nil
         do {
-            if voiceMode { try setListeningCategory() }
+            // Only a released session needs switching back — the part that
+            // costs seconds of Bluetooth renegotiation.
+            if voiceMode && audioReleased { try setListeningCategory() }
+            audioReleased = false
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             Log.write("reactivating audio failed: \(error)", "audio")
@@ -272,8 +282,19 @@ final class SessionEngine: ObservableObject {
     /// While paused the app is just a player: the mic is released and the
     /// session drops to plain playback, so AirPods leave call mode and their
     /// next press arrives as "play". reactivateAudio() switches back on resume.
+    private func scheduleRelease() {
+        releaseTimer?.cancel()
+        releaseTimer = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: 60_000_000_000)
+            guard let self, !Task.isCancelled, self.phase == .paused else { return }
+            self.releaseAudioForPause()
+        }
+    }
+
     private func releaseAudioForPause() {
         guard voiceMode else { return }
+        audioReleased = true
+        Log.write("paused for a minute: mic released", "audio")
         listener.releaseMic()
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
