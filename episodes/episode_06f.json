@@ -1,0 +1,1404 @@
+{
+ "episode": 6,
+ "part": "f",
+ "lesson": 6,
+ "title": "Familia noastră",
+ "source": "Limba care ne unește, nivelul I — Lecția 6 (partea F)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu": "names",
+  "ca": "like, as — in 'ca mama lui'"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "frate / soră",
+   "spoken": "frați",
+   "gloss": "siblings (lit. brothers)",
+   "note": "'Ai frați?' asks about brothers AND sisters — siblings — not only brothers. The default way to ask about someone's family.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "bunic, copil",
+   "spoken": "bunicii, copiii",
+   "gloss": "the grandparents, the children",
+   "note": "Used constantly in the plural: 'bunicii' = both grandparents together, 'copiii' = the children. Worth hearing early since the singulars alone sound incomplete in family talk.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "mamă, tată",
+   "spoken": "mama, tata",
+   "gloss": "mum, dad",
+   "note": "Family words are almost always used with the definite article: mama, tata, not 'o mamă'. 'mama/tata' also serve as the everyday 'mum/dad'.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum te cheamă? / Cum vă numiți?",
+   "gloss": "what's your name? (casual / polite)",
+   "note": "The book only has nume/prenume, which sound like a form. In speech you ask 'Cum te cheamă?' (casual, to someone your age) or 'Cum vă numiți?' (polite).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "tanti",
+   "spoken": "tanti Maria",
+   "gloss": "auntie (before a name)",
+   "note": "Used by children for any older woman the family knows — a neighbour, a friend's mother — not only for aunts; always before the name, no article.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "bătrân",
+   "spoken": "în vârstă",
+   "gloss": "elderly (polite)",
+   "note": "Calling a person 'bătrân' can sound blunt; 'e în vârstă' is the polite way to say someone is old.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare rău.",
+   "gloss": "I'm sorry (sympathy)",
+   "note": "The reply to bad news. Not the 'sorry' for bumping into someone (that is 'Scuzați' / 'Pardon').",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "fecior",
+   "spoken": "fiu / băiatul meu",
+   "gloss": "son",
+   "note": "'Fecior' for son is Moldovan and old-fashioned. In Bucharest: 'fiul meu', or very commonly 'băiatul meu' / 'fata mea' for my son / my daughter.",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "noroc",
+   "spoken": "Noroc!",
+   "gloss": "Cheers! / good luck",
+   "note": "In Romania 'Noroc!' is a toast (and 'Am noroc' = I'm lucky). As a greeting ('hello') it is Moldovan/regional; don't use it that way in Bucharest.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aceasta e familia mea.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și acesta cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Fiul meu. E elev.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "E slab!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, e slab, dar sănătos. Și e scund, ca mama lui.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și unchiul tău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Unchiul meu e bogat. Noi nu suntem bogați, dar suntem bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A family photo, the last of the family words, and at the end the chapter's own text. Mostly you, out loud.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unchiul meu e bogat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My uncle is rich.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unchiul meu e bogat.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "rich",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bogat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El nu e sărac.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He isn't poor.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El nu e sărac.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "poor",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sărac",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu e scund.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is short.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu e scund.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "short — about a person",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "scund",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E slab, dar sănătos.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He's thin, but healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E slab, dar sănătos.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "thin",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "slab",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e elev.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is a pupil.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e elev.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a pupil, a schoolboy",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un elev",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Familia mea are membri harnici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My family has hardworking members.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Familia mea are membri harnici.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a member",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un membru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six together, mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "thin",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "slab",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a member",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un membru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "rich",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bogat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a pupil",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un elev",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "poor",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sărac",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "short, about a person",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "scund",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two words for short. About a person, the new one; about a thing, the one from the clothes. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Two kinds of short"
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un băiat scund, o fustă scurtă",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A short boy, a short skirt. The new words agree like any other: the book's own example —",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mama mea e scundă, dar frumoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My mother is short, but pretty.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mama mea e scundă, dar frumoasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O familie bogată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A rich family.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O familie bogată.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica ei e elevă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is a pupil.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica ei e elevă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. A whole sentence out loud each time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My uncle is rich.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unchiul meu e bogat.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We are not rich.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Noi nu suntem bogați.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He isn't poor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El nu e sărac.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is short and thin.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu e scund și slab.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My mother is short, but pretty.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mama mea e scundă, dar frumoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Mama e scundă, dar frumoasă."
+   ]
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is a pupil.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e elev.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is a pupil.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica ei e elevă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A rich family.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O familie bogată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A short boy, a short skirt.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un băiat scund, o fustă scurtă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My family has hardworking members.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Familia mea are membri harnici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He's thin, but healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "E slab, dar sănătos.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We are fine.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Suntem bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His wife is young and clever.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără și deșteaptă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our grandparents are old, but healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicii noștri sunt bătrâni, dar sănătoși.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. The book has a second word for son. It is Moldovan and old-fashioned; in Bucharest you won't need it. What people say instead — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s096",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "băiatul meu, fata mea",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s097",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My boy, my girl — meaning my son, my daughter. And the chapter's word for luck, said as a toast — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noroc!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s099",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Cheers! In Moldova it is also a hello; in Romania only the toast, or good luck. And to be lucky — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s100",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am noroc.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm lucky.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s102",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am a manager.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt manager.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am not an economist, I am an accountant.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu sunt economist, sunt contabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We are in the office.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi suntem în birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a driver? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți șofer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a shop assistant, he is a journalist.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e vânzătoare, el e ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good morning, madam!",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bună dimineața, doamnă!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "good",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bun",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the chapter's own text, whole. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta este familia noastră. Eu am părinți, un frate, surori și bunici.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții mei sunt medici, fratele meu este student.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicii noștri sunt bătrâni, dar sănătoși.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul este scund. Tatăl meu este tânăr.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem o familie mare și rude cu prenumele Dan, Daniela, Dorin, Dana, Dumitru.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apartamentul nostru este bun.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s124",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta este familia noastră. Eu am părinți, un frate, surori și bunici.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții mei sunt medici, fratele meu este student.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicii noștri sunt bătrâni, dar sănătoși.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul este scund. Tatăl meu este tânăr.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem o familie mare și rude cu prenumele Dan, Daniela, Dorin, Dana, Dumitru.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apartamentul nostru este bun.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The photo again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s132",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aceasta e familia mea.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s133",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și acesta cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s134",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Fiul meu. E elev.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "E slab!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, e slab, dar sănătos. Și e scund, ca mama lui.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și unchiul tău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Unchiul meu e bogat. Noi nu suntem bogați, dar suntem bine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That closes Lesson 6 across its six parts. You can say who is in your family, whose they are, and what they are like.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's the whole family.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s141",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

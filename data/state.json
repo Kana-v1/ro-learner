@@ -466,6 +466,150 @@
    "g": "f",
    "cue": "family",
    "answer": "familie"
+  },
+  "nume": {
+   "intro": "06c",
+   "g": "m",
+   "cue": "a name",
+   "answer": "un nume"
+  },
+  "prenume": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a first name",
+   "answer": "un prenume"
+  },
+  "soț": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a husband",
+   "answer": "un soț"
+  },
+  "soție": {
+   "intro": "06c",
+   "g": "m",
+   "cue": "a wife",
+   "answer": "o soție"
+  },
+  "fiu": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a son",
+   "answer": "un fiu"
+  },
+  "fiică": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a daughter",
+   "answer": "o fiică"
+  },
+  "părinte": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "a parent",
+   "answer": "un părinte"
+  },
+  "rudă": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "a relative",
+   "answer": "o rudă"
+  },
+  "unchi": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "an uncle",
+   "answer": "un unchi"
+  },
+  "mătușă": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "an aunt",
+   "answer": "o mătușă"
+  },
+  "nepot": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "a nephew, or a grandson",
+   "answer": "un nepot"
+  },
+  "tanti": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "auntie, before a name",
+   "answer": "tanti"
+  },
+  "tânăr": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "young",
+   "answer": "tânăr"
+  },
+  "bătrân": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "old — about a person",
+   "answer": "bătrân"
+  },
+  "sănătos": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "healthy",
+   "answer": "sănătos"
+  },
+  "bolnav": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "ill",
+   "answer": "bolnav"
+  },
+  "harnic": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "hardworking",
+   "answer": "harnic"
+  },
+  "deștept": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "clever",
+   "answer": "deștept"
+  },
+  "bogat": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "rich",
+   "answer": "bogat"
+  },
+  "sărac": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "poor",
+   "answer": "sărac"
+  },
+  "scund": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "short — about a person",
+   "answer": "scund"
+  },
+  "slab": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "thin",
+   "answer": "slab"
+  },
+  "elev": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "a pupil, a schoolboy",
+   "answer": "un elev"
+  },
+  "membru": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "a member",
+   "answer": "un membru"
   }
  }
 }

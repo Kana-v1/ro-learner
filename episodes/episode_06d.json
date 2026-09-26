@@ -1,0 +1,1457 @@
+{
+ "episode": 6,
+ "part": "d",
+ "lesson": 6,
+ "title": "Rudele mele",
+ "source": "Limba care ne unește, nivelul I — Lecția 6 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu / Ana": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "frate / soră",
+   "spoken": "frați",
+   "gloss": "siblings (lit. brothers)",
+   "note": "'Ai frați?' asks about brothers AND sisters — siblings — not only brothers. The default way to ask about someone's family.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "bunic, copil",
+   "spoken": "bunicii, copiii",
+   "gloss": "the grandparents, the children",
+   "note": "Used constantly in the plural: 'bunicii' = both grandparents together, 'copiii' = the children. Worth hearing early since the singulars alone sound incomplete in family talk.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "mamă, tată",
+   "spoken": "mama, tata",
+   "gloss": "mum, dad",
+   "note": "Family words are almost always used with the definite article: mama, tata, not 'o mamă'. 'mama/tata' also serve as the everyday 'mum/dad'.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum te cheamă? / Cum vă numiți?",
+   "gloss": "what's your name? (casual / polite)",
+   "note": "The book only has nume/prenume, which sound like a form. In speech you ask 'Cum te cheamă?' (casual, to someone your age) or 'Cum vă numiți?' (polite).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "tanti",
+   "spoken": "tanti Maria",
+   "gloss": "auntie (before a name)",
+   "note": "Used by children for any older woman the family knows — a neighbour, a friend's mother — not only for aunts; always before the name, no article.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "bătrân",
+   "spoken": "în vârstă",
+   "gloss": "elderly (polite)",
+   "note": "Calling a person 'bătrân' can sound blunt; 'e în vârstă' is the polite way to say someone is old.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare rău.",
+   "gloss": "I'm sorry (sympathy)",
+   "note": "The reply to bad news. Not the 'sorry' for bumping into someone (that is 'Scuzați' / 'Pardon').",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "fecior",
+   "spoken": "fiu / băiatul meu",
+   "gloss": "son",
+   "note": "'Fecior' for son is Moldovan and old-fashioned. In Bucharest: 'fiul meu', or very commonly 'băiatul meu' / 'fata mea' for my son / my daughter.",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "noroc",
+   "spoken": "Noroc!",
+   "gloss": "Cheers! / good luck",
+   "note": "In Romania 'Noroc!' is a toast (and 'Am noroc' = I'm lucky). As a greeting ('hello') it is Moldovan/regional; don't use it that way in Bucharest.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cine sunt aceștia?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aceștia sunt părinții mei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și aceasta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aceasta e mătușa mea, tanti Ana. Iar acesta e unchiul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și copilul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "E nepotul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "O familie frumoasă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Aceasta e familia noastră.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Family photos, and who is who. Six more people, my for more than one, and our. Mostly you, out loud.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceștia sunt părinții mei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are my parents.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceștia sunt părinții mei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a parent",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un părinte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi avem rude.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have relatives.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi avem rude.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a relative",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o rudă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e unchiul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is my uncle.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e unchiul meu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an uncle",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un unchi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e mătușa mea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is my aunt.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e mătușa mea.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an aunt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o mătușă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul e nepotul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child is my nephew.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul e nepotul meu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a nephew, or a grandson",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un nepot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the word a child puts before an aunt's name — or any older woman they know well:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e tanti Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is Auntie Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s040",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e tanti Ana.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "auntie, before a name",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tanti",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six together, mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an uncle",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un unchi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a relative",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o rudă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "auntie, before a name",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tanti",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a parent",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un părinte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a nephew",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un nepot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an aunt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s055",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o mătușă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Last time, my for one person. With more than one, it changes again. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "My, plural, and our"
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "părinții mei, rudele mele",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My parents, my relatives: one plural for masculine words, one for feminine. All four forms of my, together:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "meu, mea, mei, mele",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceștia sunt frații mei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are my brothers.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceștia sunt frații mei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acestea sunt surorile mele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are my sisters.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acestea sunt surorile mele.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And our — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "familia noastră, bunicul nostru",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s068",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our family, our grandfather.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s069",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e familia noastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is our family.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s071",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e familia noastră.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul nostru e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our grandfather is at home.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul nostru e acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Părinții noștri sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our parents are at home.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s077",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Părinții noștri sunt acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The drill sets the endings; no need to memorise a table.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s079",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. A whole sentence out loud each time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "These are my parents.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceștia sunt părinții mei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is my aunt.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e mătușa mea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is my uncle.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e unchiul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child is my nephew.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul e nepotul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is Auntie Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e tanti Ana.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have relatives.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem rude.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who are these? — My parents.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine sunt aceștia? Părinții mei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My brothers are at home.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Frații mei sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sisters are at school.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Surorile mele sunt la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is our family.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e familia noastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our grandfather is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul nostru e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our parents are at home.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Părinții noștri sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you have an uncle? — Yes, I have an uncle.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ai un unchi? Da, am un unchi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Ai unchi? Da, am un unchi."
+   ]
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your aunt a teacher? — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mătușa ta e profesoară?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. That word for auntie is not only for aunts. Children use it for any older woman the family knows — a neighbour, a friend's mother. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tanti Maria, de la etajul doi",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Auntie Maria from the second floor — very likely no relation at all. And the word for nephew also means grandson; the family around it tells you which.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s111",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a scarf",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un fular",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a raincoat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un impermeabil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a winter hat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o căciulă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a glove",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o mănușă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "clothing",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "îmbrăcăminte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "mother",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mamă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "father",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e familia noastră.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceștia sunt părinții mei. Aceasta e mătușa mea.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e unchiul meu. Copilul e nepotul meu.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Noi avem rude.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s132",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e familia noastră.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s133",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceștia sunt părinții mei. Aceasta e mătușa mea.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s134",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e unchiul meu. Copilul e nepotul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s135",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Noi avem rude.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s136",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The photos again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s137",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cine sunt aceștia?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aceștia sunt părinții mei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și aceasta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aceasta e mătușa mea, tanti Ana. Iar acesta e unchiul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și copilul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "E nepotul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "O familie frumoasă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Aceasta e familia noastră.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My, all four ways, and our. Next time: his, her and their — and what people are like: young, old, healthy, clever.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s146",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's part four of the family.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s147",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

@@ -1,0 +1,1461 @@
+{
+ "episode": 6,
+ "part": "c",
+ "lesson": 6,
+ "title": "Numele meu",
+ "source": "Limba care ne unește, nivelul I — Lecția 6 (partea C)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu / Popescu": "names",
+  "vă rog": "please — a fixed chunk"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "frate / soră",
+   "spoken": "frați",
+   "gloss": "siblings (lit. brothers)",
+   "note": "'Ai frați?' asks about brothers AND sisters — siblings — not only brothers. The default way to ask about someone's family.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "bunic, copil",
+   "spoken": "bunicii, copiii",
+   "gloss": "the grandparents, the children",
+   "note": "Used constantly in the plural: 'bunicii' = both grandparents together, 'copiii' = the children. Worth hearing early since the singulars alone sound incomplete in family talk.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "mamă, tată",
+   "spoken": "mama, tata",
+   "gloss": "mum, dad",
+   "note": "Family words are almost always used with the definite article: mama, tata, not 'o mamă'. 'mama/tata' also serve as the everyday 'mum/dad'.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum te cheamă? / Cum vă numiți?",
+   "gloss": "what's your name? (casual / polite)",
+   "note": "The book only has nume/prenume, which sound like a form. In speech you ask 'Cum te cheamă?' (casual, to someone your age) or 'Cum vă numiți?' (polite).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "tanti",
+   "spoken": "tanti Maria",
+   "gloss": "auntie (before a name)",
+   "note": "Used by children for any older woman the family knows — a neighbour, a friend's mother — not only for aunts; always before the name, no article.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "bătrân",
+   "spoken": "în vârstă",
+   "gloss": "elderly (polite)",
+   "note": "Calling a person 'bătrân' can sound blunt; 'e în vârstă' is the polite way to say someone is old.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare rău.",
+   "gloss": "I'm sorry (sympathy)",
+   "note": "The reply to bad news. Not the 'sorry' for bumping into someone (that is 'Scuzați' / 'Pardon').",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "fecior",
+   "spoken": "fiu / băiatul meu",
+   "gloss": "son",
+   "note": "'Fecior' for son is Moldovan and old-fashioned. In Bucharest: 'fiul meu', or very commonly 'băiatul meu' / 'fata mea' for my son / my daughter.",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "noroc",
+   "spoken": "Noroc!",
+   "gloss": "Cheers! / good luck",
+   "note": "In Romania 'Noroc!' is a toast (and 'Am noroc' = I'm lucky). As a greeting ('hello') it is Moldovan/regional; don't use it that way in Bucharest.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Numele dumneavoastră, vă rog?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Popescu. Prenumele meu e Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aveți familie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Soțul meu e aici. El e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și copii?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Am un fiu și o fiică.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Fiul dumneavoastră e acasă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Iar fiica mea e la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumesc, doamnă Popescu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A registration desk: a name, a first name, a family. Six new words, and how to say my and your. Mostly you, out loud.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s012",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six words, one at a time. Say each back before we move on.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Numele meu e Popescu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My name is Popescu.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Numele meu e Popescu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s017",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un nume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prenumele meu e Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My first name is Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prenumele meu e Sanda.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a first name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s022",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un prenume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "On a form, the first of those means your surname, the second your first name.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soțul meu e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My husband is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soțul meu e medic.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a husband",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un soț",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Soția mea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My wife is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Soția mea e profesoară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a wife",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s033",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o soție",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is at home.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a son",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un fiu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea e la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter is at school.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s041",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea e la școală.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a daughter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fiică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six together, mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a wife",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o soție",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a first name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un prenume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a son",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un fiu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a husband",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un soț",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a daughter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fiică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un nume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now my and your. They come after the word, and the word keeps its 'the' ending. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "My and your"
+  },
+  {
+   "id": "s058",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "fratele meu, sora mea",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s059",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That was: my brother, my sister. One form for a masculine word, one for a feminine one. Your, to a friend — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "fratele tău, sora ta",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s061",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Your brother, your sister. In sentences:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele tău e inginer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your brother an engineer?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele tău e inginer?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu, fratele meu e economist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "No, my brother is an economist.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu, fratele meu e economist.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția ta e aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your wife here?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția ta e aici?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And when you are being polite, one word covers every case, and it never changes. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s072",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "numele dumneavoastră, soția dumneavoastră",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s073",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Your name, your wife — said politely.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s074",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. A whole sentence out loud each time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My name is Popescu.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Numele meu e Popescu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My first name is Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prenumele meu e Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My husband is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soțul meu e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My wife is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Soția mea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is at home.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter is at school.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea e la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have a son and a daughter.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am un fiu și o fiică.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your brother an engineer? — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele tău e inginer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "No, my brother is an economist.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu, fratele meu e economist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Your sister is a doctor. — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora ta e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your father a doctor? — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tatăl tău e medic?",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "almost": [
+    "Tata tău e medic?"
+   ]
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My mother is a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mama mea e profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Mama e profesoară."
+   ]
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Your first name, please? — politely",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prenumele dumneavoastră, vă rog?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you have a husband? — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ai soț?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. Nobody asks for your name like a form does. Casually, to someone your age — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s104",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum te cheamă?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And politely, to a stranger or someone older:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s106",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum vă numiți?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Both mean what's your name. And with close family, my is often left out altogether. This simply means my mum is at home:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s108",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mama e acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The possessive is there when you need to be clear whose.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tie",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cravată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "grandfather",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bunic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "grandmother",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bunică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Numele meu e Popescu. Prenumele meu e Sanda.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soțul meu e medic.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am un fiu și o fiică.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e acasă. Fiica mea e la școală.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s130",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s131",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Numele meu e Popescu. Prenumele meu e Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s132",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soțul meu e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s133",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am un fiu și o fiică.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s134",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e acasă. Fiica mea e la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s135",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The desk again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Numele dumneavoastră, vă rog?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Popescu. Prenumele meu e Sanda.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aveți familie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Soțul meu e aici. El e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și copii?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Am un fiu și o fiică.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Fiul dumneavoastră e acasă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Iar fiica mea e la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumesc, doamnă Popescu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My and your, in the singular. Next time: more than one — my parents, my relatives — and our.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s146",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's part three of the family.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s147",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

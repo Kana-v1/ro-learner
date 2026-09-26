@@ -276,6 +276,52 @@
    "gloss": "mum, dad",
    "note": "Family words are almost always used with the definite article: mama, tata, not 'o mamă'. 'mama/tata' also serve as the everyday 'mum/dad'.",
    "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum te cheamă? / Cum vă numiți?",
+   "gloss": "what's your name? (casual / polite)",
+   "note": "The book only has nume/prenume, which sound like a form. In speech you ask 'Cum te cheamă?' (casual, to someone your age) or 'Cum vă numiți?' (polite).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "tanti",
+   "spoken": "tanti Maria",
+   "gloss": "auntie (before a name)",
+   "note": "Used by children for any older woman the family knows — a neighbour, a friend's mother — not only for aunts; always before the name, no article.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "bătrân",
+   "spoken": "în vârstă",
+   "gloss": "elderly (polite)",
+   "note": "Calling a person 'bătrân' can sound blunt; 'e în vârstă' is the polite way to say someone is old.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare rău.",
+   "gloss": "I'm sorry (sympathy)",
+   "note": "The reply to bad news. Not the 'sorry' for bumping into someone (that is 'Scuzați' / 'Pardon').",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "fecior",
+   "spoken": "fiu / băiatul meu",
+   "gloss": "son",
+   "note": "'Fecior' for son is Moldovan and old-fashioned. In Bucharest: 'fiul meu', or very commonly 'băiatul meu' / 'fata mea' for my son / my daughter.",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "noroc",
+   "spoken": "Noroc!",
+   "gloss": "Cheers! / good luck",
+   "note": "In Romania 'Noroc!' is a toast (and 'Am noroc' = I'm lucky). As a greeting ('hello') it is Moldovan/regional; don't use it that way in Bucharest.",
+   "confidence": "check"
   }
  ]
 }

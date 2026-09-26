@@ -1,0 +1,1421 @@
+{
+ "episode": 6,
+ "part": "e",
+ "lesson": 6,
+ "title": "Bunicul lui",
+ "source": "Limba care ne unește, nivelul I — Lecția 6 (partea E)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Sanda / Radu / Mihai": "names",
+  "vecinul meu": "my neighbour — a chunk",
+  "Îmi pare rău": "I'm sorry — a fixed phrase"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "frate / soră",
+   "spoken": "frați",
+   "gloss": "siblings (lit. brothers)",
+   "note": "'Ai frați?' asks about brothers AND sisters — siblings — not only brothers. The default way to ask about someone's family.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "bunic, copil",
+   "spoken": "bunicii, copiii",
+   "gloss": "the grandparents, the children",
+   "note": "Used constantly in the plural: 'bunicii' = both grandparents together, 'copiii' = the children. Worth hearing early since the singulars alone sound incomplete in family talk.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "mamă, tată",
+   "spoken": "mama, tata",
+   "gloss": "mum, dad",
+   "note": "Family words are almost always used with the definite article: mama, tata, not 'o mamă'. 'mama/tata' also serve as the everyday 'mum/dad'.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Cum te cheamă? / Cum vă numiți?",
+   "gloss": "what's your name? (casual / polite)",
+   "note": "The book only has nume/prenume, which sound like a form. In speech you ask 'Cum te cheamă?' (casual, to someone your age) or 'Cum vă numiți?' (polite).",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "tanti",
+   "spoken": "tanti Maria",
+   "gloss": "auntie (before a name)",
+   "note": "Used by children for any older woman the family knows — a neighbour, a friend's mother — not only for aunts; always before the name, no article.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "bătrân",
+   "spoken": "în vârstă",
+   "gloss": "elderly (polite)",
+   "note": "Calling a person 'bătrân' can sound blunt; 'e în vârstă' is the polite way to say someone is old.",
+   "confidence": "high"
+  },
+  {
+   "type": "missing_from_book",
+   "spoken": "Îmi pare rău.",
+   "gloss": "I'm sorry (sympathy)",
+   "note": "The reply to bad news. Not the 'sorry' for bumping into someone (that is 'Scuzați' / 'Pardon').",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "fecior",
+   "spoken": "fiu / băiatul meu",
+   "gloss": "son",
+   "note": "'Fecior' for son is Moldovan and old-fashioned. In Bucharest: 'fiul meu', or very commonly 'băiatul meu' / 'fata mea' for my son / my daughter.",
+   "confidence": "high"
+  },
+  {
+   "type": "moldovanism",
+   "book": "noroc",
+   "spoken": "Noroc!",
+   "gloss": "Cheers! / good luck",
+   "note": "In Romania 'Noroc!' is a toast (and 'Am noroc' = I'm lucky). As a greeting ('hello') it is Moldovan/regional; don't use it that way in Bucharest.",
+   "confidence": "check"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cine e Mihai?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "E vecinul meu. Bunicul lui e bătrân, dar sănătos.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și soția lui?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Soția lui e tânără și harnică.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Au copii?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, un fiu. Fiul lor e deștept, dar acum e bolnav.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare rău.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A neighbour's family, and what everyone is like. Six describing words, and his, her and their. Mostly you, out loud.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time, the plain form first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fratele lui e tânăr.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His brother is young.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fratele lui e tânăr.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "young",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tânăr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul lui e bătrân.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His grandfather is old.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul lui e bătrân.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old — about a person",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bătrân",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul e sănătos.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The grandfather is healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul e sănătos.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "healthy",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sănătos",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul lor e bolnav.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their son is ill.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul lor e bolnav.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ill",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bolnav",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul ei e harnic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her son is hardworking.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul ei e harnic.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "hardworking",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "harnic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Copilul e deștept.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child is clever.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Copilul e deștept.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "clever",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "deștept",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six together, mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ill",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bolnav",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "clever",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "deștept",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "young",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tânăr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "hardworking",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "harnic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bătrân",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "healthy",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sănătos",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now his, her and their. These are the easy ones: they never change, whatever they belong to. His — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "His, her, their"
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "fratele lui, sora lui",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His brother, his sister — the same word for both. Her:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "fratele ei, sora ei",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her brother, her sister. And their:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "părinții lor",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their parents.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s061",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The describing words agree, like the colours did. Clever — for a son, a daughter, children:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Agreement"
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "fiu deștept, fiică deșteaptă, copii deștepți",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s063",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Young changes more than most. Listen to all four:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s064",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tânăr, tânără, tineri, tinere",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His wife is young.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții lor sunt tineri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their parents are young.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții lor sunt tineri.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunica ei e bătrână, dar sănătoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her grandmother is old, but healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunica ei e bătrână, dar sănătoasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. A whole sentence out loud each time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His grandfather is old.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul lui e bătrân.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her grandmother is old, but healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunica ei e bătrână, dar sănătoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His wife is young.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their son is clever.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul lor e deștept.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is hardworking.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica ei e harnică.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their son is ill now.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul lor e bolnav acum.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His brother is young and hardworking.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fratele lui e tânăr și harnic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their parents are young.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții lor sunt tineri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How is her mother? — She's healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum e mama ei? E sănătoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His sister is ill.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sora lui e bolnavă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our grandparents are old, but healthy.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicii noștri sunt bătrâni, dar sănătoși.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A clever daughter.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O fiică deșteaptă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Clever children.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Copii deștepți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child is clever.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul e deștept.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. Calling someone old to their face, or their family's, sounds blunt. The polite way to say it — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s104",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul e în vârstă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grandfather is getting on, elderly. Keep the plain word for things, or for your own grandparents among friends. And the answer to bad news, as in the dialogue — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s106",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Îmi pare rău.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm sorry — for sympathy. Bumping into someone is a different sorry, and that comes later.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am Moldovan — you are a man.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt moldovean.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is from Russia.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El este din Rusia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tu ești fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you from Ukraine? Politely, to one person.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dumneata ești din Ucraina?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, I am from Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Da, eu sunt din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am in Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu sunt în Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "white",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "alb",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few sentences together. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mihai e vecinul meu.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunicul lui e bătrân, dar sănătos.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără și harnică.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul lor e deștept, dar acum e bolnav.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s128",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mihai e vecinul meu.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunicul lui e bătrân, dar sănătos.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s131",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără și harnică.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s132",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul lor e deștept, dar acum e bolnav.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s133",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The neighbour's family again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s134",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cine e Mihai?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "E vecinul meu. Bunicul lui e bătrân, dar sănătos.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și soția lui?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Soția lui e tânără și harnică.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Au copii?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, un fiu. Fiul lor e deștept, dar acum e bolnav.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Îmi pare rău.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His, her and their, and six ways to describe a person. Next time, the last of the family — and the chapter's own text.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s142",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's part five of the family.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s143",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}
