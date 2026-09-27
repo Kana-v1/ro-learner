@@ -150,6 +150,16 @@ final class SessionEngine: ObservableObject {
                 if arrived { self?.preferHeadsetMic() }    // headphones connected mid-session
             }
         })
+        // In call mode (the headset mic in use) an AirPods press is not a
+        // play/pause command at all: iOS treats it as "press to mute". Observing
+        // this notification opts the app in to receiving that gesture (iOS 17),
+        // and it becomes pause/resume here.
+        observers.append(nc.addObserver(forName: AVAudioApplication.inputMuteStateChangeNotification,
+                                        object: nil, queue: .main) { [weak self] n in
+            let muted = n.userInfo?[AVAudioApplication.muteStateKey] as? Bool
+            Log.write("headset press (mute gesture, muted: \(muted.map { String($0) } ?? "?"))", "audio")
+            MainActor.assumeIsolated { self?.headsetGesture() }
+        })
         setupRemoteCommands()
 
         next = firstDrill(endingAfter: startAt)
@@ -302,6 +312,7 @@ final class SessionEngine: ObservableObject {
             audioReleased = false
             try AVAudioSession.sharedInstance().setActive(true)
             if wasReleased { preferHeadsetMic() }
+            unmuteInput()      // resumed from the screen after a press muted it
         } catch {
             Log.write("reactivating audio failed: \(error)", "audio")
         }
@@ -329,6 +340,24 @@ final class SessionEngine: ObservableObject {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
         } catch {
             Log.write("switching to playback while paused failed: \(error)", "audio")
+        }
+    }
+
+    /// An AirPods press in call mode: pause or resume. The press also toggled the
+    /// mic's mute; whenever we end up playing, make sure the mic is live again.
+    private func headsetGesture() {
+        guard phase != .idle, phase != .finished else { return }
+        togglePause()
+        if phase != .paused { unmuteInput() }
+    }
+
+    private func unmuteInput() {
+        guard voiceMode, AVAudioApplication.shared.isInputMuted else { return }
+        do {
+            try AVAudioApplication.shared.setInputMuted(false)
+            Log.write("mic unmuted", "audio")
+        } catch {
+            Log.write("couldn't unmute the mic: \(error)", "audio")
         }
     }
 
