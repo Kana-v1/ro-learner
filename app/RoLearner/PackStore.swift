@@ -157,7 +157,7 @@ final class PackStore: ObservableObject {
         }
         let known = status.pulled
         let outcome = await Task.detached(priority: .utility) {
-            DriveSync.run(root: root, known: known, outgoing: outgoing)
+            DriveSync.run(root: root, known: known, outgoing: outgoing, log: Data(Log.read().utf8))
         }.value
 
         for f in outcome.lessons {

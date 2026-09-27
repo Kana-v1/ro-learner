@@ -32,7 +32,7 @@ enum DriveSync {
         var problem: String?
     }
 
-    static func run(root: URL, known: [String: Date], outgoing: [Outgoing]) -> Outcome {
+    static func run(root: URL, known: [String: Date], outgoing: [Outgoing], log: Data? = nil) -> Outcome {
         var outcome = Outcome()
         let scoped = root.startAccessingSecurityScopedResource()
         defer { if scoped { root.stopAccessingSecurityScopedResource() } }
@@ -94,6 +94,18 @@ enum DriveSync {
 
         outcome.lessons = pull("lessons", ext: "rolesson") + pull("", ext: "rolesson")
         outcome.notes = pull("notes", ext: "roanalysis") + pull("", ext: "roanalysis")
+
+        // The diagnostic log goes up too, so it can be read on the computer
+        // without anyone copying it off the phone.
+        if let log {
+            let logsDir = root.appendingPathComponent("logs", isDirectory: true)
+            var logError: NSError?
+            coordinator.coordinate(writingItemAt: logsDir.appendingPathComponent("vorbeste-log.txt"),
+                                   options: [.forReplacing], error: &logError) { url in
+                try? fm.createDirectory(at: logsDir, withIntermediateDirectories: true)
+                try? log.write(to: url)
+            }
+        }
 
         guard !outgoing.isEmpty else { return outcome }
         let resultsDir = root.appendingPathComponent("results", isDirectory: true)

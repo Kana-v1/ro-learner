@@ -11,7 +11,9 @@ struct PlayerLaunch: Identifiable {
 struct HomeView: View {
     @EnvironmentObject private var store: PackStore
     @AppStorage("voiceMode") private var voiceMode = true
-    @AppStorage("headsetMic") private var headsetMic = true
+    // Off by default: in call mode the AirPods mic missed answers and presses
+    // were unreliable. Kept as an experiment (voice-chat mode) until it works.
+    @AppStorage("headsetMicExperimental") private var headsetMic = false
     @AppStorage("onboarded") private var onboarded = false
     @State private var importing = false
     @State private var linking = false
@@ -300,8 +302,8 @@ struct HomeView: View {
                 }
                 Divider().overlay(Theme.line)
                 Toggle("Listen to my answers", isOn: $voiceMode).tint(Theme.accent)
-                Toggle("Use headphone microphone", isOn: $headsetMic).tint(Theme.accent)
-                Text("With listening off, episodes play straight through and you mark misses yourself. The headphone mic hears you better outdoors but makes Bluetooth playback sound like a phone call.")
+                Toggle("Headphone microphone (experimental)", isOn: $headsetMic).tint(Theme.accent)
+                Text("With listening off, episodes play straight through and you mark misses yourself. The headphone microphone runs the app like a phone call: call-quality sound, noise suppression, and AirPods presses as pause/resume. Still being tested; off, the phone's microphone listens and playback stays full quality.")
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
             }
         }

@@ -185,7 +185,11 @@ final class SessionEngine: ObservableObject {
         let options: AVAudioSession.CategoryOptions = headsetMic
             ? [.allowBluetooth, .defaultToSpeaker]
             : [.allowBluetoothA2DP, .defaultToSpeaker]
-        try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: options)
+        // Experimental: with the headset mic, run as a voice call. That is when
+        // iOS reliably hands AirPods presses to the app as the mute gesture,
+        // and it turns on the call noise suppression that helps outdoors.
+        try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: headsetMic ? .voiceChat : .default,
+                                                        options: options)
     }
 
     /// Make a connected Bluetooth headset the input. Only possible once the
@@ -212,6 +216,7 @@ final class SessionEngine: ObservableObject {
                 try session.setActive(true)
                 preferHeadsetMic()
                 try listener.start()
+                unmuteInput()      // an earlier AirPods press may have left it muted
             } else {
                 try session.setCategory(.playback, mode: .spokenAudio)
                 try session.setActive(true)
@@ -231,7 +236,7 @@ final class SessionEngine: ObservableObject {
         guard !closed else { return }
         closed = true
         releaseTimer?.cancel()
-        persist()
+        persist("closing the player")
         cancelFlow()
         player.pause()
         if let o = timeObserver { player.removeTimeObserver(o); timeObserver = nil }
@@ -246,19 +251,28 @@ final class SessionEngine: ObservableObject {
         }
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+        let store = self.store
+        Task { await store.sync() }      // results and the log go up to the sync folder
     }
 
     /// Save a resume point (and the results so far). Called after every answer,
     /// on pause, every few seconds while playing, and when the app goes away.
-    func persist() {
+    /// `reason` is logged (the periodic save is not, to keep the log readable).
+    func persist(_ reason: String? = nil) {
         lastPersist = Date()
-        guard phase != .idle, phase != .finished else { return }
+        guard phase != .idle, phase != .finished else {
+            if let reason { Log.write("not saving position (\(reason)): phase \(phase)", "player") }
+            return
+        }
         guard position > 5 || !record.items.isEmpty else { return }
         var point = position
         if let d = current, flow != nil || (phase == .paused && resumeDrill != nil) {
             point = d.promptStart      // an interrupted drill is asked again from its cue
         }
         if inRound { point = duration }
+        if let reason {
+            Log.write("saved position \(timeString(point)) (\(reason); playhead \(timeString(position)), phase \(phase), seeking \(seeking))", "player")
+        }
         store.saveProgress(SavedProgress(record: record, position: point, savedAt: Date()))
         if !record.items.isEmpty { store.save(record) }
     }
@@ -282,7 +296,7 @@ final class SessionEngine: ObservableObject {
         default:
             return
         }
-        persist()
+        persist(phase == .paused ? "paused" : "resumed")
         updateNowPlaying()
     }
 

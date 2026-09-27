@@ -41,7 +41,7 @@ struct PlayerView: View {
         .onDisappear { engine.close() }      // swiped down: same as the X
         .shakeForLog()
         .onChange(of: scenePhase) { _, p in
-            if p != .active { engine.persist() }
+            if p != .active { engine.persist("app in background") }
         }
         .sheet(isPresented: $showChapters) {
             ChaptersSheet(engine: engine)
