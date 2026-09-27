@@ -83,7 +83,8 @@ final class SessionEngine: ObservableObject {
     private var audioReleased = false
     private var closed = false
 
-    init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: SavedProgress?) {
+    init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: Bool) {
+        let resume = resume ? store.progress[pack.header.slug] : nil
         self.pack = pack
         self.store = store
         self.voiceMode = voiceMode

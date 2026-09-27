@@ -1,11 +1,15 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-/// An episode about to open in the player, with where to pick up (if anywhere).
+/// An episode about to open in the player, and whether to pick up where it
+/// stopped. Carries no saved position itself: the engine reads the latest one
+/// from the store when it starts. A snapshot here went stale (reopening an
+/// episode resumed from the launch before last), and a fresh id per launch
+/// keeps SwiftUI from treating a reopened episode as the same sheet.
 struct PlayerLaunch: Identifiable {
     let pack: Pack
-    let resume: SavedProgress?
-    var id: String { pack.id }
+    let resume: Bool
+    let id = UUID()
 }
 
 struct HomeView: View {
@@ -76,12 +80,12 @@ struct HomeView: View {
         }) { pack in
             ResumeSheet(pack: pack, progress: store.progress[pack.header.slug],
                         onContinue: {
-                            pendingLaunch = PlayerLaunch(pack: pack, resume: store.progress[pack.header.slug])
+                            pendingLaunch = PlayerLaunch(pack: pack, resume: true)
                             resumeCandidate = nil
                         },
                         onStartOver: {
                             store.startOver(pack.header.slug)
-                            pendingLaunch = PlayerLaunch(pack: pack, resume: nil)
+                            pendingLaunch = PlayerLaunch(pack: pack, resume: false)
                             resumeCandidate = nil
                         })
                 .presentationDetents([.height(440)])
@@ -286,7 +290,8 @@ struct HomeView: View {
                             Text(driveStatus).font(.system(size: 13)).foregroundStyle(Theme.muted)
                         }
                         Spacer()
-                        if store.syncing { ProgressView().tint(Theme.accent) }
+                        // GitHub, when connected, is what syncs; iCloud is idle then
+                        if store.syncing && !store.githubConfigured { ProgressView().tint(Theme.accent) }
                     }
                     if store.linkedFolder == nil {
                         Button("Link iCloud Drive folder") {
@@ -401,7 +406,7 @@ struct HomeView: View {
         if store.progress[pack.header.slug] != nil {
             resumeCandidate = pack
         } else {
-            launch = PlayerLaunch(pack: pack, resume: nil)
+            launch = PlayerLaunch(pack: pack, resume: false)
         }
     }
 }
