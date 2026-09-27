@@ -535,11 +535,17 @@ final class SessionEngine: ObservableObject {
             tones.play(.yourTurn)
             try? await Task.sleep(nanoseconds: 400_000_000)
             if Task.isCancelled { return }
-            let heard = await listener.listen(expected: d.expected, maxSeconds: max(d.thinkSeconds + 1.5, 4)) {
+            let guesses = await listener.listen(expected: d.expected, hints: hints(for: d),
+                                                maxSeconds: max(d.thinkSeconds + 1.5, 4)) {
                 [weak self] partial in self?.liveHeard = partial
             }
             if Task.isCancelled { return }
-            let judgement = Grader.judge(d, heard: heard)
+            let best = Grader.judgeBest(d, guesses: guesses)
+            let judgement = best.judgement
+            let heard = best.heard
+            if best.used > 0 {
+                Log.write("used guess #\(best.used + 1) of \(guesses.count): \(guesses)", "drill")
+            }
             let score = judgement.score
             let v = judgement.verdict
             record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v, hint: judgement.hint))
@@ -568,6 +574,13 @@ final class SessionEngine: ObservableObject {
         } else {
             _ = await playSpan(from: d.answerStart, to: min(d.answerEnd + 0.3, duration))
         }
+    }
+
+    /// Words to bias recognition toward: the answer, its accepted and
+    /// almost-right phrasings, and each of its words.
+    private func hints(for d: Drill) -> [String] {
+        let words = Grader.words(d.expected).map(\.shown).filter { $0.count >= 2 }
+        return d.accept + d.almost + words
     }
 
     // MARK: the second-chance round

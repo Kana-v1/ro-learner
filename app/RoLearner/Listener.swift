@@ -33,8 +33,9 @@ final class Listener {
     private var lastChange = Date()
     private var startedAt = Date()
     private var maxSeconds = 5.0
-    private var completion: ((String?) -> Void)?
+    private var completion: (([String]) -> Void)?
     private var onPartial: ((String) -> Void)?
+    private var guesses: [String] = []      // the recogniser's ranked alternatives
     private(set) var running = false
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
@@ -101,10 +102,13 @@ final class Listener {
     /// heard (or the listen was aborted). Ends after speech followed by a short
     /// silence, or at the time limit (extended a little if the learner is
     /// mid-sentence). `onPartial` sees the transcript as it forms.
-    func listen(expected: String, maxSeconds: Double,
-                onPartial: ((String) -> Void)? = nil) async -> String? {
-        await withCheckedContinuation { (c: CheckedContinuation<String?, Never>) in
-            begin(expected: expected, maxSeconds: maxSeconds, onPartial: onPartial) {
+    /// Returns the recogniser's ranked guesses, best first (up to five), or
+    /// none if nothing was heard. `hints` are phrases and words to bias it
+    /// toward — the expected answer, its accepted alternatives, its words.
+    func listen(expected: String, hints: [String] = [], maxSeconds: Double,
+                onPartial: ((String) -> Void)? = nil) async -> [String] {
+        await withCheckedContinuation { (c: CheckedContinuation<[String], Never>) in
+            begin(expected: expected, hints: hints, maxSeconds: maxSeconds, onPartial: onPartial) {
                 c.resume(returning: $0)
             }
         }
@@ -113,15 +117,16 @@ final class Listener {
     /// Ends any listen in progress; its caller gets nil.
     func abort() {
         latest = nil
+        guesses = []
         finish()
     }
 
-    private func begin(expected: String, maxSeconds: Double, onPartial: ((String) -> Void)?,
-                       completion: @escaping (String?) -> Void) {
+    private func begin(expected: String, hints: [String], maxSeconds: Double,
+                       onPartial: ((String) -> Void)?, completion: @escaping ([String]) -> Void) {
         abort()
         ensureRunning()        // a stopped mic would only ever hear silence
         guard let recognizer, recognizer.isAvailable, running else {
-            completion(nil)
+            completion([])
             return
         }
         generation += 1
@@ -130,7 +135,9 @@ final class Listener {
         req.shouldReportPartialResults = true
         // Biases recognition toward the words the learner is trying to say,
         // which matters for accented, learner Romanian.
-        req.contextualStrings = [expected]
+        var context: [String] = []
+        for h in [expected] + hints where !h.isEmpty && !context.contains(h) { context.append(h) }
+        req.contextualStrings = Array(context.prefix(100))
         if recognizer.supportsOnDeviceRecognition { req.requiresOnDeviceRecognition = true }
 
         latest = nil
@@ -158,7 +165,15 @@ final class Listener {
     nonisolated private static func handler(for listener: Listener, gen: Int)
         -> (SFSpeechRecognitionResult?, Error?) -> Void {
         { [weak listener] result, error in
-            let text = result?.bestTranscription.formattedString
+            // best first, then the other ranked alternatives, without repeats
+            var texts: [String] = []
+            if let result {
+                for t in [result.bestTranscription] + result.transcriptions {
+                    let s = t.formattedString
+                    if !s.isEmpty && !texts.contains(s) { texts.append(s) }
+                }
+            }
+            let ranked = Array(texts.prefix(5))
             let isFinal = result?.isFinal ?? false
             let failed = error != nil
             if let error {
@@ -169,14 +184,15 @@ final class Listener {
                 }
             }
             Task { @MainActor in
-                listener?.update(gen: gen, text: text, isFinal: isFinal, failed: failed)
+                listener?.update(gen: gen, texts: ranked, isFinal: isFinal, failed: failed)
             }
         }
     }
 
-    private func update(gen: Int, text: String?, isFinal: Bool, failed: Bool) {
+    private func update(gen: Int, texts: [String], isFinal: Bool, failed: Bool) {
         guard gen == generation, completion != nil else { return }
-        if let text, !text.isEmpty, text != latest {
+        if !texts.isEmpty { guesses = texts }
+        if let text = texts.first, text != latest {
             latest = text
             lastChange = Date()
             onPartial?(text)
@@ -196,7 +212,8 @@ final class Listener {
         let done = completion
         completion = nil
         onPartial = nil
-        let heard = latest
+        let heard = latest == nil ? [] : (guesses.isEmpty ? [latest!] : guesses)
+        guesses = []
         cancelCurrent()
         done?(heard)
     }

@@ -67,6 +67,27 @@ enum Grader {
         return best
     }
 
+    /// Grade the recogniser's ranked guesses. Its best guess counts as is; a
+    /// lower-ranked guess can lift the verdict by at most one level. The
+    /// expected answer is hinted to the recogniser, so a low-ranked guess can
+    /// "hear" it when something else was said — enough to rescue a
+    /// misrecognition (almost -> right), not to turn a miss into a pass.
+    static func judgeBest(_ d: Drill, guesses: [String]) -> (judgement: Judgement, heard: String?, used: Int) {
+        guard let top = guesses.first else { return (judge(d, heard: nil), nil, 0) }
+        let topJudgement = judge(d, heard: top)
+        var best = (judgement: topJudgement, heard: Optional(top), used: 0)
+        for (k, g) in guesses.enumerated().dropFirst() {
+            let j = judge(d, heard: g)
+            let capped = min(rank(j.verdict), rank(topJudgement.verdict) + 1)
+            if capped > rank(best.judgement.verdict) {
+                let v: Verdict = capped == rank(j.verdict) ? j.verdict : .close
+                let hint = v == j.verdict ? j.hint : "Heard you as “\(top)”; say it clearly: \(d.expected)"
+                best = (Judgement(verdict: v, score: j.score, hint: hint), g, k)
+            }
+        }
+        return best
+    }
+
     private static func rank(_ v: Verdict) -> Int {
         switch v {
         case .correct: return 3
