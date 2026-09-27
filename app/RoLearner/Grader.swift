@@ -14,6 +14,10 @@ import Foundation
 ///   told the fix and hears the answer.
 /// - **not quite**: a content word missing or different. This gets a retry.
 ///
+/// One extra word is not ignored: un/o slipped in between the answer's words
+/// (e un medic for e medic). English puts an article before a profession and
+/// Romanian doesn't, and the learner does it every time, so it is an almost.
+///
 /// Lenient where the recogniser or real speech differ from the script:
 /// diacritics are folded (the recogniser is inconsistent with ă/â/î/ș/ț, and
 /// can't hear sora from soră anyway), a subject pronoun the learner dropped
@@ -117,12 +121,14 @@ enum Grader {
         // walk back to see what happened to each answer word
         var near: [(want: String, got: String)] = []
         var missing: [(key: String, shown: String)] = []
+        var alignedTo = Array(repeating: -1, count: m)     // heard word -> answer word
         var i = n, j = m
         while i > 0 {
             if j > 0 {
                 let w = e[i - 1].key == h[j - 1].key ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
                 if w > 0 && dp[i][j] == dp[i - 1][j - 1] + w {
                     if w == 1 { near.append((want: e[i - 1].shown, got: h[j - 1].shown)) }
+                    alignedTo[j - 1] = i - 1
                     i -= 1; j -= 1
                     continue
                 }
@@ -136,7 +142,16 @@ enum Grader {
         let missingContent = missing.filter { !smallWords.contains($0.key) }
         let score = Double(dp[n][m]) / Double(2 * n)
 
+        // un/o heard between two consecutive answer words
+        let articles: Set<String> = ["un", "o"]
+        let inserted = (1..<max(m - 1, 1)).first { j in
+            articles.contains(h[j].key) && alignedTo[j] < 0 && alignedTo[j - 1] >= 0
+                && alignedTo[j + 1] == alignedTo[j - 1] + 1
+        }
+        let insertedHint = inserted.map { "No \(h[$0].shown) before \(e[alignedTo[$0 + 1]].shown)" }
+
         if missing.isEmpty && near.isEmpty {
+            if let insertedHint { return Judgement(verdict: .close, score: 0.9, hint: insertedHint) }
             return Judgement(verdict: .correct, score: 1, hint: nil)
         }
         if missingContent.isEmpty && near.count <= 1 {
@@ -156,6 +171,7 @@ enum Grader {
             if let x = near.first {
                 parts.append("Check the ending: \(x.want) (heard \(x.got))")
             }
+            if let insertedHint { parts.append(insertedHint) }
             return Judgement(verdict: .close, score: score, hint: parts.joined(separator: " · "))
         }
         return Judgement(verdict: .missed, score: score, hint: nil)
