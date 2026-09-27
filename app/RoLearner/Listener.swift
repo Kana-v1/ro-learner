@@ -1,5 +1,30 @@
 import AVFoundation
+import Network
 import Speech
+
+/// Whether the phone has a connection right now, so recognition can fall back
+/// from Apple's servers to on-phone when there is none.
+final class NetworkStatus: @unchecked Sendable {
+    static let shared = NetworkStatus()
+    private let monitor = NWPathMonitor()
+    private let lock = NSLock()
+    private var _online = true
+
+    var online: Bool {
+        lock.lock(); defer { lock.unlock() }
+        return _online
+    }
+
+    private init() {
+        monitor.pathUpdateHandler = { [weak self] path in
+            guard let self else { return }
+            self.lock.lock()
+            self._online = path.status == .satisfied
+            self.lock.unlock()
+        }
+        monitor.start(queue: DispatchQueue(label: "vorbeste.network"))
+    }
+}
 
 /// The microphone tap runs on the audio thread, so the request it feeds lives in
 /// a lock-protected box rather than on the main-actor Listener.
@@ -40,6 +65,13 @@ final class Listener {
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
     var onDevice: Bool { recognizer?.supportsOnDeviceRecognition ?? false }
+    private var lastMode = ""
+
+    /// The "Better recognition" setting: Apple's servers recognise learner
+    /// Romanian better than the on-phone model. On by default.
+    static var preferServer: Bool {
+        UserDefaults.standard.object(forKey: "serverRecognition") as? Bool ?? true
+    }
 
     static func requestPermissions() async -> Bool {
         let status = await withCheckedContinuation {
@@ -138,7 +170,15 @@ final class Listener {
         var context: [String] = []
         for h in [expected] + hints where !h.isEmpty && !context.contains(h) { context.append(h) }
         req.contextualStrings = Array(context.prefix(100))
-        if recognizer.supportsOnDeviceRecognition { req.requiresOnDeviceRecognition = true }
+        // Apple's servers when the setting is on and there is a connection;
+        // otherwise on the phone, if this phone can do Romanian on-device.
+        let useServer = Self.preferServer && NetworkStatus.shared.online
+        req.requiresOnDeviceRecognition = !useServer && recognizer.supportsOnDeviceRecognition
+        let mode = req.requiresOnDeviceRecognition ? "on the phone" : "Apple's servers"
+        if mode != lastMode {
+            Log.write("recognition now via \(mode) (setting: \(Self.preferServer ? "servers" : "phone"), online: \(NetworkStatus.shared.online), on-device possible: \(recognizer.supportsOnDeviceRecognition))", "speech")
+            lastMode = mode
+        }
 
         latest = nil
         lastChange = Date()

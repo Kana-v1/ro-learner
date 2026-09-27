@@ -112,8 +112,8 @@ final class SessionEngine: ObservableObject {
             }
         }
         configureAudio()
-        if voiceMode && !listener.onDevice {
-            note = "Romanian recognition runs on Apple's servers on this phone, so it needs mobile data."
+        if voiceMode && !listener.onDevice && !NetworkStatus.shared.online {
+            note = "No connection, and this phone can't recognise Romanian offline — answers won't be heard until it's back."
         }
         record.mode = voiceMode ? "voice" : "tap"
         Log.write("start \(pack.header.slug) in \(record.mode) mode at \(timeString(startAt)); \(total) drills; on-device recognition: \(listener.onDevice)", "player")

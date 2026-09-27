@@ -14,6 +14,7 @@ struct HomeView: View {
     // Off by default: in call mode the AirPods mic missed answers and presses
     // were unreliable. Kept as an experiment (voice-chat mode) until it works.
     @AppStorage("headsetMicExperimental") private var headsetMic = false
+    @AppStorage("serverRecognition") private var serverRecognition = true
     @AppStorage("onboarded") private var onboarded = false
     @State private var importing = false
     @State private var linking = false
@@ -302,6 +303,9 @@ struct HomeView: View {
                 }
                 Divider().overlay(Theme.line)
                 Toggle("Listen to my answers", isOn: $voiceMode).tint(Theme.accent)
+                Toggle("Better recognition (Apple's servers)", isOn: $serverRecognition).tint(Theme.accent)
+                Text("Sends your spoken answers to Apple to be recognised, which is more accurate for Romanian. Needs a connection; without one the phone recognises them itself.")
+                    .font(.system(size: 12)).foregroundStyle(Theme.muted)
                 Toggle("Headphone microphone (experimental)", isOn: $headsetMic).tint(Theme.accent)
                 Text("With listening off, episodes play straight through and you mark misses yourself. The headphone microphone runs the app like a phone call: call-quality sound, noise suppression, and AirPods presses as pause/resume. Still being tested; off, the phone's microphone listens and playback stays full quality.")
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
