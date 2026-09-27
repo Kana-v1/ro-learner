@@ -53,6 +53,7 @@ final class PackStore: ObservableObject {
     @Published private(set) var syncing = false
     @Published private(set) var lastSync: Date?
     @Published private(set) var syncProblem: String?
+    @Published private(set) var githubRepo: String? = UserDefaults.standard.string(forKey: "githubRepo")
     @Published var lastError: String?
 
     /// File layout, matching make_lesson_pack.py: magic, 4-byte big-endian
@@ -146,8 +147,42 @@ final class PackStore: ObservableObject {
     /// Pull new lessons and Claude's notes from the linked folder, push finished
     /// sessions into its results/ folder. Safe to call often; does nothing
     /// without a linked folder.
+    // MARK: GitHub sync (preferred over the iCloud folder when set up)
+
+    var githubConfigured: Bool { githubRepo != nil && Keychain.get("githubToken") != nil }
+    /// Episodes arrive and results leave by themselves (GitHub or iCloud).
+    var autoSync: Bool { githubConfigured || linkedFolder != nil }
+
+    /// Check the token against the repo, keep it in the Keychain, sync.
+    /// Returns a message to show when GitHub refuses.
+    func connectGitHub(repo rawRepo: String, token rawToken: String) async -> String? {
+        let repo = rawRepo.trimmingCharacters(in: .whitespacesAndNewlines)
+        let token = rawToken.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard repo.contains("/"), !token.isEmpty else { return "Enter owner/repo and the token." }
+        if let problem = await GitHubSync.check(repo: repo, token: token) { return problem }
+        Keychain.set(token, for: "githubToken")
+        UserDefaults.standard.set(repo, forKey: "githubRepo")
+        githubRepo = repo
+        // Results "sent" to iCloud never reached the computer: send everything once more.
+        status.sent = [:]
+        saveStatus()
+        Log.write("connected to GitHub repo \(repo)", "sync")
+        await sync()
+        return nil
+    }
+
+    func disconnectGitHub() {
+        Keychain.set(nil, for: "githubToken")
+        UserDefaults.standard.removeObject(forKey: "githubRepo")
+        githubRepo = nil
+        syncProblem = nil
+    }
+
     func sync() async {
-        guard !syncing, let root = resolveLinkedFolder() else { return }
+        guard !syncing else { return }
+        let gitHub = githubRepo.flatMap { repo in Keychain.get("githubToken").map { (repo: repo, token: $0) } }
+        let root = gitHub == nil ? resolveLinkedFolder() : nil
+        guard gitHub != nil || root != nil else { return }
         syncing = true
         defer { syncing = false }
 
@@ -156,9 +191,21 @@ final class PackStore: ObservableObject {
             return DriveSync.Outgoing(key: s.key, fileName: "\(s.key).json", data: d)
         }
         let known = status.pulled
-        let outcome = await Task.detached(priority: .utility) {
-            DriveSync.run(root: root, known: known, outgoing: outgoing, log: Data(Log.read().utf8))
-        }.value
+        let logData = Data(Log.read().utf8)
+        let outcome: DriveSync.Outcome
+        if let gitHub {
+            let result = await GitHubSync.run(repo: gitHub.repo, token: gitHub.token, known: known,
+                                              haveSlugs: Set(packs.map(\.header.slug)),
+                                              outgoing: outgoing, log: logData)
+            for (k, d) in result.1 { status.pulled[k] = d }
+            outcome = result.0
+        } else if let root {
+            outcome = await Task.detached(priority: .utility) {
+                DriveSync.run(root: root, known: known, outgoing: outgoing, log: logData)
+            }.value
+        } else {
+            return
+        }
 
         for f in outcome.lessons {
             do { try importPack(from: f.local); status.pulled[f.name] = f.modified }

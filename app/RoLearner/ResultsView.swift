@@ -47,10 +47,10 @@ struct ResultsView: View {
                         }
                         Spacer()
                         Button {
-                            if store.linkedFolder != nil { Task { await store.sync() } }
+                            if store.autoSync { Task { await store.sync() } }
                             else { share = store.exportUnsent() }
                         } label: {
-                            Label(store.linkedFolder != nil ? "Sync" : "Share", systemImage: "arrow.up.doc")
+                            Label(store.autoSync ? "Sync" : "Share", systemImage: "arrow.up.doc")
                                 .font(.system(size: 15, weight: .semibold))
                                 .padding(.horizontal, 14).frame(height: 44)
                                 .background(Theme.accent, in: RoundedRectangle(cornerRadius: 12))

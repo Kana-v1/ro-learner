@@ -27,12 +27,16 @@ struct HomeView: View {
     @State private var sort: EpisodeSort = .course
     @State private var query = ""
     @State private var flipped: Set<Int> = []    // lessons opened/closed against their default
+    @State private var ghRepo = "Kana-v1/ro-learner-data"
+    @State private var ghToken = ""
+    @State private var ghMessage: String?
+    @State private var connecting = false
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 header
-                NextStepCard(step: store.nextStep, linked: store.linkedFolder != nil,
+                NextStepCard(step: store.nextStep, linked: store.autoSync,
                              syncing: store.syncing, act: act)
                 if let first = store.inProgress.first, !isContinueStep {
                     ContinueCard(pack: first.pack, progress: first.progress) { open(first.pack) }
@@ -273,10 +277,12 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Settings").font(.system(size: 17, weight: .semibold)).padding(.top, 8)
             CardBox {
+                gitHubSettings
+                Divider().overlay(Theme.line)
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("Sync folder").font(.system(size: 15, weight: .semibold))
+                            Text("iCloud folder").font(.system(size: 15, weight: .semibold))
                             Text(driveStatus).font(.system(size: 13)).foregroundStyle(Theme.muted)
                         }
                         Spacer()
@@ -298,7 +304,9 @@ struct HomeView: View {
                             Button("Unlink") { store.unlinkFolder() }.buttonStyle(OutlineButtonStyle())
                         }
                     }
-                    Text("A folder in iCloud Drive (Google Drive doesn't let other apps open its folders). Whenever the app is open, new episodes come in from its lessons/ and your results go out to results/, where Claude reads them.")
+                    Text(store.githubConfigured
+                         ? "Not used while GitHub sync is on."
+                         : "A folder in iCloud Drive. Slower than GitHub: iCloud uploads and downloads when it chooses to.")
                         .font(.system(size: 12)).foregroundStyle(Theme.muted)
                 }
                 Divider().overlay(Theme.line)
@@ -314,6 +322,61 @@ struct HomeView: View {
         .linkFolderPicker(isPresented: $linking, store: store)
     }
 
+    private var gitHubSettings: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("GitHub sync").font(.system(size: 15, weight: .semibold))
+                    Text(gitHubStatus).font(.system(size: 13)).foregroundStyle(Theme.muted)
+                }
+                Spacer()
+                if store.syncing || connecting { ProgressView().tint(Theme.accent) }
+            }
+            if store.githubConfigured {
+                HStack(spacing: 10) {
+                    Button("Sync now") {
+                        Log.write("tapped Sync now", "ui")
+                        Task { await store.sync() }
+                    }
+                    .buttonStyle(OutlineButtonStyle())
+                    Button("Disconnect") { store.disconnectGitHub() }.buttonStyle(OutlineButtonStyle())
+                }
+            } else {
+                TextField("owner/repo", text: $ghRepo)
+                    .textInputAutocapitalization(.never).autocorrectionDisabled()
+                    .padding(.horizontal, 12).frame(height: 40)
+                    .background(Theme.chip, in: RoundedRectangle(cornerRadius: 10))
+                SecureField("Access token", text: $ghToken)
+                    .textInputAutocapitalization(.never).autocorrectionDisabled()
+                    .padding(.horizontal, 12).frame(height: 40)
+                    .background(Theme.chip, in: RoundedRectangle(cornerRadius: 10))
+                Button("Connect") {
+                    connecting = true
+                    ghMessage = nil
+                    Task {
+                        ghMessage = await store.connectGitHub(repo: ghRepo, token: ghToken)
+                        if ghMessage == nil { ghToken = "" }
+                        connecting = false
+                    }
+                }
+                .buttonStyle(OutlineButtonStyle())
+                .disabled(connecting || ghToken.isEmpty)
+                if let ghMessage {
+                    Text(ghMessage).font(.system(size: 12)).foregroundStyle(Theme.notQuite)
+                }
+            }
+            Text("A private GitHub repository: new episodes come in from it and your results go straight to it for Claude, each time the app opens or an episode ends. The token is kept in the iPhone's Keychain.")
+                .font(.system(size: 12)).foregroundStyle(Theme.muted)
+        }
+    }
+
+    private var gitHubStatus: String {
+        guard let repo = store.githubRepo, store.githubConfigured else { return "Not connected" }
+        if let p = store.syncProblem { return "\(repo) · \(p)" }
+        if let t = store.lastSync { return "\(repo) · synced \(t.formatted(date: .omitted, time: .shortened))" }
+        return repo
+    }
+
     private var driveStatus: String {
         guard let name = store.linkedFolder else { return "Not linked" }
         if let p = store.syncProblem { return "\(name) · \(p)" }
@@ -324,9 +387,9 @@ struct HomeView: View {
     private func act(_ step: NextStep) {
         switch step {
         case .importEpisodes, .allDone:
-            if store.linkedFolder != nil { Task { await store.sync() } } else { importing = true }
+            if store.autoSync { Task { await store.sync() } } else { importing = true }
         case .upload:
-            if store.linkedFolder != nil { Task { await store.sync() } } else { share = store.exportUnsent() }
+            if store.autoSync { Task { await store.sync() } } else { share = store.exportUnsent() }
         case .askClaude:
             store.markAnalysed(store.awaiting.map(\.key))
         case .continueEpisode(let pack, _), .practise(let pack):

@@ -63,7 +63,7 @@ struct PlayerView: View {
     }
 
     private func upload() {
-        if store.linkedFolder != nil {
+        if store.autoSync {
             Task { await store.sync() }
         } else {
             share = store.exportUnsent()
@@ -376,7 +376,7 @@ struct FinishedPanel: View {
                                     HStack(spacing: 8) {
                                         if store.syncing { ProgressView().tint(Theme.onAccent) }
                                         else { Image(systemName: "arrow.up.doc") }
-                                        Text(store.linkedFolder != nil ? "Sync now" : "Share results")
+                                        Text(store.autoSync ? "Sync now" : "Share results")
                                     }
                                 }
                                 .buttonStyle(AccentButtonStyle())
