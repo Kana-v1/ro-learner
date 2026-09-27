@@ -141,10 +141,14 @@ final class SessionEngine: ObservableObject {
                                         object: nil, queue: .main) { [weak self] n in
             let reason = n.userInfo?[AVAudioSessionRouteChangeReasonKey] as? UInt
             let lost = reason == AVAudioSession.RouteChangeReason.oldDeviceUnavailable.rawValue
+            let arrived = reason == AVAudioSession.RouteChangeReason.newDeviceAvailable.rawValue
             let route = AVAudioSession.sharedInstance().currentRoute
             let desc = "out \(route.outputs.map(\.portName)) in \(route.inputs.map(\.portName))"
             Log.write("route change (reason \(reason ?? 0)): \(desc)", "audio")
-            MainActor.assumeIsolated { if lost { self?.pauseIfRunning() } }
+            MainActor.assumeIsolated {
+                if lost { self?.pauseIfRunning() }
+                if arrived { self?.preferHeadsetMic() }    // headphones connected mid-session
+            }
         })
         setupRemoteCommands()
 
@@ -162,10 +166,32 @@ final class SessionEngine: ObservableObject {
 
     /// Listening needs play-and-record; the headphone mic hears you far better
     /// while walking, at the cost of call-quality playback on Bluetooth.
+    ///
+    /// With both Bluetooth modes allowed, iOS prefers the high-quality one
+    /// (A2DP), which has no microphone — so the phone's own mic did the
+    /// listening. With the headset mic on, allow only call mode (HFP) and ask
+    /// for the headset as input explicitly (preferHeadsetMic, after activation).
     private func setListeningCategory() throws {
-        var options: AVAudioSession.CategoryOptions = [.allowBluetoothA2DP, .defaultToSpeaker]
-        if headsetMic { options.insert(.allowBluetooth) }
+        let options: AVAudioSession.CategoryOptions = headsetMic
+            ? [.allowBluetooth, .defaultToSpeaker]
+            : [.allowBluetoothA2DP, .defaultToSpeaker]
         try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: options)
+    }
+
+    /// Make a connected Bluetooth headset the input. Only possible once the
+    /// session is active; called again when headphones (re)connect.
+    private func preferHeadsetMic() {
+        guard voiceMode, headsetMic else { return }
+        let session = AVAudioSession.sharedInstance()
+        let inputs = session.availableInputs ?? []
+        if let headset = inputs.first(where: { $0.portType == .bluetoothHFP }) {
+            do {
+                try session.setPreferredInput(headset)
+            } catch {
+                Log.write("couldn't select \(headset.portName) as mic: \(error)", "audio")
+            }
+        }
+        Log.write("mic inputs \(inputs.map { "\($0.portName) (\($0.portType.rawValue))" }); using \(session.currentRoute.inputs.map(\.portName))", "audio")
     }
 
     private func configureAudio() {
@@ -174,6 +200,7 @@ final class SessionEngine: ObservableObject {
             if voiceMode {
                 try setListeningCategory()
                 try session.setActive(true)
+                preferHeadsetMic()
                 try listener.start()
             } else {
                 try session.setCategory(.playback, mode: .spokenAudio)
@@ -270,9 +297,11 @@ final class SessionEngine: ObservableObject {
         do {
             // Only a released session needs switching back — the part that
             // costs seconds of Bluetooth renegotiation.
-            if voiceMode && audioReleased { try setListeningCategory() }
+            let wasReleased = audioReleased
+            if voiceMode && wasReleased { try setListeningCategory() }
             audioReleased = false
             try AVAudioSession.sharedInstance().setActive(true)
+            if wasReleased { preferHeadsetMic() }
         } catch {
             Log.write("reactivating audio failed: \(error)", "audio")
         }
