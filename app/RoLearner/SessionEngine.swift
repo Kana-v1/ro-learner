@@ -579,10 +579,16 @@ final class SessionEngine: ObservableObject {
             tones.play(.yourTurn)
             try? await Task.sleep(nanoseconds: 400_000_000)
             if Task.isCancelled { return }
-            let guesses = await listener.listen(expected: d.expected, hints: hints(for: d),
-                                                maxSeconds: max(d.thinkSeconds + 1.5, 4)) {
-                [weak self] partial in self?.liveHeard = partial
-            }
+            // Time to start answering: the episode's pause was sized for
+            // listening along, not for recall on the move; 4 s left blanks on
+            // single words that came a moment later.
+            let guesses = await listener.listen(
+                expected: d.expected, hints: hints(for: d),
+                maxSeconds: max(d.thinkSeconds + 3, 7),
+                complete: { heard in
+                    let v = Grader.judge(d, heard: heard).verdict
+                    return v == .correct || v == .close
+                }) { [weak self] partial in self?.liveHeard = partial }
             if Task.isCancelled { return }
             let best = Grader.judgeBest(d, guesses: guesses)
             let judgement = best.judgement

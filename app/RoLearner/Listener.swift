@@ -58,6 +58,8 @@ final class Listener {
     private var lastChange = Date()
     private var startedAt = Date()
     private var maxSeconds = 5.0
+    private var complete: ((String) -> Bool)?
+    private var latestComplete = false
     private var completion: (([String]) -> Void)?
     private var onPartial: ((String) -> Void)?
     private var guesses: [String] = []      // the recogniser's ranked alternatives
@@ -137,10 +139,15 @@ final class Listener {
     /// Returns the recogniser's ranked guesses, best first (up to five), or
     /// none if nothing was heard. `hints` are phrases and words to bias it
     /// toward — the expected answer, its accepted alternatives, its words.
+    /// `complete` says whether what has been heard so far is already a whole
+    /// answer: then a short silence ends the listen. Otherwise the learner is
+    /// probably mid-sentence, recalling the next word, and gets a longer one.
     func listen(expected: String, hints: [String] = [], maxSeconds: Double,
+                complete: ((String) -> Bool)? = nil,
                 onPartial: ((String) -> Void)? = nil) async -> [String] {
         await withCheckedContinuation { (c: CheckedContinuation<[String], Never>) in
-            begin(expected: expected, hints: hints, maxSeconds: maxSeconds, onPartial: onPartial) {
+            begin(expected: expected, hints: hints, maxSeconds: maxSeconds, complete: complete,
+                  onPartial: onPartial) {
                 c.resume(returning: $0)
             }
         }
@@ -154,6 +161,7 @@ final class Listener {
     }
 
     private func begin(expected: String, hints: [String], maxSeconds: Double,
+                       complete: ((String) -> Bool)?,
                        onPartial: ((String) -> Void)?, completion: @escaping ([String]) -> Void) {
         abort()
         ensureRunning()        // a stopped mic would only ever hear silence
@@ -184,6 +192,8 @@ final class Listener {
         lastChange = Date()
         startedAt = Date()
         self.maxSeconds = maxSeconds
+        self.complete = complete
+        latestComplete = false
         self.completion = completion
         self.onPartial = onPartial
         box.set(req)
@@ -234,6 +244,7 @@ final class Listener {
         if !texts.isEmpty { guesses = texts }
         if let text = texts.first, text != latest {
             latest = text
+            latestComplete = complete?(text) ?? true
             lastChange = Date()
             onPartial?(text)
         }
@@ -243,8 +254,12 @@ final class Listener {
     private func tick(_ gen: Int) {
         guard gen == generation, completion != nil else { return }
         let now = Date()
-        let limit = latest == nil ? maxSeconds : maxSeconds + 3
-        let spokeThenStopped = latest != nil && now.timeIntervalSince(lastChange) > 1.3
+        // Learners pause mid-answer to recall the next word, and the 1.3 s
+        // that ended every listen cut them off ("Fiul meu e" for "Fiul meu e
+        // elev", then right on the retry). A whole answer still ends fast.
+        let limit = latest == nil ? maxSeconds : maxSeconds + 8
+        let quiet = latestComplete ? 1.0 : 2.8
+        let spokeThenStopped = latest != nil && now.timeIntervalSince(lastChange) > quiet
         if spokeThenStopped || now.timeIntervalSince(startedAt) > limit { finish() }
     }
 
@@ -252,6 +267,7 @@ final class Listener {
         let done = completion
         completion = nil
         onPartial = nil
+        complete = nil
         let heard = latest == nil ? [] : (guesses.isEmpty ? [latest!] : guesses)
         guesses = []
         cancelCurrent()
