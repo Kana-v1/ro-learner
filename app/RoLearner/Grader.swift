@@ -41,7 +41,7 @@ enum Grader {
             .replacingOccurrences(of: "ş", with: "ș").replacingOccurrences(of: "ţ", with: "ț")
             .replacingOccurrences(of: "Ş", with: "Ș").replacingOccurrences(of: "Ţ", with: "Ț")
         var spaced = ""
-        for ch in normalised { spaced.append(ch.isLetter ? ch : " ") }
+        for ch in normalised { spaced.append(ch.isLetter || ch.isNumber ? ch : " ") }
         return spaced.split(separator: " ").map { w in
             let shown = String(w)
             let folded = shown.lowercased().folding(options: .diacriticInsensitive, locale: nil)
@@ -50,6 +50,25 @@ enum Grader {
     }
 
     static func tokens(_ s: String) -> [String] { words(s).map(\.key) }
+
+    /// The recogniser writes numbers as digits ("Am 3 copii"); the answers
+    /// spell them out. A digit matches any spelling of its number — 1 is also
+    /// the articles un and o, 2 both doi and două, 9 also nouă (new).
+    static let numberWords: [String: Set<String>] = [
+        "1": ["unu", "una", "un", "o"], "2": ["doi", "doua"], "3": ["trei"], "4": ["patru"],
+        "5": ["cinci"], "6": ["sase"], "7": ["sapte"], "8": ["opt"], "9": ["noua"], "10": ["zece"],
+        "11": ["unsprezece"], "12": ["doisprezece", "douasprezece"], "13": ["treisprezece"],
+        "14": ["paisprezece"], "15": ["cincisprezece"], "16": ["saisprezece"],
+        "17": ["saptesprezece"], "18": ["optsprezece"], "19": ["nouasprezece"], "20": ["douazeci"],
+    ]
+
+    /// Two words are the same word: equal once folded, or a digit and its number.
+    static func same(_ a: String, _ b: String) -> Bool {
+        if a == b { return true }
+        if let w = numberWords[a] { return w.contains(b) }
+        if let w = numberWords[b] { return w.contains(a) }
+        return false
+    }
 
     static func judge(_ d: Drill, heard: String?) -> Judgement {
         guard let heard, !tokens(heard).isEmpty else {
@@ -124,7 +143,7 @@ enum Grader {
         var dp = Array(repeating: Array(repeating: 0, count: m + 1), count: n + 1)
         for i in 1...n {
             for j in 1...m {
-                let w = e[i - 1].key == h[j - 1].key ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
+                let w = same(e[i - 1].key, h[j - 1].key) ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1], w > 0 ? dp[i - 1][j - 1] + w : 0)
             }
         }
@@ -135,7 +154,7 @@ enum Grader {
         var i = n, j = m
         while i > 0 {
             if j > 0 {
-                let w = e[i - 1].key == h[j - 1].key ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
+                let w = same(e[i - 1].key, h[j - 1].key) ? 2 : (sameStem(e[i - 1].key, h[j - 1].key) ? 1 : 0)
                 if w > 0 && dp[i][j] == dp[i - 1][j - 1] + w {
                     if w == 1 { near.append((want: e[i - 1].shown, got: h[j - 1].shown)) }
                     alignedTo[j - 1] = i - 1
