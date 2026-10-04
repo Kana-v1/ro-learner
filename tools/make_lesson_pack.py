@@ -16,9 +16,10 @@ ep.drill() in the builders emits a `prompt` segment followed by its `answer`.
     python3 tools/make_lesson_pack.py episodes/episode_06a.json [more...]
     python3 tools/make_lesson_pack.py --all            # every rendered episode
 
-With a sync folder configured (tools/sync_folder.py: iCloud Drive via iCloud
-for Windows), each pack is also written into its lessons/, which the app picks
-up the next time it is opened. render.py calls this itself after a full render.
+Each pack also goes to the phone: uploaded to the private GitHub repo's
+release when that is set up (tools/data_repo.py), otherwise copied into the
+iCloud sync folder's lessons/ (tools/sync_folder.py). render.py calls this
+itself after a full render.
 
 File layout (read by PackStore.swift): b"ROLESSON1\\n", a 4-byte big-endian
 header length, the JSON header, then the mp3 to the end of the file.
@@ -30,6 +31,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import data_repo
 import render
 from sync_folder import sync_folder
 
@@ -82,10 +84,12 @@ def build(ep_path: Path) -> Path:
     out = PACKS / f"episode_{slug}.rolesson"
     blob = MAGIC + struct.pack(">I", len(header)) + header + mp3
     out.write_bytes(blob)
-    # Into the phone's sync folder too, if there is one: the app picks it up
-    # from lessons/ the next time it is opened.
-    folder = sync_folder()
-    if folder:
+    # Onward to the phone: the private GitHub repo if set up (tools/data_repo.py),
+    # else the iCloud folder. The app picks it up the next time it is opened.
+    folder = None if data_repo.available() else sync_folder()
+    if data_repo.available():
+        data_repo.upload_episode(out)
+    elif folder:
         lessons = folder / "lessons"
         lessons.mkdir(parents=True, exist_ok=True)
         (lessons / out.name).write_bytes(blob)
