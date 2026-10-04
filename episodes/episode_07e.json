@@ -1,0 +1,1498 @@
+{
+ "episode": 7,
+ "part": "e",
+ "lesson": 7,
+ "title": "Cât costă?",
+ "source": "Limba care ne unește, nivelul I — Lecția 7 (partea E)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Cât costă? / costă": "How much is it? / it costs — a chunk"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Vreau …",
+   "spoken": "Aș vrea …",
+   "gloss": "I'd like …",
+   "note": "The book teaches only 'vreau'. Among friends it's fine; asking in a shop or of a stranger, 'Aș vrea …' is the usual polite form. Taught as a chunk, no conditional grammar.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce vreți?",
+   "spoken": "Ce doriți?",
+   "gloss": "What would you like? (shop assistant)",
+   "note": "What a shop assistant or waiter says. The book's 'Ce vreți?' would sound blunt from staff.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "gras",
+   "spoken": "plinuț, mai solid",
+   "gloss": "fat → chubby, well-built",
+   "note": "'Gras' about a person is blunt, close to rude, said to their face. Softer: 'e mai plinuț' / 'e mai solid'. Fine about food ('carne grasă').",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "brunet / blond",
+   "spoken": "brunet, șaten, blond",
+   "gloss": "dark-haired, brown-haired, fair",
+   "note": "People add 'șaten' (brown-haired) between the book's two; 'brunet' is really dark hair.",
+   "confidence": "medium"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum este?",
+   "spoken": "Cum arată?",
+   "gloss": "What does he/she look like?",
+   "note": "The everyday question for describing a person's looks; the book only has 'Cum este?' (what is he like).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Nu am, nu are",
+   "spoken": "N-am, n-are",
+   "gloss": "I don't have, he doesn't have",
+   "note": "The book itself writes 'Mihai n-are frate'. In speech 'nu am' almost always contracts to 'n-am', 'nu are' to 'n-are'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Câți ani ai?",
+   "spoken": "Câți ani aveți?",
+   "gloss": "How old are you? (polite)",
+   "note": "'Câți ani ai?' to a child or a friend; to an adult stranger the polite 'aveți' — and, as in English, asking an adult's age is personal.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cât costă?",
+   "spoken": "Cât face?",
+   "gloss": "How much does it come to? (at the till)",
+   "note": "'Cât costă?' asks the price of one thing; at the till, for the total, people say 'Cât face?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are (handing something over).",
+   "note": "Said when handing over money or goods, and by staff inviting you in. Polite form; 'Poftim' between friends, and 'Poftim?' also means 'Pardon?'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua! Ce doriți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aș vrea o pâine. Cât costă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și o ciocolată?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și două beri?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Opt lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Poftiți banii.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A market stall: how much is it. Six to ten, and money.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s012",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six to ten first, as a run, then the money words.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "New words"
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pâinea costă șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bread costs six lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pâinea costă șase lei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "six",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s017",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "șase",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Berea costă șapte lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The beer costs seven lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Berea costă șapte lei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "seven",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s022",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "șapte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu are opt ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is eight.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu are opt ani.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eight",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s027",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "opt",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica ei are nouă ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is nine.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica ei are nouă ani.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "nine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s032",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "nouă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ciocolata costă zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chocolate costs ten lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ciocolata costă zece lei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ten",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s037",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "zece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un leu, doi lei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one, two — of Romanian money",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s040",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un leu, doi lei",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one unit of Romanian money",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un leu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de bani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need money.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s045",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de bani.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "money",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bani",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Count with him, six to ten.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six to ten.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "șase, șapte, opt, nouă, zece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And all the way, one to ten.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One to ten.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "unu, doi, trei, patru, cinci, șase, șapte, opt, nouă, zece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed, just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eight",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "opt",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "money",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bani",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "six",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "șase",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ten",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "zece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one unit of Romanian money",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un leu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "nine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "nouă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "seven",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "șapte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "patru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nine sounds exactly like new for a her-word from the shop episode. Listen — a new dress, nine lei:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Nine and new"
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O rochie nouă, nouă lei.",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s075",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Which one it is, the place in the sentence tells you. Say it:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A new dress, nine lei.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O rochie nouă, nouă lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The money word has its own plural, and asking the price is a fixed phrase — how much is it. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Prices"
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât costă? Șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât costă berea? Șapte lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two lei",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doi lei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ten lei",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "zece lei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is it?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât costă?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the bread? — Six lei.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât costă pâinea? — Șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the ice cream? — Five lei.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât costă înghețata? — Cinci lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chocolate costs ten lei.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ciocolata costă zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need money.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de bani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't have money.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu am bani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "N-am bani."
+   ]
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have ten lei.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is eight.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu are opt ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is nine.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica ei are nouă ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many chocolates do you want? — Eight.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câte ciocolate vrei? — Opt.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'd like two beers.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aș vrea două beri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Vreau două beri."
+   ]
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We need money.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Avem nevoie de bani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The beer costs seven lei.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Berea costă șapte lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old is his brother? — Nine.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți ani are fratele lui? — Nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Seven children.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Șapte copii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's the money. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți banii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. At the till, for the total of everything, people don't ask the price — they ask what it comes to. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât face?",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does it come to?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât face?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And handing over the money, the word you heard at the end of the dialogue — here you are. Between friends it's shorter. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți. Poftim.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s124",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Polite, then friendly.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s125",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A clever daughter.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O fiică deșteaptă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is a pupil.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu e elev.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My family has hardworking members.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Familia mea are membri harnici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "long",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lung",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a blouse",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a dress",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a skirt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fustă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The market again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s141",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua! Ce doriți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aș vrea o pâine. Cât costă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și o ciocolată?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și două beri?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Opt lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s148",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Poftiți banii.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s149",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One to ten, and what things cost.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s151",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

@@ -364,6 +364,38 @@
    "gloss": "What does he/she look like?",
    "note": "The everyday question for describing a person's looks; the book only has 'Cum este?' (what is he like).",
    "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Nu am, nu are",
+   "spoken": "N-am, n-are",
+   "gloss": "I don't have, he doesn't have",
+   "note": "The book itself writes 'Mihai n-are frate'. In speech 'nu am' almost always contracts to 'n-am', 'nu are' to 'n-are'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Câți ani ai?",
+   "spoken": "Câți ani aveți?",
+   "gloss": "How old are you? (polite)",
+   "note": "'Câți ani ai?' to a child or a friend; to an adult stranger the polite 'aveți' — and, as in English, asking an adult's age is personal.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cât costă?",
+   "spoken": "Cât face?",
+   "gloss": "How much does it come to? (at the till)",
+   "note": "'Cât costă?' asks the price of one thing; at the till, for the total, people say 'Cât face?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are (handing something over).",
+   "note": "Said when handing over money or goods, and by staff inviting you in. Polite form; 'Poftim' between friends, and 'Poftim?' also means 'Pardon?'.",
+   "confidence": "high"
   }
  ]
 }

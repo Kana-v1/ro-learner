@@ -1,0 +1,1438 @@
+{
+ "episode": 7,
+ "part": "d",
+ "lesson": 7,
+ "title": "Câți ani are?",
+ "source": "Limba care ne unește, nivelul I — Lecția 7 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Andrei / Mihai / Ana": "names"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Vreau …",
+   "spoken": "Aș vrea …",
+   "gloss": "I'd like …",
+   "note": "The book teaches only 'vreau'. Among friends it's fine; asking in a shop or of a stranger, 'Aș vrea …' is the usual polite form. Taught as a chunk, no conditional grammar.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce vreți?",
+   "spoken": "Ce doriți?",
+   "gloss": "What would you like? (shop assistant)",
+   "note": "What a shop assistant or waiter says. The book's 'Ce vreți?' would sound blunt from staff.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "gras",
+   "spoken": "plinuț, mai solid",
+   "gloss": "fat → chubby, well-built",
+   "note": "'Gras' about a person is blunt, close to rude, said to their face. Softer: 'e mai plinuț' / 'e mai solid'. Fine about food ('carne grasă').",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "brunet / blond",
+   "spoken": "brunet, șaten, blond",
+   "gloss": "dark-haired, brown-haired, fair",
+   "note": "People add 'șaten' (brown-haired) between the book's two; 'brunet' is really dark hair.",
+   "confidence": "medium"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum este?",
+   "spoken": "Cum arată?",
+   "gloss": "What does he/she look like?",
+   "note": "The everyday question for describing a person's looks; the book only has 'Cum este?' (what is he like).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Nu am, nu are",
+   "spoken": "N-am, n-are",
+   "gloss": "I don't have, he doesn't have",
+   "note": "The book itself writes 'Mihai n-are frate'. In speech 'nu am' almost always contracts to 'n-am', 'nu are' to 'n-are'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Câți ani ai?",
+   "spoken": "Câți ani aveți?",
+   "gloss": "How old are you? (polite)",
+   "note": "'Câți ani ai?' to a child or a friend; to an adult stranger the polite 'aveți' — and, as in English, asking an adult's age is personal.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cât costă?",
+   "spoken": "Cât face?",
+   "gloss": "How much does it come to? (at the till)",
+   "note": "'Cât costă?' asks the price of one thing; at the till, for the total, people say 'Cât face?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are (handing something over).",
+   "note": "Said when handing over money or goods, and by staff inviting you in. Polite form; 'Poftim' between friends, and 'Poftim?' also means 'Pardon?'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua. Câți copii aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Trei. Doi băieți și o fată.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Câți ani are fata?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ana are un an.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și băieții?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Andrei are trei ani, Mihai are cinci.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci trei copii: un an, trei ani și cinci ani.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da. Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Registering children at a nursery: how many, and how old. Numbers one to five, and how to ask.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One to five first — a run you say in one breath — then year, and how many.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "New words"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unu, doi, trei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one, two, three",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unu, doi, trei",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one — counting",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doi băieți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two boys",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doi băieți",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trei copii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "three children",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trei copii",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "three",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Apartamentul are patru camere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The flat has four rooms.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Apartamentul are patru camere.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "patru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mihai are cinci ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mihai is five.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mihai are cinci ani.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "five",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "cinci",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ana are un an.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ana is one.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ana are un an.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a year",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un an",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câți copii aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many children do you have?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s044",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câți copii aveți?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "how many — before a his-word: boys, years",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "câți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Count with her, one to five.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One to five.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "unu, doi, trei, patru, cinci",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed, just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "patru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a year",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un an",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "five",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cinci",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "how many",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "câți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "three",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "trei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one, counting",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Age is like need from the last episode: you have years. How old is he — literally, how many years does he have. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How old"
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câți ani are? Are trei ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea are un an. Fiul meu are cinci ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He's three.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Are trei ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She's one.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Are un an.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is five.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu are cinci ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old is he?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți ani are?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old are you? To a child.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câți ani ai?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One and two change for a her-word, the way the word for a does. And how many changes too. Listen — boys, then girls:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "For her"
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un băiat, o fată; doi băieți, două fete",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți băieți? Câte fete?",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two boys",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doi băieți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two girls",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două fete",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two brothers",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doi frați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two sisters",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două surori",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many boys?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câți băieți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many girls?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câte fete?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many rooms?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câte camere?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many children do you have? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți copii aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have three children: two boys and a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem trei copii: doi băieți și o fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old is your son? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți ani are fiul dumneavoastră?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have two sisters.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am două surori.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The flat has four rooms.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Apartamentul are patru camere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many rooms? — Five.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câte camere? — Cinci.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many boys are here?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți băieți sunt aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter is one.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica mea are un an.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have two brothers.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am doi frați.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Andrei is three, Mihai is five.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Andrei are trei ani, Mihai are cinci ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. To a child, or a friend, how old are you is the short form you drilled. To an adult you don't know, the polite one — and, as in English, it's a personal question. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți ani aveți?",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old are you? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Câți ani aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have relatives.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem rude.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My brothers are at home.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Frații mei sunt acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our grandfather is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul nostru e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their parents are young.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții lor sunt tineri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweater",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pulover",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s134",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cămașă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The nursery again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s136",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua. Câți copii aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Trei. Doi băieți și o fată.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Câți ani are fata?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ana are un an.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și băieții?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Andrei are trei ani, Mihai are cinci.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Deci trei copii: un an, trei ani și cinci ani.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da. Mulțumesc.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One to five, and how old. Next time, six to ten.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s145",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

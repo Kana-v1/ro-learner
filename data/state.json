@@ -29,7 +29,10 @@
   "06f",
   "06g",
   "07a",
-  "07b"
+  "07b",
+  "07c",
+  "07d",
+  "07e"
  ],
  "items": {
   "01-1": {
@@ -685,6 +688,126 @@
    "g": "f",
    "cue": "eyes",
    "answer": "ochi"
+  },
+  "nevoie": {
+   "intro": "07c",
+   "g": "f",
+   "cue": "I need — before the thing",
+   "answer": "am nevoie de"
+  },
+  "pâine": {
+   "intro": "07c",
+   "g": "m",
+   "cue": "bread",
+   "answer": "pâine"
+  },
+  "bere": {
+   "intro": "07c",
+   "g": "m",
+   "cue": "beer",
+   "answer": "bere"
+  },
+  "ciocolată": {
+   "intro": "07c",
+   "g": "f",
+   "cue": "chocolate",
+   "answer": "ciocolată"
+  },
+  "înghețată": {
+   "intro": "07c",
+   "g": "f",
+   "cue": "ice cream",
+   "answer": "înghețată"
+  },
+  "dulce": {
+   "intro": "07c",
+   "g": "m",
+   "cue": "sweet",
+   "answer": "dulce"
+  },
+  "unu": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "one — counting",
+   "answer": "unu"
+  },
+  "doi": {
+   "intro": "07d",
+   "g": "f",
+   "cue": "two",
+   "answer": "doi"
+  },
+  "trei": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "three",
+   "answer": "trei"
+  },
+  "patru": {
+   "intro": "07d",
+   "g": "f",
+   "cue": "four",
+   "answer": "patru"
+  },
+  "cinci": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "five",
+   "answer": "cinci"
+  },
+  "an": {
+   "intro": "07d",
+   "g": "f",
+   "cue": "a year",
+   "answer": "un an"
+  },
+  "câți": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "how many — before a his-word: boys, years",
+   "answer": "câți"
+  },
+  "șase": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "six",
+   "answer": "șase"
+  },
+  "șapte": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "seven",
+   "answer": "șapte"
+  },
+  "opt": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "eight",
+   "answer": "opt"
+  },
+  "nouă": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "nine",
+   "answer": "nouă"
+  },
+  "zece": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "ten",
+   "answer": "zece"
+  },
+  "leu": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "one unit of Romanian money",
+   "answer": "un leu"
+  },
+  "bani": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "money",
+   "answer": "bani"
   }
  },
  "struggles": {
@@ -1121,5 +1244,28 @@
    "last": "close"
   }
  },
- "struggles_used": {}
+ "struggles_used": {
+  "07c": [
+   "un nume",
+   "un unchi",
+   "o fiică",
+   "un părinte",
+   "un prenume",
+   "Tatăl tău e medic?",
+   "un tricou"
+  ],
+  "07d": [
+   "Avem rude.",
+   "Frații mei sunt acasă.",
+   "Bunicul nostru e medic.",
+   "Părinții lor sunt tineri."
+  ],
+  "07e": [
+   "O fiică deșteaptă.",
+   "Fiul meu e elev.",
+   "Familia mea are membri harnici.",
+   "lung",
+   "o rochie"
+  ]
+ }
 }

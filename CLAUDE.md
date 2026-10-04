@@ -230,6 +230,9 @@ drill. It resumes where it stopped.
   (another episode's review included) clears it. Each build records which
   struggles it asks (`struggles_used`), and later episodes skip those and take
   the next ones down the list; the record resets when new sessions are ingested.
+  A review also skips misses the same episode already asks in its own drills.
+  Never rebuild an episode that is already rendered: a rebuild re-runs
+  `review_auto()` and changes the script under the rendered audio.
 - **When results show a lesson wasn't held** (first-time-right well under
   half), build a repair episode before moving on: no new items, the missed
   answers verbatim, each weak word on an expanding ladder, the error patterns

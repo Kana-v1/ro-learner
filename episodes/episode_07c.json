@@ -1,0 +1,1517 @@
+{
+ "episode": 7,
+ "part": "c",
+ "lesson": 7,
+ "title": "Am nevoie de pâine",
+ "source": "Limba care ne unește, nivelul I — Lecția 7 (partea C)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "ceva": "something — in 'ceva dulce'",
+  "Sunt la magazin.": "I'm at the shop — a chunk"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Vreau …",
+   "spoken": "Aș vrea …",
+   "gloss": "I'd like …",
+   "note": "The book teaches only 'vreau'. Among friends it's fine; asking in a shop or of a stranger, 'Aș vrea …' is the usual polite form. Taught as a chunk, no conditional grammar.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce vreți?",
+   "spoken": "Ce doriți?",
+   "gloss": "What would you like? (shop assistant)",
+   "note": "What a shop assistant or waiter says. The book's 'Ce vreți?' would sound blunt from staff.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "gras",
+   "spoken": "plinuț, mai solid",
+   "gloss": "fat → chubby, well-built",
+   "note": "'Gras' about a person is blunt, close to rude, said to their face. Softer: 'e mai plinuț' / 'e mai solid'. Fine about food ('carne grasă').",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "brunet / blond",
+   "spoken": "brunet, șaten, blond",
+   "gloss": "dark-haired, brown-haired, fair",
+   "note": "People add 'șaten' (brown-haired) between the book's two; 'brunet' is really dark hair.",
+   "confidence": "medium"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum este?",
+   "spoken": "Cum arată?",
+   "gloss": "What does he/she look like?",
+   "note": "The everyday question for describing a person's looks; the book only has 'Cum este?' (what is he like).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Nu am, nu are",
+   "spoken": "N-am, n-are",
+   "gloss": "I don't have, he doesn't have",
+   "note": "The book itself writes 'Mihai n-are frate'. In speech 'nu am' almost always contracts to 'n-am', 'nu are' to 'n-are'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Câți ani ai?",
+   "spoken": "Câți ani aveți?",
+   "gloss": "How old are you? (polite)",
+   "note": "'Câți ani ai?' to a child or a friend; to an adult stranger the polite 'aveți' — and, as in English, asking an adult's age is personal.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cât costă?",
+   "spoken": "Cât face?",
+   "gloss": "How much does it come to? (at the till)",
+   "note": "'Cât costă?' asks the price of one thing; at the till, for the total, people say 'Cât face?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are (handing something over).",
+   "note": "Said when handing over money or goods, and by staff inviting you in. Polite form; 'Poftim' between friends, and 'Poftim?' also means 'Pardon?'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Sunt la magazin. De ce ai nevoie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și de bere?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu, n-am nevoie de bere. Vreau o ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și Elena?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Elena are nevoie de înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, acum. Vrea ceva dulce.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A call from the shop: what do you need? The book's way of saying you need something, and five things to need.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time. The first is a whole phrase.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need bread.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am nevoie de pâine.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need — before the thing",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "am nevoie de",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need bread.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de pâine.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "bread",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pâine",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vreau o bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want a beer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vreau o bere.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "beer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vreau o ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want a chocolate bar.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vreau o ciocolată.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "chocolate",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ciocolată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul vrea o înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child wants an ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul vrea o înghețată.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ice cream",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înghețată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ciocolata e dulce.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Chocolate is sweet.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ciocolata e dulce.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sweet",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "dulce",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six together, mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "beer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sweet",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dulce",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "am nevoie de",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ice cream",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înghețată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "bread",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pâine",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "chocolate",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ciocolată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need is literally I have need of — so it moves like I have. And after of, the thing stays bare. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "I need"
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de pâine. Ai nevoie de pâine?",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "El are nevoie de bere. Avem nevoie de ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the question from the shop — what do you need:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De ce ai nevoie?",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need bread.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Am nevoie de o pâine."
+   ]
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you need beer? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ai nevoie de bere?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you need? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De ce ai nevoie?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We need bread.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Avem nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Avem nevoie de o pâine."
+   ]
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She needs chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea are nevoie de ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now something that sounded like a mistake in the last episodes but isn't. A sister, the sister, and my sister. Listen to all three:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "My sister"
+  },
+  {
+   "id": "s071",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o soră, sora, sora mea",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister is built on the sister, not on a sister — literally the sister mine. The same for every family word. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un frate, fratele, fratele meu",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fiică, fiica, fiica mea",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s075",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So the word for my, your, his always comes after the the form. In threes: a, the, my.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sister",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o soră",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the sister",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "sora",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "my sister",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "sora mea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a brother",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un frate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "my brother",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "fratele meu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a daughter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fiică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "my daughter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "fiica mea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an uncle",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un unchi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "my uncle",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unchiul meu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un nume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "my name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "numele meu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need bread and beer.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de pâine și bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't need beer.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu am nevoie de bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "N-am nevoie de bere."
+   ]
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter wants an ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica mea vrea o înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Chocolate is sweet.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ciocolata e dulce.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you need bread? — Yes, I need bread.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ai nevoie de pâine? — Da, am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My brother wants a beer.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele meu vrea o bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does she need? — Ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De ce are nevoie? — De înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't want beer, I want chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu vreau bere, vreau ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Nu vreau bere, vreau o ciocolată."
+   ]
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The ice cream is sweet.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Înghețata e dulce.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister needs chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sora mea are nevoie de ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We need bread, not ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem nevoie de pâine, nu de înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. In the call you heard the short form of I don't have — the not and the have run together. Listen to the full form, then the spoken one:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu am nevoie.",
+   "rate": 0.8,
+   "pause_after_ms": 1200
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "N-am nevoie.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s124",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The book itself writes it that way. Say it:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't need bread. The short way.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "N-am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Nu am nevoie de pâine."
+   ]
+  },
+  {
+   "id": "s127",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a parent",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un părinte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a first name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un prenume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your father a doctor? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tatăl tău e medic?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a t-shirt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tricou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a sofa.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o canapea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a mirror.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a magazine, and this is a newspaper.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o revistă, iar acesta e un ziar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The call again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s143",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Sunt la magazin. De ce ai nevoie?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și de bere?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu, n-am nevoie de bere. Vreau o ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și Elena?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s148",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Elena are nevoie de înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s149",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s150",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, acum. Vrea ceva dulce.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s151",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's what you need, and whose it is.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s152",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

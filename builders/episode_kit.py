@@ -226,6 +226,8 @@ class Episode:
         # instead of all repeating its top few. (ingest_results.py resets this.)
         used = {fold(a) for slug, answers in state.get("struggles_used", {}).items()
                 if slug in seq and seq.index(slug) < ci for a in answers}
+        # ... and so are misses this episode already asks elsewhere.
+        used |= {fold(s["text"]) for s in self.seg if s["type"] == "answer"}
         # Only misses from episodes played before this one: an episode cannot
         # review drills the learner has not met yet.
         struggles = [s for s in state.get("struggles", {}).values()
