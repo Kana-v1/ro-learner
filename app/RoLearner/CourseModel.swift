@@ -86,7 +86,10 @@ final class CourseModel {
             try await data.export(to: files.data)
             let config = SFSpeechLanguageModel.Configuration(languageModel: files.model,
                                                              vocabulary: files.vocabulary)
-            try await SFSpeechLanguageModel.prepareCustomLanguageModel(for: files.data, configuration: config)
+            // The clientIdentifier form: the only one in the iOS 18 SDK the CI
+            // builds with (deprecated in iOS 26, still working).
+            try await SFSpeechLanguageModel.prepareCustomLanguageModel(
+                for: files.data, clientIdentifier: "io.github.kanav1.rolearner", configuration: config)
             configuration = config
             builtKey = key
             UserDefaults.standard.set(key, forKey: "courseModelKey")
