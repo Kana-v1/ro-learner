@@ -61,6 +61,14 @@ VOICES = {
 }
 
 
+def fold(text):
+    """Text as the app's grader compares it: no case, diacritics or punctuation."""
+    text = unicodedata.normalize("NFD", text.lower())
+    text = "".join(c if c.isalpha() else " " for c in text
+                   if unicodedata.category(c) != "Mn")
+    return " ".join(text.split())
+
+
 def load(name):
     return json.loads((DATA / name).read_text(encoding="utf-8"))
 
@@ -213,10 +221,16 @@ class Episode:
             print(f"  note: {self.slug} not in sequence; no scheduled review")
             return
         ci = seq.index(self.slug)
+        # Misses already asked by an earlier episode built since the last
+        # ingest are skipped, so consecutive episodes work down the list
+        # instead of all repeating its top few. (ingest_results.py resets this.)
+        used = {fold(a) for slug, answers in state.get("struggles_used", {}).items()
+                if slug in seq and seq.index(slug) < ci for a in answers}
         # Only misses from episodes played before this one: an episode cannot
         # review drills the learner has not met yet.
         struggles = [s for s in state.get("struggles", {}).values()
-                     if s["intro"] in seq and seq.index(s["intro"]) < ci][:struggle_cap]
+                     if s["intro"] in seq and seq.index(s["intro"]) < ci
+                     and fold(s["answer"]) not in used][:struggle_cap]
         taken = {s["answer"] for s in struggles}
         due = []
         for it in state["items"].values():
@@ -269,6 +283,13 @@ class Episode:
             state["items"][it["name"]] = {
                 "intro": self.slug, "g": it["voice"],
                 "cue": it["cue"], "answer": it["answer"]}
+        # Which of the learner's misses this episode asks anywhere (a repair
+        # episode asks most of them outside any review block), for
+        # review_auto() in later episodes to skip.
+        asked = {fold(s["text"]) for s in self.seg if s["type"] == "answer"}
+        state.setdefault("struggles_used", {})[self.slug] = [
+            s["answer"] for s in state.get("struggles", {}).values()
+            if fold(s["answer"]) in asked]
         save_state(state)
 
     def _report(self, path):

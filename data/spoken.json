@@ -323,5 +323,47 @@
    "note": "In Romania 'Noroc!' is a toast (and 'Am noroc' = I'm lucky). As a greeting ('hello') it is Moldovan/regional; don't use it that way in Bucharest.",
    "confidence": "check"
   }
+ ],
+ "7": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Vreau …",
+   "spoken": "Aș vrea …",
+   "gloss": "I'd like …",
+   "note": "The book teaches only 'vreau'. Among friends it's fine; asking in a shop or of a stranger, 'Aș vrea …' is the usual polite form. Taught as a chunk, no conditional grammar.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce vreți?",
+   "spoken": "Ce doriți?",
+   "gloss": "What would you like? (shop assistant)",
+   "note": "What a shop assistant or waiter says. The book's 'Ce vreți?' would sound blunt from staff.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "gras",
+   "spoken": "plinuț, mai solid",
+   "gloss": "fat → chubby, well-built",
+   "note": "'Gras' about a person is blunt, close to rude, said to their face. Softer: 'e mai plinuț' / 'e mai solid'. Fine about food ('carne grasă').",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "brunet / blond",
+   "spoken": "brunet, șaten, blond",
+   "gloss": "dark-haired, brown-haired, fair",
+   "note": "People add 'șaten' (brown-haired) between the book's two; 'brunet' is really dark hair.",
+   "confidence": "medium"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum este?",
+   "spoken": "Cum arată?",
+   "gloss": "What does he/she look like?",
+   "note": "The everyday question for describing a person's looks; the book only has 'Cum este?' (what is he like).",
+   "confidence": "high"
+  }
  ]
 }

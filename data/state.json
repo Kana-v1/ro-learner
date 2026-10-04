@@ -26,7 +26,10 @@
   "06c",
   "06d",
   "06e",
-  "06f"
+  "06f",
+  "06g",
+  "07a",
+  "07b"
  ],
  "items": {
   "01-1": {
@@ -610,6 +613,513 @@
    "g": "f",
    "cue": "a member",
    "answer": "un membru"
+  },
+  "vreau": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "I want",
+   "answer": "vreau"
+  },
+  "mare": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "big",
+   "answer": "mare"
+  },
+  "mic": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "small",
+   "answer": "mic"
+  },
+  "nou": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "new",
+   "answer": "nou"
+  },
+  "lung": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "long",
+   "answer": "lung"
+  },
+  "larg": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "loose, wide",
+   "answer": "larg"
+  },
+  "înalt": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "tall",
+   "answer": "înalt"
+  },
+  "gras": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "fat",
+   "answer": "gras"
+  },
+  "blond": {
+   "intro": "07b",
+   "g": "f",
+   "cue": "fair-haired, blond",
+   "answer": "blond"
+  },
+  "brunet": {
+   "intro": "07b",
+   "g": "f",
+   "cue": "dark-haired",
+   "answer": "brunet"
+  },
+  "păr": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "hair",
+   "answer": "păr"
+  },
+  "ochi": {
+   "intro": "07b",
+   "g": "f",
+   "cue": "eyes",
+   "answer": "ochi"
   }
- }
+ },
+ "struggles": {
+  "06c:15": {
+   "intro": "06c",
+   "g": "m",
+   "cue": "a name",
+   "answer": "un nume",
+   "misses": 10,
+   "seen": 11,
+   "last": "missed"
+  },
+  "06d:24": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "an uncle",
+   "answer": "un unchi",
+   "misses": 10,
+   "seen": 10,
+   "last": "missed"
+  },
+  "06c:41": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a daughter",
+   "answer": "o fiică",
+   "misses": 8,
+   "seen": 10,
+   "last": "close"
+  },
+  "06d:14": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "a parent",
+   "answer": "un părinte",
+   "misses": 6,
+   "seen": 6,
+   "last": "close"
+  },
+  "06c:20": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a first name",
+   "answer": "un prenume",
+   "misses": 5,
+   "seen": 8,
+   "last": "close"
+  },
+  "06c:94": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "Is your father a doctor? To a friend.",
+   "answer": "Tatăl tău e medic?",
+   "misses": 4,
+   "seen": 4,
+   "last": "close"
+  },
+  "06c:118": {
+   "intro": "06c",
+   "g": "m",
+   "cue": "a t-shirt",
+   "answer": "un tricou",
+   "misses": 4,
+   "seen": 4,
+   "last": "no_answer"
+  },
+  "06d:89": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "We have relatives.",
+   "answer": "Avem rude.",
+   "misses": 4,
+   "seen": 4,
+   "last": "close"
+  },
+  "06d:93": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "My brothers are at home.",
+   "answer": "Frații mei sunt acasă.",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "06d:99": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "Our grandfather is a doctor.",
+   "answer": "Bunicul nostru e medic.",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "06e:88": {
+   "intro": "06e",
+   "g": "m",
+   "cue": "Their parents are young.",
+   "answer": "Părinții lor sunt tineri.",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "06e:96": {
+   "intro": "06e",
+   "g": "f",
+   "cue": "A clever daughter.",
+   "answer": "O fiică deșteaptă.",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "06f:76": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "My son is a pupil.",
+   "answer": "Fiul meu e elev.",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "06f:84": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "My family has hardworking members.",
+   "answer": "Familia mea are membri harnici.",
+   "misses": 4,
+   "seen": 4,
+   "last": "close"
+  },
+  "07a:34": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "long",
+   "answer": "lung",
+   "misses": 4,
+   "seen": 4,
+   "last": "no_answer"
+  },
+  "07a:39": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "loose",
+   "answer": "larg",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "06c:98": {
+   "intro": "06c",
+   "g": "m",
+   "cue": "Your first name, please? Politely.",
+   "answer": "Prenumele dumneavoastră, vă rog?",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "06c:112": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a dress",
+   "answer": "o rochie",
+   "misses": 3,
+   "seen": 3,
+   "last": "close"
+  },
+  "06d:40": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "auntie, before a name",
+   "answer": "tanti",
+   "misses": 3,
+   "seen": 4,
+   "last": "no_answer"
+  },
+  "06d:103": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "Do you have an uncle? — Yes, I have an uncle.",
+   "answer": "Ai un unchi? Da, am un unchi.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "06d:113": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "a raincoat",
+   "answer": "un impermeabil",
+   "misses": 3,
+   "seen": 3,
+   "last": "no_answer"
+  },
+  "06e:112": {
+   "intro": "06e",
+   "g": "f",
+   "cue": "You are a girl.",
+   "answer": "Tu ești fată.",
+   "misses": 3,
+   "seen": 3,
+   "last": "close"
+  },
+  "06f:70": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "He isn't poor.",
+   "answer": "El nu e sărac.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "06f:72": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "My son is short and thin.",
+   "answer": "Fiul meu e scund și slab.",
+   "misses": 3,
+   "seen": 3,
+   "last": "close"
+  },
+  "06f:78": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "Her daughter is a pupil.",
+   "answer": "Fiica ei e elevă.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "06f:82": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "A short boy, a short skirt.",
+   "answer": "Un băiat scund, o fustă scurtă.",
+   "misses": 3,
+   "seen": 3,
+   "last": "close"
+  },
+  "06f:90": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "His wife is young and clever.",
+   "answer": "Soția lui e tânără și deșteaptă.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "06f:108": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "Are you a driver? Politely.",
+   "answer": "Dumneavoastră sunteți șofer?",
+   "misses": 3,
+   "seen": 3,
+   "last": "close"
+  },
+  "06f:110": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "She is a shop assistant, he is a journalist.",
+   "answer": "Ea e vânzătoare, el e ziarist.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "07a:24": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "small",
+   "answer": "mic",
+   "misses": 3,
+   "seen": 4,
+   "last": "no_answer"
+  },
+  "06f:112": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "Good morning, madam!",
+   "answer": "Bună dimineața, doamnă!",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "06f:114": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "good",
+   "answer": "bun",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "06g:133": {
+   "intro": "06g",
+   "g": "m",
+   "cue": "He is poor.",
+   "answer": "El e sărac.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07a:64": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "I want a dress.",
+   "answer": "Vreau o rochie.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07a:68": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "My son wants a sweater.",
+   "answer": "Fiul meu vrea un pulover.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07a:80": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "a small dress",
+   "answer": "o rochie mică",
+   "misses": 2,
+   "seen": 2,
+   "last": "no_answer"
+  },
+  "07a:84": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "a new dress",
+   "answer": "o rochie nouă",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07a:109": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "big trousers",
+   "answer": "pantaloni mari",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07a:111": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "loose trousers",
+   "answer": "pantaloni largi",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07a:116": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "The dress is too long.",
+   "answer": "Rochia e prea lungă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "no_answer"
+  },
+  "07a:118": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "The t-shirt is small.",
+   "answer": "Tricoul e mic.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07a:124": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "I want a loose sweater.",
+   "answer": "Vreau un pulover larg.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07a:126": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "My daughter wants a long dress.",
+   "answer": "Fiica mea vrea o rochie lungă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07a:128": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "The trousers are too long.",
+   "answer": "Pantalonii sunt prea lungi.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "07a:130": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "The shirt is new and loose.",
+   "answer": "Cămașa e nouă și largă.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "07a:132": {
+   "intro": "07a",
+   "g": "m",
+   "cue": "I don't want a big coat.",
+   "answer": "Nu vreau un palton mare.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "07a:155": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "This is a classroom.",
+   "answer": "Aceasta e o sală de curs.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "07a:159": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "What is next to the window? — A bench.",
+   "answer": "Ce e lângă fereastră? O bancă.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  }
+ },
+ "struggles_used": {}
 }
