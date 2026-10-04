@@ -169,8 +169,17 @@ seeded from their own validated drill answers. The old hand-picked `ep.review([
 ## The Vorbește app and the results loop
 
 `app/` is an iOS app that plays an episode, stops as each drill cue ends,
-listens (Apple's on-device Romanian recognition), grades the words, speaks
-the verdict, then plays the episode's own answer. `Grader.swift` has three
+listens, grades the words, speaks the verdict, then plays the episode's own
+answer. Recognition (Settings → Recognition) defaults to **tuned to the
+course**: on-device, with a custom language model (`CourseModel.swift`,
+`SFCustomLanguageModelData`) trained on every pack's answers, rebuilt when the
+set of episodes changes — Apple's mechanism for a known vocabulary, and it only
+works on-device; it falls back to Apple's servers until built. Each listen ends
+with `endAudio()` and the *final* result: partial results trail the audio, and
+cancelling (as it once did) lost exactly the last or only word ("La" for larg,
+nothing for mic). A loudness meter on the mic measures silence from the voice
+and records per attempt whether a voice was heard (`voiced`); the ingest
+counts a voiced no-answer as "unheard" — the recogniser's miss, not a struggle. `Grader.swift` has three
 verdicts: **right** (every word of the answer or of an `accept=` alternative),
 **almost** (only a small word — un, o, niște, e — missing or swapped, or one
 word with the right stem but a different ending, judged relative to word
@@ -189,26 +198,50 @@ drill. It resumes where it stopped.
 - **Episodes for the app** are `.rolesson` files from `make_lesson_pack.py`
   (sample-exact audio + the prompt/answer marks from the episode JSON). Pack
   after rendering: `python3 tools/make_lesson_pack.py episodes/episode_06c.json`.
-- **Sync folder = iCloud Drive.** The app links one folder with `lessons/`
-  (episodes in), `results/` (one JSON per finished session out) and `notes/`
-  (Claude's notes in). It is in iCloud Drive, synced to this PC by iCloud for
-  Windows (e.g. `/mnt/c/Users/<you>/iCloudDrive/Vorbește`), named in the gitignored
-  `sync_folder.txt` (or `$VORBESTE_SYNC`); `tools/sync_folder.py` resolves it.
-  Google Drive does not work: its iPhone app won't let other apps open its
-  folders. **`tools/render.py` packs every full render into `lessons/` by
-  itself**, so rendering an episode is all it takes for it to reach the phone.
+- **Sync = a private GitHub repo** (`Kana-v1/ro-learner-data`, cloned next to
+  this project as `../ro-learner-data`; see its README and `tools/data_repo.py`).
+  Episodes go up as assets of its release `episodes` (the app downloads new or
+  updated ones on opening, not ones it already has); the app uploads each
+  finished session to `results/`, its log to `logs/vorbeste-log.txt` on every
+  sync; notes go to `notes/`. The app keeps its token in the Keychain (Settings →
+  GitHub sync). Private because results hold transcripts of the user's speech.
+  **`tools/render.py` packs every full render and uploads it**, so rendering an
+  episode is all it takes for it to reach the phone. Uploads run at the PC's
+  upload speed, ~30 s per episode. The iCloud folder (`tools/sync_folder.py`,
+  gitignored `sync_folder.txt`) is the fallback only: iCloud uploads and
+  downloads when it chooses (results sat on the phone >10 min), and Google Drive
+  can't be used at all (its app won't let other apps open its folders).
+- **The app's log** is in the data repo, `logs/vorbeste-log.txt` (`git -C
+  ../ro-learner-data pull` first): drills, recognition, audio routes, AirPods
+  commands, position saves. Read it before guessing at a device-side bug.
 - **When the user says "Read my Romanian results":** run
-  `python3 tools/ingest_results.py` (reads the sync folder's `results/`;
-  `--results-dir` for anywhere else). It archives sessions under `data/results/`
+  `python3 tools/ingest_results.py` (pulls the data repo and reads its
+  `results/`; `--results-dir` for anywhere else). It archives sessions under `data/results/`
   (gitignored: transcripts of the user's speech), writes the drills still wrong
   into `state.json` `struggles`, and prints a summary. Analyse it — patterns
   (endings, agreement, a word that never sticks) matter more than single misses
   — then send a short plain-English report back with
-  `python3 tools/ingest_results.py --note "…"`; it lands in `notes/` and the
-  app shows it and marks those sessions analysed.
+  `python3 tools/ingest_results.py --note "…"`; it is pushed to the data repo's
+  `notes/` and the app shows it and marks those sessions analysed.
 - **`review_auto()` puts struggles first** (up to 4, most missed first, only
   from episodes before the one being built), then the +1/+3/+7/+16 schedule.
   So building the next episodes after an ingest is what adapts the course.
+  Struggles are keyed by the answer itself, so getting it right anywhere later
+  (another episode's review included) clears it. Each build records which
+  struggles it asks (`struggles_used`), and later episodes skip those and take
+  the next ones down the list; the record resets when new sessions are ingested.
+- **When results show a lesson wasn't held** (first-time-right well under
+  half), build a repair episode before moving on: no new items, the missed
+  answers verbatim, each weak word on an expanding ladder, the error patterns
+  (agreement, plurals, articles) drilled as pairs. `build_episode_06g.py` is
+  the model.
+- **Feedback notes:** the app's feedback button (player menu, with the drill
+  on screen and the last three answered; or the home screen) saves a note that
+  syncs to the data repo's `feedback/`. `ingest_results.py` prints new ones and
+  keeps them in `data/feedback/` (gitignored). Read them with the results.
+- **Episode states:** a finished episode is done, whatever its score — the
+  learner does not replay for a number; misses return through reviews. "Finish
+  now" in the player menu ends an episode early and saves it as finished.
 - **Building the app:** pushing changes under `app/` triggers
   `.github/workflows/ios.yml` on a GitHub macOS runner; the unsigned `.ipa` is
   the `RoLearner-ipa` artifact (`gh run download`). The user installs it with
