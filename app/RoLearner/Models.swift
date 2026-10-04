@@ -88,11 +88,36 @@ enum Verdict: String, Codable, Hashable {
     case unmarked             // tap mode: nobody said it was wrong
 }
 
+/// Something the learner wants Claude to know — a wrong answer in an episode,
+/// a word the app never hears, an idea — with where they were when they said it.
+struct FeedbackNote: Codable, Identifiable {
+    struct Drill: Codable {
+        var seg: Int
+        var cue: String
+        var expected: String
+        var heard: [String]
+    }
+
+    var id: String
+    var created: Date
+    var kind: String              // "wrong_answer", "not_heard", "audio", "idea", "other"
+    var text: String
+    var episode: String?
+    var position: Double?         // playhead, seconds
+    var drill: String?            // "41/84", or "second chance 3/12"
+    var current: Drill?           // the drill on screen
+    var recent: [Drill] = []      // the last few answered, newest last
+    var app: String
+}
+
 struct Attempt: Codable {
     var heard: String?
     var score: Double
     var verdict: Verdict
     var hint: String?         // for "almost": what to fix
+    /// Whether the mic heard a voice, whatever the recogniser made of it: a
+    /// no-answer with a voice is the recogniser's miss, not the learner's.
+    var voiced: Bool? = nil
 }
 
 /// One drill as the learner met it: up to two spoken attempts, and an optional

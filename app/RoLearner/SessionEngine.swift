@@ -280,6 +280,38 @@ final class SessionEngine: ObservableObject {
 
     // MARK: controls
 
+    /// Pause for something laid over the player (the feedback sheet), as a
+    /// press on pause would; resuming is the learner's call.
+    func hold() { pauseIfRunning() }
+
+    /// End the episode here: the answers given so far are saved as a finished
+    /// session and the rest — including any second-chance drills still to go —
+    /// is skipped. For when there's no time left, not for skipping drills.
+    func finishNow() {
+        guard phase != .idle, phase != .finished else { return }
+        Log.write("finished early at \(timeString(position)), \(inRound ? "second chance" : "drill") \(drillLabel)", "player")
+        finish()
+    }
+
+    /// Where the learner is, for a feedback note: the drill on screen and the
+    /// last few answered, with what the recogniser heard.
+    func feedbackNote(kind: String, text: String) -> FeedbackNote {
+        func heard(_ it: DrillResult) -> [String] { it.attempts.compactMap(\.heard) }
+        let recent = record.items.suffix(3).map {
+            FeedbackNote.Drill(seg: $0.seg, cue: $0.cue, expected: $0.expected, heard: heard($0))
+        }
+        let shown = current.map { d in
+            FeedbackNote.Drill(seg: d.id, cue: d.cue, expected: d.expected,
+                               heard: record.items.last { $0.seg == d.id }.map(heard) ?? [])
+        }
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "?"
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "?"
+        return FeedbackNote(id: "fb_\(Int(Date().timeIntervalSince1970))", created: Date(), kind: kind,
+                            text: text, episode: pack.header.slug, position: position,
+                            drill: inRound ? "second chance \(drillLabel)" : drillLabel,
+                            current: shown, recent: Array(recent), app: "\(version) (\(build))")
+    }
+
     func togglePause() {
         switch phase {
         case .playing:
@@ -598,11 +630,17 @@ final class SessionEngine: ObservableObject {
             }
             let score = judgement.score
             let v = judgement.verdict
-            record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v, hint: judgement.hint))
+            let meter = listener.lastMeter
+            let voiced = meter.voicedSeconds >= 0.15
+            record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v,
+                                                      hint: judgement.hint, voiced: voiced))
             lastHeard = heard
             lastVerdict = v
             lastHint = judgement.hint
-            Log.write("drill \(drillLabel) try \(n): heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score)))", "drill")
+            let sound = String(format: "voice %.1f s, peak %.0f dB over floor %.0f dB, %@",
+                               meter.voicedSeconds, meter.peakDB, meter.floorDB,
+                               listener.lastWasFinal ? "final" : "partial")
+            Log.write("drill \(drillLabel) try \(n): heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score))) [\(sound)]", "drill")
             persist()
             // "Almost" is not retried: the fix is shown and the answer plays.
             if v == .correct || v == .close || record.items[idx].correction != nil { break }

@@ -17,6 +17,7 @@ enum DriveSync {
         let key: String
         let fileName: String
         let data: Data
+        var folder = "results"        // or "feedback"
     }
 
     struct Pulled: Sendable {
@@ -108,13 +109,15 @@ enum DriveSync {
         }
 
         guard !outgoing.isEmpty else { return outcome }
-        let resultsDir = root.appendingPathComponent("results", isDirectory: true)
-        var dirError: NSError?
-        coordinator.coordinate(writingItemAt: resultsDir, options: [], error: &dirError) { url in
-            try? fm.createDirectory(at: url, withIntermediateDirectories: true)
+        for folder in Set(outgoing.map(\.folder)) {
+            var dirError: NSError?
+            coordinator.coordinate(writingItemAt: root.appendingPathComponent(folder, isDirectory: true),
+                                   options: [], error: &dirError) { url in
+                try? fm.createDirectory(at: url, withIntermediateDirectories: true)
+            }
         }
         for o in outgoing {
-            let target = resultsDir.appendingPathComponent(o.fileName)
+            let target = root.appendingPathComponent(o.folder, isDirectory: true).appendingPathComponent(o.fileName)
             var ok = false
             var writeError: NSError?
             coordinator.coordinate(writingItemAt: target, options: [.forReplacing], error: &writeError) { url in
@@ -122,10 +125,10 @@ enum DriveSync {
             }
             if ok {
                 outcome.pushed.append(o.key)
-                Log.write("wrote results/\(o.fileName)", "drive")
+                Log.write("wrote \(o.folder)/\(o.fileName)", "drive")
             } else {
                 outcome.problem = writeError?.localizedDescription ?? "Couldn't write \(o.fileName)"
-                Log.write("write results/\(o.fileName) failed: \(writeError.map { "\($0.domain) \($0.code) \($0.localizedDescription)" } ?? "no error given")", "drive")
+                Log.write("write \(o.folder)/\(o.fileName) failed: \(writeError.map { "\($0.domain) \($0.code) \($0.localizedDescription)" } ?? "no error given")", "drive")
             }
         }
         return outcome

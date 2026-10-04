@@ -105,10 +105,20 @@ enum Grader {
     /// exactly (2) or by stem with a different ending (1), and classify each
     /// answer word as exact, near, or missing.
     static func compare(expected: String, heard: String) -> Judgement {
-        let h = words(heard)
+        var h = words(heard)
         let hKeys = Set(h.map(\.key))
         let e = words(expected).filter { !optionalPronouns.contains($0.key) || hKeys.contains($0.key) }
         guard !e.isEmpty else { return Judgement(verdict: .missed, score: 0, hint: nil) }
+        // The recogniser clips the last consonants of the last word — the
+        // release of a final g, c, k is quiet ("La" for larg, "mi" for mic).
+        // When the heard last word is the answer's last word minus consonants
+        // only, it is that word. A missing vowel is not clipping: lung/lungă
+        // and bun/bună stay different.
+        if let lastH = h.last, let lastE = e.last, lastH.key != lastE.key, lastH.key.count >= 2,
+           lastE.key.hasPrefix(lastH.key),
+           lastE.key.dropFirst(lastH.key.count).allSatisfy({ !"aeiou".contains($0) }) {
+            h[h.count - 1] = lastE
+        }
 
         let n = e.count, m = h.count
         var dp = Array(repeating: Array(repeating: 0, count: m + 1), count: n + 1)

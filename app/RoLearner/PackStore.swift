@@ -66,6 +66,7 @@ final class PackStore: ObservableObject {
     var packsDir: URL { docs.appendingPathComponent("Packs", isDirectory: true) }
     var resultsDir: URL { docs.appendingPathComponent("Results", isDirectory: true) }
     var reportsDir: URL { docs.appendingPathComponent("Claude notes", isDirectory: true) }
+    var feedbackDir: URL { docs.appendingPathComponent("Feedback", isDirectory: true) }
     private var progressDir: URL { support.appendingPathComponent("Progress", isDirectory: true) }
     private var statusURL: URL { support.appendingPathComponent("status.json") }
     private var bookmarkURL: URL { support.appendingPathComponent("drive-folder.bookmark") }
@@ -84,7 +85,7 @@ final class PackStore: ObservableObject {
     }
 
     init() {
-        for d in [packsDir, resultsDir, reportsDir, progressDir] {
+        for d in [packsDir, resultsDir, reportsDir, progressDir, feedbackDir] {
             try? fm.createDirectory(at: d, withIntermediateDirectories: true)
         }
         if let d = try? Data(contentsOf: statusURL),
@@ -186,9 +187,14 @@ final class PackStore: ObservableObject {
         syncing = true
         defer { syncing = false }
 
-        let outgoing = unsent.compactMap { s -> DriveSync.Outgoing? in
+        var outgoing = unsent.compactMap { s -> DriveSync.Outgoing? in
             guard let d = try? Self.encoder.encode(s) else { return nil }
             return DriveSync.Outgoing(key: s.key, fileName: "\(s.key).json", data: d)
+        }
+        outgoing += unsentFeedback.compactMap { url -> DriveSync.Outgoing? in
+            guard let d = try? Data(contentsOf: url) else { return nil }
+            let name = url.lastPathComponent
+            return DriveSync.Outgoing(key: "fb:\(name)", fileName: name, data: d, folder: "feedback")
         }
         let known = status.pulled
         let logData = Data(Log.read().utf8)
@@ -225,6 +231,26 @@ final class PackStore: ObservableObject {
         Log.write("sync done: \(outcome.lessons.count) lesson(s), \(outcome.notes.count) note(s) in, \(outcome.pushed.count)/\(outgoing.count) result(s) out\(outcome.problem.map { "; problem: \($0)" } ?? "")", "drive")
         lastSync = now
         reload()
+    }
+
+    // MARK: feedback
+
+    /// Feedback notes not uploaded yet.
+    var unsentFeedback: [URL] {
+        jsonFiles(in: feedbackDir).filter { status.sent["fb:\($0.lastPathComponent)"] == nil }
+    }
+
+    /// Keep a note and send it straight away when sync is set up.
+    func addFeedback(_ note: FeedbackNote) {
+        let url = feedbackDir.appendingPathComponent("\(note.id).json")
+        do {
+            try Self.encoder.encode(note).write(to: url, options: .atomic)
+            Log.write("feedback saved: \(note.kind) \(note.episode ?? "-") \(note.drill ?? "")", "ui")
+        } catch {
+            lastError = "Couldn't save the feedback: \(error.localizedDescription)"
+            return
+        }
+        if autoSync { Task { await sync() } }
     }
 
     // MARK: importing
@@ -314,6 +340,7 @@ final class PackStore: ObservableObject {
             }
         }
         progress = loaded
+        CourseModel.shared.update(packs: packs)     // retrains only if the answers changed
     }
 
     private func jsonFiles(in dir: URL) -> [URL] {
@@ -430,7 +457,7 @@ final class PackStore: ObservableObject {
     // MARK: episode status, for filtering and sorting a long list
 
     enum EpisodeState: String, CaseIterable {
-        case new = "New", inProgress = "In progress", needsWork = "Needs work", done = "Done"
+        case new = "New", inProgress = "In progress", done = "Done"
     }
 
     /// The latest finished session of each episode (sessions are newest first).
@@ -449,11 +476,13 @@ final class PackStore: ObservableObject {
         return Double(heard - wrong) / Double(total)
     }
 
+    /// Finished is done, whatever the score: episodes are not replayed to
+    /// polish a number — what was missed comes back in later episodes' reviews.
+    /// The score stays visible in the row's subtitle.
     func state(of pack: Pack) -> EpisodeState {
         let slug = pack.header.slug
         if progress[slug] != nil { return .inProgress }
-        guard let score = lastScore(pack) else { return .new }
-        return score >= 0.8 ? .done : .needsWork
+        return lastFinished(slug) != nil ? .done : .new
     }
 
     /// When the episode was last listened to (finished or not).

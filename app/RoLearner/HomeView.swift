@@ -18,7 +18,7 @@ struct HomeView: View {
     // Off by default: in call mode the AirPods mic missed answers and presses
     // were unreliable. Kept as an experiment (voice-chat mode) until it works.
     @AppStorage("headsetMicExperimental") private var headsetMic = false
-    @AppStorage("serverRecognition") private var serverRecognition = true
+    @AppStorage("recognitionMode") private var recognitionMode = "tuned"
     @AppStorage("onboarded") private var onboarded = false
     @State private var importing = false
     @State private var linking = false
@@ -27,6 +27,7 @@ struct HomeView: View {
     @State private var pendingLaunch: PlayerLaunch?
     @State private var share: ShareItem?
     @State private var showResults = false
+    @State private var showFeedback = false
     @State private var filter: EpisodeFilter = .all
     @State private var sort: EpisodeSort = .course
     @State private var query = ""
@@ -101,6 +102,15 @@ struct HomeView: View {
         .sheet(isPresented: $showResults) {
             ResultsView().environmentObject(store)
         }
+        .sheet(isPresented: $showFeedback) {
+            FeedbackSheet(about: nil, kinds: FeedbackSheet.homeKinds) { kind, text in
+                let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "?"
+                store.addFeedback(FeedbackNote(id: "fb_\(Int(Date().timeIntervalSince1970))", created: Date(),
+                                               kind: kind, text: text, app: version))
+            }
+            .presentationDetents([.medium, .large])
+            .presentationBackground(Theme.raised)
+        }
         .fullScreenCover(isPresented: Binding(get: { !onboarded }, set: { onboarded = !$0 })) {
             OnboardingView { onboarded = true }.environmentObject(store)
         }
@@ -123,6 +133,7 @@ struct HomeView: View {
         HStack {
             Text("Vorbește").font(Theme.display(32))
             Spacer()
+            CircleIconButton(symbol: "exclamationmark.bubble", label: "Feedback for Claude") { showFeedback = true }
             CircleIconButton(symbol: "chart.bar", label: "Results") { showResults = true }
         }
     }
@@ -222,13 +233,19 @@ struct HomeView: View {
         Array(Set(visiblePacks.map(\.header.lesson))).sorted()
     }
 
-    /// A lesson is folded when every part of it is done, unless the user
-    /// opened it; while filtering or searching everything is shown open.
+    /// The lesson being worked through: the one played most recently, or,
+    /// before anything has been played, the one with the next new episode.
+    private var currentLesson: Int? {
+        let played = store.packs.compactMap { p in store.lastPlayed(p).map { (lesson: p.header.lesson, at: $0) } }
+        if let recent = played.max(by: { $0.at < $1.at }) { return recent.lesson }
+        return store.packs.first(where: store.isNew)?.header.lesson
+    }
+
+    /// Only the current lesson is open, the rest folded, unless the user
+    /// opened or closed one; while filtering or searching everything is open.
     private func isOpen(_ lesson: Int) -> Bool {
         if filter != .all || !query.isEmpty { return true }
-        let parts = store.packs.filter { $0.header.lesson == lesson }
-        let allDone = !parts.isEmpty && parts.allSatisfy { store.state(of: $0) == .done }
-        return allDone == flipped.contains(lesson)
+        return (lesson == currentLesson) != flipped.contains(lesson)
     }
 
     private func lessonGroup(_ lesson: Int) -> some View {
@@ -316,8 +333,17 @@ struct HomeView: View {
                 }
                 Divider().overlay(Theme.line)
                 Toggle("Listen to my answers", isOn: $voiceMode).tint(Theme.accent)
-                Toggle("Better recognition (Apple's servers)", isOn: $serverRecognition).tint(Theme.accent)
-                Text("Sends your spoken answers to Apple to be recognised, which is more accurate for Romanian. Needs a connection; without one the phone recognises them itself.")
+                HStack {
+                    Text("Recognition")
+                    Spacer()
+                    Picker("Recognition", selection: $recognitionMode) {
+                        Text("Tuned to the course").tag("tuned")
+                        Text("Apple's servers").tag("server")
+                        Text("On the phone").tag("phone")
+                    }
+                    .tint(Theme.accent)
+                }
+                Text(recognitionNote)
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
                 Toggle("Headphone microphone (experimental)", isOn: $headsetMic).tint(Theme.accent)
                 Text("With listening off, episodes play straight through and you mark misses yourself. The headphone microphone runs the app like a phone call: call-quality sound, noise suppression, and AirPods presses as pause/resume. Still being tested; off, the phone's microphone listens and playback stays full quality.")
@@ -325,6 +351,17 @@ struct HomeView: View {
             }
         }
         .linkFolderPicker(isPresented: $linking, store: store)
+    }
+
+    private var recognitionNote: String {
+        switch recognitionMode {
+        case "server":
+            return "Your answers go to Apple to be recognised. A general model: short single words are often missed. Needs a connection."
+        case "phone":
+            return "Recognised on the phone by a general model, no connection needed."
+        default:
+            return "Recognised on the phone by a model trained on this course's answers, so short words like mic or lung are expected. Works offline. Model: \(CourseModel.shared.status)."
+        }
     }
 
     private var gitHubSettings: some View {
@@ -569,8 +606,6 @@ struct EpisodeRow: View {
                     Pill(text: "New", foreground: Theme.onAccent, background: Theme.accent)
                 case .inProgress:
                     Image(systemName: "play.circle").font(.system(size: 18)).foregroundStyle(Theme.accent)
-                case .needsWork:
-                    Pill(text: "Needs work", foreground: Color(hex: 0xFFB08F), background: Theme.notQuite.opacity(0.14))
                 case .done:
                     Image(systemName: "checkmark.circle.fill").font(.system(size: 18)).foregroundStyle(Theme.right)
                 }
@@ -585,21 +620,20 @@ struct EpisodeRow: View {
 }
 
 enum EpisodeFilter: String, CaseIterable, Identifiable {
-    case all = "All", new = "New", inProgress = "In progress", needsWork = "Needs work", done = "Done"
+    case all = "All", new = "New", inProgress = "In progress", done = "Done"
     var id: String { rawValue }
     var state: PackStore.EpisodeState? {
         switch self {
         case .all: return nil
         case .new: return .new
         case .inProgress: return .inProgress
-        case .needsWork: return .needsWork
         case .done: return .done
         }
     }
 }
 
 enum EpisodeSort: String, CaseIterable, Identifiable {
-    case course = "Course order", recent = "Recently played", weakest = "Needs most work"
+    case course = "Course order", recent = "Recently played", weakest = "Lowest score"
     var id: String { rawValue }
 }
 

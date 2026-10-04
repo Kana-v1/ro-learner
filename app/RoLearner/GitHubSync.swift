@@ -168,8 +168,8 @@ enum GitHubSync {
 
         // results, then the log
         for o in outgoing {
-            if await put(repo: repo, token: token, path: "results/\(o.fileName)", data: o.data,
-                         message: "Result \(o.key)") {
+            if await put(repo: repo, token: token, path: "\(o.folder)/\(o.fileName)", data: o.data,
+                         message: o.folder == "feedback" ? "Feedback \(o.key)" : "Result \(o.key)") {
                 outcome.pushed.append(o.key)
             } else {
                 outcome.problem = "Couldn't upload \(o.fileName)"

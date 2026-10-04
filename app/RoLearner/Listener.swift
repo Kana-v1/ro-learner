@@ -26,19 +26,71 @@ final class NetworkStatus: @unchecked Sendable {
     }
 }
 
-/// The microphone tap runs on the audio thread, so the request it feeds lives in
-/// a lock-protected box rather than on the main-actor Listener.
+/// What the microphone picked up during one listen, from its loudness alone:
+/// whether a voice was there at all, independent of what the recogniser made
+/// of it. Separates "the learner said nothing" from "the recogniser missed it".
+struct VoiceMeter: Sendable {
+    var firstVoice: Double?       // CFAbsoluteTime of the first voiced buffer
+    var lastVoice: Double?        // ... and the latest
+    var voicedSeconds = 0.0
+    var peakDB = -160.0
+    var floorDB = -60.0           // running estimate of the background noise
+}
+
+/// The microphone tap runs on the audio thread, so the request it feeds — and
+/// the loudness meter — live in a lock-protected box rather than on the
+/// main-actor Listener.
 private final class RequestBox: @unchecked Sendable {
     private let lock = NSLock()
     private var request: SFSpeechAudioBufferRecognitionRequest?
+    private var meter = VoiceMeter()
+    private var floor: Double?
 
     func set(_ r: SFSpeechAudioBufferRecognitionRequest?) {
         lock.lock(); request = r; lock.unlock()
     }
 
+    /// Start a fresh meter for a new listen; the noise floor carries over.
+    func resetMeter() {
+        lock.lock(); meter = VoiceMeter(floorDB: floor ?? -60); lock.unlock()
+    }
+
+    func reading() -> VoiceMeter {
+        lock.lock(); defer { lock.unlock() }
+        return meter
+    }
+
     func append(_ buffer: AVAudioPCMBuffer) {
-        lock.lock(); let r = request; lock.unlock()
+        let db = Self.level(buffer)
+        lock.lock()
+        let r = request
+        if let db, buffer.format.sampleRate > 0 {
+            // The floor drops quickly to quiet moments and rises slowly, so a
+            // steady background (traffic, wind) becomes the floor and a voice
+            // stands out above it.
+            let f = floor ?? db
+            floor = db < f ? f * 0.7 + db * 0.3 : f * 0.995 + db * 0.005
+            meter.floorDB = floor!
+            meter.peakDB = max(meter.peakDB, db)
+            if db > meter.floorDB + 12 && db > -55 {
+                let now = CFAbsoluteTimeGetCurrent()
+                if meter.firstVoice == nil { meter.firstVoice = now }
+                meter.lastVoice = now
+                meter.voicedSeconds += Double(buffer.frameLength) / buffer.format.sampleRate
+            }
+        }
+        lock.unlock()
         r?.append(buffer)
+    }
+
+    /// Loudness of one buffer in dB (RMS of the first channel).
+    private static func level(_ buffer: AVAudioPCMBuffer) -> Double? {
+        guard let data = buffer.floatChannelData?[0], buffer.frameLength > 0 else { return nil }
+        let n = Int(buffer.frameLength)
+        var sum: Float = 0
+        for i in 0..<n { sum += data[i] * data[i] }
+        let rms = (sum / Float(n)).squareRoot()
+        return 20 * log10(Double(max(rms, 1e-8)))
     }
 }
 
@@ -51,28 +103,39 @@ final class Listener {
     private let engine = AVAudioEngine()
     private let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "ro-RO"))
     private let box = RequestBox()
+    private var request: SFSpeechAudioBufferRecognitionRequest?
     private var task: SFSpeechRecognitionTask?
     private var ticker: Task<Void, Never>?
     private var generation = 0
     private var latest: String?
-    private var lastChange = Date()
-    private var startedAt = Date()
+    private var lastChange = 0.0              // CFAbsoluteTime, like the meter's
+    private var startedAt = 0.0
     private var maxSeconds = 5.0
+    private var finalizing = false            // input ended, waiting for the final result
+    private var finalDeadline = 0.0
+    private var gotFinal = false
     private var complete: ((String) -> Bool)?
     private var latestComplete = false
     private var completion: (([String]) -> Void)?
     private var onPartial: ((String) -> Void)?
     private var guesses: [String] = []      // the recogniser's ranked alternatives
     private(set) var running = false
+    /// How the last listen went, for the log and the results: was a voice
+    /// there, and did the recogniser deliver its final result.
+    private(set) var lastMeter = VoiceMeter()
+    private(set) var lastWasFinal = false
+    private(set) var lastMode = ""
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
     var onDevice: Bool { recognizer?.supportsOnDeviceRecognition ?? false }
-    private var lastMode = ""
 
-    /// The "Better recognition" setting: Apple's servers recognise learner
-    /// Romanian better than the on-phone model. On by default.
-    static var preferServer: Bool {
-        UserDefaults.standard.object(forKey: "serverRecognition") as? Bool ?? true
+    /// Settings → Recognition. "tuned" (the default): on the phone, with a
+    /// language model trained on the course's own answers (CourseModel) —
+    /// Apple's mechanism for a known vocabulary, and only available on-device.
+    /// "server": Apple's servers. "phone": on the phone, untuned. Tuned falls
+    /// back to the servers until its model is ready (or if it can't be built).
+    static var mode: String {
+        UserDefaults.standard.string(forKey: "recognitionMode") ?? "tuned"
     }
 
     static func requestPermissions() async -> Bool {
@@ -178,19 +241,31 @@ final class Listener {
         var context: [String] = []
         for h in [expected] + hints where !h.isEmpty && !context.contains(h) { context.append(h) }
         req.contextualStrings = Array(context.prefix(100))
-        // Apple's servers when the setting is on and there is a connection;
-        // otherwise on the phone, if this phone can do Romanian on-device.
-        let useServer = Self.preferServer && NetworkStatus.shared.online
-        req.requiresOnDeviceRecognition = !useServer && recognizer.supportsOnDeviceRecognition
-        let mode = req.requiresOnDeviceRecognition ? "on the phone" : "Apple's servers"
+        // Tuned: on the phone with the course's language model. Otherwise
+        // Apple's servers when chosen and online, else the phone if it can.
+        let canPhone = recognizer.supportsOnDeviceRecognition
+        let mode: String
+        if Self.mode == "tuned", canPhone, let model = CourseModel.shared.configuration {
+            req.requiresOnDeviceRecognition = true
+            req.customizedLanguageModel = model
+            mode = "on the phone, tuned to the course"
+        } else {
+            let useServer = Self.mode != "phone" && NetworkStatus.shared.online
+            req.requiresOnDeviceRecognition = !useServer && canPhone
+            mode = req.requiresOnDeviceRecognition ? "on the phone" : "Apple's servers"
+        }
         if mode != lastMode {
-            Log.write("recognition now via \(mode) (setting: \(Self.preferServer ? "servers" : "phone"), online: \(NetworkStatus.shared.online), on-device possible: \(recognizer.supportsOnDeviceRecognition))", "speech")
+            Log.write("recognition now via \(mode) (setting: \(Self.mode), online: \(NetworkStatus.shared.online), on-device possible: \(canPhone), course model: \(CourseModel.shared.status))", "speech")
             lastMode = mode
         }
 
         latest = nil
-        lastChange = Date()
-        startedAt = Date()
+        lastChange = CFAbsoluteTimeGetCurrent()
+        startedAt = lastChange
+        finalizing = false
+        gotFinal = false
+        box.resetMeter()
+        request = req
         self.maxSeconds = maxSeconds
         self.complete = complete
         latestComplete = false
@@ -245,22 +320,52 @@ final class Listener {
         if let text = texts.first, text != latest {
             latest = text
             latestComplete = complete?(text) ?? true
-            lastChange = Date()
+            lastChange = CFAbsoluteTimeGetCurrent()
             onPartial?(text)
         }
+        if isFinal { gotFinal = true }
         if isFinal || failed { finish() }
     }
 
+    /// When to stop listening. Silence is measured from the later of the last
+    /// change in the transcript and the last moment the mic heard a voice, so
+    /// a word still being said (or not yet transcribed) keeps the listen open.
     private func tick(_ gen: Int) {
         guard gen == generation, completion != nil else { return }
-        let now = Date()
-        // Learners pause mid-answer to recall the next word, and the 1.3 s
-        // that ended every listen cut them off ("Fiul meu e" for "Fiul meu e
-        // elev", then right on the retry). A whole answer still ends fast.
-        let limit = latest == nil ? maxSeconds : maxSeconds + 8
-        let quiet = latestComplete ? 1.0 : 2.8
-        let spokeThenStopped = latest != nil && now.timeIntervalSince(lastChange) > quiet
-        if spokeThenStopped || now.timeIntervalSince(startedAt) > limit { finish() }
+        let now = CFAbsoluteTimeGetCurrent()
+        if finalizing {
+            if now > finalDeadline {
+                Log.write("no final result in time; using the last partial", "speech")
+                finish()
+            }
+            return
+        }
+        let meter = box.reading()
+        let spoke = latest != nil || meter.lastVoice != nil
+        let lastActivity = max(latest != nil ? lastChange : 0, meter.lastVoice ?? 0)
+        // Learners pause mid-answer to recall the next word; a whole answer
+        // still ends fast.
+        let quiet = latestComplete ? 0.9 : 2.4
+        if spoke && now - lastActivity > quiet {
+            endInput()
+        } else if !spoke && now - startedAt > maxSeconds {
+            finish()
+        } else if now - startedAt > maxSeconds + 8 {
+            endInput()
+        }
+    }
+
+    /// The learner has finished: stop feeding audio and ask for the final
+    /// result. Partial results trail the audio, and for a short word there may
+    /// be none at all before the end — cancelling here, as this used to, threw
+    /// away exactly the last word or the only word ("La" for "larg", nothing
+    /// for "mic"). The final result is where the recogniser commits them.
+    private func endInput() {
+        guard !finalizing else { return }
+        finalizing = true
+        box.set(nil)
+        request?.endAudio()
+        finalDeadline = CFAbsoluteTimeGetCurrent() + 2.0
     }
 
     private func finish() {
@@ -270,6 +375,8 @@ final class Listener {
         complete = nil
         let heard = latest == nil ? [] : (guesses.isEmpty ? [latest!] : guesses)
         guesses = []
+        lastMeter = box.reading()
+        lastWasFinal = gotFinal
         cancelCurrent()
         done?(heard)
     }
@@ -280,5 +387,7 @@ final class Listener {
         box.set(nil)
         task?.cancel()
         task = nil
+        request = nil
+        finalizing = false
     }
 }

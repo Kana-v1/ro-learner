@@ -8,6 +8,9 @@ struct PlayerView: View {
     @State private var showChapters = false
     @State private var scrub: Double?
     @State private var share: ShareItem?
+    @State private var feedbackAbout: String?
+    @State private var showFeedback = false
+    @State private var confirmFinish = false
 
     init(launch: PlayerLaunch, store: PackStore, voiceMode: Bool, headsetMic: Bool) {
         _engine = StateObject(wrappedValue: SessionEngine(pack: launch.pack, store: store, voiceMode: voiceMode,
@@ -55,6 +58,29 @@ struct PlayerView: View {
             }
             .presentationDetents([.medium, .large])
         }
+        .sheet(isPresented: $showFeedback) {
+            FeedbackSheet(about: feedbackAbout) { kind, text in
+                store.addFeedback(engine.feedbackNote(kind: kind, text: text))
+            }
+            .presentationDetents([.medium, .large])
+            .presentationBackground(Theme.raised)
+        }
+        .confirmationDialog("Finish the episode here?", isPresented: $confirmFinish, titleVisibility: .visible) {
+            Button("Finish now") { engine.finishNow() }
+            Button("Keep going", role: .cancel) {}
+        } message: {
+            Text("What you've answered is saved and the episode counts as done. The drills still to go are skipped.")
+        }
+    }
+
+    private func openFeedback() {
+        engine.hold()
+        if let d = engine.current {
+            feedbackAbout = "\(engine.inRound ? "Second chance" : "Drill") \(engine.drillLabel) · \(d.cue) → \(d.expected)"
+        } else {
+            feedbackAbout = "\(engine.pack.header.slug.uppercased()) at \(timeString(engine.position))"
+        }
+        showFeedback = true
     }
 
     private func close() {
@@ -83,7 +109,19 @@ struct PlayerView: View {
             Spacer()
             Text(engine.phase == .finished ? "" : engine.drillLabel)
                 .font(.system(size: 15, weight: .semibold)).monospacedDigit()
-                .frame(width: 44, alignment: .trailing)
+            Menu {
+                Button { openFeedback() } label: { Label("Feedback for Claude", systemImage: "exclamationmark.bubble") }
+                if engine.phase != .finished {
+                    Button { confirmFinish = true } label: { Label("Finish now", systemImage: "flag.checkered") }
+                }
+            } label: {
+                Image(systemName: "ellipsis").font(.system(size: 17, weight: .semibold))
+                    .frame(width: 44, height: 44)
+                    .background(Theme.surface, in: Circle())
+                    .overlay(Circle().stroke(Theme.line))
+            }
+            .foregroundStyle(Theme.text)
+            .accessibilityLabel("More")
         }
     }
 
