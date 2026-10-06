@@ -26,6 +26,8 @@ final class CourseModel {
     private var building: Task<Void, Never>?
     private var builtKey: String?
 
+    private static let client = Bundle.main.bundleIdentifier ?? "io.github.kanav1.rolearner"
+
     private let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
         .appendingPathComponent("CourseModel", isDirectory: true)
 
@@ -77,9 +79,12 @@ final class CourseModel {
             try? FileManager.default.removeItem(at: dir)          // old models
             try FileManager.default.createDirectory(at: files.data.deletingLastPathComponent(),
                                                     withIntermediateDirectories: true)
-            let data = SFCustomLanguageModelData(locale: Locale(identifier: "ro-RO"),
-                                                 identifier: "io.github.kanav1.rolearner.course",
-                                                 version: key)
+            // The data's identifier and the clientIdentifier given to prepare
+            // are the same string in Apple's sample; two different ones here
+            // failed with "Error building custom language model".
+            let locale = Locale(identifier: "ro-RO")
+            Log.write("course model: ro-RO pronunciation symbols known to iOS: \(SFCustomLanguageModelData.supportedPhonemes(locale: locale).count)", "speech")
+            let data = SFCustomLanguageModelData(locale: locale, identifier: Self.client, version: key)
             for (phrase, n) in counts {
                 data.insert(phraseCount: SFCustomLanguageModelData.PhraseCount(phrase: phrase, count: n))
             }
@@ -89,7 +94,7 @@ final class CourseModel {
             // The clientIdentifier form: the only one in the iOS 18 SDK the CI
             // builds with (deprecated in iOS 26, still working).
             try await SFSpeechLanguageModel.prepareCustomLanguageModel(
-                for: files.data, clientIdentifier: "io.github.kanav1.rolearner", configuration: config)
+                for: files.data, clientIdentifier: Self.client, configuration: config)
             configuration = config
             builtKey = key
             UserDefaults.standard.set(key, forKey: "courseModelKey")
@@ -99,7 +104,8 @@ final class CourseModel {
             configuration = nil
             builtKey = key          // don't retry the same set over and over
             status = "failed: \(error.localizedDescription)"
-            Log.write("course model failed: \(error)", "speech")
+            let underlying = (error as NSError).userInfo[NSUnderlyingErrorKey].map { " — underlying: \($0)" } ?? ""
+            Log.write("course model failed: \(error)\(underlying)", "speech")
         }
     }
 
@@ -110,13 +116,13 @@ final class CourseModel {
         return String(h, radix: 36)
     }
 
-    /// Phrases as the recogniser should see them: comma-below ș/ț, no
-    /// punctuation, single spaces.
+    /// Phrases as the recogniser should see them: comma-below ș/ț, letters
+    /// only (no punctuation or apostrophes), single spaces.
     private static func clean(_ s: String) -> String {
         let t = s.replacingOccurrences(of: "ş", with: "ș").replacingOccurrences(of: "ţ", with: "ț")
             .replacingOccurrences(of: "Ş", with: "Ș").replacingOccurrences(of: "Ţ", with: "Ț")
         var out = ""
-        for ch in t { out.append(ch.isLetter || ch == "'" ? ch : " ") }
+        for ch in t { out.append(ch.isLetter ? ch : " ") }
         return out.split(separator: " ").joined(separator: " ")
     }
 }

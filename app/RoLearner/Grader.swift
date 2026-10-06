@@ -34,6 +34,10 @@ enum Grader {
     /// Words the recogniser often drops and whose absence is a slip, not a
     /// wrong answer.
     static let smallWords: Set<String> = ["un", "o", "niste", "e"]
+    /// Short unstressed prepositions and "and" that the recogniser drops even
+    /// when they were said ("Avem nevoie de pâine, nu înghețată" for "… nu de
+    /// înghețată"). Missing on their own, the answer still counts.
+    static let droppable: Set<String> = ["de", "la", "in", "pe", "cu", "si"]
 
     /// (folded form for comparing, original form for showing)
     static func words(_ s: String) -> [(key: String, shown: String)] {
@@ -42,10 +46,15 @@ enum Grader {
             .replacingOccurrences(of: "Ş", with: "Ș").replacingOccurrences(of: "Ţ", with: "Ț")
         var spaced = ""
         for ch in normalised { spaced.append(ch.isLetter || ch.isNumber ? ch : " ") }
-        return spaced.split(separator: " ").map { w in
+        return spaced.split(separator: " ").flatMap { w -> [(key: String, shown: String)] in
             let shown = String(w)
+            // Counting comes back as one run of digits ("12345" for unu, doi,
+            // trei, patru, cinci): split anything that isn't a number we teach.
+            if shown.count > 1, shown.allSatisfy(\.isNumber), numberWords[shown] == nil {
+                return shown.map { (key: String($0), shown: String($0)) }
+            }
             let folded = shown.lowercased().folding(options: .diacriticInsensitive, locale: nil)
-            return (key: folded == "este" ? "e" : folded, shown: shown.lowercased())
+            return [(key: folded == "este" ? "e" : folded, shown: shown.lowercased())]
         }
     }
 
@@ -128,6 +137,22 @@ enum Grader {
         let hKeys = Set(h.map(\.key))
         let e = words(expected).filter { !optionalPronouns.contains($0.key) || hKeys.contains($0.key) }
         guard !e.isEmpty else { return Judgement(verdict: .missed, score: 0, hint: nil) }
+        // The recogniser runs two words into one when they sound as one:
+        // "copiii lor" comes back as copiilor, "părinții lor" as părinților.
+        // A heard word that sounds like two neighbouring answer words is them.
+        if e.count > 1 {
+            var merged: [(key: String, shown: String)] = []
+            for t in h {
+                if !e.contains(where: { $0.key == t.key }),
+                   let k = e.indices.dropLast().first(where: { squash(e[$0].key + e[$0 + 1].key) == squash(t.key) }) {
+                    merged.append(e[k])
+                    merged.append(e[k + 1])
+                } else {
+                    merged.append(t)
+                }
+            }
+            h = merged
+        }
         // The recogniser clips the last consonants of the last word — the
         // release of a final g, c, k is quiet ("La" for larg, "mi" for mic).
         // When the heard last word is the answer's last word minus consonants
@@ -168,7 +193,8 @@ enum Grader {
         }
 
         let missingSmall = missing.filter { smallWords.contains($0.key) }
-        let missingContent = missing.filter { !smallWords.contains($0.key) }
+        let missingContent = missing.filter { !smallWords.contains($0.key) && !droppable.contains($0.key) }
+        let onlyDropped = missing.allSatisfy { droppable.contains($0.key) }
         let score = Double(dp[n][m]) / Double(2 * n)
 
         // un/o heard between two consecutive answer words
@@ -179,7 +205,7 @@ enum Grader {
         }
         let insertedHint = inserted.map { "No \(h[$0].shown) before \(e[alignedTo[$0 + 1]].shown)" }
 
-        if missing.isEmpty && near.isEmpty {
+        if onlyDropped && near.isEmpty {
             if let insertedHint { return Judgement(verdict: .close, score: 0.9, hint: insertedHint) }
             return Judgement(verdict: .correct, score: 1, hint: nil)
         }
@@ -204,6 +230,14 @@ enum Grader {
             return Judgement(verdict: .close, score: score, hint: parts.joined(separator: " · "))
         }
         return Judgement(verdict: .missed, score: score, hint: nil)
+    }
+
+    /// A word with doubled letters collapsed — how it sounds, roughly:
+    /// copiiilor and copiilor both become copilor.
+    static func squash(_ s: String) -> String {
+        var out = ""
+        for ch in s where out.last != ch { out.append(ch) }
+        return out
     }
 
     /// Same word, different ending — judged relative to the words' length, not
