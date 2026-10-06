@@ -1,0 +1,1484 @@
+{
+ "episode": 7,
+ "part": "f",
+ "lesson": 7,
+ "title": "Masa veche",
+ "source": "Limba care ne unește, nivelul I — Lecția 7 (partea F)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {},
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Vreau …",
+   "spoken": "Aș vrea …",
+   "gloss": "I'd like …",
+   "note": "The book teaches only 'vreau'. Among friends it's fine; asking in a shop or of a stranger, 'Aș vrea …' is the usual polite form. Taught as a chunk, no conditional grammar.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce vreți?",
+   "spoken": "Ce doriți?",
+   "gloss": "What would you like? (shop assistant)",
+   "note": "What a shop assistant or waiter says. The book's 'Ce vreți?' would sound blunt from staff.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "gras",
+   "spoken": "plinuț, mai solid",
+   "gloss": "fat → chubby, well-built",
+   "note": "'Gras' about a person is blunt, close to rude, said to their face. Softer: 'e mai plinuț' / 'e mai solid'. Fine about food ('carne grasă').",
+   "confidence": "check"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "brunet / blond",
+   "spoken": "brunet, șaten, blond",
+   "gloss": "dark-haired, brown-haired, fair",
+   "note": "People add 'șaten' (brown-haired) between the book's two; 'brunet' is really dark hair.",
+   "confidence": "medium"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum este?",
+   "spoken": "Cum arată?",
+   "gloss": "What does he/she look like?",
+   "note": "The everyday question for describing a person's looks; the book only has 'Cum este?' (what is he like).",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Nu am, nu are",
+   "spoken": "N-am, n-are",
+   "gloss": "I don't have, he doesn't have",
+   "note": "The book itself writes 'Mihai n-are frate'. In speech 'nu am' almost always contracts to 'n-am', 'nu are' to 'n-are'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Câți ani ai?",
+   "spoken": "Câți ani aveți?",
+   "gloss": "How old are you? (polite)",
+   "note": "'Câți ani ai?' to a child or a friend; to an adult stranger the polite 'aveți' — and, as in English, asking an adult's age is personal.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cât costă?",
+   "spoken": "Cât face?",
+   "gloss": "How much does it come to? (at the till)",
+   "note": "'Cât costă?' asks the price of one thing; at the till, for the total, people say 'Cât face?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți.",
+   "gloss": "Here you are (handing something over).",
+   "note": "Said when handing over money or goods, and by staff inviting you in. Polite form; 'Poftim' between friends, and 'Poftim?' also means 'Pardon?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "unsprezece … nouăsprezece",
+   "spoken": "unșpe, doișpe, treișpe, paișpe, cinșpe, șaișpe, șaptișpe, optișpe, nouășpe",
+   "gloss": "11–19, as said",
+   "note": "In everyday speech 11–19 are almost always shortened: -sprezece becomes -șpe. Prices, ages, bus numbers. Recognise them; the full forms are what you write.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Atenție!",
+   "spoken": "Ai grijă! / Aveți grijă!",
+   "gloss": "Careful! / Watch out!",
+   "note": "'Atenție!' is the sign and announcement word; said to a person, 'Ai grijă!' (polite 'Aveți grijă!') is more usual.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bună ziua! Cât costă masa veche?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Unsprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Și scaunul verde?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Paisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "E vechi!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, e vechi, dar e bun. Doisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bine. Și tabloul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Șaisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Poftiți banii.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A second-hand stall: old things, green things, and prices from eleven to nineteen.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s012",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Eleven to nineteen are one rule: the small number, then a piece that means on ten. One on ten, two on ten. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Eleven to nineteen"
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unsprezece, doisprezece, treisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s014",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four of them to learn as words: eleven, twelve, and two that bend the rule.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Masa costă unsprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The table costs eleven lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Masa costă unsprezece lei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eleven",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doisprezece lei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "twelve lei",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doisprezece lei",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "twelve",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Scaunul costă paisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chair costs fourteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Scaunul costă paisprezece lei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "fourteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "paisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu are șaisprezece ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is sixteen.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu are șaisprezece ani.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sixteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "șaisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Fourteen and sixteen shorten the small number. The rest follow the rule exactly. Thirteen, fifteen, seventeen — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "treisprezece, cincisprezece, șaptesprezece",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "optsprezece, nouăsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s038",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Count with him, eleven to nineteen. Take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Eleven to nineteen.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unsprezece, doisprezece, treisprezece, paisprezece, cincisprezece, șaisprezece, șaptesprezece, optsprezece, nouăsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed, just the number.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "fourteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "paisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eleven",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "unsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "seventeen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "șaptesprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sixteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "șaisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "twelve",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "thirteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "treisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "nineteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s055",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "nouăsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s056",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "fifteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s057",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cincisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eighteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "optsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ten",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "zece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Twelve has a her-form, like two. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doisprezece băieți, douăsprezece fete",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "twelve girls",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "douăsprezece fete",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two more words, for things.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Old and green"
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Scaunul e vechi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chair is old.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s069",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Scaunul e vechi.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old — about a thing",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "vechi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un scaun verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a green chair",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un scaun verde",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "green",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "For her, old changes its ending; green, like big, does not. For more than one, both end in an i sound. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton vechi, o rochie veche, case vechi",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un scaun verde, o masă verde, scaune verzi",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an old coat",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton vechi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an old dress",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie veche",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old houses",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "case vechi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a green table",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o masă verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "green chairs",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "scaune verzi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old and green",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vechi și verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The old table costs eleven lei.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Masa veche costă unsprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The green chair costs fourteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Scaunul verde costă paisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chair is old, but good.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Scaunul e vechi, dar bun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Scaunul e vechi, dar e bun."
+   ]
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is sixteen.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu are șaisprezece ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is twelve.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica ei are doisprezece ani.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the green table? — Thirteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât costă masa verde? — Treisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have fifteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The flat is old.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Apartamentul e vechi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want an old picture.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vreau un tablou vechi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dress is old, but pretty.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Rochia e veche, dar frumoasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Rochia e veche, dar e frumoasă."
+   ]
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We need green chairs.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem nevoie de scaune verzi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's the money. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți banii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. Nobody says these numbers in full. The on-ten part shrinks to a short ending. Listen — eleven, twelve, fourteen, sixteen, the way you'll hear them:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unșpe, doișpe, paișpe, șaișpe",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s119",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at a normal pace — prices at a stall:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unșpe lei. Paișpe lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Recognise them; say the full ones until they come easily.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s122",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a daughter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fiică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is your father a doctor? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tatăl tău e medic?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Our grandfather is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul nostru e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their parents are young.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Părinții lor sunt tineri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a scarf",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un fular",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a raincoat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s134",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un impermeabil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a winter hat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s136",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o căciulă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s137",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The stall again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s138",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bună ziua! Cât costă masa veche?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Unsprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Și scaunul verde?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Paisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "E vechi!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, e vechi, dar e bun. Doisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bine. Și tabloul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Șaisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Poftiți banii.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Up to nineteen, and old and green.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s148",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

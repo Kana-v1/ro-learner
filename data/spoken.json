@@ -396,6 +396,22 @@
    "gloss": "Here you are (handing something over).",
    "note": "Said when handing over money or goods, and by staff inviting you in. Polite form; 'Poftim' between friends, and 'Poftim?' also means 'Pardon?'.",
    "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "unsprezece … nouăsprezece",
+   "spoken": "unșpe, doișpe, treișpe, paișpe, cinșpe, șaișpe, șaptișpe, optișpe, nouășpe",
+   "gloss": "11–19, as said",
+   "note": "In everyday speech 11–19 are almost always shortened: -sprezece becomes -șpe. Prices, ages, bus numbers. Recognise them; the full forms are what you write.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Atenție!",
+   "spoken": "Ai grijă! / Aveți grijă!",
+   "gloss": "Careful! / Watch out!",
+   "note": "'Atenție!' is the sign and announcement word; said to a person, 'Ai grijă!' (polite 'Aveți grijă!') is more usual.",
+   "confidence": "medium"
   }
  ]
 }

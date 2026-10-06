@@ -32,7 +32,9 @@
   "07b",
   "07c",
   "07d",
-  "07e"
+  "07e",
+  "07f",
+  "07g"
  ],
  "items": {
   "01-1": {
@@ -476,13 +478,13 @@
   "nume": {
    "intro": "06c",
    "g": "m",
-   "cue": "a name",
+   "cue": "a surname — the family name",
    "answer": "un nume"
   },
   "prenume": {
    "intro": "06c",
    "g": "f",
-   "cue": "a first name",
+   "cue": "a first name — the given name",
    "answer": "un prenume"
   },
   "soț": {
@@ -808,52 +810,76 @@
    "g": "m",
    "cue": "money",
    "answer": "bani"
+  },
+  "unsprezece": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "eleven",
+   "answer": "unsprezece"
+  },
+  "doisprezece": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "twelve",
+   "answer": "doisprezece"
+  },
+  "paisprezece": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "fourteen",
+   "answer": "paisprezece"
+  },
+  "șaisprezece": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "sixteen",
+   "answer": "șaisprezece"
+  },
+  "vechi": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "old — about a thing",
+   "answer": "vechi"
+  },
+  "verde": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "green",
+   "answer": "verde"
+  },
+  "cuminte": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "well-behaved, quiet — of a child",
+   "answer": "cuminte"
+  },
+  "față": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "a face",
+   "answer": "o față"
+  },
+  "ajutor": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "help",
+   "answer": "ajutor"
+  },
+  "atenție": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "attention — and, alone, watch out",
+   "answer": "atenție"
   }
  },
  "struggles": {
-  "06c:15": {
-   "intro": "06c",
-   "g": "m",
-   "cue": "a name",
-   "answer": "un nume",
-   "misses": 10,
-   "seen": 11,
-   "last": "missed"
-  },
-  "06d:24": {
-   "intro": "06d",
-   "g": "f",
-   "cue": "an uncle",
-   "answer": "un unchi",
-   "misses": 10,
-   "seen": 10,
-   "last": "missed"
-  },
   "06c:41": {
    "intro": "06c",
    "g": "f",
    "cue": "a daughter",
    "answer": "o fiică",
-   "misses": 8,
-   "seen": 10,
-   "last": "close"
-  },
-  "06d:14": {
-   "intro": "06d",
-   "g": "f",
-   "cue": "a parent",
-   "answer": "un părinte",
-   "misses": 6,
-   "seen": 6,
-   "last": "close"
-  },
-  "06c:20": {
-   "intro": "06c",
-   "g": "f",
-   "cue": "a first name",
-   "answer": "un prenume",
-   "misses": 5,
-   "seen": 8,
+   "misses": 10,
+   "seen": 12,
    "last": "close"
   },
   "06c:94": {
@@ -861,44 +887,17 @@
    "g": "f",
    "cue": "Is your father a doctor? To a friend.",
    "answer": "Tatăl tău e medic?",
-   "misses": 4,
-   "seen": 4,
+   "misses": 6,
+   "seen": 6,
    "last": "close"
-  },
-  "06c:118": {
-   "intro": "06c",
-   "g": "m",
-   "cue": "a t-shirt",
-   "answer": "un tricou",
-   "misses": 4,
-   "seen": 4,
-   "last": "no_answer"
-  },
-  "06d:89": {
-   "intro": "06d",
-   "g": "m",
-   "cue": "We have relatives.",
-   "answer": "Avem rude.",
-   "misses": 4,
-   "seen": 4,
-   "last": "close"
-  },
-  "06d:93": {
-   "intro": "06d",
-   "g": "m",
-   "cue": "My brothers are at home.",
-   "answer": "Frații mei sunt acasă.",
-   "misses": 4,
-   "seen": 4,
-   "last": "missed"
   },
   "06d:99": {
    "intro": "06d",
    "g": "m",
    "cue": "Our grandfather is a doctor.",
    "answer": "Bunicul nostru e medic.",
-   "misses": 4,
-   "seen": 4,
+   "misses": 6,
+   "seen": 6,
    "last": "missed"
   },
   "06e:88": {
@@ -906,8 +905,8 @@
    "g": "m",
    "cue": "Their parents are young.",
    "answer": "Părinții lor sunt tineri.",
-   "misses": 4,
-   "seen": 4,
+   "misses": 6,
+   "seen": 6,
    "last": "missed"
   },
   "06e:96": {
@@ -1081,24 +1080,6 @@
    "seen": 4,
    "last": "no_answer"
   },
-  "06f:112": {
-   "intro": "06f",
-   "g": "f",
-   "cue": "Good morning, madam!",
-   "answer": "Bună dimineața, doamnă!",
-   "misses": 2,
-   "seen": 2,
-   "last": "missed"
-  },
-  "06f:114": {
-   "intro": "06f",
-   "g": "m",
-   "cue": "good",
-   "answer": "bun",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
-  },
   "06g:133": {
    "intro": "06g",
    "g": "m",
@@ -1198,6 +1179,168 @@
    "seen": 2,
    "last": "missed"
   },
+  "07b:85": {
+   "intro": "07b",
+   "g": "f",
+   "cue": "Is Victor fat? — No, Victor is thin.",
+   "answer": "Victor e gras? — Nu, Victor e slab.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07b:87": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "He has fair hair and black eyes.",
+   "answer": "Are păr blond și ochi negri.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07b:91": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "My sister is short and fair-haired.",
+   "answer": "Sora mea e scundă și blondă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07b:95": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "Is he tall? — No, he's short.",
+   "answer": "E înalt? — Nu, e scund.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07b:97": {
+   "intro": "07b",
+   "g": "f",
+   "cue": "Their children are tall.",
+   "answer": "Copiii lor sunt înalți.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07b:126": {
+   "intro": "07b",
+   "g": "f",
+   "cue": "This is a floor, and this is a ceiling.",
+   "answer": "Aceasta e o podea, iar acesta e un tavan.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07b:130": {
+   "intro": "07b",
+   "g": "m",
+   "cue": "Who is he? — He is Mr Radu.",
+   "answer": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07c:24": {
+   "intro": "07c",
+   "g": "m",
+   "cue": "beer",
+   "answer": "bere",
+   "misses": 2,
+   "seen": 3,
+   "last": "close"
+  },
+  "07c:110": {
+   "intro": "07c",
+   "g": "m",
+   "cue": "What does she need? — Ice cream.",
+   "answer": "De ce are nevoie? — De înghețată.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07c:112": {
+   "intro": "07c",
+   "g": "f",
+   "cue": "I don't want beer, I want chocolate.",
+   "answer": "Nu vreau bere, vreau ciocolată.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07c:118": {
+   "intro": "07c",
+   "g": "m",
+   "cue": "We need bread, not ice cream.",
+   "answer": "Avem nevoie de pâine, nu de înghețată.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07c:137": {
+   "intro": "07c",
+   "g": "f",
+   "cue": "This is a mirror.",
+   "answer": "Aceasta e o oglindă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07c:139": {
+   "intro": "07c",
+   "g": "f",
+   "cue": "This is a magazine, and this is a newspaper.",
+   "answer": "Aceasta e o revistă, iar acesta e un ziar.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07d:82": {
+   "intro": "07d",
+   "g": "f",
+   "cue": "two girls",
+   "answer": "două fete",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07d:95": {
+   "intro": "07d",
+   "g": "f",
+   "cue": "How many children do you have? Politely.",
+   "answer": "Câți copii aveți?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07d:97": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "We have three children: two boys and a girl.",
+   "answer": "Avem trei copii: doi băieți și o fată.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07d:99": {
+   "intro": "07d",
+   "g": "f",
+   "cue": "How old is your son? Politely.",
+   "answer": "Câți ani are fiul dumneavoastră?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07d:109": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "My daughter is one.",
+   "answer": "Fiica mea are un an.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
   "07a:128": {
    "intro": "07a",
    "g": "m",
@@ -1242,30 +1385,30 @@
    "misses": 1,
    "seen": 1,
    "last": "close"
+  },
+  "07d:62": {
+   "intro": "07d",
+   "g": "m",
+   "cue": "one — counting",
+   "answer": "unu",
+   "misses": 1,
+   "seen": 2,
+   "last": "close"
   }
  },
  "struggles_used": {
-  "07c": [
-   "un nume",
-   "un unchi",
+  "07f": [
    "o fiică",
-   "un părinte",
-   "un prenume",
    "Tatăl tău e medic?",
-   "un tricou"
-  ],
-  "07d": [
-   "Avem rude.",
-   "Frații mei sunt acasă.",
    "Bunicul nostru e medic.",
-   "Părinții lor sunt tineri."
+   "Părinții lor sunt tineri.",
+   "un impermeabil"
   ],
-  "07e": [
+  "07g": [
    "O fiică deșteaptă.",
    "Fiul meu e elev.",
    "Familia mea are membri harnici.",
-   "lung",
-   "o rochie"
+   "lung"
   ]
  }
 }

@@ -233,6 +233,11 @@ class Episode:
         struggles = [s for s in state.get("struggles", {}).values()
                      if s["intro"] in seq and seq.index(s["intro"]) < ci
                      and fold(s["answer"]) not in used][:struggle_cap]
+        # A miss is asked with its item's canonical cue when it has one: the
+        # cue it was missed under may have been the ambiguous one ("a name"
+        # for nume, which an English speaker hears as a first name).
+        canon = {fold(it["answer"]): it["cue"] for it in state["items"].values()}
+        struggles = [dict(s, cue=canon.get(fold(s["answer"]), s["cue"])) for s in struggles]
         taken = {s["answer"] for s in struggles}
         due = []
         for it in state["items"].values():
