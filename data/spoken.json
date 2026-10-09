@@ -413,5 +413,31 @@
    "note": "'Atenție!' is the sign and announcement word; said to a person, 'Ai grijă!' (polite 'Aveți grijă!') is more usual.",
    "confidence": "medium"
   }
+ ],
+ "8": [
+  {
+   "type": "written_vs_spoken",
+   "book": "azi, astăzi",
+   "spoken": "azi",
+   "gloss": "today",
+   "note": "Both are standard; 'azi' is the more frequent in conversation, 'astăzi' a touch more careful. Neither is regional.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce oră e? / Cât e ceasul?",
+   "spoken": "Cât e ceasul?",
+   "gloss": "What time is it?",
+   "note": "Both are in the book; 'Cât e ceasul?' is the everyday one. Answers drop 'ora' freely: '— Nouă și jumătate.'",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Scuzați, …",
+   "gloss": "Excuse me, … (to a stranger)",
+   "note": "How to stop someone to ask the time or the way; 'Scuze' between friends.",
+   "confidence": "high"
+  }
  ]
 }

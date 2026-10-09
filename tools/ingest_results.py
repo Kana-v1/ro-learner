@@ -162,6 +162,13 @@ def main():
                       if a["verdict"] == "no_answer" and a.get("voiced"))
         print(f"  {s['started'][:16]}  {s['episode']:4} {s['mode']:5} {first}/{len(main_items)} right first time"
               + (f", {unheard} answer(s) said but not recognised" if unheard else ""))
+        # Whisper and Apple on the same answers: how often each one would
+        # have counted it right
+        both = [a for i in s["items"] for a in i.get("attempts", []) if a.get("other")]
+        if both:
+            w = sum(1 for a in both if a["verdict"] == "correct")
+            ap = sum(1 for a in both if a["other"]["verdict"] == "correct")
+            print(f"        recognisers on the same {len(both)} answers: Whisper right {w}, Apple right {ap}")
     print(f"\nstill wrong ({len(struggles)}), now first in the next review blocks:")
     for k, v in list(state["struggles"].items())[:25]:
         print(f"  {k:9} x{v['misses']}  {v['answer']!r:45} heard {last_heard.get(k)!r}")

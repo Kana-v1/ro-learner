@@ -170,11 +170,15 @@ seeded from their own validated drill answers. The old hand-picked `ep.review([
 
 `app/` is an iOS app that plays an episode, stops as each drill cue ends,
 listens, grades the words, speaks the verdict, then plays the episode's own
-answer. Recognition (Settings → Recognition) defaults to **tuned to the
-course**: on-device, with a custom language model (`CourseModel.swift`,
-`SFCustomLanguageModelData`) trained on every pack's answers, rebuilt when the
-set of episodes changes — Apple's mechanism for a known vocabulary, and it only
-works on-device; it falls back to Apple's servers until built. Each listen ends
+answer. Recognition (Settings → Recognition) defaults to **Whisper on the
+phone** (`WhisperEngine.swift`, WhisperKit, OpenAI's large-v3 2024-09-30 model,
+626 MB, downloaded from Settings): each recorded answer is transcribed with
+the drill's answer as Whisper's prompt. Apple's recogniser runs alongside to
+decide when the answer is over, and its transcript and verdict are saved next
+to Whisper's on every attempt (`engine`, `other`), so `ingest_results.py`
+prints how often each would have counted the same answers right. Apple's own
+custom language models were tried and cannot work for Romanian: iOS reports
+no Romanian pronunciation data and refuses to build one. Each listen ends
 with `endAudio()` and the *final* result: partial results trail the audio, and
 cancelling (as it once did) lost exactly the last or only word ("La" for larg,
 nothing for mic). A loudness meter on the mic measures silence from the voice
@@ -186,6 +190,10 @@ word with the right stem but a different ending, judged relative to word
 length; or an `almost=` phrasing): the fix is shown and there is no retry;
 **not quite** (a content word missing or different): an immediate second try.
 Diacritics are folded, dropped subject pronouns are fine, `e` = `este`.
+The grader also absorbs how recognisers format things: digits for numbers
+("3" = trei), clock times ("9:30" = nouă și jumătate), "RON" for lei, two
+words run into one ("copiilor" = copiii lor), and a dropped de/la/în/pe/cu/și.
+Check a session's misses for new formatting patterns before blaming the learner.
 
 **When writing drills, give the grader the alternatives only you know:**
 `ep.drill(cue, answer, voice, accept=[...], almost=[...])` — `accept` for other

@@ -34,7 +34,10 @@
   "07d",
   "07e",
   "07f",
-  "07g"
+  "07g",
+  "08a",
+  "08b",
+  "08c"
  ],
  "items": {
   "01-1": {
@@ -870,6 +873,114 @@
    "g": "f",
    "cue": "attention — and, alone, watch out",
    "answer": "atenție"
+  },
+  "învăț": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "I learn, I study",
+   "answer": "învăț"
+  },
+  "ascult": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "I listen",
+   "answer": "ascult"
+  },
+  "repet": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "I repeat, I go over",
+   "answer": "repet"
+  },
+  "azi": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "today",
+   "answer": "azi"
+  },
+  "mult": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "a lot",
+   "answer": "mult"
+  },
+  "puțin": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "a little",
+   "answer": "puțin"
+  },
+  "întreb": {
+   "intro": "08b",
+   "g": "m",
+   "cue": "I ask",
+   "answer": "întreb"
+  },
+  "explic": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "I explain",
+   "answer": "explic"
+  },
+  "rezolv": {
+   "intro": "08b",
+   "g": "m",
+   "cue": "I solve, I do — an exercise",
+   "answer": "rezolv"
+  },
+  "exercițiu": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "an exercise",
+   "answer": "un exercițiu"
+  },
+  "chimie": {
+   "intro": "08b",
+   "g": "m",
+   "cue": "chemistry",
+   "answer": "chimie"
+  },
+  "biologie": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "biology",
+   "answer": "biologie"
+  },
+  "ora": {
+   "intro": "08c",
+   "g": "m",
+   "cue": "the hour — as in it's nine o'clock",
+   "answer": "ora"
+  },
+  "fix": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "exactly, sharp — of a time",
+   "answer": "fix"
+  },
+  "jumătate": {
+   "intro": "08c",
+   "g": "m",
+   "cue": "half",
+   "answer": "jumătate"
+  },
+  "sfert": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "a quarter",
+   "answer": "un sfert"
+  },
+  "fără": {
+   "intro": "08c",
+   "g": "m",
+   "cue": "without — and, in a time, to",
+   "answer": "fără"
+  },
+  "întârzii": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "I'm late",
+   "answer": "întârzii"
   }
  },
  "struggles": {
@@ -878,35 +989,17 @@
    "g": "f",
    "cue": "a daughter",
    "answer": "o fiică",
-   "misses": 10,
-   "seen": 12,
-   "last": "close"
-  },
-  "06c:94": {
-   "intro": "06c",
-   "g": "f",
-   "cue": "Is your father a doctor? To a friend.",
-   "answer": "Tatăl tău e medic?",
-   "misses": 6,
-   "seen": 6,
-   "last": "close"
+   "misses": 11,
+   "seen": 13,
+   "last": "missed"
   },
   "06d:99": {
    "intro": "06d",
    "g": "m",
    "cue": "Our grandfather is a doctor.",
    "answer": "Bunicul nostru e medic.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "06e:88": {
-   "intro": "06e",
-   "g": "m",
-   "cue": "Their parents are young.",
-   "answer": "Părinții lor sunt tineri.",
-   "misses": 6,
-   "seen": 6,
+   "misses": 8,
+   "seen": 8,
    "last": "missed"
   },
   "06e:96": {
@@ -914,8 +1007,8 @@
    "g": "f",
    "cue": "A clever daughter.",
    "answer": "O fiică deșteaptă.",
-   "misses": 4,
-   "seen": 4,
+   "misses": 6,
+   "seen": 6,
    "last": "missed"
   },
   "06f:76": {
@@ -923,8 +1016,8 @@
    "g": "f",
    "cue": "My son is a pupil.",
    "answer": "Fiul meu e elev.",
-   "misses": 4,
-   "seen": 4,
+   "misses": 6,
+   "seen": 6,
    "last": "missed"
   },
   "06f:84": {
@@ -932,8 +1025,17 @@
    "g": "f",
    "cue": "My family has hardworking members.",
    "answer": "Familia mea are membri harnici.",
-   "misses": 4,
-   "seen": 4,
+   "misses": 6,
+   "seen": 6,
+   "last": "missed"
+  },
+  "06c:112": {
+   "intro": "06c",
+   "g": "f",
+   "cue": "a dress",
+   "answer": "o rochie",
+   "misses": 5,
+   "seen": 5,
    "last": "close"
   },
   "07a:34": {
@@ -941,9 +1043,18 @@
    "g": "m",
    "cue": "long",
    "answer": "lung",
+   "misses": 5,
+   "seen": 5,
+   "last": "close"
+  },
+  "06d:113": {
+   "intro": "06d",
+   "g": "m",
+   "cue": "a raincoat",
+   "answer": "un impermeabil",
    "misses": 4,
    "seen": 4,
-   "last": "no_answer"
+   "last": "missed"
   },
   "07a:39": {
    "intro": "07a",
@@ -963,15 +1074,6 @@
    "seen": 3,
    "last": "missed"
   },
-  "06c:112": {
-   "intro": "06c",
-   "g": "f",
-   "cue": "a dress",
-   "answer": "o rochie",
-   "misses": 3,
-   "seen": 3,
-   "last": "close"
-  },
   "06d:40": {
    "intro": "06d",
    "g": "f",
@@ -989,15 +1091,6 @@
    "misses": 3,
    "seen": 3,
    "last": "missed"
-  },
-  "06d:113": {
-   "intro": "06d",
-   "g": "m",
-   "cue": "a raincoat",
-   "answer": "un impermeabil",
-   "misses": 3,
-   "seen": 3,
-   "last": "no_answer"
   },
   "06e:112": {
    "intro": "06e",
@@ -1341,6 +1434,186 @@
    "seen": 2,
    "last": "close"
   },
+  "07e:75": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "A new dress, nine lei.",
+   "answer": "O rochie nouă, nouă lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:80": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "two lei",
+   "answer": "doi lei",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:82": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "ten lei",
+   "answer": "zece lei",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:86": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "How much is the bread? — Six lei.",
+   "answer": "Cât costă pâinea? — Șase lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:88": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "How much is the ice cream? — Five lei.",
+   "answer": "Cât costă înghețata? — Cinci lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:90": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "The chocolate costs ten lei.",
+   "answer": "Ciocolata costă zece lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:97": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "I have ten lei.",
+   "answer": "Am zece lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:103": {
+   "intro": "07e",
+   "g": "f",
+   "cue": "How many chocolates do you want? — Eight.",
+   "answer": "Câte ciocolate vrei? — Opt.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07e:109": {
+   "intro": "07e",
+   "g": "m",
+   "cue": "The beer costs seven lei.",
+   "answer": "Berea costă șapte lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:38": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "Eleven to nineteen.",
+   "answer": "unsprezece, doisprezece, treisprezece, paisprezece, cincisprezece, șaisprezece, șaptesprezece, optsprezece, nouăsprezece",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:83": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "old houses",
+   "answer": "case vechi",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:85": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "a green table",
+   "answer": "o masă verde",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07f:89": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "old and green",
+   "answer": "vechi și verde",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07f:92": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "The old table costs eleven lei.",
+   "answer": "Masa veche costă unsprezece lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:94": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "The green chair costs fourteen lei.",
+   "answer": "Scaunul verde costă paisprezece lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:96": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "The chair is old, but good.",
+   "answer": "Scaunul e vechi, dar bun.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:98": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "My son is sixteen.",
+   "answer": "Fiul meu are șaisprezece ani.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:102": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "How much is the green table? — Thirteen lei.",
+   "answer": "Cât costă masa verde? — Treisprezece lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:104": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "I have fifteen lei.",
+   "answer": "Am cincisprezece lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07f:112": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "We need green chairs.",
+   "answer": "Avem nevoie de scaune verzi.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
   "07a:128": {
    "intro": "07a",
    "g": "m",
@@ -1394,21 +1667,44 @@
    "misses": 1,
    "seen": 2,
    "last": "close"
+  },
+  "07f:79": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "an old coat",
+   "answer": "un palton vechi",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "07f:106": {
+   "intro": "07f",
+   "g": "f",
+   "cue": "The flat is old.",
+   "answer": "Apartamentul e vechi.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
   }
  },
  "struggles_used": {
-  "07f": [
+  "08a": [
    "o fiică",
-   "Tatăl tău e medic?",
    "Bunicul nostru e medic.",
-   "Părinții lor sunt tineri.",
+   "O fiică deșteaptă.",
+   "Fiul meu e elev."
+  ],
+  "08b": [
+   "Familia mea are membri harnici.",
+   "o rochie",
+   "lung",
    "un impermeabil"
   ],
-  "07g": [
-   "O fiică deșteaptă.",
-   "Fiul meu e elev.",
-   "Familia mea are membri harnici.",
-   "lung"
+  "08c": [
+   "larg",
+   "Prenumele dumneavoastră, vă rog?",
+   "tanti",
+   "Ai un unchi? Da, am un unchi."
   ]
  }
 }
