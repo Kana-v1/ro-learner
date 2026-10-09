@@ -118,6 +118,17 @@ struct Attempt: Codable {
     /// Whether the mic heard a voice, whatever the recogniser made of it: a
     /// no-answer with a voice is the recogniser's miss, not the learner's.
     var voiced: Bool? = nil
+    /// Which recogniser this was graded on ("whisper" or "apple"), and when
+    /// Whisper was used, what Apple's recogniser made of the same answer —
+    /// so the two can be compared from real sessions.
+    var engine: String? = nil
+    var other: OtherHearing? = nil
+}
+
+struct OtherHearing: Codable {
+    var engine: String
+    var heard: String?
+    var verdict: Verdict
 }
 
 /// One drill as the learner met it: up to two spoken attempts, and an optional

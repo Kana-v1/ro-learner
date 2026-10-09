@@ -340,7 +340,6 @@ final class PackStore: ObservableObject {
             }
         }
         progress = loaded
-        CourseModel.shared.update(packs: packs)     // retrains only if the answers changed
     }
 
     private func jsonFiles(in dir: URL) -> [URL] {

@@ -10,13 +10,22 @@ settings:
     # Swift 5 language mode: Swift 6 strict-concurrency errors would each cost
     # a full CI round-trip to discover, with no local compiler to catch them.
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "0.4"
-    CURRENT_PROJECT_VERSION: "4"
+    MARKETING_VERSION: "0.5"
+    CURRENT_PROJECT_VERSION: "5"
+packages:
+  # Whisper on the phone (WhisperEngine.swift). Open source (MIT), by Argmax;
+  # the model itself is downloaded by the app, not bundled.
+  ArgmaxOSS:
+    url: https://github.com/argmaxinc/argmax-oss-swift.git
+    from: 1.1.1
 targets:
   RoLearner:
     type: application
     platform: iOS
     sources: [RoLearner]
+    dependencies:
+      - package: ArgmaxOSS
+        product: WhisperKit
     scheme: {}
     settings:
       base:

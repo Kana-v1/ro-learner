@@ -45,6 +45,27 @@ private final class RequestBox: @unchecked Sendable {
     private var request: SFSpeechAudioBufferRecognitionRequest?
     private var meter = VoiceMeter()
     private var floor: Double?
+    // The answer as Whisper wants it: 16 kHz mono floats. Converted on the
+    // audio thread as it arrives; the converter is only touched there.
+    private var capturing = false
+    private var samples: [Float] = []
+    private var converter: AVAudioConverter?
+    private var converterInput: AVAudioFormat?
+    private let whisperFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 16_000,
+                                              channels: 1, interleaved: false)!
+
+    func startCapture() {
+        lock.lock(); samples = []; capturing = true; lock.unlock()
+    }
+
+    /// Stop recording and hand over what was recorded.
+    func stopCapture() -> [Float] {
+        lock.lock(); defer { lock.unlock() }
+        capturing = false
+        let out = samples
+        samples = []
+        return out
+    }
 
     func set(_ r: SFSpeechAudioBufferRecognitionRequest?) {
         lock.lock(); request = r; lock.unlock()
@@ -79,8 +100,37 @@ private final class RequestBox: @unchecked Sendable {
                 meter.voicedSeconds += Double(buffer.frameLength) / buffer.format.sampleRate
             }
         }
+        let capture = capturing
         lock.unlock()
         r?.append(buffer)
+        if capture, let converted = resample(buffer) {
+            lock.lock()
+            if capturing { samples.append(contentsOf: converted) }
+            lock.unlock()
+        }
+    }
+
+    private func resample(_ buffer: AVAudioPCMBuffer) -> [Float]? {
+        if converter == nil || converterInput != buffer.format {
+            converter = AVAudioConverter(from: buffer.format, to: whisperFormat)
+            converterInput = buffer.format
+        }
+        guard let converter, buffer.format.sampleRate > 0 else { return nil }
+        let capacity = AVAudioFrameCount(Double(buffer.frameLength) * 16_000 / buffer.format.sampleRate) + 64
+        guard let out = AVAudioPCMBuffer(pcmFormat: whisperFormat, frameCapacity: capacity) else { return nil }
+        var fed = false
+        var error: NSError?
+        converter.convert(to: out, error: &error) { _, status in
+            if fed {
+                status.pointee = .noDataNow
+                return nil
+            }
+            fed = true
+            status.pointee = .haveData
+            return buffer
+        }
+        guard error == nil, let data = out.floatChannelData?[0] else { return nil }
+        return Array(UnsafeBufferPointer(start: data, count: Int(out.frameLength)))
     }
 
     /// Loudness of one buffer in dB (RMS of the first channel).
@@ -111,9 +161,18 @@ final class Listener {
     private var lastChange = 0.0              // CFAbsoluteTime, like the meter's
     private var startedAt = 0.0
     private var maxSeconds = 5.0
-    private var finalizing = false            // input ended, waiting for the final result
+    private var finalizing = false            // input ended, waiting for the final result(s)
     private var finalDeadline = 0.0
     private var gotFinal = false
+    private var appleDone = false
+    // Whisper, when it is the chosen recogniser: it transcribes the recorded
+    // answer once the learner has finished, alongside Apple's final result.
+    private var useWhisper = false
+    private var whisperPrompt = ""
+    private var whisperDone = true
+    private var whisperDeadline = 0.0
+    private var whisperText: String?
+    private var whisperTask: Task<Void, Never>?
     private var complete: ((String) -> Bool)?
     private var latestComplete = false
     private var completion: (([String]) -> Void)?
@@ -125,17 +184,24 @@ final class Listener {
     private(set) var lastMeter = VoiceMeter()
     private(set) var lastWasFinal = false
     private(set) var lastMode = ""
+    /// Whisper's transcript of the last answer (nil when Whisper wasn't used
+    /// or heard nothing), whether it was used, and how long it took.
+    private(set) var lastWhisper: String?
+    private(set) var lastUsedWhisper = false
+    private(set) var lastWhisperSeconds = 0.0
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
     var onDevice: Bool { recognizer?.supportsOnDeviceRecognition ?? false }
 
-    /// Settings → Recognition. "tuned" (the default): on the phone, with a
-    /// language model trained on the course's own answers (CourseModel) —
-    /// Apple's mechanism for a known vocabulary, and only available on-device.
-    /// "server": Apple's servers. "phone": on the phone, untuned. Tuned falls
-    /// back to the servers until its model is ready (or if it can't be built).
+    /// Settings → Recognition. "whisper" (the default): Whisper on the phone
+    /// (WhisperEngine), with Apple's recogniser running alongside to tell when
+    /// the answer is over; until Whisper is downloaded and ready, Apple's
+    /// alone. "server": Apple's servers. "phone": Apple, on the phone.
+    /// ("tuned", an earlier setting, was an Apple custom language model that
+    /// iOS cannot build for Romanian; it now means Whisper.)
     static var mode: String {
-        UserDefaults.standard.string(forKey: "recognitionMode") ?? "tuned"
+        let m = UserDefaults.standard.string(forKey: "recognitionMode") ?? "whisper"
+        return m == "tuned" ? "whisper" : m
     }
 
     static func requestPermissions() async -> Bool {
@@ -205,12 +271,12 @@ final class Listener {
     /// `complete` says whether what has been heard so far is already a whole
     /// answer: then a short silence ends the listen. Otherwise the learner is
     /// probably mid-sentence, recalling the next word, and gets a longer one.
-    func listen(expected: String, hints: [String] = [], maxSeconds: Double,
+    func listen(expected: String, hints: [String] = [], prompt: String? = nil, maxSeconds: Double,
                 complete: ((String) -> Bool)? = nil,
                 onPartial: ((String) -> Void)? = nil) async -> [String] {
         await withCheckedContinuation { (c: CheckedContinuation<[String], Never>) in
-            begin(expected: expected, hints: hints, maxSeconds: maxSeconds, complete: complete,
-                  onPartial: onPartial) {
+            begin(expected: expected, hints: hints, prompt: prompt ?? expected, maxSeconds: maxSeconds,
+                  complete: complete, onPartial: onPartial) {
                 c.resume(returning: $0)
             }
         }
@@ -220,10 +286,11 @@ final class Listener {
     func abort() {
         latest = nil
         guesses = []
+        whisperText = nil
         finish()
     }
 
-    private func begin(expected: String, hints: [String], maxSeconds: Double,
+    private func begin(expected: String, hints: [String], prompt: String, maxSeconds: Double,
                        complete: ((String) -> Bool)?,
                        onPartial: ((String) -> Void)?, completion: @escaping ([String]) -> Void) {
         abort()
@@ -241,23 +308,23 @@ final class Listener {
         var context: [String] = []
         for h in [expected] + hints where !h.isEmpty && !context.contains(h) { context.append(h) }
         req.contextualStrings = Array(context.prefix(100))
-        // Tuned: on the phone with the course's language model. Otherwise
-        // Apple's servers when chosen and online, else the phone if it can.
+        // Apple's recogniser: its servers when chosen (or alongside Whisper)
+        // and online, else the phone if it can.
         let canPhone = recognizer.supportsOnDeviceRecognition
-        let mode: String
-        if Self.mode == "tuned", canPhone, let model = CourseModel.shared.configuration {
-            req.requiresOnDeviceRecognition = true
-            req.customizedLanguageModel = model
-            mode = "on the phone, tuned to the course"
-        } else {
-            let useServer = Self.mode != "phone" && NetworkStatus.shared.online
-            req.requiresOnDeviceRecognition = !useServer && canPhone
-            mode = req.requiresOnDeviceRecognition ? "on the phone" : "Apple's servers"
-        }
+        let useServer = Self.mode != "phone" && NetworkStatus.shared.online
+        req.requiresOnDeviceRecognition = !useServer && canPhone
+        useWhisper = Self.mode == "whisper" && WhisperEngine.shared.isReady
+        let apple = req.requiresOnDeviceRecognition ? "Apple on the phone" : "Apple's servers"
+        let mode = useWhisper ? "Whisper on the phone (\(apple) alongside)" : apple
         if mode != lastMode {
-            Log.write("recognition now via \(mode) (setting: \(Self.mode), online: \(NetworkStatus.shared.online), on-device possible: \(canPhone), course model: \(CourseModel.shared.status))", "speech")
+            Log.write("recognition now via \(mode) (setting: \(Self.mode), online: \(NetworkStatus.shared.online), whisper: \(WhisperEngine.shared.statusText))", "speech")
             lastMode = mode
         }
+        whisperPrompt = prompt
+        whisperText = nil
+        whisperDone = true
+        appleDone = false
+        if useWhisper { box.startCapture() }
 
         latest = nil
         lastChange = CFAbsoluteTimeGetCurrent()
@@ -324,7 +391,12 @@ final class Listener {
             onPartial?(text)
         }
         if isFinal { gotFinal = true }
-        if isFinal || failed { finish() }
+        if isFinal || failed {
+            // The recogniser can end on its own; Whisper still gets the audio.
+            if !finalizing { endInput() }
+            appleDone = true
+            tryFinish()
+        }
     }
 
     /// When to stop listening. Silence is measured from the later of the last
@@ -334,10 +406,15 @@ final class Listener {
         guard gen == generation, completion != nil else { return }
         let now = CFAbsoluteTimeGetCurrent()
         if finalizing {
-            if now > finalDeadline {
+            if !appleDone && now > finalDeadline {
                 Log.write("no final result in time; using the last partial", "speech")
-                finish()
+                appleDone = true
             }
+            if !whisperDone && now > whisperDeadline {
+                Log.write("whisper took too long; using Apple's result", "speech")
+                whisperDone = true
+            }
+            tryFinish()
             return
         }
         let meter = box.reading()
@@ -365,7 +442,29 @@ final class Listener {
         finalizing = true
         box.set(nil)
         request?.endAudio()
-        finalDeadline = CFAbsoluteTimeGetCurrent() + 2.0
+        let now = CFAbsoluteTimeGetCurrent()
+        finalDeadline = now + 2.0
+        guard useWhisper else { return }
+        let audio = box.stopCapture()
+        // Only when the mic heard a voice: Whisper invents text for silence.
+        guard box.reading().voicedSeconds >= 0.15, audio.count >= 1_600 else { return }
+        whisperDone = false
+        whisperDeadline = now + 8.0
+        let gen = generation
+        let prompt = whisperPrompt
+        whisperTask = Task { [weak self] in
+            let started = CFAbsoluteTimeGetCurrent()
+            let text = await WhisperEngine.shared.transcribe(audio, prompt: prompt)
+            guard let self, gen == self.generation, self.completion != nil else { return }
+            self.whisperText = text
+            self.lastWhisperSeconds = CFAbsoluteTimeGetCurrent() - started
+            self.whisperDone = true
+            self.tryFinish()
+        }
+    }
+
+    private func tryFinish() {
+        if finalizing && appleDone && whisperDone { finish() }
     }
 
     private func finish() {
@@ -377,6 +476,8 @@ final class Listener {
         guesses = []
         lastMeter = box.reading()
         lastWasFinal = gotFinal
+        lastWhisper = whisperText
+        lastUsedWhisper = useWhisper
         cancelCurrent()
         done?(heard)
     }
@@ -389,5 +490,10 @@ final class Listener {
         task = nil
         request = nil
         finalizing = false
+        _ = box.stopCapture()
+        whisperTask?.cancel()
+        whisperTask = nil
+        whisperDone = true
+        appleDone = false
     }
 }

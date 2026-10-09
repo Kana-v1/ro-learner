@@ -614,14 +614,25 @@ final class SessionEngine: ObservableObject {
             // Time to start answering: the episode's pause was sized for
             // listening along, not for recall on the move; 4 s left blanks on
             // single words that came a moment later.
-            let guesses = await listener.listen(
+            let appleGuesses = await listener.listen(
                 expected: d.expected, hints: hints(for: d),
+                prompt: ([d.expected] + d.accept).joined(separator: " "),
                 maxSeconds: max(d.thinkSeconds + 3, 7),
                 complete: { heard in
                     let v = Grader.judge(d, heard: heard).verdict
                     return v == .correct || v == .close
                 }) { [weak self] partial in self?.liveHeard = partial }
             if Task.isCancelled { return }
+            // Graded on Whisper when it was used and heard something, else on
+            // Apple's; when Whisper was used, Apple's verdict is kept beside it.
+            let whisper = listener.lastUsedWhisper ? listener.lastWhisper : nil
+            let guesses = whisper.map { [$0] } ?? appleGuesses
+            let engineName = whisper != nil ? "whisper" : "apple"
+            var other: OtherHearing?
+            if whisper != nil {
+                let a = Grader.judgeBest(d, guesses: appleGuesses)
+                other = OtherHearing(engine: "apple", heard: a.heard, verdict: a.judgement.verdict)
+            }
             let best = Grader.judgeBest(d, guesses: guesses)
             let judgement = best.judgement
             let heard = best.heard
@@ -633,14 +644,19 @@ final class SessionEngine: ObservableObject {
             let meter = listener.lastMeter
             let voiced = meter.voicedSeconds >= 0.15
             record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v,
-                                                      hint: judgement.hint, voiced: voiced))
+                                                      hint: judgement.hint, voiced: voiced,
+                                                      engine: engineName, other: other))
             lastHeard = heard
             lastVerdict = v
             lastHint = judgement.hint
             let sound = String(format: "voice %.1f s, peak %.0f dB over floor %.0f dB, %@",
                                meter.voicedSeconds, meter.peakDB, meter.floorDB,
                                listener.lastWasFinal ? "final" : "partial")
-            Log.write("drill \(drillLabel) try \(n): heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score))) [\(sound)]", "drill")
+            let alsoApple = other.map { o in
+                String(format: "; apple: %@ -> %@; whisper %.1f s", o.heard.map { "\"\($0)\"" } ?? "nothing",
+                       o.verdict.rawValue, listener.lastWhisperSeconds)
+            } ?? ""
+            Log.write("drill \(drillLabel) try \(n): \(engineName) heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score))) [\(sound)\(alsoApple)]", "drill")
             persist()
             // "Almost" is not retried: the fix is shown and the answer plays.
             if v == .correct || v == .close || record.items[idx].correction != nil { break }

@@ -18,7 +18,8 @@ struct HomeView: View {
     // Off by default: in call mode the AirPods mic missed answers and presses
     // were unreliable. Kept as an experiment (voice-chat mode) until it works.
     @AppStorage("headsetMicExperimental") private var headsetMic = false
-    @AppStorage("recognitionMode") private var recognitionMode = "tuned"
+    @AppStorage("recognitionMode") private var recognitionMode = "whisper"
+    @ObservedObject private var whisper = WhisperEngine.shared
     @AppStorage("onboarded") private var onboarded = false
     @State private var importing = false
     @State private var linking = false
@@ -54,6 +55,10 @@ struct HomeView: View {
             .padding(.bottom, 32)
         }
         .refreshable { await store.sync() }
+        .task {
+            if recognitionMode == "tuned" { recognitionMode = "whisper" }    // the old Apple custom model
+            whisper.loadIfDownloaded()
+        }
         .shakeForLog()
         .background(Theme.bg.ignoresSafeArea())
         .foregroundStyle(Theme.text)
@@ -337,14 +342,31 @@ struct HomeView: View {
                     Text("Recognition")
                     Spacer()
                     Picker("Recognition", selection: $recognitionMode) {
-                        Text("Tuned to the course").tag("tuned")
+                        Text("Whisper on the phone").tag("whisper")
                         Text("Apple's servers").tag("server")
-                        Text("On the phone").tag("phone")
+                        Text("Apple, on the phone").tag("phone")
                     }
                     .tint(Theme.accent)
                 }
                 Text(recognitionNote)
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
+                if recognitionMode == "whisper" {
+                    switch whisper.state {
+                    case .notDownloaded, .failed:
+                        Button("Download Whisper (630 MB, use Wi-Fi)") { whisper.download() }
+                            .buttonStyle(OutlineButtonStyle())
+                    case .downloading(let p):
+                        ProgressView(value: p).tint(Theme.accent)
+                    case .loading:
+                        HStack(spacing: 8) {
+                            ProgressView().tint(Theme.accent)
+                            Text("Preparing Whisper — the first time takes a few minutes. Keep the app open.")
+                                .font(.system(size: 12)).foregroundStyle(Theme.muted)
+                        }
+                    case .ready:
+                        EmptyView()
+                    }
+                }
                 Toggle("Headphone microphone (experimental)", isOn: $headsetMic).tint(Theme.accent)
                 Text("With listening off, episodes play straight through and you mark misses yourself. The headphone microphone runs the app like a phone call: call-quality sound, noise suppression, and AirPods presses as pause/resume. Still being tested; off, the phone's microphone listens and playback stays full quality.")
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
@@ -360,7 +382,7 @@ struct HomeView: View {
         case "phone":
             return "Recognised on the phone by a general model, no connection needed."
         default:
-            return "Recognised on the phone by a model trained on this course's answers, so short words like mic or lung are expected. Works offline. Model: \(CourseModel.shared.status)."
+            return "OpenAI's Whisper, on the phone, told each drill's answer in advance — so short words and similar-sounding ones are heard as the course's words. Apple's recogniser runs alongside, and both are saved, to compare. Whisper: \(whisper.statusText)."
         }
     }
 

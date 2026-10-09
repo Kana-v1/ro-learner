@@ -71,9 +71,20 @@ enum Grader {
         "17": ["saptesprezece"], "18": ["optsprezece"], "19": ["nouasprezece"], "20": ["douazeci"],
     ]
 
-    /// Two words are the same word: equal once folded, or a digit and its number.
+    /// The recogniser writes Romanian money the way a shop does: "10 RON".
+    static let aliases: [String: Set<String>] = ["ron": ["lei", "leu"]]
+
+    /// The number a word or digit stands for ("doi", "două" and "2" are all 2).
+    static func number(_ w: String) -> String? {
+        if numberWords[w] != nil { return w }
+        return numberWords.first { $0.value.contains(w) && w != "un" && w != "o" }?.key
+    }
+
+    /// Two words are the same word: equal once folded, a digit and its number,
+    /// or RON and lei.
     static func same(_ a: String, _ b: String) -> Bool {
         if a == b { return true }
+        if aliases[a]?.contains(b) == true || aliases[b]?.contains(a) == true { return true }
         if let w = numberWords[a] { return w.contains(b) }
         if let w = numberWords[b] { return w.contains(a) }
         return false
@@ -137,6 +148,11 @@ enum Grader {
         let hKeys = Set(h.map(\.key))
         let e = words(expected).filter { !optionalPronouns.contains($0.key) || hKeys.contains($0.key) }
         guard !e.isEmpty else { return Judgement(verdict: .missed, score: 0, hint: nil) }
+        // A bare number asked as a bare number: "two" is doi or două, whichever
+        // form comes out; the her-form matters only next to a noun.
+        if e.count == 1, let n = number(e[0].key), h.contains(where: { number($0.key) == n }) {
+            return Judgement(verdict: .correct, score: 1, hint: nil)
+        }
         // The recogniser runs two words into one when they sound as one:
         // "copiii lor" comes back as copiilor, "părinții lor" as părinților.
         // A heard word that sounds like two neighbouring answer words is them.
