@@ -10,8 +10,8 @@ settings:
     # Swift 5 language mode: Swift 6 strict-concurrency errors would each cost
     # a full CI round-trip to discover, with no local compiler to catch them.
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "0.5"
-    CURRENT_PROJECT_VERSION: "5"
+    MARKETING_VERSION: "0.6"
+    CURRENT_PROJECT_VERSION: "6"
 packages:
   # Whisper on the phone (WhisperEngine.swift). Open source (MIT), by Argmax;
   # the model itself is downloaded by the app, not bundled.

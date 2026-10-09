@@ -41,7 +41,7 @@ enum Grader {
 
     /// (folded form for comparing, original form for showing)
     static func words(_ s: String) -> [(key: String, shown: String)] {
-        let normalised = s
+        let normalised = spellTimes(s)
             .replacingOccurrences(of: "ş", with: "ș").replacingOccurrences(of: "ţ", with: "ț")
             .replacingOccurrences(of: "Ş", with: "Ș").replacingOccurrences(of: "Ţ", with: "Ț")
         var spaced = ""
@@ -70,6 +70,35 @@ enum Grader {
         "14": ["paisprezece"], "15": ["cincisprezece"], "16": ["saisprezece"],
         "17": ["saptesprezece"], "18": ["optsprezece"], "19": ["nouasprezece"], "20": ["douazeci"],
     ]
+
+    /// The recogniser writes times as a clock does ("9:30", "8:45"); the
+    /// answers say them the Romanian way. Rewrite each H:MM into those words,
+    /// keeping the hours as digits (they match by number): 9:00 → 9 fix,
+    /// 9:15 → 9 și un sfert, 9:30 → 9 și jumătate, 8:45 → 9 fără un sfert,
+    /// 9:05 → 9 și 5, 8:50 → 9 fără 10.
+    static func spellTimes(_ s: String) -> String {
+        guard s.contains(":") || s.contains("."),
+              let re = try? NSRegularExpression(pattern: #"\b(\d{1,2})[:.](\d{2})\b"#) else { return s }
+        var out = s
+        let matches = re.matches(in: s, range: NSRange(s.startIndex..., in: s))
+        for m in matches.reversed() {
+            guard let whole = Range(m.range, in: s), let hr = Range(m.range(at: 1), in: s),
+                  let mr = Range(m.range(at: 2), in: s),
+                  let h = Int(s[hr]), let mm = Int(s[mr]), mm < 60 else { continue }
+            let next = h == 12 ? 1 : h + 1
+            let spoken: String
+            switch mm {
+            case 0: spoken = "\(h) fix"
+            case 15: spoken = "\(h) și un sfert"
+            case 30: spoken = "\(h) și jumătate"
+            case 45: spoken = "\(next) fără un sfert"
+            case 1..<30: spoken = "\(h) și \(mm)"
+            default: spoken = "\(next) fără \(60 - mm)"
+            }
+            out.replaceSubrange(whole, with: spoken)
+        }
+        return out
+    }
 
     /// The recogniser writes Romanian money the way a shop does: "10 RON".
     static let aliases: [String: Set<String>] = ["ron": ["lei", "leu"]]
