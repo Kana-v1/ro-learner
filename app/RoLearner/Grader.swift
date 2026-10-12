@@ -160,7 +160,7 @@ enum Grader {
         return best
     }
 
-    private static func rank(_ v: Verdict) -> Int {
+    static func rank(_ v: Verdict) -> Int {
         switch v {
         case .correct: return 3
         case .close: return 2

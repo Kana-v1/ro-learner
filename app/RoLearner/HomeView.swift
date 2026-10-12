@@ -382,7 +382,7 @@ struct HomeView: View {
         case "phone":
             return "Recognised on the phone by a general model, no connection needed."
         default:
-            return "OpenAI's Whisper, on the phone, told each drill's answer in advance — so short words and similar-sounding ones are heard as the course's words. Apple's recogniser runs alongside, and both are saved, to compare. Whisper: \(whisper.statusText)."
+            return "OpenAI's Whisper on the phone and Apple's recogniser both listen; an answer counts as well as the better of the two heard it. They miss different things, so together they miss less. Whisper: \(whisper.statusText)."
         }
     }
 

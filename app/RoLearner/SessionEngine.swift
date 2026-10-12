@@ -623,17 +623,28 @@ final class SessionEngine: ObservableObject {
                     return v == .correct || v == .close
                 }) { [weak self] partial in self?.liveHeard = partial }
             if Task.isCancelled { return }
-            // Graded on Whisper when it was used and heard something, else on
-            // Apple's; when Whisper was used, Apple's verdict is kept beside it.
+            // With Whisper running too, the answer counts as well as the better
+            // of the two heard it. They miss different things: on 241 answers
+            // heard by both, Apple alone was right 125 times, Whisper alone
+            // 101, either of them 160. The other one's hearing is kept beside.
             let whisper = listener.lastUsedWhisper ? listener.lastWhisper : nil
-            let guesses = whisper.map { [$0] } ?? appleGuesses
-            let engineName = whisper != nil ? "whisper" : "apple"
+            let appleBest = Grader.judgeBest(d, guesses: appleGuesses)
+            var best = appleBest
+            var guesses = appleGuesses
+            var engineName = "apple"
             var other: OtherHearing?
-            if whisper != nil {
-                let a = Grader.judgeBest(d, guesses: appleGuesses)
-                other = OtherHearing(engine: "apple", heard: a.heard, verdict: a.judgement.verdict)
+            if let whisper {
+                let w = Grader.judgeBest(d, guesses: [whisper])
+                if Grader.rank(w.judgement.verdict) > Grader.rank(appleBest.judgement.verdict) {
+                    best = w
+                    guesses = [whisper]
+                    engineName = "whisper"
+                    other = OtherHearing(engine: "apple", heard: appleBest.heard,
+                                         verdict: appleBest.judgement.verdict)
+                } else {
+                    other = OtherHearing(engine: "whisper", heard: w.heard, verdict: w.judgement.verdict)
+                }
             }
-            let best = Grader.judgeBest(d, guesses: guesses)
             let judgement = best.judgement
             let heard = best.heard
             if best.used > 0 {
@@ -653,7 +664,7 @@ final class SessionEngine: ObservableObject {
                                meter.voicedSeconds, meter.peakDB, meter.floorDB,
                                listener.lastWasFinal ? "final" : "partial")
             let alsoApple = other.map { o in
-                String(format: "; apple: %@ -> %@; whisper %.1f s", o.heard.map { "\"\($0)\"" } ?? "nothing",
+                String(format: "; %@: %@ -> %@; whisper %.1f s", o.engine, o.heard.map { "\"\($0)\"" } ?? "nothing",
                        o.verdict.rawValue, listener.lastWhisperSeconds)
             } ?? ""
             Log.write("drill \(drillLabel) try \(n): \(engineName) heard \(heard.map { "\"\($0)\"" } ?? "nothing") for \"\(d.expected)\" -> \(v.rawValue) (\(String(format: "%.2f", score))) [\(sound)\(alsoApple)]", "drill")
