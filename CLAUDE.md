@@ -152,6 +152,18 @@ segment, not narrator text. The build warns and fails on diacritic-bearing
 Romanian left in an English-voice segment — a backstop, not a substitute for
 writing it right (it cannot catch diacritic-free Romanian like `am un frate`).
 
+**Explain the rule, not just the forms — even where the book doesn't.**
+(From the learner's feedback after 8B: "the endings of the verbs will be
+different for different verbs; the book doesn't explain it.") The textbook
+gives tables for the words of its chapter and leaves the system implicit. When
+an episode introduces a pattern (verb endings, agreement, plurals, articles),
+say the general rule in English — which group it belongs to, what changes, the
+exceptions to learn by heart, and what's coming later — and have the Romanian
+voice speak the examples. Then drill the rule on words already known, so it
+transfers. `build_episode_08d.py` is the model (verb groups by dictionary
+ending; the -a group's endings; sound changes before -i; vowel shifts learnt
+with the verb; -ez verbs previewed for Lecția 9).
+
 **No between-episodes tasks.** Episodes end on a short sign-off, not homework —
 the learner listens on the move and will not do a "before next time" exercise.
 All producing happens inside the drills. (Episodes 1–5 still carry the old

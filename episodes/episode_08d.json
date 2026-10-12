@@ -1,0 +1,1500 @@
+{
+ "episode": 8,
+ "part": "d",
+ "lesson": 8,
+ "title": "Unde stai?",
+ "source": "Limba care ne unește, nivelul I — Lecția 8 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "aproape": "near — from the book's 'stă aproape'",
+  "un coleg": "a colleague, a classmate"
+ },
+ "spoken_layer": [
+  {
+   "type": "written_vs_spoken",
+   "book": "azi, astăzi",
+   "spoken": "azi",
+   "gloss": "today",
+   "note": "Both are standard; 'azi' is the more frequent in conversation, 'astăzi' a touch more careful. Neither is regional.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce oră e? / Cât e ceasul?",
+   "spoken": "Cât e ceasul?",
+   "gloss": "What time is it?",
+   "note": "Both are in the book; 'Cât e ceasul?' is the everyday one. Answers drop 'ora' freely: '— Nouă și jumătate.'",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Scuzați, …",
+   "gloss": "Excuse me, … (to a stranger)",
+   "note": "How to stop someone to ask the time or the way; 'Scuze' between friends.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună! Ești student aici?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, la universitate. La Facultatea de Chimie.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și eu! Unde stai?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Stau aproape, cu fratele meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ai examen azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, la zece fix. Chimie sau biologie — repet cu un coleg.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two new students on the first day. This time, the rules behind the verbs — the part the book leaves out — then six words.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Romanian verbs come in groups, and you can tell the group from the dictionary form — the to-form. It ends in an a, an e-a, an e, an i, or an i with a hat. Each group has its own endings. Every verb in this lesson is in the first group, the a-group. Listen to three of them in their dictionary form:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The rule"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "a asculta, a repeta, a explica",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "To use one: take off the final a. That's the stem. Then add the ending for the person. For I: nothing. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "eu ascult, eu repet, eu explic",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s013",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "For you: an i. For he or she: the short uh. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tu asculți, el ascultă",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s015",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "For we: uhm. For you all: ats. And they is exactly the same as he. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi ascultăm, voi ascultați, ei ascultă",
+   "rate": 1.0,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s017",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "So six persons, five endings: nothing, i, uh, uhm, ats, uh. Two small things change the sound. Before the i of you, a t becomes ts. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ascult, asculți; repet, repeți",
+   "rate": 1.0,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s019",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And some verbs shift their middle vowel too. That isn't a rule you can work out — learn it with the verb. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "învăț, înveți, învață; întreb, întreabă",
+   "rate": 1.0,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s021",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One more thing for later. Many a-group verbs add an extra e-z before the ending — you used one yourself in the last episode. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "studiez, lucrez",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s023",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study, I work. That's next lesson. The other groups have endings of their own, and each comes with its own lesson.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s024",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now use the rule. The person and the verb; build the form.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Using the rule"
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all learn",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "voi învățați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they ask",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei întreabă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we explain",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "noi explicăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you repeat — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s032",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tu repeți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they listen",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei ascultă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all solve",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "voi rezolvați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she learns",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ea învață",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we ask",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi întrebăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you listen — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tu asculți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he explains",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "el explică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And three slips from your last session, side by side. Where, and what:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s046",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde înveți? Ce înveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s047",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you study, what do you study. And a lot, after a verb, never changes. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s048",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea învață mult. Ei învață mult.",
+   "rate": 1.0,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you study? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde înveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you study? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce înveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She studies a lot.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea învață mult.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They study a lot.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei învață mult.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six new words.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s058",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stau aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live nearby.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stau aproape.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live — where I stay",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "stau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Învăț la universitate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study at the university.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Învăț la universitate.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a university",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o universitate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Facultatea de Chimie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The Faculty of Chemistry.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s070",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Facultatea de Chimie.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a faculty — a university department",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o facultate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am examen azi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have an exam today.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s075",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am examen azi.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an exam",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un examen",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Chimie sau biologie?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Chemistry or biology?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Chimie sau biologie?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "or",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Stau cu fratele meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live with my brother.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s085",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Stau cu fratele meu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "with",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an exam",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un examen",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "with",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "stau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a university",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o universitate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "or",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a faculty",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o facultate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Live is one of the few a-group verbs that doesn't follow the rule. Learn its six forms as they are. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s102",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "eu stau, tu stai, el stă",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s103",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi stăm, voi stați, ei stau",
+   "rate": 1.0,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The work. Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you live? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde stai?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live nearby, with my brother.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Stau aproape, cu fratele meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We live with our parents.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stăm cu părinții.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Stăm cu părinții noștri."
+   ]
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you all live here?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Voi stați aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have an exam today.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am examen azi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Azi am examen.",
+    "Am un examen azi."
+   ]
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "At the university or at school?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "La universitate sau la școală?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister studies at the Faculty of Biology.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora mea învață la Facultatea de Biologie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go over it with a classmate.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Repet cu un coleg.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The exam is at ten sharp.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examenul e la zece fix.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The university is old.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Universitatea e veche.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Does she live nearby? — No.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stă aproape? — Nu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Ea stă aproape? — Nu."
+   ]
+  },
+  {
+   "id": "s127",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. Where do you live is asked with this verb — where do you stay — far more often than with the verb for live. And to someone older, politely. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde stați?",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you live? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde stați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a daughter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o fiică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "loose, wide",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "larg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "well-behaved children",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "copii cuminți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "chemistry",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "chimie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "grandfather",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bunic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "grandmother",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bunică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "child",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s145",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "copil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "family",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s147",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "familie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s148",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first day again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s149",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună! Ești student aici?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s150",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, la universitate. La Facultatea de Chimie.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s151",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și eu! Unde stai?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s152",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Stau aproape, cu fratele meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s153",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ai examen azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s154",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, la zece fix. Chimie sau biologie — repet cu un coleg.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s155",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The rule for a-group verbs, and where you live.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s156",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

@@ -166,9 +166,14 @@ def main():
         # have counted it right
         both = [a for i in s["items"] for a in i.get("attempts", []) if a.get("other")]
         if both:
-            w = sum(1 for a in both if a["verdict"] == "correct")
-            ap = sum(1 for a in both if a["other"]["verdict"] == "correct")
-            print(f"        recognisers on the same {len(both)} answers: Whisper right {w}, Apple right {ap}")
+            def verdict(a, engine):
+                # graded on one recogniser, the other one's verdict kept beside
+                return a["verdict"] if a.get("engine", "whisper") == engine else a["other"]["verdict"]
+            w = sum(1 for a in both if verdict(a, "whisper") == "correct")
+            ap = sum(1 for a in both if verdict(a, "apple") == "correct")
+            either = sum(1 for a in both if "correct" in (verdict(a, "whisper"), verdict(a, "apple")))
+            print(f"        recognisers on the same {len(both)} answers: Whisper right {w}, "
+                  f"Apple right {ap}, either {either}")
     print(f"\nstill wrong ({len(struggles)}), now first in the next review blocks:")
     for k, v in list(state["struggles"].items())[:25]:
         print(f"  {k:9} x{v['misses']}  {v['answer']!r:45} heard {last_heard.get(k)!r}")

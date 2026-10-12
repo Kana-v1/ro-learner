@@ -37,7 +37,9 @@
   "07g",
   "08a",
   "08b",
-  "08c"
+  "08c",
+  "08d",
+  "08e"
  ],
  "items": {
   "01-1": {
@@ -981,6 +983,78 @@
    "g": "f",
    "cue": "I'm late",
    "answer": "întârzii"
+  },
+  "stau": {
+   "intro": "08d",
+   "g": "m",
+   "cue": "I live — where I stay",
+   "answer": "stau"
+  },
+  "universitate": {
+   "intro": "08d",
+   "g": "f",
+   "cue": "a university",
+   "answer": "o universitate"
+  },
+  "facultate": {
+   "intro": "08d",
+   "g": "m",
+   "cue": "a faculty — a university department",
+   "answer": "o facultate"
+  },
+  "examen": {
+   "intro": "08d",
+   "g": "f",
+   "cue": "an exam",
+   "answer": "un examen"
+  },
+  "sau": {
+   "intro": "08d",
+   "g": "m",
+   "cue": "or",
+   "answer": "sau"
+  },
+  "cu": {
+   "intro": "08d",
+   "g": "f",
+   "cue": "with",
+   "answer": "cu"
+  },
+  "orar": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "a timetable",
+   "answer": "un orar"
+  },
+  "materie": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "a subject — or the material to learn",
+   "answer": "o materie"
+  },
+  "sesiune": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "exam season",
+   "answer": "sesiune"
+  },
+  "după": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "after",
+   "answer": "după"
+  },
+  "spațios": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "spacious, roomy",
+   "answer": "spațios"
+  },
+  "mulți": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "many — before a his-word",
+   "answer": "mulți"
   }
  },
  "struggles": {
@@ -989,71 +1063,8 @@
    "g": "f",
    "cue": "a daughter",
    "answer": "o fiică",
-   "misses": 11,
-   "seen": 13,
-   "last": "missed"
-  },
-  "06d:99": {
-   "intro": "06d",
-   "g": "m",
-   "cue": "Our grandfather is a doctor.",
-   "answer": "Bunicul nostru e medic.",
-   "misses": 8,
-   "seen": 8,
-   "last": "missed"
-  },
-  "06e:96": {
-   "intro": "06e",
-   "g": "f",
-   "cue": "A clever daughter.",
-   "answer": "O fiică deșteaptă.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "06f:76": {
-   "intro": "06f",
-   "g": "f",
-   "cue": "My son is a pupil.",
-   "answer": "Fiul meu e elev.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "06f:84": {
-   "intro": "06f",
-   "g": "f",
-   "cue": "My family has hardworking members.",
-   "answer": "Familia mea are membri harnici.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "06c:112": {
-   "intro": "06c",
-   "g": "f",
-   "cue": "a dress",
-   "answer": "o rochie",
-   "misses": 5,
-   "seen": 5,
-   "last": "close"
-  },
-  "07a:34": {
-   "intro": "07a",
-   "g": "m",
-   "cue": "long",
-   "answer": "lung",
-   "misses": 5,
-   "seen": 5,
-   "last": "close"
-  },
-  "06d:113": {
-   "intro": "06d",
-   "g": "m",
-   "cue": "a raincoat",
-   "answer": "un impermeabil",
-   "misses": 4,
-   "seen": 4,
+   "misses": 13,
+   "seen": 15,
    "last": "missed"
   },
   "07a:39": {
@@ -1061,6 +1072,24 @@
    "g": "f",
    "cue": "loose",
    "answer": "larg",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "07g:43": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "well-behaved children",
+   "answer": "copii cuminți",
+   "misses": 4,
+   "seen": 4,
+   "last": "missed"
+  },
+  "08b:32": {
+   "intro": "08b",
+   "g": "m",
+   "cue": "chemistry",
+   "answer": "chimie",
    "misses": 4,
    "seen": 4,
    "last": "missed"
@@ -1173,6 +1202,15 @@
    "seen": 4,
    "last": "no_answer"
   },
+  "08b:17": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "I explain",
+   "answer": "explic",
+   "misses": 3,
+   "seen": 4,
+   "last": "close"
+  },
   "06g:133": {
    "intro": "06g",
    "g": "m",
@@ -1216,6 +1254,15 @@
    "answer": "o rochie nouă",
    "misses": 2,
    "seen": 2,
+   "last": "close"
+  },
+  "07a:92": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "a loose blouse",
+   "answer": "o bluză largă",
+   "misses": 2,
+   "seen": 3,
    "last": "close"
   },
   "07a:109": {
@@ -1542,6 +1589,15 @@
    "seen": 2,
    "last": "close"
   },
+  "07f:87": {
+   "intro": "07f",
+   "g": "m",
+   "cue": "green chairs",
+   "answer": "scaune verzi",
+   "misses": 2,
+   "seen": 3,
+   "last": "missed"
+  },
   "07f:89": {
    "intro": "07f",
    "g": "f",
@@ -1613,6 +1669,222 @@
    "misses": 2,
    "seen": 2,
    "last": "missed"
+  },
+  "07g:45": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "a well-behaved girl",
+   "answer": "o fată cuminte",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07g:58": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "Do you need help? Politely.",
+   "answer": "Aveți nevoie de ajutor?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07g:61": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "a small house",
+   "answer": "o casă mică",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07g:63": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "small houses",
+   "answer": "case mici",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07g:69": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "a big family",
+   "answer": "o familie mare",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07g:75": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "a tall woman",
+   "answer": "o femeie înaltă",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07g:79": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "black eyes",
+   "answer": "ochi negri",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "07g:94": {
+   "intro": "07g",
+   "g": "m",
+   "cue": "The children are well-behaved.",
+   "answer": "Copiii sunt cuminți.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "07g:104": {
+   "intro": "07g",
+   "g": "f",
+   "cue": "What does he need? — Help.",
+   "answer": "De ce are nevoie? — De ajutor.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08a:58": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "you listen — to a friend",
+   "answer": "asculți",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08a:62": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "you repeat — to a friend",
+   "answer": "repeți",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08a:81": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "Do you go over the lesson at home? To a friend.",
+   "answer": "Repeți lecția acasă?",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08a:92": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "She studies a lot.",
+   "answer": "Ea învață mult.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08a:100": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "Where do you study? To a friend.",
+   "answer": "Unde înveți?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08a:102": {
+   "intro": "08a",
+   "g": "f",
+   "cue": "Do you listen a lot? — No, a little.",
+   "answer": "Asculți mult? — Nu, puțin.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08a:104": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "My sister listens to the lesson.",
+   "answer": "Sora mea ascultă lecția.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08a:128": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "comfortable",
+   "answer": "comod",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08b:27": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "an exercise",
+   "answer": "un exercițiu",
+   "misses": 2,
+   "seen": 3,
+   "last": "close"
+  },
+  "08b:63": {
+   "intro": "08b",
+   "g": "m",
+   "cue": "she solves",
+   "answer": "rezolvă",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08b:75": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "they listen",
+   "answer": "ei ascultă",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08b:90": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "Does the chemistry teacher ask a lot?",
+   "answer": "Profesorul de chimie întreabă mult?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08b:94": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "We do exercises.",
+   "answer": "Noi rezolvăm exerciții.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08b:100": {
+   "intro": "08b",
+   "g": "m",
+   "cue": "I do an exercise at home.",
+   "answer": "Rezolv un exercițiu acasă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08b:106": {
+   "intro": "08b",
+   "g": "f",
+   "cue": "The biology teacher explains well.",
+   "answer": "Profesoara de biologie explică bine.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
   },
   "07a:128": {
    "intro": "07a",
@@ -1688,23 +1960,20 @@
   }
  },
  "struggles_used": {
-  "08a": [
+  "08d": [
    "o fiică",
-   "Bunicul nostru e medic.",
-   "O fiică deșteaptă.",
-   "Fiul meu e elev."
-  ],
-  "08b": [
-   "Familia mea are membri harnici.",
-   "o rochie",
-   "lung",
-   "un impermeabil"
-  ],
-  "08c": [
    "larg",
+   "copii cuminți",
+   "chimie",
+   "Ea învață mult.",
+   "Unde înveți?",
+   "ei ascultă"
+  ],
+  "08e": [
    "Prenumele dumneavoastră, vă rog?",
    "tanti",
-   "Ai un unchi? Da, am un unchi."
+   "Ai un unchi? Da, am un unchi.",
+   "Tu ești fată."
   ]
  }
 }
