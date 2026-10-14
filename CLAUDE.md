@@ -152,17 +152,22 @@ segment, not narrator text. The build warns and fails on diacritic-bearing
 Romanian left in an English-voice segment — a backstop, not a substitute for
 writing it right (it cannot catch diacritic-free Romanian like `am un frate`).
 
-**Explain the rule, not just the forms — even where the book doesn't.**
-(From the learner's feedback after 8B: "the endings of the verbs will be
-different for different verbs; the book doesn't explain it.") The textbook
-gives tables for the words of its chapter and leaves the system implicit. When
-an episode introduces a pattern (verb endings, agreement, plurals, articles),
-say the general rule in English — which group it belongs to, what changes, the
-exceptions to learn by heart, and what's coming later — and have the Romanian
-voice speak the examples. Then drill the rule on words already known, so it
-transfers. `build_episode_08d.py` is the model (verb groups by dictionary
-ending; the -a group's endings; sound changes before -i; vowel shifts learnt
-with the verb; -ez verbs previewed for Lecția 9).
+**Explain the rule, not just the forms — even where the book doesn't — but
+by ear.** (From the learner's feedback after 8B: "the endings of the verbs
+will be different for different verbs; the book doesn't explain it." Then,
+on 8D's first attempt: "this rules explanation is rather bad" — too long and
+abstract, unclear in places, and the narrator trying to say endings.) So:
+- the Romanian voice says every form, always inside a whole word; the
+  narrator never imitates an ending ("uh", "uhm", "ats" are banned) and never
+  spells one out;
+- pattern first: three or four real forms side by side, then one short
+  sentence naming what's the same — no stretch of English longer than two
+  sentences, no grammar terms (stem, infinitive, conjugation group);
+- one point at a time, each followed at once by the learner building a form
+  they haven't heard;
+- say plainly what can't be worked out ("you can't tell which verbs do this —
+  learn each one by its I-form") instead of an over-general rule.
+`build_episode_09a.py` is the model (the -ez verbs against last lesson's).
 
 **No between-episodes tasks.** Episodes end on a short sign-off, not homework —
 the learner listens on the move and will not do a "before next time" exercise.

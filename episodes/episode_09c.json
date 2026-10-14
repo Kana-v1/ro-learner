@@ -1,0 +1,1395 @@
+{
+ "episode": 9,
+ "part": "c",
+ "lesson": 9,
+ "title": "Postul e vacant",
+ "source": "Limba care ne unește, nivelul I — Lecția 9 (partea C)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "concursul": "the selection — the exam-like interview for a post",
+  "ca": "as — in 'lucrez ca translator'"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bine ați venit!",
+   "gloss": "Welcome!",
+   "note": "To a new colleague, a guest, someone arriving. 'Bine ai venit!' to one person informally.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "la serviciu",
+   "spoken": "la muncă, la job",
+   "gloss": "at work",
+   "note": "'La serviciu' is standard and still common; 'la muncă' is everyday; 'la job' (English loan) is common among younger people in Bucharest offices. Neutral, not slang.",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "în calitate de",
+   "spoken": "ca",
+   "gloss": "as (a job title)",
+   "note": "'Lucrez în calitate de translator' is formal/written (CVs, contracts); in speech 'Lucrez ca translator'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce profesie aveți?",
+   "spoken": "Cu ce vă ocupați? / Ce lucrați?",
+   "gloss": "What do you do (for a living)?",
+   "note": "The everyday way to ask someone's job; 'Ce lucrezi?' between friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "ședință",
+   "spoken": "ședință, meeting",
+   "gloss": "a meeting (at work)",
+   "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bună ziua. Postul de translator e vacant?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Cu ce vă ocupați acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Lucrez ca translator, la o școală.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Completați o cerere, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Sunt punctuală și atentă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine. Concursul e la nouă fix.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Applying for a job at a front desk: what you do, and what you're like.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Postul de translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The translator's post.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Postul de translator.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a post, a job opening",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un post",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Postul e vacant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The post is open.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Postul e vacant.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "vacant, open",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vacant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Completez o cerere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I fill in an application.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Completez o cerere.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an application, a request",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o cerere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm a translator.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt translator.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a translator",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un translator",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e punctual.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is punctual.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e punctual.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "punctual",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "punctual",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "El e atent la lecție.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He pays attention in class.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "El e atent la lecție.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "attentive, careful",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "atent",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an application",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o cerere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "punctual",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "punctual",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a post",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un post",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "attentive",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "atent",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "vacant",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "vacant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a translator",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un translator",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Three ways to say what you do. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Saying what you do"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt translator. Lucrez ca translator. Lucrez în calitate de translator.",
+   "rate": 0.8,
+   "pause_after_ms": 2600
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I am, I work as, and the formal one you'd write on a CV. None of them has a word for a.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm a translator.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s057",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work as a translator.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez ca translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Lucrez în calitate de translator."
+   ]
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister works as a teacher.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sora mea lucrează ca profesoară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Punctual and attentive agree, like the describing words of Lesson 7. Listen — him, her:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s065",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "punctual, punctuală — atent, atentă",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is punctual.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea e punctuală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is attentive.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "El e atent.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is attentive.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea e atentă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is the translator's post open?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Postul de translator e vacant?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cu ce vă ocupați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work as a translator at a school.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez ca translator la o școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Lucrez ca translator, la o școală."
+   ]
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Please fill in an application. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Completați o cerere, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm punctual and attentive. A woman says it.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt punctuală și atentă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I sign the application.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Semnez cererea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is the post open? — Yes.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Postul e vacant? — Da.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We need a translator.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Avem nevoie de un translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The selection is at nine sharp.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Concursul e la nouă fix.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is punctual, but he isn't attentive.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "El e punctual, dar nu e atent.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All of Lesson 9's verbs so far. Which kind each is, you know from its I-form; build the one asked for.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Lesson 9's verbs"
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she works",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we sign",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you check — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "verifici",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they fill in",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei completează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all note down",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "notați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he organises",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "organizează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we check",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "verificăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you sign — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. What do you do — between friends it's shorter. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s111",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce lucrezi?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you do? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce lucrezi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a shop assistant, he is a journalist.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e vânzătoare, el e ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "small",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I explain",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "explic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He is poor.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El e sărac.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "rich",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bogat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "poor",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sărac",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "short — about a person",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "scund",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "thin",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "slab",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a pupil, a schoolboy",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un elev",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a member",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s134",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un membru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The front desk again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s136",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Bună ziua. Postul de translator e vacant?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Cu ce vă ocupați acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Lucrez ca translator, la o școală.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Completați o cerere, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Sunt punctuală și atentă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine. Concursul e la nouă fix.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A job, an application, and what you're like.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s143",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

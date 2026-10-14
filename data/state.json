@@ -39,7 +39,10 @@
   "08b",
   "08c",
   "08d",
-  "08e"
+  "08e",
+  "09a",
+  "09b",
+  "09c"
  ],
  "items": {
   "01-1": {
@@ -1055,25 +1058,124 @@
    "g": "f",
    "cue": "many — before a his-word",
    "answer": "mulți"
+  },
+  "lucrez": {
+   "intro": "09a",
+   "g": "m",
+   "cue": "I work",
+   "answer": "lucrez"
+  },
+  "serviciu": {
+   "intro": "09a",
+   "g": "f",
+   "cue": "work — the job, the place",
+   "answer": "serviciu"
+  },
+  "zi": {
+   "intro": "09a",
+   "g": "m",
+   "cue": "a day",
+   "answer": "o zi"
+  },
+  "formular": {
+   "intro": "09a",
+   "g": "f",
+   "cue": "a form — to fill in",
+   "answer": "un formular"
+  },
+  "completez": {
+   "intro": "09a",
+   "g": "m",
+   "cue": "I fill in",
+   "answer": "completez"
+  },
+  "semnez": {
+   "intro": "09a",
+   "g": "f",
+   "cue": "I sign",
+   "answer": "semnez"
+  },
+  "organizez": {
+   "intro": "09b",
+   "g": "m",
+   "cue": "I organise",
+   "answer": "organizez"
+  },
+  "ședință": {
+   "intro": "09b",
+   "g": "f",
+   "cue": "a meeting — at work",
+   "answer": "o ședință"
+  },
+  "notez": {
+   "intro": "09b",
+   "g": "m",
+   "cue": "I note down",
+   "answer": "notez"
+  },
+  "agendă": {
+   "intro": "09b",
+   "g": "f",
+   "cue": "a planner, a diary",
+   "answer": "o agendă"
+  },
+  "verific": {
+   "intro": "09b",
+   "g": "m",
+   "cue": "I check",
+   "answer": "verific"
+  },
+  "calculator": {
+   "intro": "09b",
+   "g": "f",
+   "cue": "a computer",
+   "answer": "un calculator"
+  },
+  "post": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "a post, a job opening",
+   "answer": "un post"
+  },
+  "vacant": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "vacant, open",
+   "answer": "vacant"
+  },
+  "cerere": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "an application, a request",
+   "answer": "o cerere"
+  },
+  "translator": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "a translator",
+   "answer": "un translator"
+  },
+  "punctual": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "punctual",
+   "answer": "punctual"
+  },
+  "atent": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "attentive, careful",
+   "answer": "atent"
   }
  },
  "struggles": {
-  "06c:41": {
-   "intro": "06c",
-   "g": "f",
-   "cue": "a daughter",
-   "answer": "o fiică",
-   "misses": 13,
-   "seen": 15,
-   "last": "missed"
-  },
   "07a:39": {
    "intro": "07a",
    "g": "f",
-   "cue": "loose",
+   "cue": "loose, wide",
    "answer": "larg",
-   "misses": 4,
-   "seen": 4,
+   "misses": 7,
+   "seen": 8,
    "last": "missed"
   },
   "07g:43": {
@@ -1081,45 +1183,18 @@
    "g": "f",
    "cue": "well-behaved children",
    "answer": "copii cuminți",
+   "misses": 6,
+   "seen": 6,
+   "last": "missed"
+  },
+  "08a:92": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "She studies a lot.",
+   "answer": "Ea învață mult.",
    "misses": 4,
    "seen": 4,
-   "last": "missed"
-  },
-  "08b:32": {
-   "intro": "08b",
-   "g": "m",
-   "cue": "chemistry",
-   "answer": "chimie",
-   "misses": 4,
-   "seen": 4,
-   "last": "missed"
-  },
-  "06c:98": {
-   "intro": "06c",
-   "g": "m",
-   "cue": "Your first name, please? Politely.",
-   "answer": "Prenumele dumneavoastră, vă rog?",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "06d:40": {
-   "intro": "06d",
-   "g": "f",
-   "cue": "auntie, before a name",
-   "answer": "tanti",
-   "misses": 3,
-   "seen": 4,
-   "last": "no_answer"
-  },
-  "06d:103": {
-   "intro": "06d",
-   "g": "m",
-   "cue": "Do you have an uncle? — Yes, I have an uncle.",
-   "answer": "Ai un unchi? Da, am un unchi.",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
+   "last": "close"
   },
   "06e:112": {
    "intro": "06e",
@@ -1778,24 +1853,6 @@
    "seen": 2,
    "last": "close"
   },
-  "08a:92": {
-   "intro": "08a",
-   "g": "m",
-   "cue": "She studies a lot.",
-   "answer": "Ea învață mult.",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
-  },
-  "08a:100": {
-   "intro": "08a",
-   "g": "m",
-   "cue": "Where do you study? To a friend.",
-   "answer": "Unde înveți?",
-   "misses": 2,
-   "seen": 2,
-   "last": "missed"
-  },
   "08a:102": {
    "intro": "08a",
    "g": "f",
@@ -1841,15 +1898,6 @@
    "seen": 2,
    "last": "missed"
   },
-  "08b:75": {
-   "intro": "08b",
-   "g": "f",
-   "cue": "they listen",
-   "answer": "ei ascultă",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
-  },
   "08b:90": {
    "intro": "08b",
    "g": "f",
@@ -1885,6 +1933,87 @@
    "misses": 2,
    "seen": 2,
    "last": "close"
+  },
+  "08c:82": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "he's late",
+   "answer": "întârzie",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08c:86": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "I'm not late.",
+   "answer": "Nu întârzii.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08c:89": {
+   "intro": "08c",
+   "g": "m",
+   "cue": "Excuse me, what time is it?",
+   "answer": "Scuzați, cât e ceasul?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08c:91": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "At what time? — At nine.",
+   "answer": "La ce oră? — La nouă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08c:95": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "A quarter to? I'm late!",
+   "answer": "Fără un sfert? Întârzii!",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08c:99": {
+   "intro": "08c",
+   "g": "f",
+   "cue": "The teacher is late.",
+   "answer": "Profesorul întârzie.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08d:30": {
+   "intro": "08d",
+   "g": "f",
+   "cue": "you repeat — to a friend",
+   "answer": "tu repeți",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08d:118": {
+   "intro": "08d",
+   "g": "f",
+   "cue": "I go over it with a classmate.",
+   "answer": "Repet cu un coleg.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08d:124": {
+   "intro": "08d",
+   "g": "m",
+   "cue": "Does she live nearby? — No.",
+   "answer": "Stă aproape? — Nu.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
   },
   "07a:128": {
    "intro": "07a",
@@ -1960,20 +2089,26 @@
   }
  },
  "struggles_used": {
-  "08d": [
-   "o fiică",
+  "09a": [
    "larg",
    "copii cuminți",
-   "chimie",
    "Ea învață mult.",
-   "Unde înveți?",
-   "ei ascultă"
+   "Tu ești fată.",
+   "El nu e sărac.",
+   "Fiul meu e scund și slab.",
+   "pantaloni largi"
   ],
-  "08e": [
-   "Prenumele dumneavoastră, vă rog?",
-   "tanti",
-   "Ai un unchi? Da, am un unchi.",
-   "Tu ești fată."
+  "09b": [
+   "Fiica ei e elevă.",
+   "Un băiat scund, o fustă scurtă.",
+   "Soția lui e tânără și deșteaptă.",
+   "Dumneavoastră sunteți șofer?"
+  ],
+  "09c": [
+   "Ea e vânzătoare, el e ziarist.",
+   "mic",
+   "explic",
+   "El e sărac."
   ]
  }
 }

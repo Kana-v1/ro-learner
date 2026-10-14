@@ -1,0 +1,1472 @@
+{
+ "episode": 9,
+ "part": "a",
+ "lesson": 9,
+ "title": "Prima zi la serviciu",
+ "source": "Limba care ne unește, nivelul I — Lecția 9 (partea A)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "prima": "first — in 'prima mea zi'"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bine ați venit!",
+   "gloss": "Welcome!",
+   "note": "To a new colleague, a guest, someone arriving. 'Bine ai venit!' to one person informally.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "la serviciu",
+   "spoken": "la muncă, la job",
+   "gloss": "at work",
+   "note": "'La serviciu' is standard and still common; 'la muncă' is everyday; 'la job' (English loan) is common among younger people in Bucharest offices. Neutral, not slang.",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "în calitate de",
+   "spoken": "ca",
+   "gloss": "as (a job title)",
+   "note": "'Lucrez în calitate de translator' is formal/written (CVs, contracts); in speech 'Lucrez ca translator'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce profesie aveți?",
+   "spoken": "Cu ce vă ocupați? / Ce lucrați?",
+   "gloss": "What do you do (for a living)?",
+   "note": "The everyday way to ask someone's job; 'Ce lucrezi?' between friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "ședință",
+   "spoken": "ședință, meeting",
+   "gloss": "a meeting (at work)",
+   "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua! Lucrați aici de azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, e prima mea zi.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Completați formularul, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și semnez aici?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, semnați aici. Și aici. Și aici.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce zi lungă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A first day at work, and a lot of forms. Lesson 9: work.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez la birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work at the office.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez la birou.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt la serviciu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm at work.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt la serviciu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "work — the job, the place",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "serviciu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O zi lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A long day.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O zi lungă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a day",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o zi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un formular, două formulare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one form, two forms",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un formular, două formulare",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a form — to fill in",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un formular",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Completez formularul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I fill in the form.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Completez formularul.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I fill in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "completez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Semnez aici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I sign here.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Semnez aici.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I sign",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I sign",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "semnez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a day",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o zi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a form",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un formular",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I fill in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "completez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "work, the place",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "serviciu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Listen to I, you and she — work:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Two kinds of verb"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrez, lucrezi, lucrează",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the same three for listen, from last lesson:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ascult, asculți, ascultă",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Work has an extra piece before its ending; listen has none. You can't tell from a verb which kind it is — so each one is learnt by its I-form.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Sign and fill in are like work. You build them.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you work — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "lucrezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she works",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you sign — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he fills in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "completează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "For we and you all, the extra piece drops. Both kinds end alike. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "lucrăm, lucrați — ascultăm, ascultați",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we work",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all sign",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we fill in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "completăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And they sounds like she, as always. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s076",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ea lucrează, ei lucrează",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they sign",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei semnează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they work",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei lucrează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work at the office.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez la birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you work? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde lucrezi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My wife works at a school.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Soția mea lucrează la o școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Please fill in the form. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Completați formularul, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do I sign here?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Semnez aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, sign here. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Da, semnați aici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We work a lot.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrăm mult.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today I'm at work.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Azi sunt la serviciu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Sunt la serviciu azi."
+   ]
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What a long day!",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce zi lungă!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They fill in the forms.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei completează formularele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you all work here?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Voi lucrați aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My brother is at work.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele meu e la serviciu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two pairs your results keep mixing. Long and loose:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Two you mix up"
+  },
+  {
+   "id": "s107",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lung, larg",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And a lot after a verb, against many before a word:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Învață mult. Multe zile.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "long",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lung",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "loose",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "larg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a long day",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o zi lungă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "loose trousers",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "pantaloni largi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She studies a lot.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea învață mult.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "many days",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "multe zile",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. On someone's first day, people say welcome. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bine ați venit!",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s124",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And for at work, many people in Bucharest just say this — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt la muncă. Sunt la job.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s126",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The second borrows the English word. You'll hear all three.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s127",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "well-behaved children",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "copii cuminți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You are a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tu ești fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He isn't poor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El nu e sărac.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son is short and thin.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiul meu e scund și slab.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a parent",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un părinte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a relative",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o rudă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an uncle",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un unchi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an aunt",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o mătușă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first day again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s145",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună ziua! Lucrați aici de azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, e prima mea zi.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Completați formularul, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s148",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și semnez aici?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s149",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, semnați aici. Și aici. Și aici.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s150",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce zi lungă!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s151",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Work, sign, fill in — and the verbs with the extra piece.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s152",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

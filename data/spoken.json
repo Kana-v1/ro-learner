@@ -439,5 +439,47 @@
    "note": "How to stop someone to ask the time or the way; 'Scuze' between friends.",
    "confidence": "high"
   }
+ ],
+ "9": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bine ați venit!",
+   "gloss": "Welcome!",
+   "note": "To a new colleague, a guest, someone arriving. 'Bine ai venit!' to one person informally.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "la serviciu",
+   "spoken": "la muncă, la job",
+   "gloss": "at work",
+   "note": "'La serviciu' is standard and still common; 'la muncă' is everyday; 'la job' (English loan) is common among younger people in Bucharest offices. Neutral, not slang.",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "în calitate de",
+   "spoken": "ca",
+   "gloss": "as (a job title)",
+   "note": "'Lucrez în calitate de translator' is formal/written (CVs, contracts); in speech 'Lucrez ca translator'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce profesie aveți?",
+   "spoken": "Cu ce vă ocupați? / Ce lucrați?",
+   "gloss": "What do you do (for a living)?",
+   "note": "The everyday way to ask someone's job; 'Ce lucrezi?' between friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "ședință",
+   "spoken": "ședință, meeting",
+   "gloss": "a meeting (at work)",
+   "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
+   "confidence": "medium"
+  }
  ]
 }

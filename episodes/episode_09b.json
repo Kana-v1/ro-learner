@@ -1,0 +1,1422 @@
+{
+ "episode": 9,
+ "part": "b",
+ "lesson": 9,
+ "title": "Ședința e la zece",
+ "source": "Limba care ne unește, nivelul I — Lecția 9 (partea B)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {},
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bine ați venit!",
+   "gloss": "Welcome!",
+   "note": "To a new colleague, a guest, someone arriving. 'Bine ai venit!' to one person informally.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "la serviciu",
+   "spoken": "la muncă, la job",
+   "gloss": "at work",
+   "note": "'La serviciu' is standard and still common; 'la muncă' is everyday; 'la job' (English loan) is common among younger people in Bucharest offices. Neutral, not slang.",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "în calitate de",
+   "spoken": "ca",
+   "gloss": "as (a job title)",
+   "note": "'Lucrez în calitate de translator' is formal/written (CVs, contracts); in speech 'Lucrez ca translator'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce profesie aveți?",
+   "spoken": "Cu ce vă ocupați? / Ce lucrați?",
+   "gloss": "What do you do (for a living)?",
+   "note": "The everyday way to ask someone's job; 'Ce lucrezi?' between friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "ședință",
+   "spoken": "ședință, meeting",
+   "gloss": "a meeting (at work)",
+   "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cine organizează ședința de azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Eu. Ședința e la zece.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și cine notează?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Notez eu, în agendă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine. Eu verific calculatorul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two colleagues getting a meeting ready. Three verbs, three things at work.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Organizez o ședință.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm organising a meeting.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Organizez o ședință.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I organise",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "organizez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ședința e la zece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The meeting is at ten.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ședința e la zece.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a meeting — at work",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o ședință",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Notez în agendă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I write it in the planner.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Notez în agendă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I note down",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "notez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am o agendă nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have a new planner.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am o agendă nouă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a planner, a diary",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o agendă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Verific calculatorul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I check the computer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Verific calculatorul.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I check",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "verific",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Calculatorul e vechi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The computer is old.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Calculatorul e vechi.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a computer",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un calculator",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I check",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "verific",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a meeting",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o ședință",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I organise",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "organizez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a computer",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un calculator",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I note down",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "notez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a planner",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o agendă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two of these have the extra piece, like work. Listen — note down:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Which kind"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "notez, notezi, notează",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Check doesn't — it goes like listen. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "verific, verifici, verifică",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Nothing in the word tells you. The I-form does — that's why you learn it first. Build the others.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you note down — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "notezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she checks",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verifică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he organises",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "organizează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you check — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verifici",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we organise",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "organizăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all check",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verificați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they note down",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei notează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we check",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verificăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is organising today's meeting?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine organizează ședința de azi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm organising the meeting.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu organizez ședința.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Organizez eu ședința."
+   ]
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The meeting is at ten sharp.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ședința e la zece fix.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you writing it in the planner? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Notezi în agendă?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I check the forms.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Verific formularele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She checks the computer.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea verifică calculatorul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We write it in the planner.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Notăm în agendă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you all have a meeting today?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aveți ședință azi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Aveți o ședință azi?"
+   ]
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They organise a lot of meetings.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei organizează multe ședințe.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The computer is new, the planner is old.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Calculatorul e nou, agenda e veche.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who's taking notes? — I am.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine notează? — Eu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Cine notează? — Notez eu."
+   ]
+  },
+  {
+   "id": "s097",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the verbs from the first day, mixed in. The person and the verb; build the form.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Lesson 9 so far"
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you work — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she signs",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we fill in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "completăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they check",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei verifică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all organise",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "organizați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I note down",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "notez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he works",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lucrează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you check — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verifici",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. In many Bucharest offices the English word has moved in. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s115",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am o ședință. Am un meeting.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s116",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Both mean the same; the book's word is never wrong.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s117",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Her daughter is a pupil.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica ei e elevă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A short boy, a short skirt.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un băiat scund, o fustă scurtă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His wife is young and clever.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soția lui e tânără și deșteaptă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a driver? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți șofer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "young",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tânăr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old — about a person",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bătrân",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "healthy",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sănătos",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ill",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bolnav",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "hardworking",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "harnic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "clever",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "deștept",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The two colleagues again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s139",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cine organizează ședința de azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Eu. Ședința e la zece.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și cine notează?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Notez eu, în agendă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine. Eu verific calculatorul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Organise, note down, check — and which kind each one is.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s146",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}
