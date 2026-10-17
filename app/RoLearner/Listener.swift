@@ -54,8 +54,45 @@ private final class RequestBox: @unchecked Sendable {
     private let whisperFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 16_000,
                                               channels: 1, interleaved: false)!
 
-    func startCapture() {
-        lock.lock(); samples = []; capturing = true; lock.unlock()
+    // The last moments of audio while nothing is listening, so an answer
+    // begun a beat before the listen opens isn't cut at its first word.
+    private var ring: [AVAudioPCMBuffer] = []
+    private var ringSeconds = 0.0
+    private static let ringLimit = 0.5
+    // Voice isn't counted before this: the your-turn chime plays as the
+    // listen opens, and through the phone's speaker the mic hears it.
+    private var armedAt = 0.0
+
+    /// Open a listen. The request first gets the last `preroll` seconds of
+    /// audio, then live audio; Whisper's recording (when `capture`) starts
+    /// with the same audio; the voice meter starts fresh and counts voice only
+    /// after `armAfter` seconds.
+    func begin(_ r: SFSpeechAudioBufferRecognitionRequest, capture: Bool, preroll: Double, armAfter: Double) {
+        lock.lock()
+        var kept: [AVAudioPCMBuffer] = []
+        var seconds = 0.0
+        for b in ring.reversed() {
+            let d = Double(b.frameLength) / max(b.format.sampleRate, 1)
+            if seconds + d > preroll + 0.001 { break }
+            kept.insert(b, at: 0)
+            seconds += d
+        }
+        ring = []
+        ringSeconds = 0
+        for b in kept { r.append(b) }
+        var pre: [Float] = []
+        if capture, let first = kept.first,
+           let conv = AVAudioConverter(from: first.format, to: whisperFormat) {
+            for b in kept where b.format == first.format {
+                pre += Self.convert(b, with: conv, to: whisperFormat) ?? []
+            }
+        }
+        samples = pre
+        capturing = capture
+        request = r
+        meter = VoiceMeter(floorDB: floor ?? -60)
+        armedAt = CFAbsoluteTimeGetCurrent() + armAfter
+        lock.unlock()
     }
 
     /// Stop recording and hand over what was recorded.
@@ -71,11 +108,6 @@ private final class RequestBox: @unchecked Sendable {
         lock.lock(); request = r; lock.unlock()
     }
 
-    /// Start a fresh meter for a new listen; the noise floor carries over.
-    func resetMeter() {
-        lock.lock(); meter = VoiceMeter(floorDB: floor ?? -60); lock.unlock()
-    }
-
     func reading() -> VoiceMeter {
         lock.lock(); defer { lock.unlock() }
         return meter
@@ -83,8 +115,17 @@ private final class RequestBox: @unchecked Sendable {
 
     func append(_ buffer: AVAudioPCMBuffer) {
         let db = Self.level(buffer)
+        let copy = Self.copy(buffer)
         lock.lock()
         let r = request
+        if r == nil, let copy {
+            ring.append(copy)
+            ringSeconds += Double(copy.frameLength) / max(copy.format.sampleRate, 1)
+            while ringSeconds > Self.ringLimit, let first = ring.first {
+                ring.removeFirst()
+                ringSeconds -= Double(first.frameLength) / max(first.format.sampleRate, 1)
+            }
+        }
         if let db, buffer.format.sampleRate > 0 {
             // The floor drops quickly to quiet moments and rises slowly, so a
             // steady background (traffic, wind) becomes the floor and a voice
@@ -93,8 +134,8 @@ private final class RequestBox: @unchecked Sendable {
             floor = db < f ? f * 0.7 + db * 0.3 : f * 0.995 + db * 0.005
             meter.floorDB = floor!
             meter.peakDB = max(meter.peakDB, db)
-            if db > meter.floorDB + 12 && db > -55 {
-                let now = CFAbsoluteTimeGetCurrent()
+            let now = CFAbsoluteTimeGetCurrent()
+            if db > meter.floorDB + 12 && db > -55 && now >= armedAt {
                 if meter.firstVoice == nil { meter.firstVoice = now }
                 meter.lastVoice = now
                 meter.voicedSeconds += Double(buffer.frameLength) / buffer.format.sampleRate
@@ -115,7 +156,25 @@ private final class RequestBox: @unchecked Sendable {
             converter = AVAudioConverter(from: buffer.format, to: whisperFormat)
             converterInput = buffer.format
         }
-        guard let converter, buffer.format.sampleRate > 0 else { return nil }
+        guard let converter else { return nil }
+        return Self.convert(buffer, with: converter, to: whisperFormat)
+    }
+
+    /// A copy of a mic buffer for the pre-roll (the tap reuses its buffers).
+    private static func copy(_ b: AVAudioPCMBuffer) -> AVAudioPCMBuffer? {
+        guard let src = b.floatChannelData,
+              let c = AVAudioPCMBuffer(pcmFormat: b.format, frameCapacity: b.frameLength),
+              let dst = c.floatChannelData else { return nil }
+        c.frameLength = b.frameLength
+        for ch in 0..<Int(b.format.channelCount) {
+            dst[ch].update(from: src[ch], count: Int(b.frameLength))
+        }
+        return c
+    }
+
+    private static func convert(_ buffer: AVAudioPCMBuffer, with converter: AVAudioConverter,
+                                to whisperFormat: AVAudioFormat) -> [Float]? {
+        guard buffer.format.sampleRate > 0 else { return nil }
         let capacity = AVAudioFrameCount(Double(buffer.frameLength) * 16_000 / buffer.format.sampleRate) + 64
         guard let out = AVAudioPCMBuffer(pcmFormat: whisperFormat, frameCapacity: capacity) else { return nil }
         var fed = false
@@ -188,6 +247,8 @@ final class Listener {
     /// or heard nothing), whether it was used, and how long it took.
     private(set) var lastWhisper: String?
     private(set) var lastUsedWhisper = false
+    /// When the last listen opened (CFAbsoluteTime), to time the voice onset.
+    private(set) var lastStartedAt = 0.0
     private(set) var lastWhisperSeconds = 0.0
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
@@ -271,12 +332,15 @@ final class Listener {
     /// `complete` says whether what has been heard so far is already a whole
     /// answer: then a short silence ends the listen. Otherwise the learner is
     /// probably mid-sentence, recalling the next word, and gets a longer one.
+    /// `settle`: seconds at the start when sound isn't taken as the learner's
+    /// voice (the chime that opens the listen).
     func listen(expected: String, hints: [String] = [], prompt: String? = nil, maxSeconds: Double,
+                settle: Double = 0,
                 complete: ((String) -> Bool)? = nil,
                 onPartial: ((String) -> Void)? = nil) async -> [String] {
         await withCheckedContinuation { (c: CheckedContinuation<[String], Never>) in
             begin(expected: expected, hints: hints, prompt: prompt ?? expected, maxSeconds: maxSeconds,
-                  complete: complete, onPartial: onPartial) {
+                  settle: settle, complete: complete, onPartial: onPartial) {
                 c.resume(returning: $0)
             }
         }
@@ -291,6 +355,7 @@ final class Listener {
     }
 
     private func begin(expected: String, hints: [String], prompt: String, maxSeconds: Double,
+                       settle: Double,
                        complete: ((String) -> Bool)?,
                        onPartial: ((String) -> Void)?, completion: @escaping ([String]) -> Void) {
         abort()
@@ -324,21 +389,22 @@ final class Listener {
         whisperText = nil
         whisperDone = true
         appleDone = false
-        if useWhisper { box.startCapture() }
 
         latest = nil
         lastChange = CFAbsoluteTimeGetCurrent()
         startedAt = lastChange
         finalizing = false
         gotFinal = false
-        box.resetMeter()
         request = req
         self.maxSeconds = maxSeconds
         self.complete = complete
         latestComplete = false
         self.completion = completion
         self.onPartial = onPartial
-        box.set(req)
+        // A quarter-second of what came just before, so an answer started as
+        // the cue ended keeps its first word.
+        box.begin(req, capture: useWhisper, preroll: 0.25, armAfter: settle)
+        lastStartedAt = startedAt
         task = recognizer.recognitionTask(with: req, resultHandler: Self.handler(for: self, gen: gen))
         ticker = Task { [weak self] in
             while !Task.isCancelled {

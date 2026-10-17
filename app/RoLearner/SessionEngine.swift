@@ -608,16 +608,18 @@ final class SessionEngine: ObservableObject {
             }
             phase = .listening
             liveHeard = nil
+            // Listening opens with the chime, not after it: a 0.4 s wait here
+            // cut the first word off quick answers (o, un, noi, tu missing at
+            // the start). The chime's 0.3 s isn't counted as voice.
             tones.play(.yourTurn)
-            try? await Task.sleep(nanoseconds: 400_000_000)
-            if Task.isCancelled { return }
             // Time to start answering: the episode's pause was sized for
             // listening along, not for recall on the move; 4 s left blanks on
             // single words that came a moment later.
             let appleGuesses = await listener.listen(
                 expected: d.expected, hints: hints(for: d),
                 prompt: ([d.expected] + d.accept).joined(separator: " "),
-                maxSeconds: max(d.thinkSeconds + 3, 7),
+                maxSeconds: max(d.thinkSeconds + 3.4, 7.4),
+                settle: 0.35,
                 complete: { heard in
                     let v = Grader.judge(d, heard: heard).verdict
                     return v == .correct || v == .close
@@ -660,8 +662,9 @@ final class SessionEngine: ObservableObject {
             lastHeard = heard
             lastVerdict = v
             lastHint = judgement.hint
-            let sound = String(format: "voice %.1f s, peak %.0f dB over floor %.0f dB, %@",
-                               meter.voicedSeconds, meter.peakDB, meter.floorDB,
+            let onset = meter.firstVoice.map { String(format: "from +%.2f s, ", $0 - listener.lastStartedAt) } ?? ""
+            let sound = String(format: "voice %@%.1f s, peak %.0f dB over floor %.0f dB, %@",
+                               onset, meter.voicedSeconds, meter.peakDB, meter.floorDB,
                                listener.lastWasFinal ? "final" : "partial")
             let alsoApple = other.map { o in
                 String(format: "; %@: %@ -> %@; whisper %.1f s", o.engine, o.heard.map { "\"\($0)\"" } ?? "nothing",
