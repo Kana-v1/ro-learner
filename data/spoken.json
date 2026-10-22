@@ -480,6 +480,22 @@
    "gloss": "a meeting (at work)",
    "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
    "confidence": "medium"
+  },
+  {
+   "type": "regionalism",
+   "book": "oficiu",
+   "spoken": "birou",
+   "gloss": "an office",
+   "note": "The book (Moldovan) uses 'oficiu' for an office; in Romania 'oficiu' survives in names ('oficiul poștal') and 'birou' is the office you work in.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "conducător",
+   "spoken": "șeful, managerul, directorul",
+   "gloss": "the boss",
+   "note": "'Conducător' for one's boss sounds formal and dated (and has political overtones); offices say 'șeful', 'managerul' or 'directorul'.",
+   "confidence": "high"
   }
  ]
 }

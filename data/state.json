@@ -42,7 +42,9 @@
   "08e",
   "09a",
   "09b",
-  "09c"
+  "09c",
+  "09d",
+  "09e"
  ],
  "items": {
   "01-1": {
@@ -1166,70 +1168,106 @@
    "g": "f",
    "cue": "attentive, careful",
    "answer": "atent"
+  },
+  "examinez": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "I look over, I examine",
+   "answer": "examinez"
+  },
+  "act": {
+   "intro": "09d",
+   "g": "f",
+   "cue": "an official document",
+   "answer": "un act"
+  },
+  "studiez": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "I study — a subject, properly",
+   "answer": "studiez"
+  },
+  "angajez": {
+   "intro": "09d",
+   "g": "f",
+   "cue": "I hire, I take on",
+   "answer": "angajez"
+  },
+  "secretară": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "a secretary",
+   "answer": "o secretară"
+  },
+  "exigent": {
+   "intro": "09d",
+   "g": "f",
+   "cue": "demanding, strict",
+   "answer": "exigent"
+  },
+  "de unde": {
+   "intro": "09e",
+   "g": "m",
+   "cue": "where from",
+   "answer": "de unde"
+  },
+  "de la": {
+   "intro": "09e",
+   "g": "f",
+   "cue": "from — a place or a person",
+   "answer": "de la"
+  },
+  "parter": {
+   "intro": "09e",
+   "g": "m",
+   "cue": "the ground floor",
+   "answer": "parter"
+  },
+  "muncitor": {
+   "intro": "09e",
+   "g": "f",
+   "cue": "a worker — manual work",
+   "answer": "un muncitor"
+  },
+  "binevoitor": {
+   "intro": "09e",
+   "g": "m",
+   "cue": "kind, helpful",
+   "answer": "binevoitor"
+  },
+  "desenez": {
+   "intro": "09e",
+   "g": "f",
+   "cue": "I draw",
+   "answer": "desenez"
   }
  },
  "struggles": {
-  "07a:39": {
-   "intro": "07a",
-   "g": "f",
-   "cue": "loose, wide",
-   "answer": "larg",
-   "misses": 7,
-   "seen": 8,
-   "last": "missed"
+  "06c:15": {
+   "intro": "06c",
+   "g": "m",
+   "cue": "a surname — the family name",
+   "answer": "un nume",
+   "misses": 12,
+   "seen": 14,
+   "last": "close"
   },
   "07g:43": {
    "intro": "07g",
    "g": "f",
    "cue": "well-behaved children",
    "answer": "copii cuminți",
+   "misses": 8,
+   "seen": 8,
+   "last": "missed"
+  },
+  "06f:13": {
+   "intro": "06f",
+   "g": "m",
+   "cue": "rich",
+   "answer": "bogat",
    "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "08a:92": {
-   "intro": "08a",
-   "g": "m",
-   "cue": "She studies a lot.",
-   "answer": "Ea învață mult.",
-   "misses": 4,
-   "seen": 4,
-   "last": "close"
-  },
-  "06e:112": {
-   "intro": "06e",
-   "g": "f",
-   "cue": "You are a girl.",
-   "answer": "Tu ești fată.",
-   "misses": 3,
-   "seen": 3,
-   "last": "close"
-  },
-  "06f:70": {
-   "intro": "06f",
-   "g": "m",
-   "cue": "He isn't poor.",
-   "answer": "El nu e sărac.",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "06f:72": {
-   "intro": "06f",
-   "g": "m",
-   "cue": "My son is short and thin.",
-   "answer": "Fiul meu e scund și slab.",
-   "misses": 3,
-   "seen": 3,
-   "last": "close"
-  },
-  "06f:78": {
-   "intro": "06f",
-   "g": "m",
-   "cue": "Her daughter is a pupil.",
-   "answer": "Fiica ei e elevă.",
-   "misses": 3,
-   "seen": 3,
+   "seen": 10,
    "last": "missed"
   },
   "06f:82": {
@@ -1237,26 +1275,26 @@
    "g": "m",
    "cue": "A short boy, a short skirt.",
    "answer": "Un băiat scund, o fustă scurtă.",
-   "misses": 3,
-   "seen": 3,
+   "misses": 5,
+   "seen": 5,
    "last": "close"
-  },
-  "06f:90": {
-   "intro": "06f",
-   "g": "f",
-   "cue": "His wife is young and clever.",
-   "answer": "Soția lui e tânără și deșteaptă.",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
   },
   "06f:108": {
    "intro": "06f",
    "g": "m",
    "cue": "Are you a driver? Politely.",
    "answer": "Dumneavoastră sunteți șofer?",
-   "misses": 3,
-   "seen": 3,
+   "misses": 5,
+   "seen": 5,
+   "last": "close"
+  },
+  "06d:40": {
+   "intro": "06d",
+   "g": "f",
+   "cue": "auntie, before a name",
+   "answer": "tanti",
+   "misses": 4,
+   "seen": 6,
    "last": "close"
   },
   "06f:110": {
@@ -1264,36 +1302,27 @@
    "g": "f",
    "cue": "She is a shop assistant, he is a journalist.",
    "answer": "Ea e vânzătoare, el e ziarist.",
+   "misses": 4,
+   "seen": 4,
+   "last": "close"
+  },
+  "06f:33": {
+   "intro": "06f",
+   "g": "f",
+   "cue": "a pupil, a schoolboy",
+   "answer": "un elev",
+   "misses": 3,
+   "seen": 8,
+   "last": "missed"
+  },
+  "09c:17": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "vacant, open",
+   "answer": "vacant",
    "misses": 3,
    "seen": 3,
    "last": "missed"
-  },
-  "07a:24": {
-   "intro": "07a",
-   "g": "m",
-   "cue": "small",
-   "answer": "mic",
-   "misses": 3,
-   "seen": 4,
-   "last": "no_answer"
-  },
-  "08b:17": {
-   "intro": "08b",
-   "g": "f",
-   "cue": "I explain",
-   "answer": "explic",
-   "misses": 3,
-   "seen": 4,
-   "last": "close"
-  },
-  "06g:133": {
-   "intro": "06g",
-   "g": "m",
-   "cue": "He is poor.",
-   "answer": "El e sărac.",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
   },
   "07a:64": {
    "intro": "07a",
@@ -1348,15 +1377,6 @@
    "misses": 2,
    "seen": 2,
    "last": "missed"
-  },
-  "07a:111": {
-   "intro": "07a",
-   "g": "m",
-   "cue": "loose trousers",
-   "answer": "pantaloni largi",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
   },
   "07a:116": {
    "intro": "07a",
@@ -2015,6 +2035,51 @@
    "seen": 2,
    "last": "missed"
   },
+  "08e:12": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "a timetable",
+   "answer": "un orar",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "08e:22": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "exam season",
+   "answer": "sesiune",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "09a:99": {
+   "intro": "09a",
+   "g": "f",
+   "cue": "They fill in the forms.",
+   "answer": "Ei completează formularele.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "09b:78": {
+   "intro": "09b",
+   "g": "m",
+   "cue": "The meeting is at ten sharp.",
+   "answer": "Ședința e la zece fix.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "09b:99": {
+   "intro": "09b",
+   "g": "f",
+   "cue": "she signs",
+   "answer": "semnează",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
   "07a:128": {
    "intro": "07a",
    "g": "m",
@@ -2086,29 +2151,237 @@
    "misses": 1,
    "seen": 1,
    "last": "close"
+  },
+  "08e:17": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "a subject",
+   "answer": "o materie",
+   "misses": 1,
+   "seen": 2,
+   "last": "missed"
+  },
+  "08e:59": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "a spacious room",
+   "answer": "o sală spațioasă",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "08e:72": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "she repeats",
+   "answer": "ea repetă",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "08e:76": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "we live",
+   "answer": "noi stăm",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "08e:78": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "they're late",
+   "answer": "ei întârzie",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "08e:89": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "What subject are you going over? To a friend.",
+   "answer": "Ce materie repeți?",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "08e:93": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "The teacher asks who is late.",
+   "answer": "Profesorul întreabă cine întârzie.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "08e:97": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "We have classes according to the timetable.",
+   "answer": "Avem cursuri după orar.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "08e:99": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "The university has many faculties.",
+   "answer": "Universitatea are multe facultăți.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "08e:101": {
+   "intro": "08e",
+   "g": "m",
+   "cue": "Today we have class at half past eleven.",
+   "answer": "Azi avem curs la unsprezece și jumătate.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "08e:103": {
+   "intro": "08e",
+   "g": "f",
+   "cue": "The room is spacious.",
+   "answer": "Sala e spațioasă.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "09c:22": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "an application",
+   "answer": "o cerere",
+   "misses": 1,
+   "seen": 2,
+   "last": "close"
+  },
+  "09c:37": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "attentive",
+   "answer": "atent",
+   "misses": 1,
+   "seen": 2,
+   "last": "close"
+  },
+  "09c:57": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "I work as a translator.",
+   "answer": "Lucrez ca translator.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "09c:67": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "He is attentive.",
+   "answer": "El e atent.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "09c:72": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "Is the translator's post open?",
+   "answer": "Postul de translator e vacant?",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "09c:74": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "What do you do? Politely.",
+   "answer": "Cu ce vă ocupați?",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "09c:76": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "I work as a translator at a school.",
+   "answer": "Lucrez ca translator la o școală.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "09c:78": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "Please fill in an application. Politely.",
+   "answer": "Completați o cerere, vă rog.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "09c:80": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "I'm punctual and attentive. A woman says it.",
+   "answer": "Sunt punctuală și atentă.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "09c:82": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "I sign the application.",
+   "answer": "Semnez cererea.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "09c:88": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "The selection is at nine sharp.",
+   "answer": "Concursul e la nouă fix.",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
+  },
+  "09c:90": {
+   "intro": "09c",
+   "g": "f",
+   "cue": "He is punctual, but he isn't attentive.",
+   "answer": "El e punctual, dar nu e atent.",
+   "misses": 1,
+   "seen": 1,
+   "last": "close"
+  },
+  "09c:101": {
+   "intro": "09c",
+   "g": "m",
+   "cue": "you all note down",
+   "answer": "notați",
+   "misses": 1,
+   "seen": 1,
+   "last": "missed"
   }
  },
  "struggles_used": {
-  "09a": [
-   "larg",
+  "09d": [
+   "un nume",
    "copii cuminți",
-   "Ea învață mult.",
-   "Tu ești fată.",
-   "El nu e sărac.",
-   "Fiul meu e scund și slab.",
-   "pantaloni largi"
-  ],
-  "09b": [
-   "Fiica ei e elevă.",
+   "bogat",
    "Un băiat scund, o fustă scurtă.",
-   "Soția lui e tânără și deșteaptă.",
-   "Dumneavoastră sunteți șofer?"
+   "un exercițiu"
   ],
-  "09c": [
+  "09e": [
+   "Dumneavoastră sunteți șofer?",
+   "tanti",
    "Ea e vânzătoare, el e ziarist.",
-   "mic",
-   "explic",
-   "El e sărac."
+   "un elev"
   ]
  }
 }

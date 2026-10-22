@@ -1,0 +1,1462 @@
+{
+ "episode": 9,
+ "part": "d",
+ "lesson": 9,
+ "title": "Vă angajez!",
+ "source": "Limba care ne unește, nivelul I — Lecția 9 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "șeful": "the boss — the book's conducător, as people say it",
+  "contractul": "the contract"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bine ați venit!",
+   "gloss": "Welcome!",
+   "note": "To a new colleague, a guest, someone arriving. 'Bine ai venit!' to one person informally.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "la serviciu",
+   "spoken": "la muncă, la job",
+   "gloss": "at work",
+   "note": "'La serviciu' is standard and still common; 'la muncă' is everyday; 'la job' (English loan) is common among younger people in Bucharest offices. Neutral, not slang.",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "în calitate de",
+   "spoken": "ca",
+   "gloss": "as (a job title)",
+   "note": "'Lucrez în calitate de translator' is formal/written (CVs, contracts); in speech 'Lucrez ca translator'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce profesie aveți?",
+   "spoken": "Cu ce vă ocupați? / Ce lucrați?",
+   "gloss": "What do you do (for a living)?",
+   "note": "The everyday way to ask someone's job; 'Ce lucrezi?' between friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "ședință",
+   "spoken": "ședință, meeting",
+   "gloss": "a meeting (at work)",
+   "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
+   "confidence": "medium"
+  },
+  {
+   "type": "regionalism",
+   "book": "oficiu",
+   "spoken": "birou",
+   "gloss": "an office",
+   "note": "The book (Moldovan) uses 'oficiu' for an office; in Romania 'oficiu' survives in names ('oficiul poștal') and 'birou' is the office you work in.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "conducător",
+   "spoken": "șeful, managerul, directorul",
+   "gloss": "the boss",
+   "note": "'Conducător' for one's boss sounds formal and dated (and has political overtones); offices say 'șeful', 'managerul' or 'directorul'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua. Examinez actele dumneavoastră.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce studiați acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Sunt exigent. Dar sunteți punctuală și atentă. Vă angajez!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Mulțumesc! Unde semnez?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Secretara are contractul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A job interview that ends well. Six words for getting hired.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examinez actele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over the documents.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examinez actele.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un act, două acte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one document, two documents",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un act, două acte",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an official document",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un act",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Studiez chimia.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study chemistry.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Studiez chimia.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study — a subject, properly",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "studiez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Angajez o secretară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm hiring a secretary.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Angajez o secretară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I hire, I take on",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "angajez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Secretara notează.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The secretary takes notes.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Secretara notează.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a secretary",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o secretară",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Șeful e exigent.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The boss is demanding.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Șeful e exigent.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "demanding, strict",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "exigent",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I hire",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "angajez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a document",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un act",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "studiez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "demanding",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "exigent",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a secretary",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o secretară",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two verbs for study. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Learn and study"
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Învăț limba română. Studiez chimia la facultate.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first is for learning anything; the second, for a subject you study properly — at university, or in depth.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm learning Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Învăț limba română.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study chemistry at the faculty.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Study's we-form is its own. Listen — work, then study and be late:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi lucrăm — noi studiem, noi întârziem",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s063",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Study sounds like be late, from the lesson on time. The rest are as usual. Build them.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we study",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "noi studiem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she studies",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ea studiază",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all study",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "voi studiați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we hire",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi angajăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he looks over",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "el examinează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you study — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tu studiezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm looking over your documents. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examinez actele dumneavoastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What are you studying? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce studiați?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We study Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Noi studiem limba română.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Studiem limba română."
+   ]
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The boss is hiring a translator.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Șeful angajează un translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The secretary writes the names in the planner.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Secretara notează numele în agendă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is demanding.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e exigentă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You all look over the planner.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Voi examinați agenda.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They sign the contract.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei semnează contractul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do I sign?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde semnez?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you study or work? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Studiezi sau lucrezi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The documents are on the table.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Actele sunt pe masă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All of Lesson 9's verbs. Build the one asked for.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Lesson 9's verbs"
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they hire",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei angajează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you check — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "verifici",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we fill in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "completăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she notes down",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "notează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we study",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "studiem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all sign",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he organises",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "organizează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. The book calls the head of an office by a formal word. In an office in Bucharest, people say the boss, or borrow the English. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Șeful. Managerul.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s118",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the book's word for documents is the everyday one — your ID and papers, at any office. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aveți actele la dumneavoastră?",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s120",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you have your documents on you? You'll hear it at any counter.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a surname — the family name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un nume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "well-behaved children",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "copii cuminți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "rich",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bogat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A short boy, a short skirt.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un băiat scund, o fustă scurtă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I ask",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "întreb",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I explain",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "explic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I solve, I do — an exercise",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "rezolv",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an exercise",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un exercițiu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "chemistry",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "chimie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The interview again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s141",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua. Examinez actele dumneavoastră.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s143",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce studiați acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Sunt exigent. Dar sunteți punctuală și atentă. Vă angajez!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Mulțumesc! Unde semnez?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Secretara are contractul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s148",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Hired. Next time, the last of Lesson 9.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s149",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

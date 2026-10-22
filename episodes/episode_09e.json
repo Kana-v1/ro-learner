@@ -1,0 +1,1408 @@
+{
+ "episode": 9,
+ "part": "e",
+ "lesson": 9,
+ "title": "De unde ești?",
+ "source": "Limba care ne unește, nivelul I — Lecția 9 (partea E)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "redacție": "a newsroom — in the book's text",
+  "oficiu": "an office — the book's word, in its text",
+  "șeful": "the boss",
+  "Iași": "a city in north-east Romania"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bine ați venit!",
+   "gloss": "Welcome!",
+   "note": "To a new colleague, a guest, someone arriving. 'Bine ai venit!' to one person informally.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "la serviciu",
+   "spoken": "la muncă, la job",
+   "gloss": "at work",
+   "note": "'La serviciu' is standard and still common; 'la muncă' is everyday; 'la job' (English loan) is common among younger people in Bucharest offices. Neutral, not slang.",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "în calitate de",
+   "spoken": "ca",
+   "gloss": "as (a job title)",
+   "note": "'Lucrez în calitate de translator' is formal/written (CVs, contracts); in speech 'Lucrez ca translator'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce profesie aveți?",
+   "spoken": "Cu ce vă ocupați? / Ce lucrați?",
+   "gloss": "What do you do (for a living)?",
+   "note": "The everyday way to ask someone's job; 'Ce lucrezi?' between friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "ședință",
+   "spoken": "ședință, meeting",
+   "gloss": "a meeting (at work)",
+   "note": "'Ședință' is standard; in many Bucharest offices people say 'am un meeting' / 'am un call'. Corporate jargon, neutral register.",
+   "confidence": "medium"
+  },
+  {
+   "type": "regionalism",
+   "book": "oficiu",
+   "spoken": "birou",
+   "gloss": "an office",
+   "note": "The book (Moldovan) uses 'oficiu' for an office; in Romania 'oficiu' survives in names ('oficiul poștal') and 'birou' is the office you work in.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "conducător",
+   "spoken": "șeful, managerul, directorul",
+   "gloss": "the boss",
+   "note": "'Conducător' for one's boss sounds formal and dated (and has political overtones); offices say 'șeful', 'managerul' or 'directorul'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine ai venit! De unde ești?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Din Iași. Dar acum stau aici, aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Biroul nostru e la parter.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce tablou frumos! De la cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "De la Mihai. Desenează mult. E un coleg binevoitor.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A new colleague's first morning: where are you from, and where things come from. Then the whole of Lesson 9.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s009",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De unde ești?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s010",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where are you from?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De unde ești?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "where from",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s013",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "de unde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tabloul e de la Mihai.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The picture is from Mihai.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tabloul e de la Mihai.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "from — a place or a person",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s018",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "de la",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Biroul e la parter.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The office is on the ground floor.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Biroul e la parter.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the ground floor",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s023",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "parter",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele meu e muncitor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My brother is a worker.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fratele meu e muncitor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a worker — manual work",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un muncitor",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Colegul meu e binevoitor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My colleague is kind.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Colegul meu e binevoitor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "kind, helpful",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s033",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "binevoitor",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Desenez un tablou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm drawing a picture.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Desenez un tablou.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I draw",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "desenez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the ground floor",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "parter",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I draw",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "desenez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "where from",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "de unde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a worker",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un muncitor",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "from, a place or a person",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "de la",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "kind, helpful",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "binevoitor",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where, and where from. Listen to both questions, with their answers:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Where and where from"
+  },
+  {
+   "id": "s053",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde lucrezi? La birou. — De unde ești? Din Moldova.",
+   "rate": 0.8,
+   "pause_after_ms": 2600
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where you come from takes the word from Lesson 1. Where a thing comes from — a shop, a person — takes the new one. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "De unde ai paltonul? De la magazin.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s056",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where are you from? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s057",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De unde ești?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where do you work? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde lucrezi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm from Romania.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt din România.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coat is from the shop.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Paltonul e de la magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The picture is from Mihai.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Tabloul e de la Mihai.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Kind agrees like the others, and draw is an extra-piece verb. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "binevoitor, binevoitoare — desenez, desenează",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is kind.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e binevoitoare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he draws",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "el desenează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we draw",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi desenăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences, from across the lesson.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is the office? — On the ground floor.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Unde e biroul? — La parter.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where is your colleague from? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "De unde e colegul tău?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My brother is a worker.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fratele meu e muncitor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where does your friend work? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde lucrează prietenul tău?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My wife is a doctor.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Soția mea e medic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The boss is demanding, but kind.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Șeful e exigent, dar binevoitor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today we organise a competition for a vacant post.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Azi organizăm un concurs pentru un post vacant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The secretary writes down their names.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Secretara notează numele lor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have a meeting at ten. We're punctual.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem ședință la zece. Suntem punctuali.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who draws here? — Mihai.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine desenează aici? — Mihai.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. The book's text calls the office by a Moldovan word. In Bucharest an office is the word you already know. Listen — the book's, then Bucharest's:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s096",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "oficiu — birou",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s097",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You'll meet the first in names, like the post office, but not for the place you work.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s098",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a driver? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți șofer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "auntie, before a name",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tanti",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a shop assistant, he is a journalist.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e vânzătoare, el e ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a pupil, a schoolboy",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un elev",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vreau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "big",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "small",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mic",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "new",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "nou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the chapter's own text: a day at work in a newsroom. Two words are new and clear from the story — a newsroom, and the book's word for an office. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s116",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prenumele meu e Dan. Lucrez la o redacție. Sunt ziarist.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "La ora nouă suntem la oficiu. Oficiul nostru e la parter.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s118",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În biroul nostru sunt trei mese și trei scaune. Pe mese avem calculatoare.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Azi organizăm un concurs pentru un post vacant.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Șeful examinează actele. Secretara notează în agendă numele și prenumele lor.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Azi avem ședință la ora zece. Noi suntem punctuali.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După ședință, șeful angajează un coleg nou. El este elegant și binevoitor.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s123",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prenumele meu e Dan. Lucrez la o redacție. Sunt ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "La ora nouă suntem la oficiu. Oficiul nostru e la parter.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "În biroul nostru sunt trei mese și trei scaune. Pe mese avem calculatoare.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Azi organizăm un concurs pentru un post vacant.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Șeful examinează actele. Secretara notează în agendă numele și prenumele lor.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Azi avem ședință la ora zece. Noi suntem punctuali.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După ședință, șeful angajează un coleg nou. El este elegant și binevoitor.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the chapter's proverb. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Proverb"
+  },
+  {
+   "id": "s132",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine primăvara nu lucrează, în lipsă iernează.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s133",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whoever doesn't work in spring spends the winter in want. Once more:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s134",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cine primăvara nu lucrează, în lipsă iernează.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first morning again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s136",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine ai venit! De unde ești?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Din Iași. Dar acum stau aici, aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Biroul nostru e la parter.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce tablou frumos! De la cine e?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "De la Mihai. Desenează mult. E un coleg binevoitor.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That closes Lesson 9: work, the verbs with the extra piece, and where things come from.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s142",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's the whole of Lesson 9.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s143",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}
