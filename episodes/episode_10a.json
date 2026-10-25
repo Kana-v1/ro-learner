@@ -1,0 +1,1390 @@
+{
+ "episode": 10,
+ "part": "a",
+ "lesson": 10,
+ "title": "Iau o bere",
+ "source": "Limba care ne unește, nivelul I — Lecția 10 (partea A)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "mai ieftin": "cheaper — a chunk",
+  "Vă dau": "I give you — politely, a chunk",
+  "restul": "the change"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum dați fructele?",
+   "spoken": "Cum dați …?",
+   "gloss": "How much are you selling … for? (market)",
+   "note": "The book's market phrase is current in Romania too, at stalls and markets ('Cum dați roșiile?'); in shops, 'Cât costă?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Aflu că…",
+   "spoken": "Am auzit că…",
+   "gloss": "I heard that…",
+   "note": "For news picked up second-hand, 'Am auzit că…' is the everyday turn; 'aflu' is fine but more 'I learn (a fact)'.",
+   "confidence": "medium"
+  },
+  {
+   "type": "register_scale",
+   "book": "marfă",
+   "spoken": "produse, lucruri",
+   "gloss": "goods",
+   "note": "'Marfă' is the trader's word (and slang for 'great' among teenagers — avoid); shoppers say 'produse'.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți restul.",
+   "gloss": "Here's your change.",
+   "note": "What a cashier says handing back change; 'Păstrați restul' = keep the change.",
+   "confidence": "high"
+  },
+  {
+   "type": "regionalism",
+   "book": "a umbla (la lecții, pe jos)",
+   "spoken": "a merge (pe jos), a fi la ore",
+   "gloss": "to walk; to attend",
+   "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună dimineața! Ce doriți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Iau o ciocolată. Cât costă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Doisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "E scump! Aveți ceva mai ieftin?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, ciocolata aceasta e la un preț bun: șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine, iau ciocolata aceasta. Și o cutie de bere. Vă dau zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftiți restul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A kiosk in the morning. Lesson 10 is shopping: what you take, what you give, and what it costs.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau o bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll have a beer.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau o bere.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I take — and, ordering, I'll have",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "iau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dau zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I give ten lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dau zece lei.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I give",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "La un preț bun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "At a good price.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "La un preț bun.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a price",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un preț",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "E scump!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "It's expensive!",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "E scump!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "expensive",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "scump",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pâinea e ieftină.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bread is cheap.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pâinea e ieftină.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "cheap",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ieftin",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie de bere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a can of beer",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie de bere",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box — or a can",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "cheap",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ieftin",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I give",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a price",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un preț",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I take",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "iau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o cutie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "expensive",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "scump",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Take and give don't follow a pattern; each is learnt whole. Listen to take — I, you, she:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Take and give"
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "iau, iei, ia",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s056",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Then we, you all, they:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s057",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "luăm, luați, iau",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s058",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They sounds like I — as with live. Give does the same. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s059",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dau, dai, dă — dăm, dați, dau",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you take — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "iei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she takes",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ia",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we take",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "luăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they take",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei iau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you give — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dai",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he gives",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "dă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all give",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "dați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they give",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei dau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two everyday uses from the book. Take a meal means have lunch or dinner; give an exam means take one. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s077",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Luăm masa la unu. Azi dau examen.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have lunch at one.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luăm masa la unu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today I'm taking an exam.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Azi dau examen.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Asking the price: the question you know, and the book's second one — at what price. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The price"
+  },
+  {
+   "id": "s083",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât costă? La ce preț e berea?",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s084",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Cheap and expensive agree, like every describing word. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s085",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un produs scump, o bere ieftină",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s086",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll have a beer.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau o bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What will you have? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce iei?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "It's expensive! Do you have something cheaper? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E scump! Aveți ceva mai ieftin?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "At what price is the beer?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "La ce preț e berea?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bread is cheap.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pâinea e ieftină.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll take this chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iau ciocolata aceasta.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She takes a can of beer.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea ia o cutie de bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll give you ten lei. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vă dau zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We'll take two beers.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luăm două beri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A good price.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un preț bun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The ice cream is expensive.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Înghețata e scumpă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's your change. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți restul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. At a market stall, the book's way of asking a price is still the one you hear — literally, how do you give it. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s112",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum dați pâinea?",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the bread? At a market stall.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum dați pâinea?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a surname — the family name",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un nume",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "well-behaved children",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "copii cuminți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A short boy, a short skirt.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un băiat scund, o fustă scurtă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a driver? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți șofer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "tall",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "înalt",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "fat",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "gras",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "fair-haired, blond",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "blond",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "dark-haired",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "brunet",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "hair",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "păr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The kiosk again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s135",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună dimineața! Ce doriți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Iau o ciocolată. Cât costă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Doisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "E scump! Aveți ceva mai ieftin?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, ciocolata aceasta e la un preț bun: șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s140",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine, iau ciocolata aceasta. Și o cutie de bere. Vă dau zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s141",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftiți restul.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s142",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Take, give, and the price.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s143",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

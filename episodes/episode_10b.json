@@ -1,0 +1,1467 @@
+{
+ "episode": 10,
+ "part": "b",
+ "lesson": 10,
+ "title": "Intrăm?",
+ "source": "Limba care ne unește, nivelul I — Lecția 10 (partea B)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "că": "that — in 'aflu că…'",
+  "vânzătoarea": "the shop assistant (her)"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum dați fructele?",
+   "spoken": "Cum dați …?",
+   "gloss": "How much are you selling … for? (market)",
+   "note": "The book's market phrase is current in Romania too, at stalls and markets ('Cum dați roșiile?'); in shops, 'Cât costă?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Aflu că…",
+   "spoken": "Am auzit că…",
+   "gloss": "I heard that…",
+   "note": "For news picked up second-hand, 'Am auzit că…' is the everyday turn; 'aflu' is fine but more 'I learn (a fact)'.",
+   "confidence": "medium"
+  },
+  {
+   "type": "register_scale",
+   "book": "marfă",
+   "spoken": "produse, lucruri",
+   "gloss": "goods",
+   "note": "'Marfă' is the trader's word (and slang for 'great' among teenagers — avoid); shoppers say 'produse'.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți restul.",
+   "gloss": "Here's your change.",
+   "note": "What a cashier says handing back change; 'Păstrați restul' = keep the change.",
+   "confidence": "high"
+  },
+  {
+   "type": "regionalism",
+   "book": "a umbla (la lecții, pe jos)",
+   "spoken": "a merge (pe jos), a fi la ore",
+   "gloss": "to walk; to attend",
+   "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aflu că e un magazin nou, aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Intrăm?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Intrăm! Prețurile sunt convenabile.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce preferi: ciocolată sau înghețată?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Prefer înghețata. E delicioasă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și vânzătoarea e amabilă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A new shop near home. Finding out, going in, and what you prefer.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prefer înghețata.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prefer înghețata.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "prefer",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aflu prețul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out the price.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aflu prețul.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "aflu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Intru în magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go into the shop.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Intru în magazin.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "intru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Înghețata e delicioasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The ice cream is delicious.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Înghețata e delicioasă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "delicious",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "delicios",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vânzătorul e amabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The shop assistant is friendly.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vânzătorul e amabil.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "friendly, kind — of staff, strangers",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "amabil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prețul e convenabil.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The price is reasonable.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prețul e convenabil.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "affordable, reasonable — of a price",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "convenabil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "intru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "delicious",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "delicios",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "prefer",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "reasonable, of a price",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "convenabil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "aflu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "friendly",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "amabil",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Listen to I for find out and go in — then for prefer:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "A short extra sound"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "aflu, intru — prefer",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The first two end with a short extra sound, only in the I-form. Every other form goes as usual. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "aflu, afli, află — aflăm, aflați, află",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you find out — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "afli",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she goes in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "intră",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we go in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "intrăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all find out",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "aflați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he prefers",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "preferă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you prefer — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "preferi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we prefer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "preferăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they go in",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei intră",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the three describing words, for her and for more than one. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s074",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "delicios, delicioasă — amabil, amabilă — prețuri convenabile",
+   "rate": 0.8,
+   "pause_after_ms": 2600
+  },
+  {
+   "id": "s075",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out that there's a new shop nearby.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aflu că e un magazin nou aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Aflu că e un magazin nou, aproape."
+   ]
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Shall we go in?",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Intrăm?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go into the shop.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Intru în magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What do you prefer? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce preferi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prefer înghețata.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Prefer înghețată."
+   ]
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The ice cream is delicious.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Înghețata e delicioasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The shop assistant is friendly — a woman.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vânzătoarea e amabilă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The prices are reasonable.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prețurile sunt convenabile.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He goes into the office.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "El intră în birou.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We find out the price.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aflăm prețul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They prefer small shops.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei preferă magazinele mici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A friendly seller, a delicious chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un vânzător amabil, o ciocolată delicioasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Take and give, mixed in with this episode's three. Build the one asked for.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Lesson 10's verbs"
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you take — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "iei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she finds out",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "află",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they give",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei dau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "intru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we take",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "luăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you all prefer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "preferați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he gives",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "dă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "aflu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they take",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei iau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. For news you've picked up, people often say I heard instead of I find out. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am auzit că e un magazin nou.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I heard there's a new shop. Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s122",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "auntie, before a name",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tanti",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She is a shop assistant, he is a journalist.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea e vânzătoare, el e ziarist.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a pupil, a schoolboy",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un elev",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an exercise",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un exercițiu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need — before the thing",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "am nevoie de",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "bread",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s134",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pâine",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "beer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s136",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s137",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "chocolate",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s138",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ciocolată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s139",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ice cream",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s140",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înghețată",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s141",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sweet",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s142",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "dulce",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s143",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The new shop again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s144",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Aflu că e un magazin nou, aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Intrăm?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Intrăm! Prețurile sunt convenabile.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ce preferi: ciocolată sau înghețată?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s148",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Prefer înghețata. E delicioasă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s149",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Și vânzătoarea e amabilă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Find out, go in, prefer.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s151",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

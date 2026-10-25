@@ -497,5 +497,47 @@
    "note": "'Conducător' for one's boss sounds formal and dated (and has political overtones); offices say 'șeful', 'managerul' or 'directorul'.",
    "confidence": "high"
   }
+ ],
+ "10": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum dați fructele?",
+   "spoken": "Cum dați …?",
+   "gloss": "How much are you selling … for? (market)",
+   "note": "The book's market phrase is current in Romania too, at stalls and markets ('Cum dați roșiile?'); in shops, 'Cât costă?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Aflu că…",
+   "spoken": "Am auzit că…",
+   "gloss": "I heard that…",
+   "note": "For news picked up second-hand, 'Am auzit că…' is the everyday turn; 'aflu' is fine but more 'I learn (a fact)'.",
+   "confidence": "medium"
+  },
+  {
+   "type": "register_scale",
+   "book": "marfă",
+   "spoken": "produse, lucruri",
+   "gloss": "goods",
+   "note": "'Marfă' is the trader's word (and slang for 'great' among teenagers — avoid); shoppers say 'produse'.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți restul.",
+   "gloss": "Here's your change.",
+   "note": "What a cashier says handing back change; 'Păstrați restul' = keep the change.",
+   "confidence": "high"
+  },
+  {
+   "type": "regionalism",
+   "book": "a umbla (la lecții, pe jos)",
+   "spoken": "a merge (pe jos), a fi la ore",
+   "gloss": "to walk; to attend",
+   "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
+   "confidence": "medium"
+  }
  ]
 }

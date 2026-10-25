@@ -1,0 +1,1362 @@
+{
+ "episode": 10,
+ "part": "c",
+ "lesson": 10,
+ "title": "Toate produsele",
+ "source": "Limba care ne unește, nivelul I — Lecția 10 (partea C)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "mulțumiți": "pleased, satisfied",
+  "tot ce": "everything that — a chunk"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum dați fructele?",
+   "spoken": "Cum dați …?",
+   "gloss": "How much are you selling … for? (market)",
+   "note": "The book's market phrase is current in Romania too, at stalls and markets ('Cum dați roșiile?'); in shops, 'Cât costă?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Aflu că…",
+   "spoken": "Am auzit că…",
+   "gloss": "I heard that…",
+   "note": "For news picked up second-hand, 'Am auzit că…' is the everyday turn; 'aflu' is fine but more 'I learn (a fact)'.",
+   "confidence": "medium"
+  },
+  {
+   "type": "register_scale",
+   "book": "marfă",
+   "spoken": "produse, lucruri",
+   "gloss": "goods",
+   "note": "'Marfă' is the trader's word (and slang for 'great' among teenagers — avoid); shoppers say 'produse'.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți restul.",
+   "gloss": "Here's your change.",
+   "note": "What a cashier says handing back change; 'Păstrați restul' = keep the change.",
+   "confidence": "high"
+  },
+  {
+   "type": "regionalism",
+   "book": "a umbla (la lecții, pe jos)",
+   "spoken": "a merge (pe jos), a fi la ore",
+   "gloss": "to walk; to attend",
+   "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Iată magazinul meu. Toate produsele sunt de calitate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și toată marfa e nouă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, toată. Și toți cumpărătorii sunt mulțumiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Toate prețurile sunt convenabile?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu toate. Dar tot ce e necesar e aici.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A shop owner showing off. One small word that changes four ways — all — and the words of a shop.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s009",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tot timpul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s010",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the time",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tot timpul",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all — before a his-word",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s013",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un produs, două produse",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one product, two products",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un produs, două produse",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a product",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s018",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un produs",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Marfa e nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The goods are new.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Marfa e nouă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "goods — on sale",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s023",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "marfă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Produse de calitate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Quality products.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Produse de calitate.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "quality",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "calitate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cumpărătorul examinează marfa.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The customer looks over the goods.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cumpărătorul examinează marfa.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a customer",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s033",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un cumpărător",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pâinea e necesară.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Bread is necessary.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pâinea e necesară.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "necessary",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "necesar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "quality",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "calitate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all, before a his-word",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "tot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a customer",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un cumpărător",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "goods",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "marfă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "necessary",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "necesar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a product",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un produs",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All changes like a describing word. Listen — the time, the day, the children, the products:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "All"
+  },
+  {
+   "id": "s053",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tot timpul, toată ziua, toți copiii, toate produsele",
+   "rate": 0.8,
+   "pause_after_ms": 2600
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the word after it keeps its the-form — the children, not children. Like the word before my.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all day",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "toată ziua",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the time",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "tot timpul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the children",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "toți copiii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the products",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "toate produsele",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the customers",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "toți cumpărătorii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the goods",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "toată marfa",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "not all",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "nu toți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All the products are quality products.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Toate produsele sunt de calitate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are all the goods new?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Toată marfa e nouă?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Not all managers are punctual.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu toți managerii sunt punctuali.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The customer looks over the goods.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cumpărătorul examinează marfa.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I check the price and the quality.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Verific prețul și calitatea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I study all day.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Studiez toată ziua.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All the customers are here.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Toți cumpărătorii sunt aici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Everything that's necessary is here.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tot ce e necesar e aici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are all the prices reasonable? — Not all.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Toate prețurile sunt convenabile? — Nu toate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Quality goods at a good price.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Marfă de calitate la un preț bun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bread is necessary, the chocolate isn't.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pâinea e necesară, ciocolata nu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The describing words of this lesson, with all. Say the whole phrase.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Him, her, all"
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the products are expensive",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "toate produsele sunt scumpe",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the goods are cheap",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "toată marfa e ieftină",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the customers are friendly",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "toți cumpărătorii sunt amabili",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the prices are reasonable",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "toate prețurile sunt convenabile",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all the chocolate is delicious",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "toată ciocolata e delicioasă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "all day at the shop",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "toată ziua la magazin",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll take all the boxes.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau toate cutiile.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We find out all the prices.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aflăm toate prețurile.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. All the time, said about someone who's always doing something — you'll hear it constantly. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s110",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Lucrează tot timpul.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s111",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He works all the time. And people say goods for what's in a shop far less than products; the book's word is mostly for traders.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s112",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "vacant, open",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vacant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want a dress.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vreau o rochie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My son wants a sweater.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiul meu vrea un pulover.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a small dress",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie mică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "one — counting",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "three",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "patru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "five",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "cinci",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a year",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un an",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The shop owner again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s134",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Iată magazinul meu. Toate produsele sunt de calitate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și toată marfa e nouă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, toată. Și toți cumpărătorii sunt mulțumiți.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Toate prețurile sunt convenabile?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu toate. Dar tot ce e necesar e aici.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All, in four forms — and the words of a shop.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s140",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}
