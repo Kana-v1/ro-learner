@@ -1,10 +1,9 @@
 import SwiftUI
 
 struct PlayerView: View {
-    @StateObject private var engine: SessionEngine
+    @ObservedObject private var engine: SessionEngine
     @ObservedObject private var store: PackStore
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.scenePhase) private var scenePhase
+    private let onClose: () -> Void
     @State private var showChapters = false
     @State private var scrub: Double?
     @State private var share: ShareItem?
@@ -12,10 +11,13 @@ struct PlayerView: View {
     @State private var showFeedback = false
     @State private var confirmFinish = false
 
-    init(launch: PlayerLaunch, store: PackStore, voiceMode: Bool, headsetMic: Bool) {
-        _engine = StateObject(wrappedValue: SessionEngine(pack: launch.pack, store: store, voiceMode: voiceMode,
-                                                         headsetMic: headsetMic, resume: launch.resume))
+    /// The engine lives on the home screen, so swiping this sheet down only
+    /// hides it — the episode goes on under the mini-player. `onClose` (the X,
+    /// or "Back to episodes" at the end) ends it.
+    init(engine: SessionEngine, store: PackStore, onClose: @escaping () -> Void) {
+        self.engine = engine
         self.store = store
+        self.onClose = onClose
     }
 
     var body: some View {
@@ -40,12 +42,8 @@ struct PlayerView: View {
         .padding(.bottom, 20)
         .background(Theme.bg.ignoresSafeArea())
         .foregroundStyle(Theme.text)
-        .task { await engine.start() }
-        .onDisappear { engine.close() }      // swiped down: same as the X
+        .task { await engine.start() }       // once: start() ignores a second call
         .shakeForLog()
-        .onChange(of: scenePhase) { _, p in
-            if p != .active { engine.persist("app in background") }
-        }
         .sheet(isPresented: $showChapters) {
             ChaptersSheet(engine: engine)
                 .presentationDetents([.medium, .large])
@@ -83,10 +81,7 @@ struct PlayerView: View {
         showFeedback = true
     }
 
-    private func close() {
-        engine.close()
-        dismiss()
-    }
+    private func close() { onClose() }
 
     private func upload() {
         if store.autoSync {

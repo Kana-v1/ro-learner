@@ -23,14 +23,19 @@ struct HomeView: View {
     @AppStorage("onboarded") private var onboarded = false
     @State private var importing = false
     @State private var linking = false
-    @State private var launch: PlayerLaunch?
+    // The episode playing, kept here rather than in the player screen so it
+    // keeps running when the player is swiped down; the mini-player at the
+    // bottom brings it back. The X (player or mini-player) ends it.
+    @State private var active: SessionEngine?
+    @State private var showPlayer = false
+    @Environment(\.scenePhase) private var scenePhase
     @State private var resumeCandidate: Pack?
     @State private var pendingLaunch: PlayerLaunch?
     @State private var share: ShareItem?
     @State private var showResults = false
     @State private var showFeedback = false
     @State private var filter: EpisodeFilter = .all
-    @State private var sort: EpisodeSort = .course
+    @AppStorage("episodeSort") private var sort: EpisodeSort = .newest
     @State private var query = ""
     @State private var flipped: Set<Int> = []    // lessons opened/closed against their default
     @State private var ghRepo = "Kana-v1/ro-learner-data"
@@ -55,6 +60,14 @@ struct HomeView: View {
             .padding(.bottom, 32)
         }
         .refreshable { await store.sync() }
+        .safeAreaInset(edge: .bottom) {
+            if let e = active, !showPlayer {
+                MiniPlayer(engine: e, open: { showPlayer = true }, close: closePlayer)
+            }
+        }
+        .onChange(of: scenePhase) { _, p in
+            if p != .active { active?.persist("app in background") }
+        }
         .task {
             if recognitionMode == "tuned" { recognitionMode = "whisper" }    // the old Apple custom model
             whisper.loadIfDownloaded()
@@ -72,16 +85,18 @@ struct HomeView: View {
                 Log.write("import picker failed: \(error)", "ui")
             }
         }
-        // A sheet rather than a full-screen cover, so it can be swiped down;
-        // swiping closes the player exactly like its X (PlayerView.onDisappear).
-        .sheet(item: $launch) { l in
-            PlayerView(launch: l, store: store, voiceMode: voiceMode, headsetMic: headsetMic)
-                .environmentObject(store)
-                .presentationDragIndicator(.visible)
-                .presentationBackground(Theme.bg)
+        // A sheet, so it can be swiped down — which now only hides it: the
+        // episode carries on under the mini-player.
+        .sheet(isPresented: $showPlayer) {
+            if let e = active {
+                PlayerView(engine: e, store: store, onClose: closePlayer)
+                    .environmentObject(store)
+                    .presentationDragIndicator(.visible)
+                    .presentationBackground(Theme.bg)
+            }
         }
         .sheet(item: $resumeCandidate, onDismiss: {
-            launch = pendingLaunch
+            play(pendingLaunch)
             pendingLaunch = nil
         }) { pack in
             ResumeSheet(pack: pack, progress: store.progress[pack.header.slug],
@@ -155,6 +170,8 @@ struct HomeView: View {
         switch sort {
         case .course:
             return list
+        case .newest:
+            return list.reversed()
         case .recent:
             return list.sorted { (store.lastPlayed($0) ?? .distantPast) > (store.lastPlayed($1) ?? .distantPast) }
         case .weakest:
@@ -224,7 +241,7 @@ struct HomeView: View {
                 Text("No episodes yet.").foregroundStyle(Theme.muted)
             } else if visiblePacks.isEmpty {
                 Text("Nothing matches.").foregroundStyle(Theme.muted)
-            } else if sort == .course {
+            } else if sort == .course || sort == .newest {
                 ForEach(lessons, id: \.self) { lesson in
                     lessonGroup(lesson)
                 }
@@ -235,7 +252,8 @@ struct HomeView: View {
     }
 
     private var lessons: [Int] {
-        Array(Set(visiblePacks.map(\.header.lesson))).sorted()
+        let all = Array(Set(visiblePacks.map(\.header.lesson))).sorted()
+        return sort == .newest ? all.reversed() : all
     }
 
     /// The lesson being worked through: the one played most recently, or,
@@ -462,11 +480,31 @@ struct HomeView: View {
     }
 
     private func open(_ pack: Pack) {
+        // The episode already playing (minimised): just bring it back.
+        if let e = active, e.pack.id == pack.id {
+            showPlayer = true
+            return
+        }
         if store.progress[pack.header.slug] != nil {
             resumeCandidate = pack
         } else {
-            launch = PlayerLaunch(pack: pack, resume: false)
+            play(PlayerLaunch(pack: pack, resume: false))
         }
+    }
+
+    /// Start an episode in the player; one plays at a time.
+    private func play(_ launch: PlayerLaunch?) {
+        guard let launch else { return }
+        active?.close()
+        active = SessionEngine(pack: launch.pack, store: store, voiceMode: voiceMode,
+                               headsetMic: headsetMic, resume: launch.resume)
+        showPlayer = true
+    }
+
+    private func closePlayer() {
+        active?.close()
+        showPlayer = false
+        active = nil
     }
 }
 
@@ -655,7 +693,7 @@ enum EpisodeFilter: String, CaseIterable, Identifiable {
 }
 
 enum EpisodeSort: String, CaseIterable, Identifiable {
-    case course = "Course order", recent = "Recently played", weakest = "Lowest score"
+    case newest = "Newest first", course = "Course order", recent = "Recently played", weakest = "Lowest score"
     var id: String { rawValue }
 }
 
@@ -703,5 +741,65 @@ struct ResumeSheet: View {
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Theme.chip, in: RoundedRectangle(cornerRadius: 14))
+    }
+}
+
+/// The bar at the bottom while an episode plays with the player swiped away:
+/// what's playing, where, pause/resume, and the X that ends it. Tap to reopen.
+struct MiniPlayer: View {
+    @ObservedObject var engine: SessionEngine
+    let open: () -> Void
+    let close: () -> Void
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Button(action: open) {
+                HStack(spacing: 10) {
+                    Image(systemName: icon).font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Theme.accent).frame(width: 26)
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text(engine.pack.header.title).font(.system(size: 15, weight: .semibold)).lineLimit(1)
+                        Text(subtitle).font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
+                    }
+                    Spacer(minLength: 0)
+                }
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Open the player")
+            if engine.phase != .finished {
+                Button { engine.togglePause() } label: {
+                    Image(systemName: engine.phase == .paused ? "play.fill" : "pause.fill")
+                        .font(.system(size: 18, weight: .semibold)).frame(width: 40, height: 40)
+                }
+                .accessibilityLabel(engine.phase == .paused ? "Resume" : "Pause")
+            }
+            Button(action: close) {
+                Image(systemName: "xmark").font(.system(size: 15, weight: .semibold)).frame(width: 36, height: 40)
+            }
+            .accessibilityLabel("Close the episode")
+        }
+        .foregroundStyle(Theme.text)
+        .padding(.horizontal, 14)
+        .frame(height: 62)
+        .background(Theme.raised, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Theme.line))
+        .padding(.horizontal, 12)
+        .padding(.bottom, 6)
+    }
+
+    private var icon: String {
+        switch engine.phase {
+        case .listening, .secondTry: return "mic.fill"
+        case .paused: return "pause.circle"
+        case .finished: return "checkmark.circle"
+        default: return "waveform"
+        }
+    }
+
+    private var subtitle: String {
+        if engine.phase == .finished { return "Finished — tap for your results" }
+        let paused = engine.phase == .paused ? " · paused" : ""
+        return "\(engine.pack.header.slug.uppercased()) · drill \(engine.drillLabel)\(paused)"
     }
 }
