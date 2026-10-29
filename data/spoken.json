@@ -538,6 +538,38 @@
    "gloss": "to walk; to attend",
    "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
    "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "kilogram",
+   "spoken": "kil",
+   "gloss": "a kilo",
+   "note": "At counters and markets: 'un kil de…', 'jumătate de kil'. 'Kilogram' is the written form.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ce noutăți?",
+   "gloss": "What's new?",
+   "note": "A common greeting question between friends and colleagues; reply 'Nimic nou' (nothing new) or the news.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Adevărat?",
+   "gloss": "Really? Is that true?",
+   "note": "Everyday reaction to news; also 'Serios?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Acesta este adevărul",
+   "spoken": "Acesta-i / Asta-i",
+   "gloss": "that's (the truth)",
+   "note": "The book's own text contracts 'este' to '-i' after a vowel-final word; common in speech ('Asta-i bună!'), a little informal.",
+   "confidence": "medium"
   }
  ]
 }

@@ -1,0 +1,1393 @@
+{
+ "episode": 10,
+ "part": "d",
+ "lesson": 10,
+ "title": "O cutie de bomboane",
+ "source": "Limba care ne unește, nivelul I — Lecția 10 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "rece": "cold — in 'o băutură rece'"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum dați fructele?",
+   "spoken": "Cum dați …?",
+   "gloss": "How much are you selling … for? (market)",
+   "note": "The book's market phrase is current in Romania too, at stalls and markets ('Cum dați roșiile?'); in shops, 'Cât costă?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Aflu că…",
+   "spoken": "Am auzit că…",
+   "gloss": "I heard that…",
+   "note": "For news picked up second-hand, 'Am auzit că…' is the everyday turn; 'aflu' is fine but more 'I learn (a fact)'.",
+   "confidence": "medium"
+  },
+  {
+   "type": "register_scale",
+   "book": "marfă",
+   "spoken": "produse, lucruri",
+   "gloss": "goods",
+   "note": "'Marfă' is the trader's word (and slang for 'great' among teenagers — avoid); shoppers say 'produse'.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți restul.",
+   "gloss": "Here's your change.",
+   "note": "What a cashier says handing back change; 'Păstrați restul' = keep the change.",
+   "confidence": "high"
+  },
+  {
+   "type": "regionalism",
+   "book": "a umbla (la lecții, pe jos)",
+   "spoken": "a merge (pe jos), a fi la ore",
+   "gloss": "to walk; to attend",
+   "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "kilogram",
+   "spoken": "kil",
+   "gloss": "a kilo",
+   "note": "At counters and markets: 'un kil de…', 'jumătate de kil'. 'Kilogram' is the written form.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ce noutăți?",
+   "gloss": "What's new?",
+   "note": "A common greeting question between friends and colleagues; reply 'Nimic nou' (nothing new) or the news.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Adevărat?",
+   "gloss": "Really? Is that true?",
+   "note": "Everyday reaction to news; also 'Serios?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Acesta este adevărul",
+   "spoken": "Acesta-i / Asta-i",
+   "gloss": "that's (the truth)",
+   "note": "The book's own text contracts 'este' to '-i' after a vowel-final word; common in speech ('Asta-i bună!'), a little informal.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cât costă zahărul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cinci lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "E de calitate?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, e din România.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "La ce preț e făina?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Trei lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Vreau și o cutie de bomboane.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftim. Cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The book's own shopping scene: sugar, flour, a box of sweets. Six words for the grocery list.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Zahărul e dulce.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Sugar is sweet.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Zahărul e dulce.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sugar",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "zahăr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Făina e ieftină.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Flour is cheap.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Făina e ieftină.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "flour",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "făină",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un kilogram de făină",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a kilo of flour",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un kilogram de făină",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a kilo",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un kilogram",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie de bomboane",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box of chocolates",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie de bomboane",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweet, a chocolate — one piece",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bomboană",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce băutură preferi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What drink do you prefer?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce băutură preferi?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a drink",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o băutură",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt la cumpărături.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm out shopping.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Sunt la cumpărături.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "shopping — the things you buy",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cumpărături",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "flour",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "făină",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a drink",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o băutură",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sugar",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "zahăr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a kilo",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un kilogram",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "shopping",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "cumpărături",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a sweet",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bomboană",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "After an amount, the thing comes after of, and stays bare. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "An amount of something"
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un kilogram de zahăr, o cutie de bomboane, două kilograme de făină",
+   "rate": 0.8,
+   "pause_after_ms": 2800
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The same as after need, from the shop episode. Build them.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a kilo of sugar",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un kilogram de zahăr",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box of sweets",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o cutie de bomboane",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two kilos of flour",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două kilograme de făină",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a can of beer",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o cutie de bere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a kilo of sweets",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un kilogram de bomboane",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the sugar?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât costă zahărul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is it good quality? — Yes, it's from Romania.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "E de calitate? — Da, e din România.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "At what price is the flour? — Three lei.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "La ce preț e făina? — Trei lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want a box of sweets too.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vreau și o cutie de bomboane.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The sweets are delicious.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bomboanele sunt delicioase.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All the sweets are expensive.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Toate bomboanele sunt scumpe.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What drink do you prefer? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce băutură preferi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer a cold drink.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prefer o băutură rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm out shopping.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt la cumpărături.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need two kilos of sugar.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am nevoie de două kilograme de zahăr.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Flour is cheap, sugar is expensive.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Făina e ieftină, zahărul e scump.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is a kilo of flour?",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât costă un kilogram de făină?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Lesson 10's verbs, with the shopping. Build the one asked for.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Lesson 10's verbs"
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll take a kilo of sugar.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau un kilogram de zahăr.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She gives fifteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea dă cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We find out the price.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aflăm prețul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They go into the shop.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei intră în magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You prefer sweets. To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Preferi bomboanele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We take all the boxes.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Luăm toate cutiile.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. At the counter nobody says the whole of kilo; listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s107",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un kil de zahăr. Jumătate de kil de făină.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A kilo of sugar, half a kilo of flour. And the seller's here you are was the friendly one; in a smart shop you'd hear the polite one. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poftim. Poftiți.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Friendly, then polite.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s111",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A short boy, a short skirt.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un băiat scund, o fustă scurtă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you a driver? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dumneavoastră sunteți șofer?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "vacant, open",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vacant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "six",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "șase",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "seven",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "șapte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eight",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "opt",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "nine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "nouă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ten",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "zece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The counter again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s131",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cât costă zahărul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Cinci lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s133",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "E de calitate?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s134",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, e din România.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "La ce preț e făina?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Trei lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Vreau și o cutie de bomboane.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftim. Cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The grocery list, and how much of each.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s140",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

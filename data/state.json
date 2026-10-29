@@ -47,7 +47,9 @@
   "09e",
   "10a",
   "10b",
-  "10c"
+  "10c",
+  "10d",
+  "10e"
  ],
  "items": {
   "01-1": {
@@ -1351,79 +1353,106 @@
    "g": "f",
    "cue": "necessary",
    "answer": "necesar"
+  },
+  "zahăr": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "sugar",
+   "answer": "zahăr"
+  },
+  "făină": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "flour",
+   "answer": "făină"
+  },
+  "kilogram": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "a kilo",
+   "answer": "un kilogram"
+  },
+  "bomboană": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "a sweet, a chocolate — one piece",
+   "answer": "o bomboană"
+  },
+  "băutură": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "a drink",
+   "answer": "o băutură"
+  },
+  "cumpărături": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "shopping — the things you buy",
+   "answer": "cumpărături"
+  },
+  "librărie": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "a bookshop",
+   "answer": "o librărie"
+  },
+  "știre": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "a piece of news",
+   "answer": "o știre"
+  },
+  "noutate": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "something new",
+   "answer": "o noutate"
+  },
+  "tren": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "a train",
+   "answer": "un tren"
+  },
+  "umblu": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "I wander, I walk around",
+   "answer": "umblu"
+  },
+  "adevăr": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "the truth",
+   "answer": "adevărul"
   }
  },
  "struggles": {
-  "06c:15": {
-   "intro": "06c",
-   "g": "m",
-   "cue": "a surname — the family name",
-   "answer": "un nume",
-   "misses": 13,
-   "seen": 15,
-   "last": "close"
-  },
-  "07g:43": {
-   "intro": "07g",
-   "g": "f",
-   "cue": "well-behaved children",
-   "answer": "copii cuminți",
-   "misses": 9,
-   "seen": 9,
-   "last": "missed"
-  },
   "06f:82": {
    "intro": "06f",
    "g": "m",
    "cue": "A short boy, a short skirt.",
    "answer": "Un băiat scund, o fustă scurtă.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
+   "misses": 8,
+   "seen": 8,
+   "last": "close"
   },
   "06f:108": {
    "intro": "06f",
    "g": "m",
    "cue": "Are you a driver? Politely.",
    "answer": "Dumneavoastră sunteți șofer?",
-   "misses": 5,
-   "seen": 5,
-   "last": "close"
-  },
-  "06d:40": {
-   "intro": "06d",
-   "g": "f",
-   "cue": "auntie, before a name",
-   "answer": "tanti",
-   "misses": 4,
-   "seen": 6,
-   "last": "close"
-  },
-  "06f:110": {
-   "intro": "06f",
-   "g": "f",
-   "cue": "She is a shop assistant, he is a journalist.",
-   "answer": "Ea e vânzătoare, el e ziarist.",
-   "misses": 4,
-   "seen": 4,
-   "last": "close"
-  },
-  "06f:33": {
-   "intro": "06f",
-   "g": "f",
-   "cue": "a pupil, a schoolboy",
-   "answer": "un elev",
-   "misses": 3,
+   "misses": 7,
    "seen": 8,
-   "last": "missed"
+   "last": "close"
   },
-  "08b:27": {
-   "intro": "08b",
-   "g": "f",
-   "cue": "an exercise",
-   "answer": "un exercițiu",
-   "misses": 3,
-   "seen": 4,
+  "09d:13": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "I look over",
+   "answer": "examinez",
+   "misses": 5,
+   "seen": 7,
    "last": "close"
   },
   "09c:17": {
@@ -1434,6 +1463,51 @@
    "misses": 3,
    "seen": 3,
    "last": "missed"
+  },
+  "09d:28": {
+   "intro": "09d",
+   "g": "f",
+   "cue": "I hire",
+   "answer": "angajez",
+   "misses": 3,
+   "seen": 5,
+   "last": "missed"
+  },
+  "09d:69": {
+   "intro": "09d",
+   "g": "f",
+   "cue": "we hire",
+   "answer": "noi angajăm",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "09d:76": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "I'm looking over your documents. Politely.",
+   "answer": "Examinez actele dumneavoastră.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "09d:84": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "The secretary writes the names in the planner.",
+   "answer": "Secretara notează numele în agendă.",
+   "misses": 3,
+   "seen": 3,
+   "last": "missed"
+  },
+  "10a:59": {
+   "intro": "10a",
+   "g": "f",
+   "cue": "you take — to a friend",
+   "answer": "iei",
+   "misses": 3,
+   "seen": 4,
+   "last": "close"
   },
   "07a:64": {
    "intro": "07a",
@@ -1587,15 +1661,6 @@
    "misses": 2,
    "seen": 2,
    "last": "missed"
-  },
-  "07c:24": {
-   "intro": "07c",
-   "g": "m",
-   "cue": "beer",
-   "answer": "bere",
-   "misses": 2,
-   "seen": 3,
-   "last": "close"
   },
   "07c:110": {
    "intro": "07c",
@@ -1984,6 +2049,15 @@
    "seen": 2,
    "last": "close"
   },
+  "08a:84": {
+   "intro": "08a",
+   "g": "m",
+   "cue": "I'm learning Romanian.",
+   "answer": "Învăț limba română.",
+   "misses": 2,
+   "seen": 4,
+   "last": "missed"
+  },
   "08a:102": {
    "intro": "08a",
    "g": "f",
@@ -2182,47 +2256,92 @@
    "seen": 2,
    "last": "missed"
   },
-  "09d:28": {
-   "intro": "09d",
+  "09e:36": {
+   "intro": "09e",
    "g": "f",
-   "cue": "I hire",
-   "answer": "angajez",
+   "cue": "I draw",
+   "answer": "desenez",
    "misses": 2,
    "seen": 3,
-   "last": "no_answer"
+   "last": "close"
   },
-  "09d:69": {
-   "intro": "09d",
+  "09e:71": {
+   "intro": "09e",
    "g": "f",
-   "cue": "we hire",
-   "answer": "noi angajăm",
+   "cue": "we draw",
+   "answer": "noi desenăm",
    "misses": 2,
    "seen": 2,
    "last": "missed"
   },
-  "09d:76": {
-   "intro": "09d",
+  "09e:86": {
+   "intro": "09e",
    "g": "m",
-   "cue": "I'm looking over your documents. Politely.",
-   "answer": "Examinez actele dumneavoastră.",
+   "cue": "Today we organise a competition for a vacant post.",
+   "answer": "Azi organizăm un concurs pentru un post vacant.",
    "misses": 2,
    "seen": 2,
    "last": "missed"
   },
-  "09d:82": {
-   "intro": "09d",
+  "10a:38": {
+   "intro": "10a",
    "g": "f",
-   "cue": "The boss is hiring a translator.",
-   "answer": "Șeful angajează un translator.",
+   "cue": "a box",
+   "answer": "o cutie",
+   "misses": 2,
+   "seen": 3,
+   "last": "missed"
+  },
+  "10a:79": {
+   "intro": "10a",
+   "g": "f",
+   "cue": "Today I'm taking an exam.",
+   "answer": "Azi dau examen.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "10a:98": {
+   "intro": "10a",
+   "g": "m",
+   "cue": "She takes a can of beer.",
+   "answer": "Ea ia o cutie de bere.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "10a:108": {
+   "intro": "10a",
+   "g": "f",
+   "cue": "Here's your change. Politely.",
+   "answer": "Poftiți restul.",
    "misses": 2,
    "seen": 2,
    "last": "missed"
   },
-  "09d:84": {
-   "intro": "09d",
+  "10b:75": {
+   "intro": "10b",
    "g": "m",
-   "cue": "The secretary writes the names in the planner.",
-   "answer": "Secretara notează numele în agendă.",
+   "cue": "I find out that there's a new shop nearby.",
+   "answer": "Aflu că e un magazin nou aproape.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10b:95": {
+   "intro": "10b",
+   "g": "m",
+   "cue": "They prefer small shops.",
+   "answer": "Ei preferă magazinele mici.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "10b:97": {
+   "intro": "10b",
+   "g": "f",
+   "cue": "A friendly seller, a delicious chocolate.",
+   "answer": "Un vânzător amabil, o ciocolată delicioasă.",
    "misses": 2,
    "seen": 2,
    "last": "missed"
@@ -2524,6 +2643,15 @@
    "seen": 1,
    "last": "missed"
   },
+  "09d:67": {
+   "intro": "09d",
+   "g": "m",
+   "cue": "you all study",
+   "answer": "voi studiați",
+   "misses": 1,
+   "seen": 2,
+   "last": "no_answer"
+  },
   "09d:86": {
    "intro": "09d",
    "g": "f",
@@ -2571,25 +2699,17 @@
   }
  },
  "struggles_used": {
-  "10a": [
-   "un nume",
-   "copii cuminți",
+  "10d": [
    "Un băiat scund, o fustă scurtă.",
-   "Dumneavoastră sunteți șofer?"
+   "Dumneavoastră sunteți șofer?",
+   "examinez",
+   "vacant"
   ],
-  "10b": [
-   "tanti",
-   "Ea e vânzătoare, el e ziarist.",
-   "un elev",
-   "un exercițiu",
-   "bere"
-  ],
-  "10c": [
-   "vacant",
-   "Vreau o rochie.",
-   "Fiul meu vrea un pulover.",
-   "o rochie mică",
-   "unu"
+  "10e": [
+   "angajez",
+   "noi angajăm",
+   "Examinez actele dumneavoastră.",
+   "Secretara notează numele în agendă."
   ]
  }
 }

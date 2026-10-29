@@ -1,0 +1,1496 @@
+{
+ "episode": 10,
+ "part": "e",
+ "lesson": 10,
+ "title": "Ce noutăți?",
+ "source": "Limba care ne unește, nivelul I — Lecția 10 (partea E)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Adevărat?": "Really? True? — a chunk",
+  "prin": "through, around — in 'umblu prin magazin'",
+  "ambalaj": "packaging — in the book's text",
+  "varietate": "variety — in the book's text"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Cum dați fructele?",
+   "spoken": "Cum dați …?",
+   "gloss": "How much are you selling … for? (market)",
+   "note": "The book's market phrase is current in Romania too, at stalls and markets ('Cum dați roșiile?'); in shops, 'Cât costă?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Aflu că…",
+   "spoken": "Am auzit că…",
+   "gloss": "I heard that…",
+   "note": "For news picked up second-hand, 'Am auzit că…' is the everyday turn; 'aflu' is fine but more 'I learn (a fact)'.",
+   "confidence": "medium"
+  },
+  {
+   "type": "register_scale",
+   "book": "marfă",
+   "spoken": "produse, lucruri",
+   "gloss": "goods",
+   "note": "'Marfă' is the trader's word (and slang for 'great' among teenagers — avoid); shoppers say 'produse'.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftiți restul.",
+   "gloss": "Here's your change.",
+   "note": "What a cashier says handing back change; 'Păstrați restul' = keep the change.",
+   "confidence": "high"
+  },
+  {
+   "type": "regionalism",
+   "book": "a umbla (la lecții, pe jos)",
+   "spoken": "a merge (pe jos), a fi la ore",
+   "gloss": "to walk; to attend",
+   "note": "'Umblu la lecții' (I attend classes) and 'umblu pe jos' are Moldovan usage; in Bucharest 'merg pe jos', 'sunt la ore'. 'A umbla' there means to wander, roam ('umblu prin magazin').",
+   "confidence": "medium"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "kilogram",
+   "spoken": "kil",
+   "gloss": "a kilo",
+   "note": "At counters and markets: 'un kil de…', 'jumătate de kil'. 'Kilogram' is the written form.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ce noutăți?",
+   "gloss": "What's new?",
+   "note": "A common greeting question between friends and colleagues; reply 'Nimic nou' (nothing new) or the news.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Adevărat?",
+   "gloss": "Really? Is that true?",
+   "note": "Everyday reaction to news; also 'Serios?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "written_vs_spoken",
+   "book": "Acesta este adevărul",
+   "spoken": "Acesta-i / Asta-i",
+   "gloss": "that's (the truth)",
+   "note": "The book's own text contracts 'este' to '-i' after a vowel-final word; common in speech ('Asta-i bună!'), a little informal.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ce noutăți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Am o știre bună: e o librărie nouă lângă universitate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Adevărat?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da! Umblu prin librărie toată ziua.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Iei trenul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu, e aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two friends catching up. The last six words of Lesson 10, then the whole lesson, and the book's own text.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The six, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O librărie nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A new bookshop.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O librărie nouă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a bookshop",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o librărie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O știre bună.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Good news.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O știre bună.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of news",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o știre",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce noutăți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What's new?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce noutăți?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "something new",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o noutate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iau trenul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I take the train.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iau trenul.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a train",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un tren",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Umblu prin magazin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I wander round the shop.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Umblu prin magazin.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I wander, I walk around",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "umblu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e adevărul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's the truth.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e adevărul.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the truth",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "adevărul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a train",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un tren",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the truth",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "adevărul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a bookshop",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o librărie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I wander around",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "umblu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of news",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o știre",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "something new",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o noutate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A bookshop is not a library. Listen — bookshop, library:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Two to keep straight"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o librărie, o bibliotecă",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You buy books in the first, borrow them in the second. And wander goes like find out — the short extra sound in the I-form only. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "umblu, umbli, umblă",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a bookshop",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o librărie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a library",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bibliotecă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you wander — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "umbli",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she wanders",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "umblă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we wander",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "umblăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now all of Lesson 10 — the verbs, all, the prices.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Lesson 10 together"
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What's new?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce noutăți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have good news.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Am o știre bună.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Really?",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Adevărat?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I take the train.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iau trenul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They take the train at nine.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei iau trenul la nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I wander round the bookshop all day.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Umblu prin librărie toată ziua.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out a piece of news.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aflu o știre.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We go into the bookshop.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Intrăm în librărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's the truth.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta e adevărul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "All the goods are good quality.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Toate mărfurile sunt de calitate bună.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The prices are reasonable.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prețurile sunt convenabile.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'll take some products.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Iau niște produse.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The shop assistants are friendly.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vânzătorii sunt amabili.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer expensive, good ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Prefer înghețată scumpă și bună.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. The book also uses wander for walking, and for going to classes. That's Moldovan. In Bucharest, walking is said like this — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s097",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Merg pe jos.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I walk, on foot. Wander stays for wandering round a shop or a town. And in the book's text you'll hear that's the truth said short, the way people do. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s099",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta-i adevărul.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Just to recognise.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s101",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I hire, I take on",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "angajez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we hire",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi angajăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm looking over your documents. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examinez actele dumneavoastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The secretary writes the names in the planner.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Secretara notează numele în agendă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "eleven",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "unsprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "twelve",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "fourteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "paisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "sixteen",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "șaisprezece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the chapter's own text: going shopping. Two words are new and clear from the story — packaging and variety. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de produse. Vreau produse de calitate și în ambalaj frumos.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aflu că la magazinul de lângă casa mea sunt produse ieftine. Intru.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E o varietate mare de mărfuri. Toate mărfurile sunt de calitate bună.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt mulți cumpărători. Umblu prin magazin. Prețurile sunt convenabile.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu iau niște produse.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "— Cât costă zahărul? — Cinci lei. — E de calitate? — Da, e din Moldova.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "— La ce preț e făina? — Trei lei. — Vreau și o cutie de bomboane. — Poftim. Cincisprezece lei.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vânzătorii sunt amabili. Vreau o înghețată. Prefer înghețată scumpă și bună.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta-i adevărul. Eu iau cumpărătura.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s128",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de produse. Vreau produse de calitate și în ambalaj frumos.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s130",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aflu că la magazinul de lângă casa mea sunt produse ieftine. Intru.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s131",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E o varietate mare de mărfuri. Toate mărfurile sunt de calitate bună.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s132",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt mulți cumpărători. Umblu prin magazin. Prețurile sunt convenabile.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s133",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu iau niște produse.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s134",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "— Cât costă zahărul? — Cinci lei. — E de calitate? — Da, e din Moldova.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s135",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "— La ce preț e făina? — Trei lei. — Vreau și o cutie de bomboane. — Poftim. Cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s136",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vânzătorii sunt amabili. Vreau o înghețată. Prefer înghețată scumpă și bună.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s137",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Acesta-i adevărul. Eu iau cumpărătura.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s138",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the chapter's proverb. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Proverb"
+  },
+  {
+   "id": "s139",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cinstea nu se cumpără.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Honesty can't be bought. Once more:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s141",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cinstea nu se cumpără.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The two friends again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s143",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ce noutăți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s144",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Am o știre bună: e o librărie nouă lângă universitate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s145",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Adevărat?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s146",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da! Umblu prin librărie toată ziua.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s147",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Iei trenul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s148",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu, e aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s149",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That closes Lesson 10 — and with it the second block of five. Next, a recap of Lessons 6 to 10, built from what you still miss.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's the whole of Lesson 10.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s151",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}
