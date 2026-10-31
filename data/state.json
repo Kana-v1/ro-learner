@@ -49,7 +49,9 @@
   "10b",
   "10c",
   "10d",
-  "10e"
+  "10e",
+  "10r",
+  "10s"
  ],
  "items": {
   "01-1": {
@@ -1428,77 +1430,32 @@
   }
  },
  "struggles": {
-  "06f:82": {
-   "intro": "06f",
-   "g": "m",
-   "cue": "A short boy, a short skirt.",
-   "answer": "Un băiat scund, o fustă scurtă.",
-   "misses": 8,
-   "seen": 8,
-   "last": "close"
-  },
-  "06f:108": {
-   "intro": "06f",
-   "g": "m",
-   "cue": "Are you a driver? Politely.",
-   "answer": "Dumneavoastră sunteți șofer?",
-   "misses": 7,
-   "seen": 8,
-   "last": "close"
-  },
   "09d:13": {
    "intro": "09d",
    "g": "m",
-   "cue": "I look over",
+   "cue": "I look over, I examine",
    "answer": "examinez",
-   "misses": 5,
-   "seen": 7,
+   "misses": 7,
+   "seen": 9,
    "last": "close"
-  },
-  "09c:17": {
-   "intro": "09c",
-   "g": "f",
-   "cue": "vacant, open",
-   "answer": "vacant",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "09d:28": {
-   "intro": "09d",
-   "g": "f",
-   "cue": "I hire",
-   "answer": "angajez",
-   "misses": 3,
-   "seen": 5,
-   "last": "missed"
-  },
-  "09d:69": {
-   "intro": "09d",
-   "g": "f",
-   "cue": "we hire",
-   "answer": "noi angajăm",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
   },
   "09d:76": {
    "intro": "09d",
    "g": "m",
    "cue": "I'm looking over your documents. Politely.",
    "answer": "Examinez actele dumneavoastră.",
-   "misses": 3,
-   "seen": 3,
+   "misses": 5,
+   "seen": 5,
    "last": "missed"
   },
-  "09d:84": {
-   "intro": "09d",
-   "g": "m",
-   "cue": "The secretary writes the names in the planner.",
-   "answer": "Secretara notează numele în agendă.",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
+  "07a:80": {
+   "intro": "07a",
+   "g": "f",
+   "cue": "a small dress",
+   "answer": "o rochie mică",
+   "misses": 4,
+   "seen": 4,
+   "last": "close"
   },
   "10a:59": {
    "intro": "10a",
@@ -1508,33 +1465,6 @@
    "misses": 3,
    "seen": 4,
    "last": "close"
-  },
-  "07a:64": {
-   "intro": "07a",
-   "g": "f",
-   "cue": "I want a dress.",
-   "answer": "Vreau o rochie.",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
-  },
-  "07a:68": {
-   "intro": "07a",
-   "g": "f",
-   "cue": "My son wants a sweater.",
-   "answer": "Fiul meu vrea un pulover.",
-   "misses": 2,
-   "seen": 2,
-   "last": "close"
-  },
-  "07a:80": {
-   "intro": "07a",
-   "g": "f",
-   "cue": "a small dress",
-   "answer": "o rochie mică",
-   "misses": 2,
-   "seen": 2,
-   "last": "no_answer"
   },
   "07a:84": {
    "intro": "07a",
@@ -2346,6 +2276,186 @@
    "seen": 2,
    "last": "missed"
   },
+  "10c:83": {
+   "intro": "10c",
+   "g": "f",
+   "cue": "Everything that's necessary is here.",
+   "answer": "Tot ce e necesar e aici.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10c:87": {
+   "intro": "10c",
+   "g": "f",
+   "cue": "Quality goods at a good price.",
+   "answer": "Marfă de calitate la un preț bun.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10c:94": {
+   "intro": "10c",
+   "g": "f",
+   "cue": "all the goods are cheap",
+   "answer": "toată marfa e ieftină",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "10c:96": {
+   "intro": "10c",
+   "g": "m",
+   "cue": "all the customers are friendly",
+   "answer": "toți cumpărătorii sunt amabili",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10c:98": {
+   "intro": "10c",
+   "g": "f",
+   "cue": "all the prices are reasonable",
+   "answer": "toate prețurile sunt convenabile",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10c:100": {
+   "intro": "10c",
+   "g": "m",
+   "cue": "all the chocolate is delicious",
+   "answer": "toată ciocolata e delicioasă",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10d:34": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "a drink",
+   "answer": "o băutură",
+   "misses": 2,
+   "seen": 3,
+   "last": "close"
+  },
+  "10d:61": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "two kilos of flour",
+   "answer": "două kilograme de făină",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10d:72": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "At what price is the flour? — Three lei.",
+   "answer": "La ce preț e făina? — Trei lei.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10d:82": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "I prefer a cold drink.",
+   "answer": "Prefer o băutură rece.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "10d:84": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "I'm out shopping.",
+   "answer": "Sunt la cumpărături.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10d:88": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "Flour is cheap, sugar is expensive.",
+   "answer": "Făina e ieftină, zahărul e scump.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10d:103": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "We take all the boxes.",
+   "answer": "Luăm toate cutiile.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10e:17": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "a piece of news",
+   "answer": "o știre",
+   "misses": 2,
+   "seen": 3,
+   "last": "missed"
+  },
+  "10e:22": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "something new",
+   "answer": "o noutate",
+   "misses": 2,
+   "seen": 3,
+   "last": "close"
+  },
+  "10e:69": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "I have good news.",
+   "answer": "Am o știre bună.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10e:75": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "They take the train at nine.",
+   "answer": "Ei iau trenul la nouă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "10e:77": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "I wander round the bookshop all day.",
+   "answer": "Umblu prin librărie toată ziua.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10e:79": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "I find out a piece of news.",
+   "answer": "Aflu o știre.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "10e:81": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "We go into the bookshop.",
+   "answer": "Intrăm în librărie.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
   "07a:128": {
    "intro": "07a",
    "g": "m",
@@ -2389,15 +2499,6 @@
    "answer": "Ce e lângă fereastră? O bancă.",
    "misses": 1,
    "seen": 1,
-   "last": "close"
-  },
-  "07d:62": {
-   "intro": "07d",
-   "g": "m",
-   "cue": "one — counting",
-   "answer": "unu",
-   "misses": 1,
-   "seen": 2,
    "last": "close"
   },
   "07f:79": {
@@ -2699,17 +2800,95 @@
   }
  },
  "struggles_used": {
-  "10d": [
-   "Un băiat scund, o fustă scurtă.",
-   "Dumneavoastră sunteți șofer?",
-   "examinez",
-   "vacant"
+  "10r": [
+   "o rochie mică",
+   "o rochie nouă",
+   "o bluză largă",
+   "pantaloni mari",
+   "Rochia e prea lungă.",
+   "Tricoul e mic.",
+   "Vreau un pulover larg.",
+   "Fiica mea vrea o rochie lungă.",
+   "Victor e gras? — Nu, Victor e slab.",
+   "Are păr blond și ochi negri.",
+   "Sora mea e scundă și blondă.",
+   "E înalt? — Nu, e scund.",
+   "Copiii lor sunt înalți.",
+   "Aceasta e o podea, iar acesta e un tavan.",
+   "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "De ce are nevoie? — De înghețată.",
+   "Nu vreau bere, vreau ciocolată.",
+   "Avem nevoie de pâine, nu de înghețată.",
+   "Aceasta e o oglindă.",
+   "Aceasta e o revistă, iar acesta e un ziar.",
+   "două fete",
+   "Câți copii aveți?",
+   "Avem trei copii: doi băieți și o fată.",
+   "Câți ani are fiul dumneavoastră?",
+   "Fiica mea are un an.",
+   "O rochie nouă, nouă lei.",
+   "doi lei",
+   "zece lei",
+   "Cât costă pâinea? — Șase lei.",
+   "Cât costă înghețata? — Cinci lei.",
+   "Ciocolata costă zece lei.",
+   "Am zece lei.",
+   "case vechi",
+   "o masă verde",
+   "scaune verzi",
+   "vechi și verde",
+   "Am cincisprezece lei.",
+   "o fată cuminte",
+   "o casă mică",
+   "case mici",
+   "o familie mare",
+   "o femeie înaltă",
+   "ochi negri",
+   "Copiii sunt cuminți.",
+   "un palton vechi"
   ],
-  "10e": [
-   "angajez",
-   "noi angajăm",
+  "10s": [
+   "examinez",
    "Examinez actele dumneavoastră.",
-   "Secretara notează numele în agendă."
+   "iei",
+   "asculți",
+   "repeți",
+   "Repeți lecția acasă?",
+   "Învăț limba română.",
+   "Asculți mult? — Nu, puțin.",
+   "Sora mea ascultă lecția.",
+   "comod",
+   "rezolvă",
+   "Profesorul de chimie întreabă mult?",
+   "Noi rezolvăm exerciții.",
+   "Rezolv un exercițiu acasă.",
+   "Profesoara de biologie explică bine.",
+   "întârzie",
+   "Nu întârzii.",
+   "Scuzați, cât e ceasul?",
+   "La ce oră? — La nouă.",
+   "Fără un sfert? Întârzii!",
+   "Profesorul întârzie.",
+   "Repet cu un coleg.",
+   "Stă aproape? — Nu.",
+   "un orar",
+   "sesiune",
+   "Ei completează formularele.",
+   "Ședința e la zece fix.",
+   "semnează",
+   "desenez",
+   "noi desenăm",
+   "Azi organizăm un concurs pentru un post vacant.",
+   "o cutie",
+   "Azi dau examen.",
+   "Ea ia o cutie de bere.",
+   "Poftiți restul.",
+   "Aflu că e un magazin nou aproape.",
+   "Ei preferă magazinele mici.",
+   "Un vânzător amabil, o ciocolată delicioasă.",
+   "Tot ce e necesar e aici.",
+   "Marfă de calitate la un preț bun.",
+   "Lucrez ca translator."
   ]
  }
 }

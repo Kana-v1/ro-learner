@@ -1,0 +1,1255 @@
+{
+ "episode": 10,
+ "part": "r",
+ "lesson": 10,
+ "title": "Recapitulare (6–10), partea I",
+ "source": "Limba care ne unește, nivelul I — Recapitulare, lecțiile 6–10",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Una.": "one — her-form, on its own"
+ },
+ "spoken_layer": [],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ce noutăți? Cum e familia ta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine! Fiica mea are opt ani. E înaltă și blondă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și fiul tău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Fiul meu are doisprezece ani. E scund, dar deștept.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și ce vrei azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Vreau o rochie nouă pentru fiica mea. Și am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Rochiile sunt scumpe! Câte rochii vrei?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Una. Mică și verde.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "No new words. Lessons 6 to 10 are done, so this is a recap — built from your own misses. Part one: people, things, and how they're described.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The miss that comes back most: a or an dropped when a describing word follows. Listen — the small word stays:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "A and an stay"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie mică, un pulover larg, o masă verde",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a small dress",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie mică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a new dress",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o rochie nouă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a loose blouse",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s018",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o bluză largă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a green table",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o masă verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a well-behaved girl",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s022",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o fată cuminte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a small house",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o casă mică",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a big family",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o familie mare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a tall woman",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o femeie înaltă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an old coat",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un palton vechi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Next: the ending of a describing word follows its word — for her, and for more than one. Listen — one, then more:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "The ending follows the word"
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un ochi negru, ochi negri — o casă mică, case mici — un scaun verde, scaune verzi",
+   "rate": 0.8,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s033",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And for her, with the her-words:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un băiat scund, o fată scundă — un frate blond, o soră blondă",
+   "rate": 0.8,
+   "pause_after_ms": 2600
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "big trousers",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "pantaloni mari",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The t-shirt is small.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tricoul e mic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two girls",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două fete",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How many children do you have? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți copii aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two lei",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "doi lei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "ten lei",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "zece lei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have ten lei.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old houses",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "case vechi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "green chairs",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "scaune verzi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "old and green",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vechi și verde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have fifteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "small houses",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "case mici",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "black eyes",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ochi negri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The children are well-behaved.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Copiii sunt cuminți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now whole sentences you've missed, from across Lesson 7. Take your time — the app waits.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Whole sentences"
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dress is too long.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rochia e prea lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I want a loose sweater.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vreau un pulover larg.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter wants a long dress.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea vrea o rochie lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is Victor fat? — No, Victor is thin.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Victor e gras? — Nu, Victor e slab.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He has fair hair and black eyes.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Are păr blond și ochi negri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister is short and fair-haired.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora mea e scundă și blondă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is he tall? — No, he's short.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E înalt? — Nu, e scund.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Their children are tall.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copiii lor sunt înalți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a floor, and this is a ceiling.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o podea, iar acesta e un tavan.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is he? — He is Mr Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does she need? — Ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "De ce are nevoie? — De înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't want beer, I want chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu vreau bere, vreau ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We need bread, not ice cream.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem nevoie de pâine, nu de înghețată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a mirror.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a magazine, and this is a newspaper.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o revistă, iar acesta e un ziar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have three children: two boys and a girl.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem trei copii: doi băieți și o fată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old is your son? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți ani are fiul dumneavoastră?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter is one.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Fiica mea are un an.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A new dress, nine lei.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O rochie nouă, nouă lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the bread? — Six lei.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât costă pâinea? — Șase lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How much is the ice cream? — Five lei.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cât costă înghețata? — Cinci lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The chocolate costs ten lei.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ciocolata costă zece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the shop and street phrases from the how-people-say-it parts, as ordinary speech now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Everyday phrases"
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What would you like? A shop assistant, politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce doriți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'd like a sweater.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aș vrea un pulover.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does it come to?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cât face?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here you are. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poftiți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What does he look like?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cum arată?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't need bread. The short way.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "N-am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How old are you? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Câți ani aveți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The two friends again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s124",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ce noutăți? Cum e familia ta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s125",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bine! Fiica mea are opt ani. E înaltă și blondă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s126",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și fiul tău?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s127",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Fiul meu are doisprezece ani. E scund, dar deștept.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s128",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și ce vrei azi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s129",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Vreau o rochie nouă pentru fiica mea. Și am nevoie de pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s130",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Rochiile sunt scumpe! Câte rochii vrei?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s131",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Una. Mică și verde.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Part one of the recap. Part two: the verbs, time and prices.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s133",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

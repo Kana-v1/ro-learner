@@ -1,0 +1,1326 @@
+{
+ "episode": 10,
+ "part": "s",
+ "lesson": 10,
+ "title": "Recapitulare (6–10), partea II",
+ "source": "Limba care ne unește, nivelul I — Recapitulare, lecțiile 6–10",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Cluj": "a city in Transylvania"
+ },
+ "spoken_layer": [],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Unde lucrezi acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Lucrez ca translator. Și studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și cum e ziua ta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Iau trenul la opt fără un sfert. Lucrez toată ziua.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și după serviciu?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Intru în librărie, iau o carte și repet lecția acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ești harnic! Dar cărțile nu sunt scumpe?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt scumpe! Dar prefer cărțile, nu înghețata.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Part two of the recap: doing things — the verbs — and time and money. All from your own misses, then an introduction you build yourself.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Four kinds of verb so far. Listen — I, then you, for each:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Four kinds of verb"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ascult, asculți — lucrez, lucrezi — aflu, afli — iau, iei",
+   "rate": 0.8,
+   "pause_after_ms": 3000
+  },
+  {
+   "id": "s013",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Plain; with the extra piece; a short extra sound in I only; and the few learnt whole. Which kind a verb is, its I-form tells you. Now the forms you've missed.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you take — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s017",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "iei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you listen — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "asculți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you repeat — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "repeți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "comfortable",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s023",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "comod",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she solves",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "rezolvă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he's late",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s027",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "întârzie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm not late.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu întârzii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The teacher is late.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Profesorul întârzie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a timetable",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s033",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un orar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "exam season",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sesiune",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she signs",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s037",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "semnează",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I draw",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "desenez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we draw",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "noi desenăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box — or a can",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's your change. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți restul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Whole sentences you've missed, from Lessons 8, 9 and 10. Take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Whole sentences"
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm looking over your documents. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examinez actele dumneavoastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you go over the lesson at home? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Repeți lecția acasă?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm learning Romanian.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Învăț limba română.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you listen a lot? — No, a little.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Asculți mult? — Nu, puțin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister listens to the lesson.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora mea ascultă lecția.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Does the chemistry teacher ask a lot?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Profesorul de chimie întreabă mult?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We do exercises.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Noi rezolvăm exerciții.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I do an exercise at home.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rezolv un exercițiu acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The biology teacher explains well.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Profesoara de biologie explică bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Excuse me, what time is it?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Scuzați, cât e ceasul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "At what time? — At nine.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "La ce oră? — La nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A quarter to? I'm late!",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fără un sfert? Întârzii!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go over it with a classmate.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Repet cu un coleg.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Does she live nearby? — No.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stă aproape? — Nu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They fill in the forms.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei completează formularele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The meeting is at ten sharp.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ședința e la zece fix.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today we organise a competition for a vacant post.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Azi organizăm un concurs pentru un post vacant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today I'm taking an exam.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Azi dau examen.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She takes a can of beer.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea ia o cutie de bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out that there's a new shop nearby.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aflu că e un magazin nou aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They prefer small shops.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei preferă magazinele mici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A friendly seller, a delicious chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un vânzător amabil, o ciocolată delicioasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Everything that's necessary is here.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Tot ce e necesar e aici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Quality goods at a good price.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Marfă de calitate la un preț bun.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Last, a whole introduction — Radu's. You say it, one line at a time, using everything from Lessons 6 to 10.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "An introduction"
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My surname is Popescu, my first name is Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 8200
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Numele meu e Popescu, prenumele meu e Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm from Cluj.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt din Cluj.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live near the university.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stau lângă universitate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work as a translator.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez ca translator.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And I study chemistry at the faculty.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Și studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have a sister and two brothers.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am o soră și doi frați.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister is tall and fair-haired.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora mea e înaltă și blondă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I take the train at a quarter to eight.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau trenul la opt fără un sfert.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm learning Romanian: I listen a lot and repeat.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Învăț limba română: ascult mult și repet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "After work I go into the bookshop.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După serviciu intru în librărie.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer chocolate, but it's expensive.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prefer ciocolata, dar e scumpă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the whole of it, at speed. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s119",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Numele meu e Popescu, prenumele meu e Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s120",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sunt din Cluj.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s121",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Stau lângă universitate.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s122",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez ca translator.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s123",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Și studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s124",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am o soră și doi frați.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s125",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora mea e înaltă și blondă.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Iau trenul la opt fără un sfert.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s127",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Învăț limba română: ascult mult și repet.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s128",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După serviciu intru în librărie.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prefer ciocolata, dar e scumpă.",
+   "rate": 1.0,
+   "pause_after_ms": 350
+  },
+  {
+   "id": "s130",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Radu's day again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s131",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Unde lucrezi acum?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s132",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Lucrez ca translator. Și studiez chimia la facultate.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s133",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și cum e ziua ta?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s134",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Iau trenul la opt fără un sfert. Lucrez toată ziua.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s135",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și după serviciu?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s136",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Intru în librărie, iau o carte și repet lecția acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s137",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ești harnic! Dar cărțile nu sunt scumpe?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s138",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Ba da, sunt scumpe! Dar prefer cărțile, nu înghețata.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's Lessons 6 to 10: family and looks, clothes and numbers, your first verbs, work, and shopping.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The end of the second block. Next time, Lesson 11.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s141",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

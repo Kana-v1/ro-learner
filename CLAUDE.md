@@ -130,7 +130,11 @@ Named with `part="r"` (`episode_05r`, `episode_10r`, …) so it sorts after the
 block's last episode; `REQUIRED` is a spread of anchor items, a few per lesson,
 so the coverage check proves it touched all five. Follow `build_episode_05r.py`.
 "Every five lessons" tracks the book, not the raw episode count (lessons split
-into one or two episodes each).
+into one or two episodes each). From 10R on, a recap drills the learner's own
+misses for the block (`recap_kit.py` reads state.json "struggles" at build
+time), grouped by pattern with a by-ear reminder before each group; when there
+are many, the recap is two parts (10R nouns and describing words, 10S verbs and
+a closing self-introduction).
 
 **Recall pauses are proportional to the answer.** `recall_pause()` in
 `episode_kit.py` sizes the production silence from the answer's word count —
