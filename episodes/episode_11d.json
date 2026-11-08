@@ -1,0 +1,2079 @@
+{
+ "episode": 11,
+ "part": "d",
+ "lesson": 11,
+ "title": "Încape în portbagaj?",
+ "source": "Limba care ne unește, nivelul I — Lecția 11 (partea D)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Gata": "right then, ready — a chunk",
+  "turiștii": "the tourists — the book's word"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ne vedem!",
+   "gloss": "See you!",
+   "note": "Everyday goodbye between friends and colleagues; also 'Ne vedem mâine / luni'. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Vedem.",
+   "gloss": "We'll see.",
+   "note": "Non-committal reply to a suggestion; also 'Mai vedem.'",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftă bună!",
+   "gloss": "Enjoy your meal!",
+   "note": "Said before eating and by a waiter bringing food; the reply is 'Mulțumesc, la fel!' (thanks, you too). The book reaches it only in Lecția 22.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bem o cafea?",
+   "gloss": "Shall we have a coffee?",
+   "note": "Everyday invitation between colleagues and friends; also 'Mergem la o cafea?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Pot rezerva o cameră? (a putea + infinitive)",
+   "spoken": "Pot să rezerv o cameră?",
+   "gloss": "Can I book a room?",
+   "note": "Both are correct. In everyday speech 'pot să' + the subjunctive is far more common; the bare infinitive sounds a little bookish. For 'I' the form after 'să' is the I-form the learner already knows (pot să intru, pot să semnez); for he/she it differs (poate să rezerve), so the episode keeps to 'I'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Călătorie plăcută!",
+   "gloss": "Have a good trip!",
+   "note": "Standard send-off to a traveller, said by agents and friends alike; also 'Drum bun!'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Hai!",
+   "gloss": "Come on! Let's…",
+   "note": "The everyday call to move or start ('Hai, plecăm!', 'Hai la o cafea!'); neutral among friends, family, colleagues.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Plecăm?",
+   "gloss": "Shall we go?",
+   "note": "Said when it's time to leave a place; the answer is 'Plecăm!' or 'Hai!'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "portbagaj (of a coach)",
+   "spoken": "cala (autocarului)",
+   "gloss": "the luggage hold",
+   "note": "'Portbagaj' is first of all a car's boot; for a coach's hold, drivers and passengers often say 'cala' ('bagajele la cală'). Not taught in the audio — the episode keeps the book's word.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Se poate intra?",
+   "spoken": "Se poate?",
+   "gloss": "May I? (come in, sit here, take this)",
+   "note": "On its own at a door or pointing at a free chair; the reply is 'Da, poftiți' or 'Sigur'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Nu se poate.",
+   "spoken": "Nu se poate!",
+   "gloss": "No way! You're joking!",
+   "note": "Besides 'it isn't allowed', said with feeling it is the everyday reaction of disbelief to news.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Iată muntele!",
+   "spoken": "Uite muntele!",
+   "gloss": "Look, there's the mountain!",
+   "note": "'Iată' is bookish or a little formal (guides, announcements); in everyday speech people point things out with 'uite' (literally 'look').",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ce frumos!",
+   "gloss": "How lovely!",
+   "note": "The everyday exclamation at a view, a gift, good news.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Autocarul pleacă la opt. Urcați, vă rog!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și valiza? Încape în portbagaj?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, încape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Și valiza mea? E mare.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu încape. Dar e loc aici.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Gata, plecăm!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Eight in the morning, a coach to the mountains, and a driver loading suitcases. Leave, get on — and does it fit?",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un autocar mare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A big coach.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un autocar mare.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coach — a long-distance bus",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un autocar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O valiză mică.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A small suitcase.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O valiză mică.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a suitcase",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o valiză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Portbagajul e mare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The boot is big.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Portbagajul e mare.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the boot — of a car or a coach",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "portbagajul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Plec la munte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm off to the mountains.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Plec la munte.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I leave, I'm off",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "plec",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Urc în autocar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I get on the coach.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Urc în autocar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I get on — and I climb",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "urc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Valiza încape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The suitcase fits.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Valiza încape.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "it fits — in the boot, in the case",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "încape",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I get on",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "urc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a suitcase",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o valiză",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "it fits",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "încape",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a coach",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un autocar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I leave",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "plec",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the boot",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "portbagajul",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Leave: the coach leaves. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Leave and get on"
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Autocarul pleacă la opt.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s056",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "it leaves — the coach",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s057",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pleacă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The train leaves at nine.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Trenul pleacă la nouă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We leave. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s061",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Plecăm acum.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we leave",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "plecăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We leave at eight.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Plecăm la opt.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Get on — the driver, politely. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s067",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Urcați, vă rog!",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you get on — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "urcați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you get on here? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Urcați aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He gets on. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Dan urcă în autocar.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he gets on",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "urcă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mum gets on the coach.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mama urcă în autocar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Get on also means climb. We climb — build it like we leave.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we climb",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "urcăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We climb slowly.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Urcăm încet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And fits, said of things. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s084",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu încape.",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "It doesn't fit.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu încape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The suitcase fits in the boot.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Valiza încape în portbagaj.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now mixed, and not in order.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the coach leaves",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "autocarul pleacă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I get on",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "urc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we leave",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "plecăm",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "it fits",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "încape",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you get on — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "urcați",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I leave",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "plec",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he gets on",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "urcă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A question from last time: why does the sun take this form of lovely? Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "His-word or her-word"
+  },
+  {
+   "id": "s105",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Soarele e frumos.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s106",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Because sun is a his-word — listen to the small word before it:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s107",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un soare",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A her-word has the other small word, and the other form of lovely. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s109",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o valiză frumoasă",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You can't tell from how a word ends. So learn each word with its small word — that decides the describing word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a lovely suitcase",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o valiză frumoasă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a lovely mountain",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un munte frumos",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a new coach",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un autocar nou",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a new suitcase",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o valiză nouă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The sun is lovely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Soarele e frumos.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The suitcase is small.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Valiza e mică.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The boot is small.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Portbagajul e mic.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Your results mix I see and she sees. Just the two — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "I see, she sees"
+  },
+  {
+   "id": "s126",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Eu văd. Ea vede.",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she sees",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vede",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I see",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "văd",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She sees the coach.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea vede autocarul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I see the suitcase.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s134",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Văd valiza.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He doesn't see the suitcase.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s136",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu vede valiza.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s137",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't see the coach.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s138",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu văd autocarul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the word you've missed most: I examine. You've been giving the you-form. Listen to the two:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "I examine"
+  },
+  {
+   "id": "s140",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Eu examinez. Tu examinezi.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s141",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s142",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s143",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you examine — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s144",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "examinezi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s145",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I examine the documents.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s146",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Examinez actele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s147",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm looking over your documents. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s148",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Examinez actele dumneavoastră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s149",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s150",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s151",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm off to the mountains.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Plec la munte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coach leaves at eight.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s155",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Autocarul pleacă la opt.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Does the suitcase fit in the boot?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s157",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Valiza încape în portbagaj?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s158",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, it fits.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s159",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Da, încape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s160",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My suitcase is big.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s161",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Valiza mea e mare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s162",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "There's room here.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s163",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "E loc aici.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s164",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can I get on?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s165",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pot urca?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s166",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Where's the coach leaving for?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s167",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Unde pleacă autocarul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s168",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tourists climb fast.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s169",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Turiștii urcă repede.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s170",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Have a good trip!",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s171",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Călătorie plăcută!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s172",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you drink — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s173",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bei",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "băi"
+   ]
+  },
+  {
+   "id": "s174",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What are you drinking? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s175",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce beți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Ce băieți?"
+   ]
+  },
+  {
+   "id": "s176",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you drink — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s177",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "beți",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "băieți"
+   ]
+  },
+  {
+   "id": "s178",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can I book? The way people say it.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s179",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pot să rezerv?",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Pot rezerva?"
+   ]
+  },
+  {
+   "id": "s180",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. To get people moving, you'll hear this everywhere — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s181",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Hai, plecăm!",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s182",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Come on, we're off! And when it's time to leave a place, between friends — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s183",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Plecăm?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s184",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Shall we go? Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s185",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s186",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dress is too long.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s187",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rochia e prea lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s188",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter wants a long dress.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s189",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea vrea o rochie lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s190",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a floor, and this is a ceiling.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s191",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o podea, iar acesta e un tavan.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s192",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is he? — He is Mr Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s193",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s194",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a timetable",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s195",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un orar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s196",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a subject — or the material to learn",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s197",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o materie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s198",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "exam season",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s199",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "sesiune",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s200",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "after",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s201",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "după",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s202",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coach again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s203",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Autocarul pleacă la opt. Urcați, vă rog!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s204",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și valiza? Încape în portbagaj?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s205",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, încape.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s206",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Și valiza mea? E mare.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s207",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Nu încape. Dar e loc aici.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s208",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s209",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Gata, plecăm!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s210",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The coach, the suitcase — leave, get on, and does it fit.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s211",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

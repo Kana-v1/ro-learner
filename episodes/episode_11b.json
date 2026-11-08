@@ -1,0 +1,1785 @@
+{
+ "episode": 11,
+ "part": "b",
+ "lesson": 11,
+ "title": "Ce beți?",
+ "source": "Limba care ne unește, nivelul I — Lecția 11 (partea B)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "Bună seara": "good evening — a chunk",
+  "minerală": "mineral — in 'apă minerală', the book's phrase"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ne vedem!",
+   "gloss": "See you!",
+   "note": "Everyday goodbye between friends and colleagues; also 'Ne vedem mâine / luni'. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Vedem.",
+   "gloss": "We'll see.",
+   "note": "Non-committal reply to a suggestion; also 'Mai vedem.'",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftă bună!",
+   "gloss": "Enjoy your meal!",
+   "note": "Said before eating and by a waiter bringing food; the reply is 'Mulțumesc, la fel!' (thanks, you too). The book reaches it only in Lecția 22.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bem o cafea?",
+   "gloss": "Shall we have a coffee?",
+   "note": "Everyday invitation between colleagues and friends; also 'Mergem la o cafea?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Pot rezerva o cameră? (a putea + infinitive)",
+   "spoken": "Pot să rezerv o cameră?",
+   "gloss": "Can I book a room?",
+   "note": "Both are correct. In everyday speech 'pot să' + the subjunctive is far more common; the bare infinitive sounds a little bookish. For 'I' the form after 'să' is the I-form the learner already knows (pot să intru, pot să semnez); for he/she it differs (poate să rezerve), so the episode keeps to 'I'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Călătorie plăcută!",
+   "gloss": "Have a good trip!",
+   "note": "Standard send-off to a traveller, said by agents and friends alike; also 'Drum bun!'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună seara! Ce beți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Eu beau apă. Copilul bea lapte.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și bunicul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bunicul bea bere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Tata, bunicul mănâncă încet!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, dar tu mănânci repede!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dinner at the mountain hotel: a waitress, a father, a child, and a grandfather who takes his time. Drink and eat, fast and slowly.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Apă, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Water, please.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Apă, vă rog.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "water",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "apă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lapte și pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Milk and bread.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lapte și pâine.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "milk",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lapte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Beau apă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink water.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Beau apă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "beau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mănânc pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm eating bread.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mănânc pâine.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I eat",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mănânc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mănânc repede.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I eat quickly.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mănânc repede.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "quickly, fast",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "repede",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Beau încet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink slowly.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Beau încet.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "slowly",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "încet",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I eat",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mănânc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "slowly",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "încet",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "water",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "apă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "beau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "quickly",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "repede",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "milk",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "lapte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Drink changes its sound like see, so again one form at a time. To a friend: what are you drinking? Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Drink, one form at a time"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce bei?",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you drink — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You drink milk. To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bei lapte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She drinks, he drinks. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s060",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Copilul bea lapte.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she drinks",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grandpa drinks beer.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul bea bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Politely, or to a group — the waitress's word. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce beți?",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you drink — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "beți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you drink milk? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Beți lapte?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We drink — short. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s072",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bem apă.",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we drink",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We drink beer.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bem bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And they sounds like I — as with see. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei beau apă.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they drink",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei beau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now mixed, and not in order.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s082",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we drink",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s083",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she drinks",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "bea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you drink — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "bei",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s089",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "beau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they drink",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei beau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you drink — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "beți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "See, from last time, has a we-form too — short, like we drink. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "See and eat"
+  },
+  {
+   "id": "s095",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vedem muntele.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we see",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vedem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We see the peak.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vedem vârful.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Eat, to a friend. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s101",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mănânci repede!",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you eat — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mănânci",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He eats, she eats. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s105",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bunicul mănâncă încet.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he eats",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mănâncă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I eat",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mănânc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she eats",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mănâncă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you eat — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "mănânci",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How you do something comes straight after the verb. From the book — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How you do it"
+  },
+  {
+   "id": "s115",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "El vede bine.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s116",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He sees well. Fast, slowly, carefully, a lot, a little — they all go there. Build them.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I eat slowly.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mănânc încet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child eats fast.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Copilul mănâncă repede.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She draws carefully.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s122",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ea desenează atent.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We drink a lot.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bem mult.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My colleague works well.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Colegul meu lucrează bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They eat a little.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ei mănâncă puțin.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How does grandpa eat?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cum mănâncă bunicul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink water.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Beau apă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What are you drinking? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce beți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The child drinks milk.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Copilul bea lapte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grandpa eats slowly.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunicul mănâncă încet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You eat fast! To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mănânci repede!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We drink mineral water.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bem apă minerală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "They don't drink beer.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s145",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei nu beau bere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you drink a lot of milk? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s147",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bei mult lapte?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s148",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I drink milk and eat bread.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s149",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Beau lapte și mănânc pâine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s150",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She sees well.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s151",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea vede bine.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We see the mountain.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vedem muntele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "See you! To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s155",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ne vedem!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. Before eating, and when the waitress brings the food, you'll hear — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s157",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftă bună!",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s158",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal! And the everyday invitation at work uses we drink — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s159",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bem o cafea?",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s160",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Shall we have a coffee? Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s161",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s162",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The dress is too long.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s163",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rochia e prea lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s164",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My daughter wants a long dress.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s165",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiica mea vrea o rochie lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s166",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "My sister is short and fair-haired.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s167",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Sora mea e scundă și blondă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s168",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is he tall? — No, he's short.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s169",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E înalt? — Nu, e scund.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s170",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "the hour — as in it's nine o'clock",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s171",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ora",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s172",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "exactly, sharp — of a time",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s173",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "fix",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s174",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "half",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s175",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "jumătate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s176",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a quarter",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s177",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un sfert",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s178",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dinner again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s179",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bună seara! Ce beți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s180",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Eu beau apă. Copilul bea lapte.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s181",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Și bunicul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s182",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bunicul bea bere.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s183",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Tata, bunicul mănâncă încet!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s184",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Da, dar tu mănânci repede!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s185",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Drink and eat — fast, slowly, and one form at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s186",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

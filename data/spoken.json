@@ -571,5 +571,111 @@
    "note": "The book's own text contracts 'este' to '-i' after a vowel-final word; common in speech ('Asta-i bună!'), a little informal.",
    "confidence": "medium"
   }
+ ],
+ "11": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ne vedem!",
+   "gloss": "See you!",
+   "note": "Everyday goodbye between friends and colleagues; also 'Ne vedem mâine / luni'. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Vedem.",
+   "gloss": "We'll see.",
+   "note": "Non-committal reply to a suggestion; also 'Mai vedem.'",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftă bună!",
+   "gloss": "Enjoy your meal!",
+   "note": "Said before eating and by a waiter bringing food; the reply is 'Mulțumesc, la fel!' (thanks, you too). The book reaches it only in Lecția 22.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bem o cafea?",
+   "gloss": "Shall we have a coffee?",
+   "note": "Everyday invitation between colleagues and friends; also 'Mergem la o cafea?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Pot rezerva o cameră? (a putea + infinitive)",
+   "spoken": "Pot să rezerv o cameră?",
+   "gloss": "Can I book a room?",
+   "note": "Both are correct. In everyday speech 'pot să' + the subjunctive is far more common; the bare infinitive sounds a little bookish. For 'I' the form after 'să' is the I-form the learner already knows (pot să intru, pot să semnez); for he/she it differs (poate să rezerve), so the episode keeps to 'I'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Călătorie plăcută!",
+   "gloss": "Have a good trip!",
+   "note": "Standard send-off to a traveller, said by agents and friends alike; also 'Drum bun!'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Hai!",
+   "gloss": "Come on! Let's…",
+   "note": "The everyday call to move or start ('Hai, plecăm!', 'Hai la o cafea!'); neutral among friends, family, colleagues.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Plecăm?",
+   "gloss": "Shall we go?",
+   "note": "Said when it's time to leave a place; the answer is 'Plecăm!' or 'Hai!'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "portbagaj (of a coach)",
+   "spoken": "cala (autocarului)",
+   "gloss": "the luggage hold",
+   "note": "'Portbagaj' is first of all a car's boot; for a coach's hold, drivers and passengers often say 'cala' ('bagajele la cală'). Not taught in the audio — the episode keeps the book's word.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Se poate intra?",
+   "spoken": "Se poate?",
+   "gloss": "May I? (come in, sit here, take this)",
+   "note": "On its own at a door or pointing at a free chair; the reply is 'Da, poftiți' or 'Sigur'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Nu se poate.",
+   "spoken": "Nu se poate!",
+   "gloss": "No way! You're joking!",
+   "note": "Besides 'it isn't allowed', said with feeling it is the everyday reaction of disbelief to news.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Iată muntele!",
+   "spoken": "Uite muntele!",
+   "gloss": "Look, there's the mountain!",
+   "note": "'Iată' is bookish or a little formal (guides, announcements); in everyday speech people point things out with 'uite' (literally 'look').",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ce frumos!",
+   "gloss": "How lovely!",
+   "note": "The everyday exclamation at a view, a gift, good news.",
+   "confidence": "high"
+  }
  ]
 }

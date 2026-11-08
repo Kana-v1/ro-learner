@@ -1,0 +1,1689 @@
+{
+ "episode": 11,
+ "part": "c",
+ "lesson": 11,
+ "title": "Pot rezerva o cameră?",
+ "source": "Limba care ne unește, nivelul I — Lecția 11 (partea C)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "de turism": "travel — in 'agenția de turism'",
+  "Călătorie plăcută!": "Have a good trip! — a chunk"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ne vedem!",
+   "gloss": "See you!",
+   "note": "Everyday goodbye between friends and colleagues; also 'Ne vedem mâine / luni'. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Vedem.",
+   "gloss": "We'll see.",
+   "note": "Non-committal reply to a suggestion; also 'Mai vedem.'",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Poftă bună!",
+   "gloss": "Enjoy your meal!",
+   "note": "Said before eating and by a waiter bringing food; the reply is 'Mulțumesc, la fel!' (thanks, you too). The book reaches it only in Lecția 22.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Bem o cafea?",
+   "gloss": "Shall we have a coffee?",
+   "note": "Everyday invitation between colleagues and friends; also 'Mergem la o cafea?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Pot rezerva o cameră? (a putea + infinitive)",
+   "spoken": "Pot să rezerv o cameră?",
+   "gloss": "Can I book a room?",
+   "note": "Both are correct. In everyday speech 'pot să' + the subjunctive is far more common; the bare infinitive sounds a little bookish. For 'I' the form after 'să' is the I-form the learner already knows (pot să intru, pot să semnez); for he/she it differs (poate să rezerve), so the episode keeps to 'I'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Călătorie plăcută!",
+   "gloss": "Have a good trip!",
+   "note": "Standard send-off to a traveller, said by agents and friends alike; also 'Drum bun!'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Agenția de turism, bună ziua!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Pot rezerva o cameră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Cu câte paturi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cu trei paturi. Și trei locuri în tren.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine. Călătorie plăcută!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A phone call to a travel agency: a room, beds, seats on the train. Today: can, and booking.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s009",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Agenția de turism.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s010",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The travel agency.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Agenția de turism.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an agency",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s013",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o agenție",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O călătorie lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A long journey.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O călătorie lungă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a trip, a journey",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s018",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o călătorie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Rezerv o cameră.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I book a room.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Rezerv o cameră.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I book, I reserve",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s023",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "rezerv",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un pat mare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A big bed.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un pat mare.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a bed",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un loc în tren.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A seat on the train.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un loc în tren.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a place — or a seat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s033",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un loc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pot rezerva?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can I book?",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pot rezerva?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a bed",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un pat",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an agency",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o agenție",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a seat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un loc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I book",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "rezerv",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a journey",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o călătorie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "More than one bed. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Beds and seats"
+  },
+  {
+   "id": "s053",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pat, două paturi",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Seat goes the same way, and two is the her-form here — as with two kilos. Build them.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two seats",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două locuri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "three beds",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trei paturi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a seat",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un loc",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four seats",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s062",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "patru locuri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two beds",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două paturi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "After can, the next verb changes. Listen — I work, then I can work:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Can, and the verb after it"
+  },
+  {
+   "id": "s066",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Lucrez. Pot lucra.",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The extra piece drops. Sign and fill in go the same way. Build them.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s068",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can sign",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s069",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pot semna",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s070",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can fill in",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s071",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "pot completa",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s072",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Book has no extra piece; it only gains a sound at the end. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s073",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Rezerv. Pot rezerva.",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can listen",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "pot asculta",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can book",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pot rezerva",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "See does its own thing — you can't work it out, just hear it. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s079",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pot vedea muntele.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can see the peak.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pot vedea vârful.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can changes its sound too. One form at a time. To a friend: can you? Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Can, one form at a time"
+  },
+  {
+   "id": "s083",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poți semna aici?",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you can — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "poți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can you work at home? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poți lucra acasă?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She can, he can. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s089",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea poate rezerva.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s090",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s091",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "poate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s092",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He can sign.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s093",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poate semna.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s094",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Politely, or to a group. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s095",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puteți rezerva o cameră?",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you can — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "puteți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can you sign here? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puteți semna aici?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We can. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s101",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Putem asculta.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "putem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And they sounds like I. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s105",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei pot lucra.",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they can",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ei pot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now mixed, and not in order.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "poate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "putem",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "pot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you can — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s116",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "puteți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s117",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "they can",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s118",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ei pot",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s119",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you can — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s120",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "poți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s121",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can I book a room?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Pot rezerva o cameră?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A room with two beds.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O cameră cu două paturi.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Three seats on the train.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Trei locuri în tren.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can't book today.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Azi nu pot rezerva.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Nu pot rezerva azi."
+   ]
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mum books two seats.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mama rezervă două locuri.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The agency is near.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Agenția e aproape.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A long journey.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O călătorie lungă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She can work at home.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s137",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ea poate lucra acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s138",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We can listen.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s139",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Putem asculta.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s140",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I can't see the sun.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s141",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu pot vedea soarele.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Shall we have a coffee?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bem o cafea?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal!",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s145",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. In speech, people more often put a small word after can — and then the I-form you already know. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s147",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pot să rezerv o cameră?",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s148",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Both are right; you'll hear this one more. And seeing someone off on a trip — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s149",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Călătorie plăcută!",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Have a good trip!",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s151",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a floor, and this is a ceiling.",
+   "rate": 1.0,
+   "pause_after_ms": 9000
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o podea, iar acesta e un tavan.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is he? — He is Mr Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s155",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e dumnealui? Dumnealui e domnu' Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't want beer, I want chocolate.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s157",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu vreau bere, vreau ciocolată.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s158",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This is a mirror.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s159",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aceasta e o oglindă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s160",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I live — where I stay",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s161",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "stau",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s162",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a university",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s163",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o universitate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s164",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a faculty — a university department",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s165",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o facultate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s166",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an exam",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s167",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un examen",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s168",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The phone call again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s169",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Agenția de turism, bună ziua!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s170",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună ziua! Pot rezerva o cameră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s171",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da. Cu câte paturi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s172",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Cu trei paturi. Și trei locuri în tren.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s173",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine. Călătorie plăcută!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s174",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Can, book, beds and seats.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s175",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

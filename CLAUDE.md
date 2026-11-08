@@ -173,6 +173,17 @@ abstract, unclear in places, and the narrator trying to say endings.) So:
   learn each one by its I-form") instead of an over-general rule.
 `build_episode_09a.py` is the model (the -ez verbs against last lesson's).
 
+**Never a run of forms in one breath.** (From the feedback on 10R: "how am I
+supposed to learn all these 5 forms when they're spelled one after
+another".) A Romanian segment that strings four or six forms together is heard
+once and gone. A new form is heard alone, inside a short sentence, recalled
+bare, used in a sentence — and only then is the next one heard; afterwards the
+forms are drilled out of order, never as a table. Two forms side by side for a
+contrast (`Lucrez. Pot lucra.`) are the limit. `build_episode_11a.py` is the
+model for a verb whose sound changes (văd, vezi, vede). Results through 10S
+also show sentences over four or five words collapsing, so new drill sentences
+stay short until the words are held.
+
 **No between-episodes tasks.** Episodes end on a short sign-off, not homework —
 the learner listens on the move and will not do a "before next time" exercise.
 All producing happens inside the drills. (Episodes 1–5 still carry the old
