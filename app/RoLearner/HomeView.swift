@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import UniformTypeIdentifiers
 
 /// An episode about to open in the player, and whether to pick up where it
@@ -28,6 +29,11 @@ struct HomeView: View {
     // bottom brings it back. The X (player or mini-player) ends it.
     @State private var active: SessionEngine?
     @State private var showPlayer = false
+    // The player zooms out of the mini-player and folds back into it, so the
+    // bar stays in place under the player; the X keeps it until the player
+    // has gone, then removes it.
+    @Namespace private var playerZoom
+    @State private var closing = false
     @Environment(\.scenePhase) private var scenePhase
     @State private var resumeCandidate: Pack?
     @State private var pendingLaunch: PlayerLaunch?
@@ -61,8 +67,8 @@ struct HomeView: View {
         }
         .refreshable { await store.sync() }
         .safeAreaInset(edge: .bottom) {
-            if let e = active, !showPlayer {
-                MiniPlayer(engine: e, open: { showPlayer = true }, close: closePlayer)
+            if let e = active {
+                MiniPlayer(engine: e, zoom: playerZoom, open: { showPlayer = true }, close: closePlayer)
             }
         }
         .onChange(of: scenePhase) { _, p in
@@ -71,6 +77,8 @@ struct HomeView: View {
         .task {
             if recognitionMode == "tuned" { recognitionMode = "whisper" }    // the old Apple custom model
             whisper.loadIfDownloaded()
+            Log.write("iOS \(UIDevice.current.systemVersion); the player opens "
+                      + (playerZooms ? "with the zoom" : "as a sheet"), "ui")
         }
         .shakeForLog()
         .background(Theme.bg.ignoresSafeArea())
@@ -85,13 +93,12 @@ struct HomeView: View {
                 Log.write("import picker failed: \(error)", "ui")
             }
         }
-        // A sheet, so it can be swiped down — which now only hides it: the
-        // episode carries on under the mini-player.
-        .sheet(isPresented: $showPlayer) {
+        // Swiping it down only hides it: the episode carries on under the
+        // mini-player.
+        .playerCover(isPresented: $showPlayer, zoom: playerZoom, onDismiss: playerGone) {
             if let e = active {
                 PlayerView(engine: e, store: store, onClose: closePlayer)
                     .environmentObject(store)
-                    .presentationDragIndicator(.visible)
                     .presentationBackground(Theme.bg)
             }
         }
@@ -498,13 +505,26 @@ struct HomeView: View {
         active?.close()
         active = SessionEngine(pack: launch.pack, store: store, voiceMode: voiceMode,
                                headsetMic: headsetMic, resume: launch.resume)
-        showPlayer = true
+        // One turn later, so the mini-player is on screen for the player to
+        // zoom out of; in the same update there is nothing to zoom from.
+        DispatchQueue.main.async { showPlayer = true }
     }
 
     private func closePlayer() {
         active?.close()
-        showPlayer = false
-        active = nil
+        if showPlayer {
+            closing = true
+            showPlayer = false        // playerGone() clears it once the player has folded away
+        } else {
+            active = nil
+        }
+    }
+
+    private func playerGone() {
+        if closing {
+            closing = false
+            active = nil
+        }
     }
 }
 
@@ -748,6 +768,7 @@ struct ResumeSheet: View {
 /// what's playing, where, pause/resume, and the X that ends it. Tap to reopen.
 struct MiniPlayer: View {
     @ObservedObject var engine: SessionEngine
+    let zoom: Namespace.ID
     let open: () -> Void
     let close: () -> Void
 
@@ -784,6 +805,7 @@ struct MiniPlayer: View {
         .frame(height: 62)
         .background(Theme.raised, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Theme.line))
+        .playerZoomSource(zoom)
         .padding(.horizontal, 12)
         .padding(.bottom, 6)
     }
@@ -801,5 +823,57 @@ struct MiniPlayer: View {
         if engine.phase == .finished { return "Finished — tap for your results" }
         let paused = engine.phase == .paused ? " · paused" : ""
         return "\(engine.pack.header.slug.uppercased()) · drill \(engine.drillLabel)\(paused)"
+    }
+}
+
+// MARK: - the player opening out of the mini-player
+
+// From the feedback: swiped down, the player sheet slid all the way off the
+// screen and only then did the mini-player appear. From iOS 18 the player is
+// full screen with the zoom transition instead: it grows out of the mini-player,
+// and swiped down it shrinks under the finger back into it. iOS 17 has no zoom,
+// and a full-screen player can't be swiped away there, so it keeps the sheet.
+private let playerZoomID = "player"
+
+var playerZooms: Bool {
+    if #available(iOS 18.0, *) { return true }
+    return false
+}
+
+extension View {
+    /// Marks the mini-player as where the player zooms from and folds back to.
+    @ViewBuilder
+    func playerZoomSource(_ namespace: Namespace.ID) -> some View {
+        if #available(iOS 18.0, *) {
+            matchedTransitionSource(id: playerZoomID, in: namespace) { source in
+                source.clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            }
+        } else {
+            self
+        }
+    }
+
+    /// Presents the player: zooming full screen from iOS 18, a sheet before.
+    @ViewBuilder
+    func playerCover<Player: View>(isPresented: Binding<Bool>, zoom namespace: Namespace.ID,
+                                   onDismiss: @escaping () -> Void,
+                                   @ViewBuilder player: @escaping () -> Player) -> some View {
+        if #available(iOS 18.0, *) {
+            fullScreenCover(isPresented: isPresented, onDismiss: onDismiss) {
+                player()
+                    // a full-screen cover has no grabber of its own; this one
+                    // says it can be swiped down, as the sheet's did
+                    .overlay(alignment: .top) {
+                        Capsule().fill(Theme.lineStrong).frame(width: 36, height: 5)
+                            .padding(.top, 4)
+                            .allowsHitTesting(false)
+                    }
+                    .navigationTransition(.zoom(sourceID: playerZoomID, in: namespace))
+            }
+        } else {
+            sheet(isPresented: isPresented, onDismiss: onDismiss) {
+                player().presentationDragIndicator(.visible)
+            }
+        }
     }
 }
