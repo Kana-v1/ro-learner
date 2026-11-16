@@ -40,6 +40,11 @@ def recall_pause(romanian):
 # odd function word (unde, cum) use the headroom to eight.
 NEW_ITEM_CAP = 8
 
+# A miss asked cold again and again only rehearses the failure ("after 6 times
+# it's obvious I don't remember floor and ceiling"). From this many misses on,
+# review_auto() plays the answer first and asks for it at the end of the block.
+STUBBORN_MISSES = 3
+
 VOICE = {"nar": "en_narrator", "m": "ro_male", "f": "ro_female",
          "dana": "ro_dana", "radu": "ro_radu", "elena": "ro_elena"}
 
@@ -105,6 +110,9 @@ class Episode:
         # New items this episode introduces, registered into state.json on emit
         # with a canonical cue/answer for later review. Populated by new_item().
         self.new = []
+        # Old words taught again as words (relearn()); registered like new
+        # items but outside the new-item cap.
+        self.relearned = []
 
     @property
     def slug(self):
@@ -191,6 +199,19 @@ class Episode:
         self.new.append({"name": name, "cue": cue, "answer": answer,
                          "voice": voice})
 
+    def relearn(self, name, cue, answer, voice="m", teach_ro=None, teach_en=None):
+        """Teach an old word again as a word, the way new_item() does.
+
+        For a word the learner keeps missing because it was only ever met
+        inside a long sentence (podea and tavan lived in a nine-word drill
+        from 4A). It is registered for spaced review from this episode on,
+        but does not count against the new-item cap: the learner has met it.
+        """
+        self.teach(teach_ro or answer, teach_en or cue, voice)
+        self.recall_word(cue, answer, voice)
+        self.relearned.append({"name": name, "cue": cue, "answer": answer,
+                               "voice": voice})
+
     def dialogue(self, lines, pause=650):
         for who, line in lines:
             self.ro(line, who, NORMAL, pause, type_=f"line_{who}")
@@ -255,7 +276,19 @@ class Episode:
         self.narr(intro or "Before we finish, things from earlier episodes come "
                           "back — answer each out loud before you hear it.",
                   pause=P_SECTION, chapter="Review")
-        for it in due:
+        # Stubborn misses are heard first and asked last, so a few other
+        # answers sit between hearing one and producing it.
+        stubborn = [s for s in struggles if s.get("misses", 0) >= STUBBORN_MISSES]
+        if stubborn:
+            self.narr("A few of these keep slipping, so hear them first. Say "
+                      "each one after the voice.", pause=P_SHORT)
+            for s in stubborn:
+                self.add("gloss", s["cue"], "en", "nar", NORMAL, P_SHORT)
+                self.ro(s["answer"], s["g"], SLOW,
+                        max(P_REPEAT, recall_pause(s["answer"]) - 1000))
+            self.narr("Now from memory.", pause=800)
+        ids = {id(s) for s in stubborn}
+        for it in [it for it in due if id(it) not in ids] + stubborn:
             self.drill(it["cue"], it["answer"], it["g"])
 
     # ── emit and check ───────────────────────────────────────────────────────
@@ -286,7 +319,7 @@ class Episode:
         if self.slug not in state["sequence"]:
             state["sequence"].append(self.slug)
             print(f"  note: appended {self.slug} to sequence (was missing)")
-        for it in self.new:
+        for it in self.new + self.relearned:
             state["items"][it["name"]] = {
                 "intro": self.slug, "g": it["voice"],
                 "cue": it["cue"], "answer": it["answer"]}
@@ -332,6 +365,9 @@ class Episode:
         introduced = [it["name"] for it in self.new]
         print(f"new items       : {len(introduced)} "
               f"(cap {NEW_ITEM_CAP})  {', '.join(introduced) or '—'}")
+        if self.relearned:
+            print(f"relearned       : "
+                  f"{', '.join(it['name'] for it in self.relearned)}")
 
         # Rule: the English narrator never speaks Romanian. Catch the diacritic
         # forms left in an English-voice segment (narration/gloss/prompt); the

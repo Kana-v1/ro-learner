@@ -60,6 +60,15 @@ enum Grader {
 
     static func tokens(_ s: String) -> [String] { words(s).map(\.key) }
 
+    /// The learner passing: the answer ends in "nu știu" (Whisper sometimes
+    /// writes "no stiu"). A second try would only make them say it again.
+    static func isPass(_ heard: String?) -> Bool {
+        guard let heard else { return false }
+        let t = tokens(heard)
+        guard t.count >= 2, t[t.count - 1] == "stiu" else { return false }
+        return t[t.count - 2] == "nu" || t[t.count - 2] == "no"
+    }
+
     /// The recogniser writes numbers as digits ("Am 3 copii"); the answers
     /// spell them out. A digit matches any spelling of its number — 1 is also
     /// the articles un and o, 2 both doi and două, 9 also nouă (new).

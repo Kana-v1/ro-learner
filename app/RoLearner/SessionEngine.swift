@@ -674,6 +674,12 @@ final class SessionEngine: ObservableObject {
             persist()
             // "Almost" is not retried: the fix is shown and the answer plays.
             if v == .correct || v == .close || record.items[idx].correction != nil { break }
+            // "Nu știu" means the learner doesn't know it: no retry, straight
+            // to the answer (from the learner's feedback on 11C).
+            if Grader.isPass(heard) || Grader.isPass(other?.heard) {
+                Log.write("drill \(drillLabel): pass (nu știu), no retry", "drill")
+                break
+            }
         }
 
         let outcome = record.items[idx].outcome

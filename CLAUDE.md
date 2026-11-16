@@ -222,6 +222,7 @@ word with the right stem but a different ending, judged relative to word
 length; or an `almost=` phrasing): the fix is shown and there is no retry;
 **not quite** (a content word missing or different): an immediate second try.
 Diacritics are folded, dropped subject pronouns are fine, `e` = `este`.
+An answer ending in "nu știu" is a pass: no retry, straight to the answer.
 The grader also absorbs how recognisers format things: digits for numbers
 ("3" = trei), clock times ("9:30" = nouă și jumătate), "RON" for lei, two
 words run into one ("copiilor" = copiii lor), and a dropped de/la/în/pe/cu/și.
@@ -273,6 +274,16 @@ drill. It resumes where it stopped.
   A review also skips misses the same episode already asks in its own drills.
   Never rebuild an episode that is already rendered: a rebuild re-runs
   `review_auto()` and changes the script under the rendered audio.
+- **Stubborn misses are heard before they're asked.** (From the feedback
+  after 11D: "after 6 times it's obvious I don't remember floor and
+  ceiling".) A miss asked cold again and again only rehearses the failure,
+  so from `STUBBORN_MISSES` (3) misses on, `review_auto()` plays the answer
+  first and asks for it at the end of the block. When a miss is a long
+  sentence whose words were never taught as words (4A's "Aceasta e o podea,
+  iar acesta e un tavan"), re-teach the words with `ep.relearn()` (like
+  `new_item()`, outside the new-item cap, back on the spacing schedule) in
+  an episode where they fit, then the halves, then the sentence.
+  `build_episode_11g.py` does this.
 - **When results show a lesson wasn't held** (first-time-right well under
   half), build a repair episode before moving on: no new items, the missed
   answers verbatim, each weak word on an expanding ladder, the error patterns

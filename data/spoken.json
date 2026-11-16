@@ -676,6 +676,72 @@
    "gloss": "How lovely!",
    "note": "The everyday exclamation at a view, a gift, good news.",
    "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Cad de oboseală.",
+   "spoken": "Sunt obosit. / Sunt obosită.",
+   "gloss": "I'm tired.",
+   "note": "The book's 'a cădea de oboseală' is understood and used, but sounds a little emphatic or written; the everyday way is simply 'sunt obosit' (a man), 'sunt obosită' (a woman), or 'sunt foarte obosit'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Mor de somn.",
+   "gloss": "I'm dying to sleep — I can barely keep my eyes open.",
+   "note": "Common, friendly-informal exaggeration among family and friends; also 'pic de somn'. Not for a formal setting.",
+   "confidence": "check"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Nu știu.",
+   "gloss": "I don't know.",
+   "note": "Already heard in the learner's own answers; the honest reply to a question you can't answer. Neutral in every setting.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "De ce?",
+   "spoken": "De ce nu?",
+   "gloss": "Why not?",
+   "note": "The everyday yes to a suggestion ('Bem o cafea? — De ce nu?'). Neutral.",
+   "confidence": "high"
+  }
+ ],
+ "12": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Merg cu troleibuzul.",
+   "spoken": "Merg cu metroul.",
+   "gloss": "I go by metro.",
+   "note": "The book is set in Chișinău, which has no metro; in Bucharest the metro is how most people cross the city. Also 'Iau metroul' (I take the metro).",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ajung în zece minute.",
+   "gloss": "I'll be there in ten minutes.",
+   "note": "The everyday phone message when running to meet someone; the present tense does the future's job. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce faci astăzi?",
+   "spoken": "Ce faci?",
+   "gloss": "How are you? / What are you up to?",
+   "note": "Between friends 'Ce faci?' is first of all a greeting, like 'how are you?'; the reply is 'Bine, tu?'. For plans people add the time: 'Ce faci diseară?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "astă seară / în seara asta",
+   "spoken": "diseară",
+   "gloss": "tonight, this evening",
+   "note": "Both book forms are correct, but in everyday speech 'diseară' is by far the most common: 'Ce faci diseară?'.",
+   "confidence": "high"
   }
  ]
 }
