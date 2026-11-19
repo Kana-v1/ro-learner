@@ -250,6 +250,10 @@ final class Listener {
     /// When the last listen opened (CFAbsoluteTime), to time the voice onset.
     private(set) var lastStartedAt = 0.0
     private(set) var lastWhisperSeconds = 0.0
+    /// The last answer as recorded (16 kHz mono), whichever recogniser ran,
+    /// so it can be saved and listened to.
+    private(set) var lastAudio: [Float] = []
+    private var takenAudio: [Float]?
 
     var isAvailable: Bool { recognizer?.isAvailable ?? false }
     var onDevice: Bool { recognizer?.supportsOnDeviceRecognition ?? false }
@@ -402,8 +406,10 @@ final class Listener {
         self.completion = completion
         self.onPartial = onPartial
         // A quarter-second of what came just before, so an answer started as
-        // the cue ended keeps its first word.
-        box.begin(req, capture: useWhisper, preroll: 0.25, armAfter: settle)
+        // the cue ended keeps its first word. Always recorded: the answer is
+        // kept even when Whisper doesn't run.
+        takenAudio = nil
+        box.begin(req, capture: true, preroll: 0.25, armAfter: settle)
         lastStartedAt = startedAt
         task = recognizer.recognitionTask(with: req, resultHandler: Self.handler(for: self, gen: gen))
         ticker = Task { [weak self] in
@@ -510,8 +516,9 @@ final class Listener {
         request?.endAudio()
         let now = CFAbsoluteTimeGetCurrent()
         finalDeadline = now + 2.0
-        guard useWhisper else { return }
         let audio = box.stopCapture()
+        takenAudio = audio
+        guard useWhisper else { return }
         // Only when the mic heard a voice: Whisper invents text for silence.
         guard box.reading().voicedSeconds >= 0.15, audio.count >= 1_600 else { return }
         whisperDone = false
@@ -544,6 +551,8 @@ final class Listener {
         lastWasFinal = gotFinal
         lastWhisper = whisperText
         lastUsedWhisper = useWhisper
+        lastAudio = takenAudio ?? box.stopCapture()
+        takenAudio = nil
         cancelCurrent()
         done?(heard)
     }

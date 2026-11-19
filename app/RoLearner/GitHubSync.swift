@@ -182,6 +182,61 @@ enum GitHubSync {
         return (outcome, baseline)
     }
 
+    /// Add several files in one commit (the contents API would make one commit
+    /// per file): blobs, a tree on top of the branch's, a commit, then move
+    /// the branch. If the branch moved meanwhile, the move fails and the next
+    /// sync tries again.
+    static func commit(repo: String, token: String, files: [(path: String, data: Data)],
+                       message: String) async -> Bool {
+        guard !files.isEmpty else { return true }
+        do {
+            let (repoInfo, rc) = try await json(request("/repos/\(repo)", token: token))
+            guard rc == 200, let branch = (repoInfo as? [String: Any])?["default_branch"] as? String else {
+                Log.write("recordings: repo lookup failed: HTTP \(rc)", "sync"); return false
+            }
+            let (ref, refCode) = try await json(request("/repos/\(repo)/git/ref/heads/\(branch)", token: token))
+            guard refCode == 200,
+                  let head = ((ref as? [String: Any])?["object"] as? [String: Any])?["sha"] as? String else {
+                Log.write("recordings: branch lookup failed: HTTP \(refCode)", "sync"); return false
+            }
+            let (headCommit, hc) = try await json(request("/repos/\(repo)/git/commits/\(head)", token: token))
+            guard hc == 200,
+                  let baseTree = ((headCommit as? [String: Any])?["tree"] as? [String: Any])?["sha"] as? String else {
+                Log.write("recordings: commit lookup failed: HTTP \(hc)", "sync"); return false
+            }
+            var entries: [[String: Any]] = []
+            for f in files {
+                let (blob, bc) = try await json(request("/repos/\(repo)/git/blobs", token: token, method: "POST",
+                                                        body: ["content": f.data.base64EncodedString(),
+                                                               "encoding": "base64"]))
+                guard bc == 201, let sha = (blob as? [String: Any])?["sha"] as? String else {
+                    Log.write("recordings: blob \(f.path) failed: HTTP \(bc)", "sync"); return false
+                }
+                entries.append(["path": f.path, "mode": "100644", "type": "blob", "sha": sha])
+            }
+            let (tree, tc) = try await json(request("/repos/\(repo)/git/trees", token: token, method: "POST",
+                                                    body: ["base_tree": baseTree, "tree": entries]))
+            guard tc == 201, let treeSha = (tree as? [String: Any])?["sha"] as? String else {
+                Log.write("recordings: tree failed: HTTP \(tc)", "sync"); return false
+            }
+            let (made, mc) = try await json(request("/repos/\(repo)/git/commits", token: token, method: "POST",
+                                                    body: ["message": message, "tree": treeSha, "parents": [head]]))
+            guard mc == 201, let commitSha = (made as? [String: Any])?["sha"] as? String else {
+                Log.write("recordings: commit failed: HTTP \(mc)", "sync"); return false
+            }
+            let (_, uc) = try await json(request("/repos/\(repo)/git/refs/heads/\(branch)", token: token,
+                                                 method: "PATCH", body: ["sha": commitSha]))
+            guard uc == 200 else {
+                Log.write("recordings: moving \(branch) failed: HTTP \(uc)", "sync"); return false
+            }
+            Log.write("uploaded \(files.count) recording(s): \(message)", "sync")
+            return true
+        } catch {
+            Log.write("recordings upload failed: \(error)", "sync")
+            return false
+        }
+    }
+
     /// Create or replace a file through the contents API.
     private static func put(repo: String, token: String, path: String, data: Data, message: String) async -> Bool {
         do {

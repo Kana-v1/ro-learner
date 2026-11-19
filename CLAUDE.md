@@ -205,10 +205,18 @@ listens, grades the words, speaks the verdict, then plays the episode's own
 answer. Recognition (Settings → Recognition) defaults to **Whisper on the
 phone** (`WhisperEngine.swift`, WhisperKit, OpenAI's large-v3 2024-09-30 model,
 626 MB, downloaded from Settings): each recorded answer is transcribed with
-the drill's answer as Whisper's prompt. Apple's recogniser runs alongside to
-decide when the answer is over, and its transcript and verdict are saved next
-to Whisper's on every attempt (`engine`, `other`), so `ingest_results.py`
-prints how often each would have counted the same answers right. Apple's own
+the drill's answer as Whisper's prompt. Apple's recogniser runs alongside: it
+decides when the answer is over, and it grades too: an answer counts if
+**either** recogniser heard it right (`engine` = the one graded on, `other` =
+the other's transcript and verdict), so `ingest_results.py` prints how often
+each would have counted the same answers right. Every answer is recorded
+(16 kHz AAC, `audio` on the attempt, playable in Results; the last 10 sessions
+stay on the phone). The recordings of problem drills (a miss, a correction,
+the two recognisers disagreeing) go up to the data repo's
+`recordings/<session key>/`, one commit per session; listen to them, or run
+Whisper on them on the PC, before blaming the learner or the recogniser.
+Sessions also carry `activeSeconds`: time practising, answers included,
+pauses not. Apple's own
 custom language models were tried and cannot work for Romanian: iOS reports
 no Romanian pronunciation data and refuses to build one. Each listen ends
 with `endAudio()` and the *final* result: partial results trail the audio, and

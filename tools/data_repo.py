@@ -41,9 +41,16 @@ def _git(*args):
 
 def upload_episode(path):
     """Upload (or replace) one .rolesson as an asset of the release."""
-    subprocess.run([GH, "release", "upload", "episodes", str(path), "-R", REPO, "--clobber"],
-                   env=_env(), check=True, capture_output=True, text=True)
-    print(f"  -> GitHub {REPO}, release 'episodes': {Path(path).name}")
+    # One retry: an upload occasionally drops mid-way while the next succeeds.
+    for attempt in (1, 2):
+        r = subprocess.run([GH, "release", "upload", "episodes", str(path), "-R", REPO, "--clobber"],
+                           env=_env(), capture_output=True, text=True)
+        if r.returncode == 0:
+            print(f"  -> GitHub {REPO}, release 'episodes': {Path(path).name}")
+            return
+        print(f"  upload of {Path(path).name} failed (try {attempt}): {r.stderr.strip()}")
+    raise SystemExit(f"upload failed; retry with: python3 tools/make_lesson_pack.py "
+                     f"episodes/{Path(path).stem}.json")
 
 
 def pull():

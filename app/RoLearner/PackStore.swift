@@ -226,11 +226,33 @@ final class PackStore: ObservableObject {
         }
         let now = Date()
         for k in outcome.pushed { status.sent[k] = now }
+        if let gitHub { await sendRecordings(repo: gitHub.repo, token: gitHub.token) }
         saveStatus()
         syncProblem = outcome.problem
         Log.write("sync done: \(outcome.lessons.count) lesson(s), \(outcome.notes.count) note(s) in, \(outcome.pushed.count)/\(outgoing.count) result(s) out\(outcome.problem.map { "; problem: \($0)" } ?? "")", "drive")
         lastSync = now
         reload()
+    }
+
+    // MARK: recordings
+
+    /// The recordings of the problem attempts (misses, corrections, the two
+    /// recognisers disagreeing) go to recordings/<session>/ once the session's
+    /// results are up, in one commit per session. Marked "rec:<key>" in sent.
+    private func sendRecordings(repo: String, token: String) async {
+        for s in sessions where status.sent[s.key] != nil && status.sent["rec:" + s.key] == nil {
+            let files = s.problemRecordings.compactMap { name -> (path: String, data: Data)? in
+                guard let d = try? Data(contentsOf: Recording.url(session: s.key, file: name)) else { return nil }
+                return (path: "recordings/\(s.key)/\(name)", data: d)
+            }
+            if await GitHubSync.commit(repo: repo, token: token, files: files, message: "Recordings \(s.key)") {
+                status.sent["rec:" + s.key] = Date()
+            } else {
+                break      // the next sync tries again
+            }
+        }
+        let waiting = Set(sessions.filter { status.sent["rec:" + $0.key] == nil }.map(\.key))
+        Recording.prune(unsent: waiting)
     }
 
     // MARK: feedback

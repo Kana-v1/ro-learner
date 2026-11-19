@@ -123,6 +123,12 @@ struct Attempt: Codable {
     /// so the two can be compared from real sessions.
     var engine: String? = nil
     var other: OtherHearing? = nil
+    /// The recorded answer, a file in the session's recordings folder, so the
+    /// learner (and Claude) can hear what the recognisers were given.
+    var audio: String? = nil
+
+    /// Worth sending to Claude: a miss, or the two recognisers disagreeing.
+    var isProblem: Bool { verdict != .correct || (other.map { $0.verdict != verdict } ?? false) }
 }
 
 struct OtherHearing: Codable {
@@ -157,12 +163,23 @@ struct SessionRecord: Codable {
     var finished: Date?
     var mode: String          // "voice" or "tap"
     var items: [DrillResult]
+    /// Time spent in the episode, answers included, pauses not.
+    var activeSeconds: Double? = nil
 
     /// Stable id shared with ingest_results.py: episode + start time in whole
     /// seconds (the precision the ISO-8601 results file keeps).
     var key: String { "\(episode)_\(Int(started.timeIntervalSince1970))" }
     var mainItems: [DrillResult] { items.filter { $0.round == 0 } }
     var rightFirstTime: Int { mainItems.filter(\.rightFirstTime).count }
+
+    /// Recordings to send: every attempt at a drill that went wrong anywhere,
+    /// that was corrected by hand, or that the recognisers disagreed on.
+    var problemRecordings: [String] {
+        items.flatMap { it -> [String] in
+            let flagged = it.correction != nil || it.outcome != .correct || it.attempts.contains(where: \.isProblem)
+            return flagged ? it.attempts.compactMap(\.audio) : []
+        }
+    }
 }
 
 /// Where an unfinished episode stopped, so it can pick up there.

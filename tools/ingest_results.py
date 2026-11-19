@@ -160,8 +160,14 @@ def main():
         first = sum(1 for i in main_items if outcome(i) == "correct" and len(i.get("attempts", [])) <= 1)
         unheard = sum(1 for i in s["items"] for a in i.get("attempts", [])
                       if a["verdict"] == "no_answer" and a.get("voiced"))
+        active = s.get("activeSeconds")
+        # the problem attempts' audio, uploaded by the app beside the results
+        rec = data_repo.CLONE / "recordings" / key(s)
+        clips = len(list(rec.glob("*.m4a"))) if rec.is_dir() else 0
         print(f"  {s['started'][:16]}  {s['episode']:4} {s['mode']:5} {first}/{len(main_items)} right first time"
-              + (f", {unheard} answer(s) said but not recognised" if unheard else ""))
+              + (f", {active / 60:.0f} min practising" if active else "")
+              + (f", {unheard} answer(s) said but not recognised" if unheard else "")
+              + (f", {clips} recording(s) in {rec}" if clips else ""))
         # Whisper and Apple on the same answers: how often each one would
         # have counted it right
         both = [a for i in s["items"] for a in i.get("attempts", []) if a.get("other")]

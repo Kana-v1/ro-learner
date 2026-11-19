@@ -19,7 +19,7 @@ import SwiftUI
 final class SessionEngine: ObservableObject {
     enum Phase: Equatable { case idle, playing, paused, listening, secondTry, feedback, finished }
 
-    @Published private(set) var phase: Phase = .idle
+    @Published private(set) var phase: Phase = .idle { didSet { clock() } }
     @Published private(set) var position: Double = 0
     @Published private(set) var current: Drill?
     @Published private(set) var attempt = 1
@@ -82,6 +82,9 @@ final class SessionEngine: ObservableObject {
     private var releaseTimer: Task<Void, Never>?
     private var audioReleased = false
     private var closed = false
+    // The session clock: runs whenever the episode is under way (answers
+    // included), stops while paused. Folded into record.activeSeconds.
+    private var activeSince: Date?
 
     init(pack: Pack, store: PackStore, voiceMode: Bool, headsetMic: Bool, resume: Bool) {
         let resume = resume ? store.progress[pack.header.slug] : nil
@@ -261,6 +264,7 @@ final class SessionEngine: ObservableObject {
     /// `reason` is logged (the periodic save is not, to keep the log readable).
     func persist(_ reason: String? = nil) {
         lastPersist = Date()
+        foldClock()
         guard phase != .idle, phase != .finished else {
             if let reason { Log.write("not saving position (\(reason)): phase \(phase)", "player") }
             return
@@ -624,6 +628,7 @@ final class SessionEngine: ObservableObject {
                     let v = Grader.judge(d, heard: heard).verdict
                     return v == .correct || v == .close
                 }) { [weak self] partial in self?.liveHeard = partial }
+            let audio = listener.lastAudio
             if Task.isCancelled { return }
             // With Whisper running too, the answer counts as well as the better
             // of the two heard it. They miss different things: on 241 answers
@@ -656,9 +661,14 @@ final class SessionEngine: ObservableObject {
             let v = judgement.verdict
             let meter = listener.lastMeter
             let voiced = meter.voicedSeconds >= 0.15
+            let file = audio.isEmpty ? nil : "i\(idx)-s\(d.id)-a\(n).m4a"
+            if let file {
+                let url = Recording.url(session: record.key, file: file)
+                Task.detached(priority: .utility) { Recording.write(audio, to: url) }
+            }
             record.items[idx].attempts.append(Attempt(heard: heard, score: score, verdict: v,
                                                       hint: judgement.hint, voiced: voiced,
-                                                      engine: engineName, other: other))
+                                                      engine: engineName, other: other, audio: file))
             lastHeard = heard
             lastVerdict = v
             lastHint = judgement.hint
@@ -783,6 +793,25 @@ final class SessionEngine: ObservableObject {
     }
 
     // MARK: helpers
+
+    private func clock() {
+        let running = phase != .idle && phase != .paused && phase != .finished
+        if running {
+            if activeSince == nil { activeSince = Date() }
+        } else {
+            foldClock()
+            activeSince = nil
+        }
+    }
+
+    /// Add the time since the clock last started to the record, keeping it
+    /// running: a session cut off without a pause still keeps its time.
+    private func foldClock() {
+        guard let since = activeSince else { return }
+        let now = Date()
+        record.activeSeconds = (record.activeSeconds ?? 0) + now.timeIntervalSince(since)
+        activeSince = now
+    }
 
     private func cancelFlow() {
         flow?.cancel()

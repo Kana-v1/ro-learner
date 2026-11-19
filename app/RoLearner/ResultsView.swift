@@ -163,7 +163,8 @@ private struct SessionRow: View {
 
     private func summary(_ main: [DrillResult]) -> String {
         let when = session.started.formatted(date: .abbreviated, time: .shortened)
-        if session.mode == "voice" { return "\(when) · \(session.rightFirstTime) of \(main.count) right first time" }
+        let time = session.activeSeconds.map { " · \(minutes($0))" } ?? ""
+        if session.mode == "voice" { return "\(when)\(time) · \(session.rightFirstTime) of \(main.count) right first time" }
         return "\(when) · \(main.filter { $0.outcome == .missed }.count) marked wrong"
     }
 
@@ -190,6 +191,7 @@ extension SessionRecord: Identifiable {
 struct SessionDetailView: View {
     let session: SessionRecord
     @Environment(\.dismiss) private var dismiss
+    @StateObject private var recordings = RecordingPlayer()
 
     var body: some View {
         ScrollView {
@@ -198,7 +200,8 @@ struct SessionDetailView: View {
                     CircleIconButton(symbol: "chevron.down", label: "Close") { dismiss() }
                     VStack(alignment: .leading, spacing: 2) {
                         Text("\(session.episode.uppercased()) · \(session.title)").font(Theme.display(22))
-                        Text(session.started.formatted(date: .abbreviated, time: .shortened))
+                        Text(session.started.formatted(date: .abbreviated, time: .shortened)
+                             + (session.activeSeconds.map { " · \(minutes($0)) of practice" } ?? ""))
                             .font(.system(size: 13)).foregroundStyle(Theme.muted)
                     }
                 }
@@ -209,7 +212,8 @@ struct SessionDetailView: View {
                 }
                 // by position: going back to a drill can answer it twice in one session
                 ForEach(Array(session.items.enumerated()), id: \.offset) { _, it in
-                    DrillResultCard(item: it, voice: session.mode == "voice")
+                    DrillResultCard(item: it, voice: session.mode == "voice", session: session.key,
+                                    recordings: recordings)
                 }
             }
             .padding(20)
@@ -217,6 +221,7 @@ struct SessionDetailView: View {
         .background(Theme.bg.ignoresSafeArea())
         .foregroundStyle(Theme.text)
         .shakeForLog()
+        .onDisappear { recordings.stop() }
     }
 
     private var headline: String {
@@ -236,6 +241,8 @@ struct SessionDetailView: View {
 private struct DrillResultCard: View {
     let item: DrillResult
     let voice: Bool
+    let session: String
+    @ObservedObject var recordings: RecordingPlayer
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -254,8 +261,23 @@ private struct DrillResultCard: View {
             }
             if voice {
                 ForEach(Array(item.attempts.enumerated()), id: \.offset) { k, a in
-                    Text("\(k == 0 ? "1st" : "2nd") try: heard \(a.heard.map { "“\($0)”" } ?? "nothing") → \(a.verdict.title)")
-                        .font(.system(size: 13)).foregroundStyle(Theme.muted)
+                    HStack(spacing: 8) {
+                        Text("\(k == 0 ? "1st" : "2nd") try: heard \(a.heard.map { "“\($0)”" } ?? "nothing") → \(a.verdict.title)")
+                            .font(.system(size: 13)).foregroundStyle(Theme.muted)
+                        Spacer(minLength: 0)
+                        if let file = a.audio {
+                            let url = Recording.url(session: session, file: file)
+                            if FileManager.default.fileExists(atPath: url.path) {
+                                Button { recordings.toggle(url) } label: {
+                                    Image(systemName: recordings.playing == url ? "stop.circle.fill" : "play.circle.fill")
+                                        .font(.system(size: 26))
+                                        .foregroundStyle(Theme.accent)
+                                }
+                                .buttonStyle(.plain)
+                                .accessibilityLabel(recordings.playing == url ? "Stop" : "Play your answer")
+                            }
+                        }
+                    }
                 }
             }
             if let c = item.correction {
@@ -267,4 +289,10 @@ private struct DrillResultCard: View {
         .background(Theme.surface, in: RoundedRectangle(cornerRadius: 16))
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(Theme.line))
     }
+}
+
+/// "34 min", or "1 h 05 min".
+func minutes(_ seconds: Double) -> String {
+    let m = Int((seconds / 60).rounded())
+    return m >= 60 ? String(format: "%d h %02d min", m / 60, m % 60) : "\(m) min"
 }
