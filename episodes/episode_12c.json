@@ -1,0 +1,1821 @@
+{
+ "episode": 12,
+ "part": "c",
+ "lesson": 12,
+ "title": "Poftim? Nu înțeleg.",
+ "source": "Limba care ne unește, nivelul I — Lecția 12 (partea C)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "la telefon": "on the phone — a chunk",
+  "un bilet": "a ticket"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Merg cu troleibuzul.",
+   "spoken": "Merg cu metroul.",
+   "gloss": "I go by metro.",
+   "note": "The book is set in Chișinău, which has no metro; in Bucharest the metro is how most people cross the city. Also 'Iau metroul' (I take the metro).",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ajung în zece minute.",
+   "gloss": "I'll be there in ten minutes.",
+   "note": "The everyday phone message when running to meet someone; the present tense does the future's job. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce faci astăzi?",
+   "spoken": "Ce faci?",
+   "gloss": "How are you? / What are you up to?",
+   "note": "Between friends 'Ce faci?' is first of all a greeting, like 'how are you?'; the reply is 'Bine, tu?'. For plans people add the time: 'Ce faci diseară?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "astă seară / în seara asta",
+   "spoken": "diseară",
+   "gloss": "tonight, this evening",
+   "note": "Both book forms are correct, but in everyday speech 'diseară' is by far the most common: 'Ce faci diseară?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Poftiți!",
+   "spoken": "Poftim?",
+   "gloss": "Pardon? / Sorry, what?",
+   "note": "With a rising tone, the everyday polite way to ask someone to repeat; the same word as 'here you are'. Neutral, fine with strangers.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Puteți repeta, vă rog?",
+   "gloss": "Can you repeat that, please?",
+   "note": "Polite request to a stranger or at a counter; between friends 'Poți să repeți?' or just 'Poftim?'.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ce faci, Dana?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine, tu? Diseară lucrez la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună seara! O informație, vă rog. Când începe spectacolul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La ora șapte.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Poftim? Nu înțeleg.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La ora șapte! E un spectacol interesant.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ce cere domnul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Un bilet. Mulți spectatori astă seară!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Și cine răspunde la telefon?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s011",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Eu răspund! Alo?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s012",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dana works the theatre box office tonight, and everyone wants something from her.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s013",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu înțeleg.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't understand.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Nu înțeleg.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I understand",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s018",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "înțeleg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O informație, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Some information, please.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O informație, vă rog.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of information",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s023",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o informație",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cer ajutor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I ask for help.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cer ajutor.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I ask for",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s028",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "cer",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un spectacol interesant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "An interesting show.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un spectacol interesant.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "interesting",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s033",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "interesant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Răspund la telefon.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I answer the phone.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Răspund la telefon.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I answer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s038",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "răspund",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un spectator la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A spectator at the theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s041",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un spectator la teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a spectator, someone in the audience",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un spectator",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I answer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "răspund",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "interesting",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "interesant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I understand",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înțeleg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a spectator",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un spectator",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I ask for",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cer",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of information",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o informație",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Understand goes exactly like go and arrive. You haven't heard these — build them.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Understand, like go"
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you understand — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înțelegi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you understand? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Înțelegi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she understands",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s063",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înțelege",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s064",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you understand — politely",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s065",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "înțelegeți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s066",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I don't understand.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s067",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu înțeleg.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s068",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Three verbs of the same shape. Mixed.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "merg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I understand",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "înțeleg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I arrive",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ajung",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you go — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mergi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you understand — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "înțelegi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he arrives",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ajunge",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ask for is plain. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Ask for"
+  },
+  {
+   "id": "s082",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ce ceri?",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you ask for — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "ceri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she asks for",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "What is the gentleman asking for?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce cere domnul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "He's asking for a ticket.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cere un bilet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm asking for some information.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cer o informație.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Answer changes a sound, the way see does. To a friend — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Answer, by ear"
+  },
+  {
+   "id": "s094",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Răspunzi la telefon?",
+   "rate": 0.8,
+   "pause_after_ms": 1900
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you answer — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "răspunzi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you answering the phone? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Răspunzi la telefon?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She answers is plain again. Build it.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she answers",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "răspunde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who's answering the phone?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine răspunde la telefon?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I answer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s105",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "răspund",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s106",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you answer — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s107",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "răspunzi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he answers",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "răspunde",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s110",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Interesting, with a show and with a book. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Interesting"
+  },
+  {
+   "id": "s111",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un spectacol interesant. O carte interesantă.",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an interesting book",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o carte interesantă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "It's an interesting show.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "E un spectacol interesant.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And many spectators — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s117",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mulți spectatori.",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "many spectators",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mulți spectatori",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Lots of spectators this evening!",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mulți spectatori astă seară!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s123",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Some information, please.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s124",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O informație, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s125",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "When does the show begin?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s126",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Când începe spectacolul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s127",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Pardon? I don't understand.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s128",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftim? Nu înțeleg.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s129",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you understand? Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s130",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Înțelegeți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s131",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm asking for help.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s132",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cer ajutor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s133",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I answer the phone.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s134",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Răspund la telefon.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s135",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This evening I work at the theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s136",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Diseară lucrez la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Astă seară lucrez la teatru."
+   ]
+  },
+  {
+   "id": "s137",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How are you? — Fine, you?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s138",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce faci? — Bine, tu?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s139",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Every spectator asks for a ticket.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s140",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiecare spectator cere un bilet.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s141",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The book is interesting.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s142",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cartea e interesantă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s143",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm staying home this evening.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s144",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Diseară rămân acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Rămân acasă diseară.",
+    "Astă seară rămân acasă.",
+    "Rămân acasă astă seară."
+   ]
+  },
+  {
+   "id": "s145",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. You know the word for here you are. Said as a question, it's how people say pardon? — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s146",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftim?",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s147",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And politely, when you need it again: can you repeat, please? Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s148",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Puteți repeta, vă rog?",
+   "rate": 0.8,
+   "pause_after_ms": 1900
+  },
+  {
+   "id": "s149",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s150",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s151",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few of these keep slipping, so hear them first. Say each one after the voice.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s152",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s153",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s154",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "vacant, open",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s155",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vacant",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s156",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have fifteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s157",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am cincisprezece lei.",
+   "rate": 0.8,
+   "pause_after_ms": 2950
+  },
+  {
+   "id": "s158",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a well-behaved girl",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s159",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o fată cuminte",
+   "rate": 0.8,
+   "pause_after_ms": 2950
+  },
+  {
+   "id": "s160",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now from memory.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s161",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I prefer",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s162",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "prefer",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s163",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I find out",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s164",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "aflu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s165",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go in",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s166",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "intru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s167",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "delicious",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s168",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "delicios",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s169",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s170",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s171",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "vacant, open",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s172",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vacant",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s173",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have fifteen lei.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s174",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am cincisprezece lei.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s175",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a well-behaved girl",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s176",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o fată cuminte",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s177",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The box office again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s178",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ce faci, Dana?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s179",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine, tu? Diseară lucrez la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s180",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună seara! O informație, vă rog. Când începe spectacolul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s181",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La ora șapte.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s182",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Poftim? Nu înțeleg.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s183",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La ora șapte! E un spectacol interesant.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s184",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ce cere domnul?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s185",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Un bilet. Mulți spectatori astă seară!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s186",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Și cine răspunde la telefon?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s187",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Eu răspund! Alo?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s188",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Ask, understand, answer — and a box office full of spectators.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s189",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

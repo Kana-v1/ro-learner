@@ -61,7 +61,11 @@
   "11g",
   "11h",
   "12a",
-  "12b"
+  "12b",
+  "12c",
+  "12d",
+  "12e",
+  "12f"
  ],
  "items": {
   "01-1": {
@@ -1815,205 +1819,160 @@
    "g": "f",
    "cue": "every evening",
    "answer": "în fiecare seară"
+  },
+  "înțeleg": {
+   "intro": "12c",
+   "g": "m",
+   "cue": "I understand",
+   "answer": "înțeleg"
+  },
+  "informație": {
+   "intro": "12c",
+   "g": "f",
+   "cue": "a piece of information",
+   "answer": "o informație"
+  },
+  "cer": {
+   "intro": "12c",
+   "g": "m",
+   "cue": "I ask for",
+   "answer": "cer"
+  },
+  "interesant": {
+   "intro": "12c",
+   "g": "f",
+   "cue": "interesting",
+   "answer": "interesant"
+  },
+  "răspund": {
+   "intro": "12c",
+   "g": "m",
+   "cue": "I answer",
+   "answer": "răspund"
+  },
+  "spectator": {
+   "intro": "12c",
+   "g": "f",
+   "cue": "a spectator, someone in the audience",
+   "answer": "un spectator"
+  },
+  "aduc": {
+   "intro": "12d",
+   "g": "m",
+   "cue": "I bring",
+   "answer": "aduc"
+  },
+  "înapoi": {
+   "intro": "12d",
+   "g": "f",
+   "cue": "back — returning",
+   "answer": "înapoi"
+  },
+  "scriu": {
+   "intro": "12d",
+   "g": "m",
+   "cue": "I write",
+   "answer": "scriu"
+  },
+  "duc": {
+   "intro": "12d",
+   "g": "f",
+   "cue": "I take — somewhere",
+   "answer": "duc"
+  },
+  "spun": {
+   "intro": "12d",
+   "g": "m",
+   "cue": "I say",
+   "answer": "spun"
+  },
+  "înainte": {
+   "intro": "12d",
+   "g": "f",
+   "cue": "forward, straight on",
+   "answer": "înainte"
+  },
+  "decor": {
+   "intro": "12e",
+   "g": "m",
+   "cue": "the scenery — on a stage",
+   "answer": "un decor"
+  },
+  "cunosc": {
+   "intro": "12e",
+   "g": "f",
+   "cue": "I know — a place or a person",
+   "answer": "cunosc"
+  },
+  "aplaudă": {
+   "intro": "12e",
+   "g": "m",
+   "cue": "they applaud",
+   "answer": "aplaudă"
+  },
+  "prieten": {
+   "intro": "12e",
+   "g": "f",
+   "cue": "a friend",
+   "answer": "un prieten"
+  },
+  "trec": {
+   "intro": "12e",
+   "g": "m",
+   "cue": "I go past",
+   "answer": "trec"
+  },
+  "amator": {
+   "intro": "12e",
+   "g": "f",
+   "cue": "a fan — of something",
+   "answer": "un amator"
+  },
+  "propunere": {
+   "intro": "12f",
+   "g": "m",
+   "cue": "a suggestion, a proposal",
+   "answer": "o propunere"
+  },
+  "ziua": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "in the daytime",
+   "answer": "ziua"
+  },
+  "acela": {
+   "intro": "12f",
+   "g": "m",
+   "cue": "that train — over there",
+   "answer": "trenul acela"
+  },
+  "până la": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "as far as",
+   "answer": "până la"
+  },
+  "lucru": {
+   "intro": "12f",
+   "g": "m",
+   "cue": "a thing",
+   "answer": "un lucru"
+  },
+  "aceea": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "that girl — over there",
+   "answer": "fata aceea"
   }
  },
  "struggles": {
   "09d:13": {
    "intro": "09d",
    "g": "m",
-   "cue": "I examine",
+   "cue": "I look over, I examine",
    "answer": "examinez",
-   "misses": 13,
-   "seen": 15,
-   "last": "close"
-  },
-  "09d:76": {
-   "intro": "09d",
-   "g": "m",
-   "cue": "I'm looking over your documents. Politely.",
-   "answer": "Examinez actele dumneavoastră.",
-   "misses": 8,
-   "seen": 8,
-   "last": "missed"
-  },
-  "07a:116": {
-   "intro": "07a",
-   "g": "m",
-   "cue": "The dress is too long.",
-   "answer": "Rochia e prea lungă.",
-   "misses": 7,
-   "seen": 7,
-   "last": "missed"
-  },
-  "07a:126": {
-   "intro": "07a",
-   "g": "f",
-   "cue": "My daughter wants a long dress.",
-   "answer": "Fiica mea vrea o rochie lungă.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "07b:126": {
-   "intro": "07b",
-   "g": "f",
-   "cue": "This is a floor, and this is a ceiling.",
-   "answer": "Aceasta e o podea, iar acesta e un tavan.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "07b:130": {
-   "intro": "07b",
-   "g": "m",
-   "cue": "Who is he? — He is Mr Radu.",
-   "answer": "Cine e dumnealui? Dumnealui e domnu' Radu.",
-   "misses": 6,
-   "seen": 6,
-   "last": "missed"
-  },
-  "07c:137": {
-   "intro": "07c",
-   "g": "f",
-   "cue": "This is a mirror.",
-   "answer": "Aceasta e o oglindă.",
-   "misses": 5,
-   "seen": 5,
-   "last": "close"
-  },
-  "11b:54": {
-   "intro": "11b",
-   "g": "m",
-   "cue": "you drink — to a friend",
-   "answer": "bei",
-   "misses": 5,
-   "seen": 5,
-   "last": "missed"
-  },
-  "08e:12": {
-   "intro": "08e",
-   "g": "m",
-   "cue": "a timetable",
-   "answer": "un orar",
-   "misses": 4,
-   "seen": 4,
-   "last": "close"
-  },
-  "08e:22": {
-   "intro": "08e",
-   "g": "m",
-   "cue": "exam season",
-   "answer": "sesiune",
-   "misses": 4,
-   "seen": 4,
-   "last": "missed"
-  },
-  "07c:139": {
-   "intro": "07c",
-   "g": "f",
-   "cue": "This is a magazine, and this is a newspaper.",
-   "answer": "Aceasta e o revistă, iar acesta e un ziar.",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "07d:95": {
-   "intro": "07d",
-   "g": "f",
-   "cue": "How many children do you have? Politely.",
-   "answer": "Câți copii aveți?",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "07f:87": {
-   "intro": "07f",
-   "g": "m",
-   "cue": "green chairs",
-   "answer": "scaune verzi",
-   "misses": 3,
-   "seen": 4,
-   "last": "missed"
-  },
-  "07f:104": {
-   "intro": "07f",
-   "g": "m",
-   "cue": "I have fifteen lei.",
-   "answer": "Am cincisprezece lei.",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "07g:45": {
-   "intro": "07g",
-   "g": "m",
-   "cue": "a well-behaved girl",
-   "answer": "o fată cuminte",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "07g:63": {
-   "intro": "07g",
-   "g": "f",
-   "cue": "small houses",
-   "answer": "case mici",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "07g:69": {
-   "intro": "07g",
-   "g": "m",
-   "cue": "a big family",
-   "answer": "o familie mare",
-   "misses": 3,
-   "seen": 3,
-   "last": "close"
-  },
-  "07g:79": {
-   "intro": "07g",
-   "g": "f",
-   "cue": "black eyes",
-   "answer": "ochi negri",
-   "misses": 3,
-   "seen": 3,
-   "last": "close"
-  },
-  "08a:84": {
-   "intro": "08a",
-   "g": "m",
-   "cue": "I'm learning Romanian.",
-   "answer": "Învăț limba română.",
-   "misses": 3,
-   "seen": 5,
-   "last": "missed"
-  },
-  "08a:128": {
-   "intro": "08a",
-   "g": "m",
-   "cue": "comfortable",
-   "answer": "comod",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "08c:82": {
-   "intro": "08c",
-   "g": "f",
-   "cue": "he's late",
-   "answer": "întârzie",
-   "misses": 3,
-   "seen": 3,
-   "last": "close"
-  },
-  "08c:86": {
-   "intro": "08c",
-   "g": "f",
-   "cue": "I'm not late.",
-   "answer": "Nu întârzii.",
-   "misses": 3,
-   "seen": 3,
+   "misses": 21,
+   "seen": 25,
    "last": "close"
   },
   "08d:70": {
@@ -2061,6 +2020,15 @@
    "seen": 3,
    "last": "missed"
   },
+  "10c:21": {
+   "intro": "10c",
+   "g": "m",
+   "cue": "goods — on sale",
+   "answer": "marfă",
+   "misses": 3,
+   "seen": 5,
+   "last": "close"
+  },
   "11c:11": {
    "intro": "11c",
    "g": "f",
@@ -2068,6 +2036,42 @@
    "answer": "o agenție",
    "misses": 3,
    "seen": 5,
+   "last": "close"
+  },
+  "11g:23": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "I'm dead tired.",
+   "answer": "Cad de oboseală.",
+   "misses": 3,
+   "seen": 5,
+   "last": "close"
+  },
+  "11g:65": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "Are you dead tired? To a friend.",
+   "answer": "Cazi de oboseală?",
+   "misses": 3,
+   "seen": 4,
+   "last": "close"
+  },
+  "11g:103": {
+   "intro": "11g",
+   "g": "f",
+   "cue": "a floor",
+   "answer": "o podea",
+   "misses": 3,
+   "seen": 4,
+   "last": "close"
+  },
+  "12b:61": {
+   "intro": "12b",
+   "g": "f",
+   "cue": "he does",
+   "answer": "face",
+   "misses": 3,
+   "seen": 4,
    "last": "close"
   },
   "07e:103": {
@@ -2320,6 +2324,15 @@
    "answer": "Ședința e la zece fix.",
    "misses": 2,
    "seen": 2,
+   "last": "close"
+  },
+  "09e:21": {
+   "intro": "09e",
+   "g": "m",
+   "cue": "the ground floor",
+   "answer": "parter",
+   "misses": 2,
+   "seen": 4,
    "last": "close"
   },
   "09e:86": {
@@ -2709,6 +2722,159 @@
    "seen": 2,
    "last": "close"
   },
+  "11g:38": {
+   "intro": "11g",
+   "g": "f",
+   "cue": "deep",
+   "answer": "adânc",
+   "misses": 2,
+   "seen": 3,
+   "last": "missed"
+  },
+  "11g:57": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "it falls",
+   "answer": "cade",
+   "misses": 2,
+   "seen": 4,
+   "last": "close"
+  },
+  "11g:59": {
+   "intro": "11g",
+   "g": "f",
+   "cue": "The suitcase falls from my hand.",
+   "answer": "Valiza cade din mână.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "11g:116": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "The ceiling is high.",
+   "answer": "Tavanul e înalt.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "11g:131": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "The walk is long.",
+   "answer": "Plimbarea e lungă.",
+   "misses": 2,
+   "seen": 3,
+   "last": "close"
+  },
+  "11g:141": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "Sleep is deep.",
+   "answer": "Somnul e adânc.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "11g:150": {
+   "intro": "11g",
+   "g": "f",
+   "cue": "Look, the children are quiet!",
+   "answer": "Uite, copiii tac!",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "11g:152": {
+   "intro": "11g",
+   "g": "m",
+   "cue": "The child keeps quiet.",
+   "answer": "Copilul tace.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "11h:129": {
+   "intro": "11h",
+   "g": "m",
+   "cue": "We're leaving for a spa resort.",
+   "answer": "Plecăm la o stațiune balneară.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12a:137": {
+   "intro": "12a",
+   "g": "m",
+   "cue": "Shall we go? — Why not?",
+   "answer": "Plecăm? — De ce nu?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12b:101": {
+   "intro": "12b",
+   "g": "f",
+   "cue": "The show begins at eight.",
+   "answer": "Spectacolul începe la ora opt.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12b:124": {
+   "intro": "12b",
+   "g": "m",
+   "cue": "Come on, to the theatre!",
+   "answer": "Hai la teatru!",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12c:90": {
+   "intro": "12c",
+   "g": "m",
+   "cue": "I'm asking for some information.",
+   "answer": "Cer o informație.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12c:113": {
+   "intro": "12c",
+   "g": "f",
+   "cue": "It's an interesting show.",
+   "answer": "E un spectacol interesant.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12c:134": {
+   "intro": "12c",
+   "g": "f",
+   "cue": "This evening I work at the theatre.",
+   "answer": "Diseară lucrez la teatru.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12c:138": {
+   "intro": "12c",
+   "g": "f",
+   "cue": "Every spectator asks for a ticket.",
+   "answer": "Fiecare spectator cere un bilet.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12d:77": {
+   "intro": "12d",
+   "g": "m",
+   "cue": "you say — to a friend",
+   "answer": "spui",
+   "misses": 2,
+   "seen": 3,
+   "last": "close"
+  },
   "07a:128": {
    "intro": "07a",
    "g": "m",
@@ -2888,15 +3054,6 @@
    "misses": 1,
    "seen": 4,
    "last": "missed"
-  },
-  "09c:22": {
-   "intro": "09c",
-   "g": "m",
-   "cue": "an application",
-   "answer": "o cerere",
-   "misses": 1,
-   "seen": 2,
-   "last": "close"
   },
   "09c:37": {
    "intro": "09c",
@@ -3296,36 +3453,19 @@
   }
  },
  "struggles_used": {
-  "11g": [
+  "12e": [
    "examinez",
-   "Examinez actele dumneavoastră.",
-   "Rochia e prea lungă.",
-   "Fiica mea vrea o rochie lungă.",
-   "Aceasta e o podea, iar acesta e un tavan.",
-   "o cerere"
+   "o facultate",
+   "desenez",
+   "noi desenăm"
   ],
-  "11h": [
-   "examinez",
-   "Examinez actele dumneavoastră.",
-   "Cine e dumnealui? Dumnealui e domnu' Radu.",
-   "Aceasta e o oglindă.",
-   "bei",
-   "un orar",
-   "Învăț limba română."
-  ],
-  "12a": [
-   "sesiune",
-   "Aceasta e o revistă, iar acesta e un ziar.",
-   "Câți copii aveți?",
-   "scaune verzi",
-   "întârzie",
-   "Nu întârzii."
-  ],
-  "12b": [
-   "Am cincisprezece lei.",
-   "o fată cuminte",
-   "case mici",
-   "o familie mare"
+  "12f": [
+   "o cutie",
+   "Poftiți restul.",
+   "marfă",
+   "o agenție",
+   "o știre",
+   "o noutate"
   ]
  }
 }

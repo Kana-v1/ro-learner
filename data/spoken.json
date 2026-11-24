@@ -742,6 +742,62 @@
    "gloss": "tonight, this evening",
    "note": "Both book forms are correct, but in everyday speech 'diseară' is by far the most common: 'Ce faci diseară?'.",
    "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Poftiți!",
+   "spoken": "Poftim?",
+   "gloss": "Pardon? / Sorry, what?",
+   "note": "With a rising tone, the everyday polite way to ask someone to repeat; the same word as 'here you are'. Neutral, fine with strangers.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Puteți repeta, vă rog?",
+   "gloss": "Can you repeat that, please?",
+   "note": "Polite request to a stranger or at a counter; between friends 'Poți să repeți?' or just 'Poftim?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Ce spui?",
+   "spoken": "Ce zici?",
+   "gloss": "What do you say? / What do you think?",
+   "note": "Between friends 'Ce zici?' (a zice) is the usual way to ask someone's opinion or reaction; 'Ce spui?' is fine but plainer. Neutral, not slang.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Îți scriu.",
+   "gloss": "I'll write to you / I'll message you.",
+   "note": "Present tense for a promise, as with 'Ajung în zece minute'; today usually means a text or chat message.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "prietenul meu",
+   "spoken": "Un prieten de-al meu.",
+   "gloss": "A friend of mine.",
+   "note": "'Prietenul meu / prietena mea' from someone of the other sex is usually heard as boyfriend/girlfriend; for a plain friend people say 'un prieten de-al meu' / 'o prietenă de-a mea'. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Spectatorii aplaudă.",
+   "spoken": "Bravo!",
+   "gloss": "Bravo! / Well done!",
+   "note": "Shouted at the end of a show, and said to praise anyone for something done well. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "acela / aceea",
+   "spoken": "ăla / aia",
+   "gloss": "that one (over there)",
+   "note": "Everyday spoken forms after a noun ('trenul ăla', 'fata aia'); informal, fine among friends, avoid with strangers and in writing. Taught for recognition only.",
+   "confidence": "medium"
   }
  ]
 }

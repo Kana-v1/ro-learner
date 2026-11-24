@@ -1,0 +1,1902 @@
+{
+ "episode": 12,
+ "part": "f",
+ "lesson": 12,
+ "title": "Troleibuzul acela",
+ "source": "Limba care ne unește, nivelul I — Lecția 12 (partea F)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "troleibuzul": "the trolleybus",
+  "casa de bilete": "the box office — a chunk",
+  "cortina": "the curtain — in the book's text",
+  "Mihai": "a man's name"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Merg cu troleibuzul.",
+   "spoken": "Merg cu metroul.",
+   "gloss": "I go by metro.",
+   "note": "The book is set in Chișinău, which has no metro; in Bucharest the metro is how most people cross the city. Also 'Iau metroul' (I take the metro).",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Ajung în zece minute.",
+   "gloss": "I'll be there in ten minutes.",
+   "note": "The everyday phone message when running to meet someone; the present tense does the future's job. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Ce faci astăzi?",
+   "spoken": "Ce faci?",
+   "gloss": "How are you? / What are you up to?",
+   "note": "Between friends 'Ce faci?' is first of all a greeting, like 'how are you?'; the reply is 'Bine, tu?'. For plans people add the time: 'Ce faci diseară?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "astă seară / în seara asta",
+   "spoken": "diseară",
+   "gloss": "tonight, this evening",
+   "note": "Both book forms are correct, but in everyday speech 'diseară' is by far the most common: 'Ce faci diseară?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Poftiți!",
+   "spoken": "Poftim?",
+   "gloss": "Pardon? / Sorry, what?",
+   "note": "With a rising tone, the everyday polite way to ask someone to repeat; the same word as 'here you are'. Neutral, fine with strangers.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Puteți repeta, vă rog?",
+   "gloss": "Can you repeat that, please?",
+   "note": "Polite request to a stranger or at a counter; between friends 'Poți să repeți?' or just 'Poftim?'.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "Ce spui?",
+   "spoken": "Ce zici?",
+   "gloss": "What do you say? / What do you think?",
+   "note": "Between friends 'Ce zici?' (a zice) is the usual way to ask someone's opinion or reaction; 'Ce spui?' is fine but plainer. Neutral, not slang.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Îți scriu.",
+   "gloss": "I'll write to you / I'll message you.",
+   "note": "Present tense for a promise, as with 'Ajung în zece minute'; today usually means a text or chat message.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "prietenul meu",
+   "spoken": "Un prieten de-al meu.",
+   "gloss": "A friend of mine.",
+   "note": "'Prietenul meu / prietena mea' from someone of the other sex is usually heard as boyfriend/girlfriend; for a plain friend people say 'un prieten de-al meu' / 'o prietenă de-a mea'. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Spectatorii aplaudă.",
+   "spoken": "Bravo!",
+   "gloss": "Bravo! / Well done!",
+   "note": "Shouted at the end of a show, and said to praise anyone for something done well. Neutral.",
+   "confidence": "high"
+  },
+  {
+   "type": "register_scale",
+   "book": "acela / aceea",
+   "spoken": "ăla / aia",
+   "gloss": "that one (over there)",
+   "note": "Everyday spoken forms after a noun ('trenul ăla', 'fata aia'); informal, fine among friends, avoid with strangers and in writing. Taught for recognition only.",
+   "confidence": "medium"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Elena, am o propunere. Diseară mergem la teatru?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ziua lucrez, dar seara pot.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Vezi troleibuzul acela? Merge până la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Nu troleibuzul acela. Mergem pe jos!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bravo! Și cine e fata aceea?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Fata aceea? Nu știu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dana has an idea for the evening. The last part of Lesson 12 — and the chapter's own text.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s010",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am o propunere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s011",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have a suggestion.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am o propunere.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a suggestion, a proposal",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s014",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o propunere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ziua sunt la serviciu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "In the daytime I'm at work.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ziua sunt la serviciu.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "in the daytime",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s019",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ziua",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Trenul acela.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That train.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Trenul acela.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that train — over there",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s024",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trenul acela",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Merg pe jos până la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I walk as far as the theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Merg pe jos până la teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "as far as",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s029",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "până la",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un lucru necesar.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A necessary thing.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un lucru necesar.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a thing",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s034",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un lucru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fata aceea.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That girl.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fata aceea.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that girl — over there",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s039",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "fata aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the words.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s041",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a thing",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s042",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un lucru",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that train",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "trenul acela",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "in the daytime",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ziua",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a suggestion",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o propunere",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that girl",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "fata aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "as far as",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "până la",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You know this. That is the one over there. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "This and that"
+  },
+  {
+   "id": "s054",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Trenul acesta. Trenul acela.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s055",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that boy",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s056",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "băiatul acela",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that show",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "spectacolul acela",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is this your brother, or that one? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Acesta e fratele tău sau acela?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "For a woman, or a feminine thing, it's the other one. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Cartea aceasta. Cartea aceea.",
+   "rate": 0.8,
+   "pause_after_ms": 2200
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that book",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "cartea aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that woman",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "femeia aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is this your book, or that one? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aceasta e cartea ta sau aceea?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that train",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "trenul acela",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that girl",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "fata aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "this train",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "trenul acesta",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that suggestion",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "propunerea aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "this book",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s078",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cartea aceasta",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s079",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Morning, daytime, evening — the same shape. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "When?"
+  },
+  {
+   "id": "s080",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Dimineața. Ziua. Seara.",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "In the daytime I'm at work.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ziua sunt la serviciu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Sunt la serviciu ziua."
+   ]
+  },
+  {
+   "id": "s083",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "In the evening I stay home.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s084",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Seara rămân acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Rămân acasă seara."
+   ]
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "In the daytime I work, but in the evening I can.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ziua lucrez, dar seara pot.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "every day",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "în fiecare zi",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "As far as works for a place — and for a time, as until. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "As far as, until"
+  },
+  {
+   "id": "s090",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Până la teatru. Până la ora șase.",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The bus goes as far as the theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Autobuzul merge până la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I work until six.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Lucrez până la ora șase.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Lucrez până la șase."
+   ]
+  },
+  {
+   "id": "s095",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We walk as far as the school.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s096",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mergem pe jos până la școală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s097",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A suggestion goes like a book. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "A suggestion, a thing"
+  },
+  {
+   "id": "s098",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O propunere interesantă.",
+   "rate": 0.8,
+   "pause_after_ms": 1900
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an interesting suggestion",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o propunere interesantă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "His suggestion is interesting.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Propunerea lui e interesantă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I have a suggestion.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am o propunere.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a necessary thing",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un lucru necesar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s108",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "This evening we're going to the theatre.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s109",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Diseară mergem la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Astă seară mergem la teatru.",
+    "Mergem la teatru diseară.",
+    "În seara asta mergem la teatru.",
+    "Seara asta mergem la teatru."
+   ]
+  },
+  {
+   "id": "s110",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you see that bus? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s111",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vezi autobuzul acela?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s112",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Not that bus. We're walking!",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s113",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Nu autobuzul acela. Mergem pe jos!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Who is that girl?",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cine e fata aceea?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A friend of mine.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un prieten de-al meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Do you know that man? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cunoști bărbatul acela?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "When does the show begin?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Când începe spectacolul?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm taking the book back as far as the library.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Duc cartea înapoi până la bibliotecă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Everyone arrives home late.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Fiecare ajunge acasă târziu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Fiecare ajunge târziu acasă."
+   ]
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Well done!",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Bravo!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. Over there, in everyday speech, the that-word often comes as a shorter one. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s129",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Trenul ăla. Fata aia.",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s130",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Fine with friends; with strangers, keep the long one. Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s131",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s132",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few of these keep slipping, so hear them first. Say each one after the voice.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s133",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box — or a can",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s134",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s135",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's your change. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s136",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți restul.",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s137",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "goods — on sale",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s138",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "marfă",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s139",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an agency",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s140",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o agenție",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s141",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now from memory.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s142",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a bookshop",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s143",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o librărie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s144",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of news",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s145",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o știre",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s146",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "something new",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s147",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o noutate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s148",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a train",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s149",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un tren",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s150",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a box — or a can",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s151",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o cutie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's your change. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți restul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "goods — on sale",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s155",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "marfă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "an agency",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s157",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o agenție",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s158",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now the chapter's own text: two friends go to the theatre. Three things are new and clear from the story — a trolleybus, the box office, and the curtain. Slowly first.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Text"
+  },
+  {
+   "id": "s159",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prietenii merg la teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s160",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Radu și Mihai sunt mari amatori de teatru. Astăzi, după serviciu, ei merg la teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s161",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei iau troleibuzul până la teatru.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s162",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Când ajung la teatru, ei întreabă la casa de bilete:",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s163",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aveți bilete la spectacolul de astă seară? — Da, avem. Avem locuri la balcon.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s164",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prietenii iau două bilete și intră în sală. Aici sunt mulți spectatori.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s165",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E ora șapte și cinci minute. La ora șapte și un sfert începe spectacolul.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s166",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Este un spectacol interesant, cu un decor frumos.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s167",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Când cade cortina, spectatorii aplaudă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s168",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După spectacol, prietenii merg împreună pe jos. Seara târziu ajung acasă.",
+   "rate": 0.8,
+   "pause_after_ms": 900
+  },
+  {
+   "id": "s169",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And at speed.",
+   "rate": 1.0,
+   "pause_after_ms": 600
+  },
+  {
+   "id": "s170",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prietenii merg la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s171",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Radu și Mihai sunt mari amatori de teatru. Astăzi, după serviciu, ei merg la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s172",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ei iau troleibuzul până la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s173",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Când ajung la teatru, ei întreabă la casa de bilete:",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s174",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Aveți bilete la spectacolul de astă seară? — Da, avem. Avem locuri la balcon.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s175",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Prietenii iau două bilete și intră în sală. Aici sunt mulți spectatori.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s176",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "E ora șapte și cinci minute. La ora șapte și un sfert începe spectacolul.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s177",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Este un spectacol interesant, cu un decor frumos.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s178",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Când cade cortina, spectatorii aplaudă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s179",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "După spectacol, prietenii merg împreună pe jos. Seara târziu ajung acasă.",
+   "rate": 1.0,
+   "pause_after_ms": 300
+  },
+  {
+   "id": "s180",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the chapter's proverb. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Proverb"
+  },
+  {
+   "id": "s181",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Orice lucru este bun la timpul său.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s182",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Everything is good in its own time. Once more:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s183",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Orice lucru este bun la timpul său.",
+   "rate": 1.0,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s184",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dana and Elena again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s185",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Elena, am o propunere. Diseară mergem la teatru?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s186",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Ziua lucrez, dar seara pot.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s187",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Vezi troleibuzul acela? Merge până la teatru.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s188",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Nu troleibuzul acela. Mergem pe jos!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s189",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bravo! Și cine e fata aceea?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s190",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Fata aceea? Nu știu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s191",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That's the whole of Lesson 12 — the theatre, and verbs like go. Next, Lesson 13: visiting friends.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s192",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}
