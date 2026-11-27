@@ -230,7 +230,8 @@ word with the right stem but a different ending, judged relative to word
 length; or an `almost=` phrasing): the fix is shown and there is no retry;
 **not quite** (a content word missing or different): an immediate second try.
 Diacritics are folded, dropped subject pronouns are fine, `e` = `este`.
-An answer ending in "nu știu" is a pass: no retry, straight to the answer.
+An answer ending in "nu știu" is a pass: no retry, no miss tone or spoken
+verdict, straight to the answer.
 The grader also absorbs how recognisers format things: digits for numbers
 ("3" = trei), clock times ("9:30" = nouă și jumătate), "RON" for lei, two
 words run into one ("copiilor" = copiii lor), and a dropped de/la/în/pe/cu/și.

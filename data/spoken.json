@@ -799,5 +799,31 @@
    "note": "Everyday spoken forms after a noun ('trenul ăla', 'fata aia'); informal, fine among friends, avoid with strangers and in writing. Taught for recognition only.",
    "confidence": "medium"
   }
+ ],
+ "13": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Poftă bună!",
+   "spoken": "Mersi, la fel!",
+   "gloss": "Thanks, you too!",
+   "note": "The usual reply to 'Poftă bună!'. 'Mersi' is the everyday thank-you in Bucharest, fine anywhere except formal writing; 'Mulțumesc, la fel!' is the careful version.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Hai la masă!",
+   "gloss": "Come to the table! / Dinner's ready!",
+   "note": "How a host or parent calls everyone to eat. Neutral, among family and friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Mi-e foame.",
+   "gloss": "I'm hungry.",
+   "note": "The everyday way to say it ('Mi-e sete' = I'm thirsty); 'Sunt flămând' exists but is far less common. Neutral.",
+   "confidence": "high"
+  }
  ]
 }

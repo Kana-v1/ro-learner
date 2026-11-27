@@ -65,7 +65,9 @@
   "12c",
   "12d",
   "12e",
-  "12f"
+  "12f",
+  "13a",
+  "13b"
  ],
  "items": {
   "01-1": {
@@ -1963,6 +1965,78 @@
    "g": "f",
    "cue": "that girl — over there",
    "answer": "fata aceea"
+  },
+  "vin": {
+   "intro": "13a",
+   "g": "m",
+   "cue": "I come",
+   "answer": "vin"
+  },
+  "oaspete": {
+   "intro": "13a",
+   "g": "f",
+   "cue": "a guest",
+   "answer": "un oaspete"
+  },
+  "invit": {
+   "intro": "13a",
+   "g": "m",
+   "cue": "I invite",
+   "answer": "invit"
+  },
+  "vizită": {
+   "intro": "13a",
+   "g": "f",
+   "cue": "on a visit",
+   "answer": "în vizită"
+  },
+  "luați loc": {
+   "intro": "13a",
+   "g": "m",
+   "cue": "Please sit down — politely",
+   "answer": "Luați loc, vă rog."
+  },
+  "poftă bună": {
+   "intro": "13a",
+   "g": "f",
+   "cue": "Enjoy your meal!",
+   "answer": "Poftă bună!"
+  },
+  "farfurie": {
+   "intro": "13b",
+   "g": "m",
+   "cue": "a plate",
+   "answer": "o farfurie"
+  },
+  "cald": {
+   "intro": "13b",
+   "g": "f",
+   "cue": "warm, hot",
+   "answer": "cald"
+  },
+  "pahar": {
+   "intro": "13b",
+   "g": "m",
+   "cue": "a glass",
+   "answer": "un pahar"
+  },
+  "mâncare": {
+   "intro": "13b",
+   "g": "f",
+   "cue": "food",
+   "answer": "mâncare"
+  },
+  "rece": {
+   "intro": "13b",
+   "g": "m",
+   "cue": "cold",
+   "answer": "rece"
+  },
+  "lingură": {
+   "intro": "13b",
+   "g": "f",
+   "cue": "a spoon",
+   "answer": "o lingură"
   }
  },
  "struggles": {
@@ -1971,72 +2045,36 @@
    "g": "m",
    "cue": "I look over, I examine",
    "answer": "examinez",
-   "misses": 21,
-   "seen": 25,
+   "misses": 23,
+   "seen": 27,
    "last": "close"
-  },
-  "08d:70": {
-   "intro": "08d",
-   "g": "m",
-   "cue": "a faculty — a university department",
-   "answer": "o facultate",
-   "misses": 3,
-   "seen": 5,
-   "last": "close"
-  },
-  "09e:36": {
-   "intro": "09e",
-   "g": "f",
-   "cue": "I draw",
-   "answer": "desenez",
-   "misses": 3,
-   "seen": 4,
-   "last": "missed"
-  },
-  "09e:71": {
-   "intro": "09e",
-   "g": "f",
-   "cue": "we draw",
-   "answer": "noi desenăm",
-   "misses": 3,
-   "seen": 3,
-   "last": "missed"
-  },
-  "10a:38": {
-   "intro": "10a",
-   "g": "f",
-   "cue": "a box — or a can",
-   "answer": "o cutie",
-   "misses": 3,
-   "seen": 4,
-   "last": "missed"
   },
   "10a:108": {
    "intro": "10a",
    "g": "f",
    "cue": "Here's your change. Politely.",
    "answer": "Poftiți restul.",
-   "misses": 3,
-   "seen": 3,
+   "misses": 5,
+   "seen": 5,
    "last": "missed"
   },
-  "10c:21": {
-   "intro": "10c",
-   "g": "m",
-   "cue": "goods — on sale",
-   "answer": "marfă",
-   "misses": 3,
+  "10e:17": {
+   "intro": "10e",
+   "g": "f",
+   "cue": "a piece of news",
+   "answer": "o știre",
+   "misses": 4,
    "seen": 5,
    "last": "close"
   },
-  "11c:11": {
-   "intro": "11c",
-   "g": "f",
-   "cue": "an agency",
-   "answer": "o agenție",
-   "misses": 3,
+  "10e:22": {
+   "intro": "10e",
+   "g": "m",
+   "cue": "something new",
+   "answer": "o noutate",
+   "misses": 4,
    "seen": 5,
-   "last": "close"
+   "last": "missed"
   },
   "11g:23": {
    "intro": "11g",
@@ -2443,6 +2481,24 @@
    "seen": 2,
    "last": "missed"
   },
+  "10d:19": {
+   "intro": "10d",
+   "g": "f",
+   "cue": "flour",
+   "answer": "făină",
+   "misses": 2,
+   "seen": 4,
+   "last": "missed"
+  },
+  "10d:24": {
+   "intro": "10d",
+   "g": "m",
+   "cue": "a kilo",
+   "answer": "un kilogram",
+   "misses": 2,
+   "seen": 4,
+   "last": "close"
+  },
   "10d:34": {
    "intro": "10d",
    "g": "m",
@@ -2505,24 +2561,6 @@
    "misses": 2,
    "seen": 2,
    "last": "missed"
-  },
-  "10e:17": {
-   "intro": "10e",
-   "g": "f",
-   "cue": "a piece of news",
-   "answer": "o știre",
-   "misses": 2,
-   "seen": 3,
-   "last": "missed"
-  },
-  "10e:22": {
-   "intro": "10e",
-   "g": "m",
-   "cue": "something new",
-   "answer": "o noutate",
-   "misses": 2,
-   "seen": 3,
-   "last": "close"
   },
   "10e:69": {
    "intro": "10e",
@@ -2874,6 +2912,105 @@
    "misses": 2,
    "seen": 3,
    "last": "close"
+  },
+  "12e:66": {
+   "intro": "12e",
+   "g": "f",
+   "cue": "Do you know the city? Politely.",
+   "answer": "Cunoașteți orașul?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12e:110": {
+   "intro": "12e",
+   "g": "f",
+   "cue": "The scenery is beautiful.",
+   "answer": "Decorul e frumos.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12e:112": {
+   "intro": "12e",
+   "g": "m",
+   "cue": "an interesting set",
+   "answer": "un decor interesant",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12e:119": {
+   "intro": "12e",
+   "g": "f",
+   "cue": "My friend is a theatre fan.",
+   "answer": "Prietenul meu e un amator de teatru.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12e:133": {
+   "intro": "12e",
+   "g": "m",
+   "cue": "What do you think? To a friend.",
+   "answer": "Ce zici?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12f:72": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "this train",
+   "answer": "trenul acesta",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12f:100": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "His suggestion is interesting.",
+   "answer": "Propunerea lui e interesantă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12f:107": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "This evening we're going to the theatre.",
+   "answer": "Diseară mergem la teatru.",
+   "misses": 2,
+   "seen": 2,
+   "last": "close"
+  },
+  "12f:115": {
+   "intro": "12f",
+   "g": "f",
+   "cue": "A friend of mine.",
+   "answer": "Un prieten de-al meu.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12f:117": {
+   "intro": "12f",
+   "g": "m",
+   "cue": "Do you know that man? To a friend.",
+   "answer": "Cunoști bărbatul acela?",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
+  },
+  "12f:121": {
+   "intro": "12f",
+   "g": "m",
+   "cue": "I'm taking the book back as far as the library.",
+   "answer": "Duc cartea înapoi până la bibliotecă.",
+   "misses": 2,
+   "seen": 2,
+   "last": "missed"
   },
   "07a:128": {
    "intro": "07a",
@@ -3453,19 +3590,19 @@
   }
  },
  "struggles_used": {
-  "12e": [
+  "13a": [
    "examinez",
-   "o facultate",
-   "desenez",
-   "noi desenăm"
-  ],
-  "12f": [
-   "o cutie",
    "Poftiți restul.",
-   "marfă",
-   "o agenție",
    "o știre",
-   "o noutate"
+   "o noutate",
+   "Poftă bună!",
+   "Bine ați venit!"
+  ],
+  "13b": [
+   "Cad de oboseală.",
+   "Cazi de oboseală?",
+   "o podea",
+   "face"
   ]
  }
 }

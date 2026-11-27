@@ -1,0 +1,1670 @@
+{
+ "episode": 13,
+ "part": "b",
+ "lesson": 13,
+ "title": "Mâncarea e caldă",
+ "source": "Limba care ne unește, nivelul I — Lecția 13 (partea B)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "te rog": "please — to a friend; vă rog is the polite one"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Poftă bună!",
+   "spoken": "Mersi, la fel!",
+   "gloss": "Thanks, you too!",
+   "note": "The usual reply to 'Poftă bună!'. 'Mersi' is the everyday thank-you in Bucharest, fine anywhere except formal writing; 'Mulțumesc, la fel!' is the careful version.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Hai la masă!",
+   "gloss": "Come to the table! / Dinner's ready!",
+   "note": "How a host or parent calls everyone to eat. Neutral, among family and friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Mi-e foame.",
+   "gloss": "I'm hungry.",
+   "note": "The everyday way to say it ('Mi-e sete' = I'm thirsty); 'Sunt flămând' exists but is far less common. Neutral.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Oaspeții vin la ora șapte. Am nevoie de ajutor.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aduc patru farfurii și patru pahare.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mersi! Și patru linguri, te rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mâncarea e caldă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, e caldă. Și apa e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Paharul acela e pentru oaspeți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu, acela e pentru bunica.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "An hour before the guests come, the table has to be laid.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s011",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O farfurie pentru oaspete.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s012",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A plate for the guest.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s013",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O farfurie pentru oaspete.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s014",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a plate",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s015",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o farfurie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s016",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ceaiul e cald.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tea is hot.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s018",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ceaiul e cald.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s019",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "warm, hot",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s020",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cald",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s021",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un pahar de apă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A glass of water.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s023",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un pahar de apă.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s024",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a glass",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s025",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pahar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s026",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunica face mâncare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grandma is cooking.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s028",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunica face mâncare.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s029",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "food",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s030",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mâncare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s031",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apa e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The water is cold.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s033",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apa e rece.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s034",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "cold",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s035",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "rece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s036",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O lingură pentru fiecare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A spoon for everyone.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s038",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "O lingură pentru fiecare.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s039",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a spoon",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s040",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o lingură",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s041",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the word.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s042",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a spoon",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s043",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o lingură",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s044",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "cold",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s045",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "rece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s046",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a plate",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s047",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o farfurie",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s048",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "food",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s049",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mâncare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s050",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a glass",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s051",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un pahar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s052",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "warm, hot",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s053",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "cald",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s054",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Hot changes for a feminine thing, like interesting did. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Hot and cold"
+  },
+  {
+   "id": "s055",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ceaiul e cald. Mâncarea e caldă.",
+   "rate": 0.8,
+   "pause_after_ms": 2400
+  },
+  {
+   "id": "s056",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The food is hot.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s057",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mâncarea e caldă.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s058",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "hot tea",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s059",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un ceai cald",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s060",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "warm water",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s061",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "apă caldă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s062",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Cold doesn't change at all. Build these.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "cold water",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "apă rece",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tea is cold.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ceaiul e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s067",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The evening is cold.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s068",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Seara e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The water is cold.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apa e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The tea is hot.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s072",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ceaiul e cald.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s073",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The food is cold.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s074",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mâncarea e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s075",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "hot food",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s076",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "mâncare caldă",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s077",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two plates — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Two of each"
+  },
+  {
+   "id": "s078",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Două farfurii.",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s079",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two plates",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s080",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două farfurii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s081",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four plates",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s082",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "patru farfurii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s083",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two glasses — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s084",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Două pahare.",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s085",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two glasses",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s086",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "două pahare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s087",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four glasses",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s088",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "patru pahare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s089",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Two spoons — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s090",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Două linguri.",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two spoons",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "două linguri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s094",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four glasses",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s095",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "patru pahare",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s096",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a spoon",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s097",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o lingură",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s098",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two plates",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s099",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "două farfurii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s100",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a glass",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s101",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un pahar",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s102",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "four spoons",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s103",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "patru linguri",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s104",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That one, from last time, on the table.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "That one"
+  },
+  {
+   "id": "s105",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that glass",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s106",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "paharul acela",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "that plate",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "farfuria aceea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "this glass",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "paharul acesta",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is that glass for the guests?",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Paharul acela e pentru oaspeți?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s114",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The guests are coming at seven.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s115",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Oaspeții vin la ora șapte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Oaspeții vin la șapte."
+   ]
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I need help.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Am nevoie de ajutor.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm bringing four plates.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Aduc patru farfurii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A glass of water, please. To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Un pahar de apă, te rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Is the food hot?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mâncarea e caldă?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "The water is cold.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Apa e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Grandma is cooking.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bunica face mâncare.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A plate for the guest.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "O farfurie pentru oaspete.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Thanks! To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mersi!",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Mulțumesc!"
+   ]
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal! — Thanks, you too!",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poftă bună! — Mersi, la fel!",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Poftă bună! — Mulțumesc, la fel!"
+   ]
+  },
+  {
+   "id": "s134",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. When the food is ready, people call everyone to the table like this. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s135",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Hai la masă!",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s136",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And the everyday way to say I'm hungry. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s137",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Mi-e foame.",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s138",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few of these keep slipping, so hear them first. Say each one after the voice.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s141",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm dead tired.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s142",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cad de oboseală.",
+   "rate": 0.8,
+   "pause_after_ms": 2950
+  },
+  {
+   "id": "s143",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you dead tired? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s144",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cazi de oboseală?",
+   "rate": 0.8,
+   "pause_after_ms": 2950
+  },
+  {
+   "id": "s145",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a floor",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s146",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o podea",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s147",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he does",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s148",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "face",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s149",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now from memory.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s150",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I go",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s151",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "merg",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "on foot",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "pe jos",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "by what? — asking how someone travels",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s155",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "cu ce",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I arrive, I get there",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s157",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "ajung",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s158",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm dead tired.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s159",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cad de oboseală.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s160",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you dead tired? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s161",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Cazi de oboseală?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s162",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a floor",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s163",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o podea",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s164",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "he does",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s165",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "face",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s166",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Laying the table again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s167",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Oaspeții vin la ora șapte. Am nevoie de ajutor.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s168",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Aduc patru farfurii și patru pahare.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s169",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Mersi! Și patru linguri, te rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s170",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mâncarea e caldă?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s171",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Da, e caldă. Și apa e rece.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s172",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Paharul acela e pentru oaspeți?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s173",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Nu, acela e pentru bunica.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s174",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Plates, glasses, spoons — hot food and cold water.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s175",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

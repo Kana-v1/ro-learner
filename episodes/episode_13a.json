@@ -1,0 +1,1681 @@
+{
+ "episode": 13,
+ "part": "a",
+ "lesson": 13,
+ "title": "Vii la noi?",
+ "source": "Limba care ne unește, nivelul I — Lecția 13 (partea A)",
+ "l1": "en",
+ "l2": "ro",
+ "level": "A1",
+ "glue": {
+  "la noi": "to our place — a chunk"
+ },
+ "spoken_layer": [
+  {
+   "type": "phrase_missing_from_book",
+   "book": "Poftă bună!",
+   "spoken": "Mersi, la fel!",
+   "gloss": "Thanks, you too!",
+   "note": "The usual reply to 'Poftă bună!'. 'Mersi' is the everyday thank-you in Bucharest, fine anywhere except formal writing; 'Mulțumesc, la fel!' is the careful version.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Hai la masă!",
+   "gloss": "Come to the table! / Dinner's ready!",
+   "note": "How a host or parent calls everyone to eat. Neutral, among family and friends.",
+   "confidence": "high"
+  },
+  {
+   "type": "phrase_missing_from_book",
+   "book": "—",
+   "spoken": "Mi-e foame.",
+   "gloss": "I'm hungry.",
+   "note": "The everyday way to say it ('Mi-e sete' = I'm thirsty); 'Sunt flămând' exists but is far less common. Neutral.",
+   "confidence": "high"
+  }
+ ],
+ "voices": {
+  "en_narrator": {
+   "provider": "azure",
+   "lang": "en-US",
+   "voice_id": "en-US-AndrewNeural"
+  },
+  "ro_male": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.9
+  },
+  "ro_female": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_dana": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural"
+  },
+  "ro_radu": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-EmilNeural",
+   "rate_scale": 0.92
+  },
+  "ro_elena": {
+   "provider": "azure",
+   "lang": "ro-RO",
+   "voice_id": "ro-RO-AlinaNeural",
+   "pitch": "+12%"
+  }
+ },
+ "segments": [
+  {
+   "id": "s001",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Ascultați!",
+   "rate": 1.0,
+   "pause_after_ms": 900,
+   "chapter": "Cold open"
+  },
+  {
+   "id": "s002",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Alo, Elena? Astăzi avem oaspeți. Vii la noi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s003",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Da, vin! La ce oră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s004",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La ora șapte. Invit și prietenii.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s005",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună seara! Vin cu un prieten de-al meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s006",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine ați venit! Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s007",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Mulțumesc! Ce frumos e aici!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s008",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s009",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumim!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s010",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Lesson 13: visiting friends. Dana has guests tonight.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s011",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Six words, one at a time.",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Six words"
+  },
+  {
+   "id": "s012",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vin la ora șapte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s013",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm coming at seven.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s014",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vin la ora șapte.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s015",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I come",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s016",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "vin",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s017",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Astăzi avem oaspeți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s018",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today we have guests.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s019",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Astăzi avem oaspeți.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s020",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a guest",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s021",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un oaspete",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s022",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Invit prietenii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s023",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm inviting friends.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s024",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Invit prietenii.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s025",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I invite",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s026",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "invit",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s027",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Venim în vizită.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s028",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We're coming on a visit.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s029",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Venim în vizită.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s030",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "on a visit",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s031",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "în vizită",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s032",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s033",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Please sit down.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s034",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luați loc, vă rog.",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s035",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Please sit down — politely",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s036",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s037",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s038",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal!",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s039",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftă bună!",
+   "rate": 0.8,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s040",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal!",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s041",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s042",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Mixed. Just the words.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s043",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a guest",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s044",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "un oaspete",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s045",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I come",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s046",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vin",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s047",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal!",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s048",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s049",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "on a visit",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s050",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "în vizită",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s051",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I invite",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s052",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "invit",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s053",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Please sit down — politely",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s054",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s055",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Come changes its sound to a friend — a long sound at the end. And to our place is a chunk. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Come, by ear"
+  },
+  {
+   "id": "s056",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vii la noi?",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s057",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you come — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s058",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "vii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s059",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you coming to our place? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s060",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vii la noi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s061",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She comes — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s062",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vine și Radu.",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s063",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she comes",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s064",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vine",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s065",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Radu's coming too.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s066",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vine și Radu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Și Radu vine."
+   ]
+  },
+  {
+   "id": "s067",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "And we come — listen:",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s068",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Venim în vizită.",
+   "rate": 0.8,
+   "pause_after_ms": 1700
+  },
+  {
+   "id": "s069",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we come",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s070",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "venim",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s071",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "You can't work these out — learn each by ear. Mixed.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s072",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I come",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s073",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vin",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s074",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she comes",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s075",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "vine",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s076",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you come — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s077",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "vii",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s078",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "we come",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s079",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "venim",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s080",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm coming at seven.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s081",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Vin la ora șapte.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s082",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Invite goes like listen: to a friend, the last sound softens. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Invite, like listen"
+  },
+  {
+   "id": "s083",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Asculți. Inviți.",
+   "rate": 0.8,
+   "pause_after_ms": 1800
+  },
+  {
+   "id": "s084",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you invite — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s085",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "inviți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s086",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "you listen — to a friend",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s087",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "asculți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s088",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She invites is plain, like she listens. Build it.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s089",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "she invites",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s090",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "invită",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s091",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "She's inviting friends.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s092",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Invită prietenii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s093",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you inviting friends? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s094",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Inviți prietenii?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s095",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "One guest, many guests — the end changes. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Guests"
+  },
+  {
+   "id": "s096",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Un oaspete. Doi oaspeți.",
+   "rate": 0.8,
+   "pause_after_ms": 2000
+  },
+  {
+   "id": "s097",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We have guests.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s098",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Avem oaspeți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s099",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "two guests",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s100",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "doi oaspeți",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s101",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm coming on a visit.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s102",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vin în vizită.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s103",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "We're going on a visit to friends.",
+   "rate": 1.0,
+   "pause_after_ms": 5650
+  },
+  {
+   "id": "s104",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mergem în vizită la prieteni.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s105",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Sit down, politely — and to a friend. Listen to both:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "Sit down"
+  },
+  {
+   "id": "s106",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luați loc. Ia loc.",
+   "rate": 0.8,
+   "pause_after_ms": 1900
+  },
+  {
+   "id": "s107",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Sit down — to a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s108",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Ia loc.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s109",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Please sit down — politely.",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s110",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s111",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Welcome! Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s112",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bine ați venit!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s113",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal!",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s114",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s115",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Short sentences — take your time.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Drill"
+  },
+  {
+   "id": "s116",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Today we have guests.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s117",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Astăzi avem oaspeți.",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Azi avem oaspeți.",
+    "Avem oaspeți astăzi."
+   ]
+  },
+  {
+   "id": "s118",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Are you coming to our place? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s119",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vii la noi?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s120",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Yes, I'm coming!",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s121",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Da, vin!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s122",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "At what time?",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s123",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "La ce oră?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s124",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm inviting friends too.",
+   "rate": 1.0,
+   "pause_after_ms": 3950
+  },
+  {
+   "id": "s125",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Invit și prietenii.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s126",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I'm coming with a friend of mine.",
+   "rate": 1.0,
+   "pause_after_ms": 6500
+  },
+  {
+   "id": "s127",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Vin cu un prieten de-al meu.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s128",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Welcome! Please sit down.",
+   "rate": 1.0,
+   "pause_after_ms": 7350
+  },
+  {
+   "id": "s129",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Bine ați venit! Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s130",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How beautiful it is here!",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s131",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Ce frumos e aici!",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s132",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Enjoy your meal! — Thank you!",
+   "rate": 1.0,
+   "pause_after_ms": 4800
+  },
+  {
+   "id": "s133",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftă bună! — Mulțumesc!",
+   "rate": 1.0,
+   "pause_after_ms": 1400,
+   "accept": [
+    "Poftă bună! — Mulțumim!"
+   ]
+  },
+  {
+   "id": "s134",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "When are you coming? To a friend.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s135",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "Când vii?",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s136",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "How this really goes. When someone says enjoy your meal, the usual answer is thanks — and the same to you. Listen:",
+   "rate": 1.0,
+   "pause_after_ms": 800,
+   "chapter": "How people really say it"
+  },
+  {
+   "id": "s137",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Mersi, la fel!",
+   "rate": 0.8,
+   "pause_after_ms": 1600
+  },
+  {
+   "id": "s138",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "That thanks is the everyday one, between friends and at the table. Just to recognise for now.",
+   "rate": 1.0,
+   "pause_after_ms": 1000
+  },
+  {
+   "id": "s139",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Before we finish, things from earlier episodes come back — answer each out loud before you hear it.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Review"
+  },
+  {
+   "id": "s140",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "A few of these keep slipping, so hear them first. Say each one after the voice.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s141",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s142",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 0.8,
+   "pause_after_ms": 1500
+  },
+  {
+   "id": "s143",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's your change. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s144",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți restul.",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s145",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of news",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s146",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o știre",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s147",
+   "type": "gloss",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "something new",
+   "rate": 1.0,
+   "pause_after_ms": 400
+  },
+  {
+   "id": "s148",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o noutate",
+   "rate": 0.8,
+   "pause_after_ms": 2100
+  },
+  {
+   "id": "s149",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Now from memory.",
+   "rate": 1.0,
+   "pause_after_ms": 800
+  },
+  {
+   "id": "s150",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "when?",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s151",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "când",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s152",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "why?",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s153",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "de ce",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s154",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a route",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s155",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "un traseu",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s156",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I arrange, I put in order",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s157",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "aranjez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s158",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "I look over, I examine",
+   "rate": 1.0,
+   "pause_after_ms": 2500
+  },
+  {
+   "id": "s159",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "examinez",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s160",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Here's your change. Politely.",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s161",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Poftiți restul.",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s162",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "a piece of news",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s163",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "o știre",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s164",
+   "type": "prompt",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "something new",
+   "rate": 1.0,
+   "pause_after_ms": 3100
+  },
+  {
+   "id": "s165",
+   "type": "answer",
+   "lang": "ro",
+   "voice": "ro_male",
+   "text": "o noutate",
+   "rate": 1.0,
+   "pause_after_ms": 1400
+  },
+  {
+   "id": "s166",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Dana's guests again. Same recording.",
+   "rate": 1.0,
+   "pause_after_ms": 1000,
+   "chapter": "Cold open again"
+  },
+  {
+   "id": "s167",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Alo, Elena? Astăzi avem oaspeți. Vii la noi?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s168",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Da, vin! La ce oră?",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s169",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "La ora șapte. Invit și prietenii.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s170",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Bună seara! Vin cu un prieten de-al meu.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s171",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Bine ați venit! Luați loc, vă rog.",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s172",
+   "type": "line_elena",
+   "lang": "ro",
+   "voice": "ro_elena",
+   "text": "Mulțumesc! Ce frumos e aici!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s173",
+   "type": "line_dana",
+   "lang": "ro",
+   "voice": "ro_dana",
+   "text": "Poftă bună!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s174",
+   "type": "line_radu",
+   "lang": "ro",
+   "voice": "ro_radu",
+   "text": "Mulțumim!",
+   "rate": 1.0,
+   "pause_after_ms": 650
+  },
+  {
+   "id": "s175",
+   "type": "narration",
+   "lang": "en",
+   "voice": "en_narrator",
+   "text": "Guests at the door, a seat, and enjoy your meal.",
+   "rate": 1.0,
+   "pause_after_ms": 400,
+   "chapter": "Close"
+  },
+  {
+   "id": "s176",
+   "type": "target",
+   "lang": "ro",
+   "voice": "ro_female",
+   "text": "Pe curând!",
+   "rate": 1.0,
+   "pause_after_ms": 1200
+  }
+ ]
+}

@@ -601,6 +601,7 @@ final class SessionEngine: ObservableObject {
         let idx = record.items.count - 1
         updateNowPlaying()
 
+        var passed = false
         for n in 1...2 {
             attempt = n
             if n == 2 {
@@ -688,6 +689,7 @@ final class SessionEngine: ObservableObject {
             // to the answer (from the learner's feedback on 11C).
             if Grader.isPass(heard) || Grader.isPass(other?.heard) {
                 Log.write("drill \(drillLabel): pass (nu știu), no retry", "drill")
+                passed = true
                 break
             }
         }
@@ -695,8 +697,12 @@ final class SessionEngine: ObservableObject {
         let outcome = record.items[idx].outcome
         lastVerdict = outcome
         phase = .feedback
-        tones.play(Cue(outcome))
-        if let line = Coach.Line.verdict(outcome) { await coach.say(line) }
+        // After "nu știu" the learner already knows it's wrong: no miss tone
+        // or spoken verdict, just the answer (from the feedback on 12B).
+        if !passed {
+            tones.play(Cue(outcome))
+            if let line = Coach.Line.verdict(outcome) { await coach.say(line) }
+        }
         if Task.isCancelled { return }
 
         if round == 0 {
